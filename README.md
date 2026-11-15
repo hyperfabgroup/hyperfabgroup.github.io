@@ -32,10 +32,14 @@
    python3 tools/build.py
    ```
 3. کامیت و پوش کنید؛ GitHub Pages ظرف یکی دو دقیقه به‌روز می‌شود.
+   فقط ریپوی `hyperfabgroup` پوش می‌شود (`git push group main`).
    اگر دو پوش پشت‌سرهم بفرستید، GitHub ممکن است دومی را با خطای
    «Deployment request failed … due to in progress deployment» رد کند و ایمیل خطا بفرستد.
    این خطا از خود سایت نیست: صبر کنید انتشار قبلی تمام شود، بعد یک کامیت تازه پوش کنید.
-   برای هر دو ریپو، اول `hyperfabgroup` را پوش کنید و بعد از تمام‌شدن انتشارش `hyperfab-ir` را.
+
+سایت قدیمی `hyperfab-ir.github.io` فقط صفحه‌های جابه‌جایی دارد که هر نشانی را به همان مسیر در
+`hyperfabgroup.github.io` می‌فرستد. اگر صفحه‌ی تازه‌ای اضافه شد، `python3 tools/redirect_stubs.py <پوشه>` را
+روی یک کپی از ریپوی قدیمی اجرا و آن را پوش کنید.
 
 ظاهر از فایل `style.css` قالب وردپرس هایپرفب ۲۰٫۰ می‌آید (`assets/hyperfab.css`، بی‌تغییر).
 افزوده‌های این سایت در `assets/site.css` است. اگر قالب سایت اصلی به‌روز شد، کافی است `style.css` تازه را
