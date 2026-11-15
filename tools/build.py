@@ -27,7 +27,8 @@ import content_en  # noqa: E402
 from common import SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
 from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
-from structure import HUBS, NAV_LABELS, INDUSTRIAL_KEYS  # noqa: E402
+from structure import HUBS, NAV_LABELS, INDUSTRIAL_KEYS, GUIDES_HUB, GUIDE_LABELS  # noqa: E402
+import guides as guides_pkg  # noqa: E402
 from stock import MEDIA, PAGE_TOPICS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -245,7 +246,7 @@ def head(c, page, depth):
 <link rel="alternate" hreflang="fa" href="{fa_url}">
 <link rel="alternate" hreflang="en" href="{en_url}">
 <link rel="alternate" hreflang="x-default" href="{fa_url}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{page.get('og_type', 'website')}">
 <meta property="og:site_name" content="{e(c['brand_name'])}">
 <meta property="og:locale" content="{c['og_locale']}">
 <meta property="og:locale:alternate" content="{alt_locale}">
@@ -277,10 +278,16 @@ def nav_items(c):
     industrial = [(None, L['all_industrial'], 'industrial/')] + [
         (k, c[k]['hero']['crumb'], c['page_' + k]['path'][len(c['home_path']):]) for k in INDUSTRIAL_KEYS]
     tools = [('estimator', c['est_name'], 'price-estimator/'), ('tekeyab', c['tek_name'], 'tekeyab/')]
-    return [('home', L['home'], '', []), ('services', L['services'], 'services/', online),
-            ('industrial', L['industrial'], 'industrial/', industrial), ('tools', L['tools'], 'price-estimator/', tools),
-            ('portfolio', L['portfolio'], 'portfolio/', []), ('about', L['about'], 'about/', []),
-            ('contact', L['contact'], 'contact/', [])]
+    items = [('home', L['home'], '', []), ('services', L['services'], 'services/', online),
+             ('industrial', L['industrial'], 'industrial/', industrial), ('tools', L['tools'], 'price-estimator/', tools),
+             ('portfolio', L['portfolio'], 'portfolio/', []), ('about', L['about'], 'about/', []),
+             ('contact', L['contact'], 'contact/', [])]
+    if c.get('guides'):
+        # راهنماها بعد از «ابزارها»؛ زیرمنو تا ۸ راهنمای تازه‌تر را نشان می‌دهد
+        kids = [('guides', L['all_guides'], 'guides/')] + [
+            ('guides:' + g['slug'], g.get('short') or g['title'], 'guides/' + g['slug'] + '/') for g in c['guides'][:8]]
+        items.insert(4, ('guides', L['guides'], 'guides/', kids))
+    return items
 
 
 def header(c, page, depth):
@@ -293,7 +300,7 @@ def header(c, page, depth):
     cur_attr = ' aria-current="page"'
     nav = ''
     for key, label, h, kids in nav_items(c):
-        active = cur == key or any(k == cur for k, _, _ in kids)
+        active = cur == key or cur.startswith(key + ':') or any(k == cur for k, _, _ in kids)
         a = f'<a href="{href_of(h)}"{cur_attr if cur == key else ""}>{e(label)}</a>'
         if not kids:
             nav += f'<li class="menu-item{" current-menu-item" if active else ""}">{a}</li>'
@@ -329,7 +336,11 @@ def footer(c, depth):
     svc += f'<li><a href="{rel(depth, c["tek_rel"])}">{e(c["tek_name"])}</a></li>'
     for name, r in c['industrial_links']:
         svc += f'<li><a href="{rel(depth, r)}">{e(name)}</a></li>'
-    links = ''.join(f'<li><a href="{rel(depth, c["home_rel"] + u)}">{e(t)}</a></li>' for t, u in NAV_LABELS[c['lang']]['site_pages'])
+    L = NAV_LABELS[c['lang']]
+    site_pages = list(L['site_pages'])
+    if c.get('guides'):
+        site_pages.insert(2, (L['guides'], 'guides/'))
+    links = ''.join(f'<li><a href="{rel(depth, c["home_rel"] + u)}">{e(t)}</a></li>' for t, u in site_pages)
     links += ''.join(f'<li><a href="{MAIN}{u}">{e(t)}</a></li>' for t, u in c['foot_links'])
     soc = ''.join(
         f'<div class="hf-soc-group"><h6>{e(g["title"])}</h6><p>{e(g["desc"])}</p><div class="hf-soc-links">'
@@ -809,11 +820,11 @@ def page_hub(c, key, hb):
         est = dict(h['est_feature'], cls='')
         body += sec_online(c, depth, on_services=True, alt='') + sec_details(c, depth) \
             + stock_block(c, depth, 'services', hb['crumb']) + feature(c, depth, est, '../') \
-            + sec_how(c) + home_cta(c)
+            + sec_how(c) + hub_guides(c, depth, key) + home_cta(c)
     elif key == 'industrial':
         ind = dict(h['ind_feature'], cls=' section-alt', id='industrial')
         body += sec_industrial(c, depth, on_hub=True) + feature(c, depth, ind, '../') + sec_why(c) \
-            + cta_block(hb['cta_h'], hb['cta_p'], c['punching']['cta_btns'])
+            + hub_guides(c, depth, key) + cta_block(hb['cta_h'], hb['cta_p'], c['punching']['cta_btns'])
     elif key == 'portfolio':
         body += sec_works(c, depth, alt='') + sec_videos(c, depth, alt=' section-alt') + home_cta(c)
     elif key == 'about':
@@ -822,7 +833,14 @@ def page_hub(c, key, hb):
         body += sec_contact(c) + home_cta(c)
     elif key == 'credits':
         body += sec_simple('credits', '', credits_table(c, depth))
+    elif key == 'guides':
+        body += sec_simple('guides-list', '', guide_cards(c, depth)) + home_cta(c)
     return depth, body
+
+
+def hub_guides(c, depth, key):
+    rows = service_guides(c, depth, key)
+    return sec_simple('guides', ' section-alt', rows) if rows else ''
 
 
 def hub_schema(c, key, hb, p):
@@ -840,6 +858,8 @@ def hub_schema(c, key, hb, p):
         items = [(s['title'], url + '#' + s['key']) for s in c['services']]
     elif key == 'industrial':
         items = [(c[k]['hero']['crumb'], SITE + c['page_' + k]['path']) for k in INDUSTRIAL_KEYS]
+    elif key == 'guides':
+        items = [(g['title'], SITE + c['home_path'] + 'guides/' + g['slug'] + '/') for g in c['guides']]
     else:
         items = []
     if items:
@@ -876,14 +896,26 @@ def stock_block(c, depth, page_key, title):
             f'{hfs_head("IN PICTURES", e(title + c["in_pictures"]))}{out}</div></section>\n')
 
 
-def related_block(c, depth, path):
-    """پیوند به همه‌ی صفحه‌های خدمت دیگر؛ هم برای کاربر و هم برای خزنده‌ها."""
+def related_block(c, depth, path, key=None):
+    """پیوند به همه‌ی صفحه‌های خدمت دیگر؛ هم برای کاربر و هم برای خزنده‌ها.
+    اگر راهنمایی برای این خدمت (key) باشد، ردیف «راهنماهای مرتبط» هم زیرش می‌آید."""
     links = [(c['est_name'], c['est_rel']), (c['tek_name'], c['tek_rel'])] + c['industrial_links']
     chips = ''.join(f'<a class="rel-chip" href="{rel(depth, r)}">{e(n)}</a>'
                     for n, r in links if '/' + r != path)
     chips += f'<a class="rel-chip" href="{rel(depth, c["home_rel"] + "services/")}">{e(c["online_services"])}</a>'
     return (f'<section class="block"><div class="wrap">{hfs_head("MORE SERVICES", e(c["related_title"]))}'
-            f'<div class="rel-chips">{chips}</div></div></section>\n')
+            f'<div class="rel-chips">{chips}</div>{service_guides(c, depth, key)}</div></section>\n')
+
+
+def service_guides(c, depth, key):
+    """ردیف راهنماهایی که service آن‌ها همین صفحه است؛ اگر نباشد خروجی ندارد."""
+    gs = [g for g in c.get('guides', []) if key and g['service'] == key]
+    if not gs:
+        return ''
+    chips = ''.join(f'<a class="rel-chip guide-chip" href="{rel(depth, c["home_rel"] + "guides/" + g["slug"] + "/")}">'
+                    f'{e(g.get("short") or g["title"])}</a>' for g in gs)
+    return (f'<div class="guide-rel"><h3 class="guide-rel-h">{e(GUIDE_LABELS[c["lang"]]["service_guides"])}</h3>'
+            f'<div class="rel-chips">{chips}</div></div>')
 
 
 def page_tool(c, key):
@@ -923,7 +955,7 @@ def page_tool(c, key):
         sections += f'<section class="block{alt}"><div class="wrap">{inner}</div></section>\n'
     body = (svc_hero(c, depth, d['hero']) + answer_block(c, d) + sections
             + stock_block(c, depth, key, d['hero']['crumb'])
-            + related_block(c, depth, c['page_' + key]['path'])
+            + related_block(c, depth, c['page_' + key]['path'], key)
             + faq_block(c, d['faq']) + cta_block(d['cta_h'], d['cta_p'], d['cta_btns']))
     return depth, body
 
@@ -949,6 +981,245 @@ def answer_block(c, d):
     label = 'پاسخ کوتاه' if c['lang'] == 'fa' else 'Quick answer'
     return (f'<section class="answer-sec" aria-label="{label}"><div class="wrap">'
             f'<div class="{cls}">{inner}</div></div></section>\n')
+
+
+# ---------------------------------------------------------------- guides (راهنماها)
+GUIDE_KEYS = ('slug', 'title', 'desc', 'lead', 'updated', 'service', 'sections')
+GUIDE_DESC_MAX = {'fa': 155, 'en': 160}
+JALALI_MONTHS = ('فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور',
+                 'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند')
+
+
+def g2j(gy, gm, gd):
+    """تاریخ میلادی → خورشیدی (سال، ماه، روز)"""
+    g_d_m = (0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334)
+    gy2 = gy + 1 if gm > 2 else gy
+    days = 355666 + 365 * gy + (gy2 + 3) // 4 - (gy2 + 99) // 100 + (gy2 + 399) // 400 + gd + g_d_m[gm - 1]
+    jy = -1595 + 33 * (days // 12053)
+    days %= 12053
+    jy += 4 * (days // 1461)
+    days %= 1461
+    if days > 365:
+        jy += (days - 1) // 365
+        days = (days - 1) % 365
+    if days < 186:
+        return jy, 1 + days // 31, 1 + days % 31
+    return jy, 7 + (days - 186) // 30, 1 + (days - 186) % 30
+
+
+def guide_date(c, iso):
+    y, m, d = map(int, iso.split('-'))
+    if c['lang'] == 'fa':
+        jy, jm, jd = g2j(y, m, d)
+        fa = str.maketrans('0123456789', '۰۱۲۳۴۵۶۷۸۹')
+        return f'{str(jd).translate(fa)} {JALALI_MONTHS[jm - 1]} {str(jy).translate(fa)}'
+    return f'{d} {date(y, m, d).strftime("%B")} {y}'
+
+
+def service_keys():
+    return list(content_fa.C['tool_keys']) + ['services', 'industrial']
+
+
+def guide_service(c, key):
+    """(نام، مسیر نسبت به ریشه‌ی سایت، صنعتی است؟) صفحه‌ی خدمتی که راهنما به آن مربوط است"""
+    if key in c['tool_keys']:
+        return c[key]['hero']['crumb'], c['page_' + key]['path'].lstrip('/'), key in INDUSTRIAL_KEYS
+    hb = HUBS[c['lang']]['industrial' if key == 'industrial' else 'services']
+    return hb['crumb'], c['home_rel'] + hb['slug'] + '/', key == 'industrial'
+
+
+def load_guides():
+    """راهنماهای tools/guides/g_*.py، بررسی‌شده و مرتب (تازه‌ترین اول): {'fa': [...], 'en': [...]}"""
+    out = {'fa': [], 'en': []}
+    seen = set()
+    for name, G in guides_pkg.load():
+        where = f'tools/guides/{name}.py'
+        ok, langs = True, {}
+        for lang in ('fa', 'en'):
+            g = dict(G[lang])
+            missing = [k for k in GUIDE_KEYS if not g.get(k)]
+            if missing:
+                warn(f'{where} [{lang}]: missing {", ".join(missing)}; guide skipped')
+                ok = False
+                continue
+            if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', g['slug']):
+                warn(f'{where} [{lang}]: slug must be lowercase ascii words joined by "-": {g["slug"]}')
+                ok = False
+            try:
+                date.fromisoformat(g['updated'])
+            except (TypeError, ValueError):
+                warn(f'{where} [{lang}]: updated must be YYYY-MM-DD: {g["updated"]}')
+                ok = False
+            if len(g['desc']) > GUIDE_DESC_MAX[lang]:
+                warn(f'{where} [{lang}]: desc is {len(g["desc"])} chars (> {GUIDE_DESC_MAX[lang]})')
+            if g['service'] not in service_keys():
+                warn(f'{where} [{lang}]: unknown service {g["service"]!r}; using "services"')
+                g['service'] = 'services'
+            if g.get('img') and not os.path.exists(os.path.join(ROOT, g['img'])):
+                warn(f'{where} [{lang}]: image not found: {g["img"]}')
+                g['img'] = ''
+            if any(not s.get('h') for s in g['sections']):
+                warn(f'{where} [{lang}]: every section needs "h"')
+                ok = False
+            g.setdefault('faq', [])
+            g.setdefault('related', [])
+            langs[lang] = g
+        if ok and langs['fa']['slug'] != langs['en']['slug']:
+            warn(f'{where}: slug differs between fa and en')
+            ok = False
+        if ok and langs['fa']['slug'] in seen:
+            warn(f'{where}: duplicate slug {langs["fa"]["slug"]}')
+            ok = False
+        if ok:
+            seen.add(langs['fa']['slug'])
+            for lang in out:
+                out[lang].append(langs[lang])
+    for lang in out:
+        out[lang].sort(key=lambda g: g['slug'])
+        out[lang].sort(key=lambda g: g['updated'], reverse=True)
+    return out
+
+
+def guide_href(c, depth, slug=''):
+    return rel(depth, c['home_rel'] + 'guides/' + (slug + '/' if slug else ''))
+
+
+def fill_home(c, depth, html):
+    """{home} در متن راهنما = نشانی نسبی صفحه‌ی اصلی همان زبان (مثلاً href="{home}punching/")"""
+    return str(html).replace('{home}', rel(depth, c['home_rel']) or './')
+
+
+def guide_cards(c, depth):
+    G = GUIDE_LABELS[c['lang']]
+    cards = ''
+    for g in c['guides']:
+        im = (f'<div class="im">{img(depth, g["img"], g.get("img_alt") or g["title"], picture=True)}</div>'
+              if g.get('img') else '')
+        cards += (f'<a class="hfs-index-card guide-card" href="{guide_href(c, depth, g["slug"])}">{im}<div class="bd">'
+                  f'<h3>{e(g["title"])}</h3><p>{e(g["desc"])}</p><span class="go">{e(G["read"])} {c["arrow"]}</span></div></a>')
+    return f'<div class="hfs-index guide-index">{cards}</div>'
+
+
+def guide_page_meta(c, g):
+    fa = c['lang'] == 'fa'
+    other_home_path, other_rel = ('/en/', 'en/') if fa else ('/', '')
+    sub = 'guides/' + g['slug'] + '/'
+    brand = ' | ' + c['brand_name']
+    st = g.get('seo_title') or g['title']  # عنوان کوتاه‌تر برای <title> وقتی H1 بلند است
+    title = st + brand if len(st + brand) <= 60 else st
+    return {'key': 'guides:' + g['slug'], 'lang': c['lang'], 'file': c['home_rel'] + sub + 'index.html',
+            'path': c['home_path'] + sub, 'alt_path': other_home_path + sub, 'alt_rel': other_rel + sub,
+            'priority': '0.7' if fa else '0.6', 'title': title, 'desc': g['desc'],
+            'keywords': g.get('keywords') or g['title'], 'og_img': g.get('img') or 'assets/img/og-default.jpg',
+            'og_alt': g.get('img_alt') or g['title'], 'og_type': 'article', 'lastmod': g['updated']}
+
+
+def guide_hero(c, depth, g):
+    L, G = NAV_LABELS[c['lang']], GUIDE_LABELS[c['lang']]
+    sep = ' ‹ ' if c['dir'] == 'rtl' else ' › '
+    art = (f'<figure class="hfs-hero-art has-pic">{img(depth, g["img"], g.get("img_alt") or g["title"], eager=True, picture=True)}'
+           f'{credit(c, g["img"], "hero-credit")}</figure>') if g.get('img') else ''
+    crumb_label = 'مسیر صفحه' if c['lang'] == 'fa' else 'Breadcrumb'
+    return f'''<section class="hfs-hero guide-hero{'' if art else ' no-art'}">
+	<div class="wrap">
+		<div>
+			<nav class="hfs-crumb" aria-label="{crumb_label}"><a href="{rel(depth, c['home_rel']) or './'}">{e(c['brand_name'])}</a>{sep}<a href="{guide_href(c, depth)}">{e(L['guides'])}</a>{sep}<span aria-current="page">{e(g.get('short') or g['title'])}</span></nav>
+			<h1>{e(g['title'])}</h1>
+			<p class="guide-meta">{icon('clock', 16)}<span>{e(G['updated'])}: <time datetime="{g['updated']}">{e(guide_date(c, g['updated']))}</time></span></p>
+		</div>
+		{art}
+	</div>
+</section>
+'''
+
+
+def guide_body(c, depth, g):
+    G = GUIDE_LABELS[c['lang']]
+
+    def t(x):
+        return isolate_ltr(fill_home(c, depth, x))
+    def cell(x):
+        # خانه‌ای که فقط متن لاتین/عدد دارد (مثل «±0.1 mm») در جدول راست‌چین وارونه دیده می‌شود
+        x = t(x)
+        if c['dir'] == 'rtl' and not re.search(r'[\u0600-\u06FF]', text(x)) and re.search(r'[A-Za-z0-9]', x):
+            return f'<span dir="ltr">{x}</span>'
+        return x
+    toc, secs = '', ''
+    for k, s in enumerate(g['sections'], 1):
+        toc += f'<li><a href="#sec-{k}">{e(s["h"])}</a></li>'
+        before, after = split_outro(g, k, s)
+        inner = f'<h2>{e(s["h"])}</h2>' + ''.join(f'<p>{t(p)}</p>' for p in before)
+        if s.get('ul'):
+            inner += '<ul class="guide-ul">' + ''.join(f'<li>{t(x)}</li>' for x in s['ul']) + '</ul>'
+        inner += ''.join(f'<p>{t(p)}</p>' for p in after)
+        if s.get('table'):
+            tb = s['table']
+            head_row = ''.join(f'<th scope="col">{cell(x)}</th>' for x in tb.get('head', []))
+            rows = ''.join('<tr>' + ''.join(f'<td>{cell(x)}</td>' for x in r) + '</tr>' for r in tb.get('rows', []))
+            inner += (f'<div class="hfs-tbl-wrap hfs-scroll guide-tbl" role="region" tabindex="0" aria-label="{e(s["h"])}">'
+                      f'<table class="hfs-tbl"><thead><tr>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>')
+        secs += f'<section class="guide-sec" id="sec-{k}">{inner}</section>'
+    if g.get('faq'):
+        toc += f'<li><a href="#faq">{e(c["faq_title"])}</a></li>'
+    return (f'<section class="block guide-main"><div class="wrap"><div class="guide-layout">'
+            f'<nav class="guide-toc" aria-label="{e(G["toc"])}"><p class="guide-toc-h">{e(G["toc"])}</p><ol>{toc}</ol></nav>'
+            f'<article class="guide-body prose">{secs}</article></div></div></section>\n')
+
+
+def guide_cta(c, depth, g):
+    G = GUIDE_LABELS[c['lang']]
+    label, path, industrial = guide_service(c, g['service'])
+    _, call, tel = c['punching']['cta_btns'][0]  # «تماس: ۰۹۹۶۲۲۳۳۸۹۸» و tel:
+    if industrial:
+        return cta_block(G['cta_ind_h'], e(G['cta_ind_p']), [('w', call, tel), ('o', label, rel(depth, path))])
+    order = MAIN + ('/tekeyab/' if g['service'] == 'tekeyab' else '/order/')
+    btn = c['tek_cta'] if g['service'] == 'tekeyab' else c['home']['btn1']
+    return cta_block(G['cta_on_h'], e(G['cta_on_p']), [('w', btn, order), ('o', label, rel(depth, path)), ('o', call, tel)])
+
+
+def guide_related(c, depth, g):
+    """راهنماهای مرتبط (related)؛ اگر نباشد، راهنماهای دیگر همان خدمت. پیوند «همه‌ی راهنماها» همیشه هست."""
+    G, L = GUIDE_LABELS[c['lang']], NAV_LABELS[c['lang']]
+    by = {x['slug']: x for x in c['guides']}
+    gs = [by[s] for s in g['related'] if s in by and s != g['slug']] or \
+        [x for x in c['guides'] if x['service'] == g['service'] and x['slug'] != g['slug']][:6]
+    chips = ''.join(f'<a class="rel-chip guide-chip" href="{guide_href(c, depth, x["slug"])}">{e(x.get("short") or x["title"])}</a>'
+                    for x in gs)
+    chips += f'<a class="rel-chip" href="{guide_href(c, depth)}">{e(L["all_guides"])}</a>'
+    return (f'<section class="block"><div class="wrap">{hfs_head("GUIDES", e(G["related"] if gs else G["more_guides"]))}'
+            f'<div class="rel-chips">{chips}</div></div></section>\n')
+
+
+def guide_schema(c, g, p):
+    url = SITE + p['path']
+    website_id = SITE + c['home_path'] + '#website'
+    webpage = {'@type': 'WebPage', '@id': url, 'url': url, 'name': p['title'], 'description': g['desc'],
+               'inLanguage': c['lang'], 'datePublished': g['updated'], 'dateModified': g['updated'],
+               'isPartOf': {'@id': website_id}, 'breadcrumb': {'@id': url + '#breadcrumb'},
+               'mainEntity': {'@id': url + '#article'}}
+    article = {'@type': 'Article', '@id': url + '#article', 'headline': g['title'], 'description': g['desc'],
+               'inLanguage': c['lang'], 'datePublished': g['updated'], 'dateModified': g['updated'],
+               'author': {'@id': ORG_ID}, 'publisher': {'@id': ORG_ID}, 'mainEntityOfPage': {'@id': url},
+               'isPartOf': {'@id': website_id}}
+    if g.get('img'):
+        article['image'] = webpage['primaryImageOfPage'] = image_object(g['img'], g.get('img_alt') or g['title'])
+    nodes = [org_schema(c), website_node(c), webpage, article,
+             {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
+                 {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
+                 {'@type': 'ListItem', 'position': 2, 'name': GUIDES_HUB[c['lang']]['crumb'],
+                  'item': SITE + c['home_path'] + 'guides/'},
+                 {'@type': 'ListItem', 'position': 3, 'name': g['title'], 'item': url}]}]
+    if g.get('faq'):
+        nodes.append(faq_schema(g['faq']))
+    return nodes
+
+
+def page_guide(c, g):
+    depth = c['depth_home'] + 2
+    body = (guide_hero(c, depth, g) + answer_block(c, {'answer': fill_home(c, depth, g['lead'])})
+            + guide_body(c, depth, g) + (faq_block(c, g['faq']) if g.get('faq') else '')
+            + guide_cta(c, depth, g) + guide_related(c, depth, g))
+    return depth, body
 
 
 WRITTEN = {}
@@ -1050,6 +1321,22 @@ def build_lang(c):
         write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
         pages.append(p)
 
+    if c.get('guides'):  # بی راهنما، صفحه‌ی /guides/ هم ساخته نمی‌شود
+        hb = GUIDES_HUB[c['lang']]
+        p = hub_page_meta(c, 'guides', hb)
+        depth, body = page_hub(c, 'guides', hb)
+        p['schema'] = hub_schema(c, 'guides', hb, p)
+        check_lengths(p)
+        write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
+        pages.append(p)
+        for g in c['guides']:
+            p = guide_page_meta(c, g)
+            depth, body = page_guide(c, g)
+            p['schema'] = guide_schema(c, g, p)
+            check_lengths(p)
+            write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
+            pages.append(p)
+
     for key in c['tool_keys']:
         depth, body = page_tool(c, key)
         p = c['page_' + key]
@@ -1068,7 +1355,7 @@ def sitemap(pages):
     for p in pages:
         a = by_path[p['alt_path']]
         fa, en = (p, a) if p['lang'] == 'fa' else (a, p)
-        out.append(f'  <url><loc>{SITE}{p["path"]}</loc><lastmod>{TODAY}</lastmod>'
+        out.append(f'  <url><loc>{SITE}{p["path"]}</loc><lastmod>{p.get("lastmod", TODAY)}</lastmod>'
                    f'<changefreq>monthly</changefreq><priority>{p["priority"]}</priority>'
                    f'<xhtml:link rel="alternate" hreflang="fa" href="{SITE}{fa["path"]}"/>'
                    f'<xhtml:link rel="alternate" hreflang="en" href="{SITE}{en["path"]}"/></url>')
@@ -1165,7 +1452,52 @@ def llms_full(langs):
         out.append(f'\n---\n\n<!-- language: {c["lang"]} -->\n\n' + md_home(c))
         for key in c['tool_keys']:
             out.append('\n---\n\n' + md_tool(c, key))
+        for g in c.get('guides', []):
+            out.append('\n---\n\n' + md_guide(c, g))
     write('llms-full.txt', re.sub(r'\n{3,}', '\n\n', ''.join(out)))
+
+
+def split_outro(g, k, s):
+    """در بخش آخر راهنما (عوامل هزینه)، پاراگراف آخر دعوت به تماس است و باید بعد از فهرست بیاید."""
+    ps = list(s.get('p', []))
+    if k == len(g['sections']) and s.get('ul') and len(ps) >= 2:
+        return ps[:-1], ps[-1:]
+    return ps, []
+
+
+def md_guide(c, g):
+    url = SITE + c['home_path'] + 'guides/' + g['slug'] + '/'
+    out = f'# {text(g["title"])}\n\nURL: {url}\nUpdated: {g["updated"]}\n' + md_paras([g['lead']])
+    for k, s in enumerate(g['sections'], 1):
+        before, after = split_outro(g, k, s)
+        out += md_section(s['h']) + md_paras(before)
+        if s.get('ul'):
+            out += '\n' + md_items([text(x) for x in s['ul']])
+        out += md_paras(after)
+        if s.get('table') and s['table'].get('head'):
+            out += '\n' + md_table([s['table']['head']] + list(s['table'].get('rows', [])))
+    return out + (md_faq(g['faq']) if g.get('faq') else '')
+
+
+def llms_index(fa, en):
+    """بخش «## Guides» در llms.txt (که دستی نوشته شده) از روی راهنماها بازسازی می‌شود؛
+    بی راهنما، این بخش برداشته می‌شود."""
+    path = os.path.join(ROOT, 'llms.txt')
+    src = open(path, encoding='utf-8').read()
+    new = re.sub(r'^## Guides\n.*?(?=^## |\Z)', '', src, flags=re.S | re.M)
+    if en:
+        fa_by = {g['slug']: g for g in fa}
+        lines = [f'- [All guides]({SITE}/en/guides/) ([Persian]({SITE}/guides/)): '
+                 'practical articles on choosing a manufacturing process, material and finish']
+        for g in en:
+            fg = fa_by.get(g['slug'])
+            persian = f' ([Persian: {text(fg["title"])}]({SITE}/guides/{g["slug"]}/))' if fg else ''
+            lines.append(f'- [{text(g["title"])}]({SITE}/en/guides/{g["slug"]}/){persian}: {text(g["desc"])}')
+        block = '## Guides\n\n' + '\n'.join(lines) + '\n\n'
+        anchor = next((a for a in ('## Services on the main website', '## Optional') if a in new), None)
+        new = new.replace(anchor, block + anchor, 1) if anchor else new.rstrip('\n') + '\n\n' + block
+    if new != src:
+        write('llms.txt', new)
 
 
 # ---------------------------------------------------------------- CSS purge
@@ -1337,12 +1669,15 @@ def check_links():
 
 def main():
     pages = []
+    guides = load_guides()
     for c in (content_fa.C, content_en.C):
+        c['guides'] = guides[c['lang']]
         for p in ['page_home'] + ['page_' + k for k in c['tool_keys']]:
             c[p]['lang'] = c['lang']
         pages += build_lang(c)
     sitemap(pages)
     llms_full((content_en.C, content_fa.C))
+    llms_index(guides['fa'], guides['en'])
     purge_css()
     check_links()
     if WARNINGS:

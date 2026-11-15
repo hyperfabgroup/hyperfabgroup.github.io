@@ -116,17 +116,55 @@ HUBS = {
 
 NAV_LABELS = {
     'fa': {'home': 'معرفی', 'services': 'خدمات آنلاین', 'industrial': 'تولید صنعتی', 'tools': 'ابزارها',
-           'portfolio': 'نمونه‌کارها', 'about': 'درباره‌ی ما', 'contact': 'تماس', 'all_services': 'همه‌ی خدمات آنلاین',
+           'portfolio': 'نمونه‌کارها', 'about': 'درباره‌ی ما', 'contact': 'تماس', 'guides': 'راهنماها',
+           'all_guides': 'همه‌ی راهنماها', 'all_services': 'همه‌ی خدمات آنلاین',
            'all_industrial': 'همه‌ی خدمات صنعتی', 'toggle_open': 'باز کردن زیرمنو', 'toggle_close': 'بستن زیرمنو',
            'industrial_btn': 'همه‌ی خدمات صنعتی', 'works_btn': 'همه‌ی نمونه‌کارها و ویدیوها',
            'credits_title': 'تصاویر آرشیوی', 'credits_col': ('تصویر', 'عکاس', 'مجوز', 'منبع'), 'used_on': 'منبع',
            'site_pages': [('خدمات آنلاین', 'services/'), ('تولید صنعتی', 'industrial/'), ('نمونه‌کارها', 'portfolio/'),
                           ('درباره‌ی ما', 'about/'), ('تماس', 'contact/'), ('اعتبار تصاویر', 'credits/')]},
     'en': {'home': 'Overview', 'services': 'Online services', 'industrial': 'Industrial', 'tools': 'Tools',
-           'portfolio': 'Portfolio', 'about': 'About', 'contact': 'Contact', 'all_services': 'All online services',
+           'portfolio': 'Portfolio', 'about': 'About', 'contact': 'Contact', 'guides': 'Guides',
+           'all_guides': 'All guides', 'all_services': 'All online services',
            'all_industrial': 'All industrial services', 'toggle_open': 'Open submenu', 'toggle_close': 'Close submenu',
            'industrial_btn': 'All industrial services', 'works_btn': 'All work and videos',
            'credits_title': 'Archive images', 'credits_col': ('Image', 'Photographer', 'Licence', 'Source'), 'used_on': 'Source',
            'site_pages': [('Online services', 'services/'), ('Industrial production', 'industrial/'), ('Portfolio', 'portfolio/'),
                           ('About', 'about/'), ('Contact', 'contact/'), ('Image credits', 'credits/')]},
+}
+
+# صفحه‌ی مادر راهنماها (/guides/)؛ فقط وقتی ساخته می‌شود که دست‌کم یک راهنما در tools/guides/ باشد
+GUIDES_HUB = {
+    'fa': {
+        'slug': 'guides', 'priority': '0.7', 'img': 'assets/img/real-pt-test.jpg',
+        'title': 'راهنماهای ساخت قطعه و تولید صنعتی | هایپرفب',
+        'desc': 'راهنماهای کاربردی هایپرفب برای انتخاب روش ساخت، جنس و پرداخت قطعه؛ از پرینت سه‌بعدی و برش لیزر تا تزریق پلاستیک، تراشکاری، جوشکاری و آبکاری.',
+        'crumb': 'راهنماها',
+        'h1': '<em>راهنماهای هایپرفب</em><br>پیش از سفارش، روش درست را بشناسید',
+        'lead': 'این راهنماها را گروه مهندسی هایپرفب نوشته است تا پیش از سفارش بدانید کدام روش ساخت، جنس و پرداخت برای قطعه‌ی شما مناسب است و قیمت و زمان به چه چیزهایی بستگی دارد.',
+    },
+    'en': {
+        'slug': 'guides', 'priority': '0.6', 'img': 'assets/img/real-pt-test.jpg',
+        'title': 'Manufacturing and Production Guides | HyperFab',
+        'desc': 'Practical HyperFab guides to choosing a process, material and finish for a part, from 3D printing and laser cutting to moulding, turning, welding and plating.',
+        'crumb': 'Guides',
+        'h1': '<em>HyperFab guides</em><br>Choose the right process before you order',
+        'lead': 'HyperFab’s engineering team wrote these guides so you know, before ordering, which process, material and finish suit your part, and what its price and lead time depend on.',
+    },
+}
+
+# برچسب‌های صفحه‌ی هر راهنما
+GUIDE_LABELS = {
+    'fa': {'updated': 'به‌روزرسانی', 'toc': 'فهرست مطالب', 'answer': 'خلاصه‌ی راهنما', 'related': 'راهنماهای مرتبط',
+           'more_guides': 'راهنماهای دیگر', 'read': 'خواندن راهنما', 'service_guides': 'راهنماهای مرتبط',
+           'cta_ind_h': 'سفارش این کار تلفنی است',
+           'cta_ind_p': 'نقشه یا نمونه‌ی قطعه را آماده کنید و با کارشناس پروژه‌های صنعتی هایپرفب تماس بگیرید؛ قیمت و زمان پس از بررسی مهندسی اعلام می‌شود.',
+           'cta_on_h': 'سفارش آنلاین در hyperfab.ir',
+           'cta_on_p': 'فایل طرح را در hyperfab.ir بارگذاری کنید و قیمت بگیرید؛ برای مشاوره پیش از سفارش هم می‌توانید تماس بگیرید.'},
+    'en': {'updated': 'Updated', 'toc': 'Contents', 'answer': 'Guide summary', 'related': 'Related guides',
+           'more_guides': 'More guides', 'read': 'Read the guide', 'service_guides': 'Related guides',
+           'cta_ind_h': 'This work is ordered by phone',
+           'cta_ind_p': 'Have your drawing or a sample part ready and call HyperFab’s industrial projects specialist; price and lead time follow an engineering review.',
+           'cta_on_h': 'Order online at hyperfab.ir',
+           'cta_on_p': 'Upload your design on hyperfab.ir and get a price; for advice before ordering, you can also call us.'},
 }

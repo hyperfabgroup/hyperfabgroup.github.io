@@ -1294,6 +1294,868 @@ HyperFab is based in Tehran, Iran. Powder coating projects are handled by phone 
 
 ---
 
+# 3D Printing vs CNC vs Injection Moulding: Choosing by Quantity
+
+URL: https://hyperfabgroup.github.io/en/guides/3d-printing-vs-cnc-vs-injection/
+Updated: 2026-11-15
+
+For one to a few parts, 3D printing is usually the cheapest and quickest option. For tens to hundreds, choose between 3D printing and CNC machining based on material, geometry and accuracy. Once you need thousands, the mould cost spreads across the run and injection moulding gives the lowest cost per part.
+
+## 3D printing vs CNC vs injection moulding: what is the difference?
+
+These three processes follow very different cost logic. 3D printing builds a part layer by layer straight from a file, with no tooling at all. CNC machining cuts the part out of a solid block by milling and turning. Injection moulding (injection molding in US spelling) forces molten polymer into a steel mould, and every shot produces one or more identical parts.
+
+The key difference is set-up cost. 3D printing has almost none, CNC needs programming and fixturing, and injection moulding cannot start until a mould has been designed and built. In return, the cost per moulded part falls steeply as quantity rises, while the cost per printed part stays roughly flat.
+
+| Factor | 3D printing | CNC machining | Injection moulding |
+|---|---|---|---|
+| Set-up cost | Almost none; no tooling | Low; programming and fixturing | High; mould design and build |
+| Cost per part as quantity rises | Roughly flat; stepped discounts only | Falls a little | Falls steeply |
+| Typical quantity | One to tens | One to hundreds | Thousands and up |
+| Materials at HyperFab | PLA, PETG, ABS, TPU and resins | PE, acetal, PTFE, nylon, acrylic, brass | PE, PP, ABS, nylon, polycarbonate, acetal |
+| Accuracy and finish | Fine for prototypes; resin gives finer detail | Tightest control of size and finish | Repeatable; depends on mould and shrinkage |
+| Design changes | Easy; swap the file | Easy; edit the program | Costly; the mould must be modified |
+| How HyperFab prices it | FDM instantly online at hyperfab.ir | After drawing review | Mould cost plus cost per shot, by phone |
+
+## Cheapest way to make one to a few parts
+
+When you need a single prototype or a handful of parts, set-up cost dominates. FDM 3D printing is almost always the cheapest option here because there is no mould and no machining program: your STL or 3MF file goes straight to the printer. HyperFab’s minimum order is one part, and the online price estimator on hyperfab.ir shows the FDM price the moment you upload.
+
+For small parts with fine detail or a smooth surface, such as display models or precise assembly parts, resin printing (SLA / DLP) gives a better result. If the part must be made from a real engineering material such as PTFE, acetal or brass, or needs threads and accurate sealing faces, CNC machining makes sense even for a single piece.
+
+## Tens to hundreds of parts: 3D printing or CNC?
+
+In this range, geometry and material matter more than the count. 3D printing suits complex shapes, internal cavities and organic forms, because complexity adds little to the cost. Stepped discounts lower the unit price, but every part still needs its own print time and material.
+
+CNC machining wins on simpler, prismatic parts such as bushings, washers, rollers and fixtures, and wherever the real material and dimensional accuracy matter. Once the program is written, its set-up cost is shared across the batch. For turned metal parts in larger quantities, such as brass fittings, HyperFab’s batch CNC turning is a separate service.
+
+## At what quantity does injection moulding pay off?
+
+Once you need thousands of parts or more, injection moulding is usually the most economical process. The mould is paid for once and its cost is spread across every part. After that, the cost per part depends mainly on material, part weight and cycle time.
+
+Moulding also brings consistency: the last part matches the first. At HyperFab, an injection project starts with a mouldability review of the design, and the mould cost and cost per shot are quoted separately. These projects are arranged by phone rather than through online ordering.
+
+## How material and accuracy change the choice
+
+Quantity is not the only factor; sometimes the material decides for you. If the part must be brass, PTFE or acetal, 3D printing is no real substitute and CNC is the natural route. If you need polyethylene or polypropylene parts in high volumes, injection moulding gives you that material at a lower cost.
+
+Accuracy differs too. CNC gives the most control over dimensions and surface finish, which suits mating faces and bearing seats. Injection moulding is highly repeatable, but final accuracy depends on mould design and polymer shrinkage. FDM parts show layer lines and are weaker across the layers.
+
+## Break-even between processes, explained without numbers
+
+The logic is simple even without figures. Each process has a fixed cost (tooling, mould, programming) and a variable cost (price per part times quantity). 3D printing has almost no fixed cost and a higher variable cost. Injection moulding is the opposite: a high fixed cost and a low cost per part. CNC sits in between.
+
+Plot total cost against quantity for each process and the lines cross somewhere; that crossing is the break-even point. Below it, the tool-free process is cheaper; above it, the mould pays for itself. Where the lines cross is different for every part, so it has to be worked out project by project. Before you decide, answer these questions:
+
+- What is the total volume over the product’s life, not just the first order?
+- Is the design frozen, or is it still likely to change?
+- What material does the part need, and what load, temperature or environment must it handle?
+- Which dimensions are truly critical, and what surface finish do you need?
+- Is the geometry complex, or simple and prismatic?
+
+## What affects the cost of each process?
+
+None of these processes can be priced without seeing the file or drawing, but the main cost drivers are clear:
+
+- 3D printing: material volume and weight, print time, layer height, infill, filament or resin type, and quantity.
+- CNC machining: stock material and size, number of operations and set-ups, tolerances and surface finish, and quantity.
+- Injection moulding, the mould: part size and complexity, number of cavities, undercuts and slides, surface finish and mould steel.
+- Injection moulding, production: part material and weight, cycle time and run quantity.
+
+For FDM 3D printing, upload your file to the online price estimator at hyperfab.ir and see the price now; for CNC, upload your model or drawing there too and receive a quote after review. For mould making and injection moulding, or if you are unsure which process fits your quantity, call 09962233898 and HyperFab will review the design and recommend a process with an exact quote.
+
+## FAQ
+
+### Which process is cheapest for ten pieces?
+
+For ten pieces, FDM 3D printing is usually cheapest because there is no set-up cost, and you can see the price instantly in the online estimator on hyperfab.ir. If the part must be an engineering material such as PTFE or brass, or needs high accuracy, CNC machining is the better choice. A mould is not worth building for that quantity.
+
+### When does an injection mould pay off?
+
+When the saving per part, multiplied by the total quantity, exceeds the cost of building the mould. That point depends on part size, complexity and material, and it usually falls at high volumes. HyperFab quotes the mould cost and the cost per shot separately after reviewing the design, so you can compare.
+
+### Are 3D-printed parts strong enough?
+
+For prototypes, jigs, fixtures and many functional parts under moderate load, yes, especially in PETG or ABS with the right print orientation. FDM parts are weaker across the layers, so for heavy loads or constant wear a part machined from nylon or acetal, or an injection-moulded part, is the safer choice.
+
+### Can I switch methods later?
+
+Yes, and that is the usual path: prototype with 3D printing, make small batches by printing or CNC, then move to injection moulding. If the design includes draft, uniform wall thickness and ribs from the start, it can move to a mould without a redesign.
+
+---
+
+# Custom Aluminium Extrusion: Die, Press Tonnage and Section Design
+
+URL: https://hyperfabgroup.github.io/en/guides/aluminium-extrusion-die-design/
+Updated: 2026-11-15
+
+To order a custom aluminium profile, the section is finalised in consultation with HyperFab’s engineering team, a dedicated extrusion die is built, and the profile is produced at the ordered tonnage. You bring the required tonnage and pay for the die. Die type, section size relative to press capacity and sound section design decide feasibility and cost.
+
+## Short answer: how do you order a custom aluminium profile?
+
+HyperFab specialises in aluminium extrusion, and aluminium only: other metals such as steel, brass and copper are not part of this service. The model is simple. You bring the required tonnage and pay for the die; section consultation, die making, profile production, quality control and delivery are handled by HyperFab’s engineering team.
+
+This is a batch service, ordered by tonnage, meaning the weight of profile you order. The die cost and the profile price, which depends on alloy, weight and tonnage, are quoted separately. You will see both “aluminium” and “aluminum” in specifications; it is the same material and the same process.
+
+## What is aluminium extrusion and how does it work?
+
+Aluminium extrusion pushes a hot aluminium billet under press force through a steel die to make a long profile with a constant cross-section. The heated billet is loaded into the press container, the ram drives it towards the die, and the metal emerges through the die opening in the shape of the section. The profile is then cooled, straightened and cut to length, and where needed aged to reach its final temper.
+
+Almost any section you can draw can be made with a dedicated die: solid, hollow, slotted, finned or with screw ports, which is why extrusion is the most economical way to make long, uniform aluminium parts. But extrusion dies are expensive, and a poorly designed section can lead to warped profiles, uneven surfaces or a broken die. That is why the section is reviewed before the die is made.
+
+## Solid, semi-hollow and hollow extrusion dies: what is the difference?
+
+The shape of the section decides the die type, not the buyer’s preference. The more fully enclosed voids a section has, the more complex and expensive the die becomes.
+
+An extrusion die is designed and built for your section and produces only your profile, so it is part of your product’s tooling cost and the customer pays for it. It is quoted separately from the profile price. Agree how the die is stored and used for repeat orders with HyperFab when you receive the quotation.
+
+| Die type | Suits which sections | How the die is built | Relative complexity and cost |
+|---|---|---|---|
+| Solid die | Sections with no enclosed void: angles, channels, flat bar and many heat sinks | A steel plate with an opening in the shape of the section | Simplest; lowest relative cost |
+| Semi-hollow die | Sections that nearly enclose a void through a narrow gap, such as a deep slot or an open screw port | A die tongue forms the inner space and must survive the extrusion pressure | Sensitive to slot depth-to-width ratio; usually dearer than solid |
+| Hollow die | Sections with one or more fully enclosed voids: tube, box section, housings and multi-cavity profiles | Two-part: a mandrel on bridges forms the void, and the split metal rejoins in a welding chamber | Most complex; highest relative cost |
+
+## Press tonnage and the circumscribing circle: what limits section size?
+
+In extrusion, “tonnage” can mean two things. Press tonnage is the force and capacity of the press that extrudes the profile; order tonnage is the weight of profile you buy. When HyperFab talks about the “required tonnage”, it means order tonnage. Whether your section suits the available press capacity is checked during section consultation.
+
+The circumscribing circle is the smallest circle that fully encloses the cross-section. Each press, with its container and dies, can only extrude sections whose circle falls within its range, so a larger section needs a larger press.
+
+Size is not the only limit. Walls that are very thin for the size of the section, several enclosed voids and harder-to-extrude alloys all need more pressure, so a section can fit the circle and still be difficult to extrude. If a section sits near the edge of the production range, splitting it into two profiles that snap or screw together is sometimes the more practical answer; that option is explored in consultation.
+
+## Extrusion section design rules
+
+These rules extend die life and lower the cost per kilo of profile. HyperFab’s engineering team checks all of them before the die is built and suggests changes where needed:
+
+- Uniform wall thickness: large differences unbalance metal flow and warp the profile.
+- Rounded corners: give sharp corners a small radius for longer die life and a better surface.
+- Balanced section: symmetric, balanced sections extrude more stably and accurately.
+- Avoid deep, narrow channels: they weaken the die tongue, so the depth-to-width ratio must be controlled.
+- Enclose voids only where needed: if the function allows, opening one void can move the die from hollow to a simpler type.
+- Tight tolerances on functional dimensions only; extruded profile tolerances are typically specified per EN 755.
+
+## Which aluminium alloy and temper for extrusion? (6000 series)
+
+Most extruded profiles are made from 6000-series alloys, with 6063 and 6061 the most widely used. 6063 extrudes more easily and gives a better surface, which suits architectural and decorative profiles, thin and intricate sections, and parts that will be anodized. 6061 is stronger and is chosen for structural work, but it is harder to extrude, and thin, complex sections are more demanding in it.
+
+The temper is part of the profile specification too and is usually written on the drawing with a designation such as T5 or T6. If you know the alloy and temper, put them on the drawing; if not, describe the use, the loads and the final finish and the engineering team will advise. The alloy also affects the profile price.
+
+An extruded profile is rarely the finished product. Anodizing, powder coating, machining, punching and aluminium welding are also available at HyperFab.
+
+## How to order a custom aluminium profile, and what drives the price
+
+Ordering takes five steps: send the section drawing, a DXF or even a sketch with the profile’s use; section consultation and tonnage advice; a quotation with die cost and profile price shown separately; die making and a sample profile for your approval; and finally production at the ordered tonnage, inspection and delivery. The price comes from the factors below, and no meaningful figure can be given before the section has been reviewed.
+
+- Die type and complexity: solid, semi-hollow or hollow.
+- Section size and its circumscribing circle relative to the production range.
+- Section weight and wall thickness.
+- Alloy and temper.
+- Order tonnage.
+- Tolerances and surface requirements.
+- Follow-on work such as anodizing, powder coating and machining.
+
+For consultation and an exact quote, call HyperFab’s industrial projects specialist on 09962233898 (+98 996 223 3898) or send the section drawing on Bale.
+
+## FAQ
+
+### Who owns the extrusion die?
+
+The customer pays for the dedicated die, and it is built only for that customer’s section. Agree ownership, storage and use of the die for later orders with HyperFab when you receive the quotation.
+
+### Is there a minimum order for aluminium extrusion?
+
+HyperFab takes extrusion orders by tonnage. The right tonnage depends on the size and weight of the section and is advised after consultation.
+
+### Does HyperFab extrude metals other than aluminium?
+
+No. In extrusion, HyperFab works with aluminium only. If you need brass or steel parts, HyperFab’s batch CNC turning may suit, depending on the part.
+
+### What drawing or file do you need?
+
+A section drawing, a DXF or even a hand sketch, together with the profile’s use, is enough to start. Add the alloy, temper and final finish if you know them; you can also send the details by phone or on Bale.
+
+---
+
+# Anodizing vs Electroplating vs Chromate Conversion: Which Finish?
+
+URL: https://hyperfabgroup.github.io/en/guides/anodizing-vs-plating-vs-chromate/
+Updated: 2026-11-15
+
+Anodizing grows a hard, insulating oxide out of the aluminium itself. Chromate conversion (Alodine) forms a very thin, conductive film on aluminium. Electroplating deposits a different metal, such as silver or gold, onto brass and other metals. Start with the base metal, then decide whether conductivity, wear resistance or appearance matters most for the part.
+
+## Anodizing vs plating vs chromate at a glance
+
+These three finishes get mixed up because they all count as surface treatment, but they work in completely different ways. Anodizing and chromate conversion act on the aluminium itself and turn its surface into a new compound; electroplating deposits a layer of another metal on top of the part. That difference drives everything else: conductivity, appearance and even whether the part's dimensions change.
+
+| Finish | Base metal | How it forms | Surface conductivity | Appearance | Typical use |
+|---|---|---|---|---|---|
+| Anodizing | Aluminium | Controlled electrochemical oxidation of the aluminium in an electrolyte bath | Insulating | Matt to satin; natural, black or dyed colours | Device housings, profiles, industrial and decorative parts |
+| Chromate (Alodine) | Aluminium | Chemical reaction with a conversion solution, no current | Conductive | Clear or faint yellow-gold | Electronic parts, enclosures, paint base |
+| Silver plating | Brass, copper and other metals | Silver electro-deposited from a plating bath | Highest of any metal | Bright white silver; tarnishes over time | Contacts, connectors, busbars, RF parts, decorative items |
+| Gold plating | Brass, copper and other metals | Gold electro-deposited, usually over an underlayer | Conductive, stable contact resistance | Gold; does not oxidise | Connectors and electronics, luxury hardware, decorative items |
+
+## What is aluminium anodizing and what colours are available?
+
+Anodizing (also spelled anodising) is an electrochemical process in which the aluminium part is made the anode of a circuit, so the thin natural oxide on its surface is thickened in a controlled way. The layer is not paint sitting on the metal: it grows out of the aluminium, which is why it does not flake. The result is a harder surface with better corrosion and wear resistance.
+
+Anodizing is for aluminium, and the alloy affects the result: 6000-series extrusion alloys usually anodize evenly, while high-copper and casting alloys can come out duller and patchier.
+
+A key advantage of anodizing is that it can be coloured. The fresh oxide is porous and absorbs dye before sealing; sealing then locks the colour inside the layer. The surface finish beforehand matters as much as the dye: a bead-blasted part comes out evenly matt, a polished one brighter. Common options:
+
+- Natural or clear: keeps the silver look of the aluminium.
+- Black: common on device housings, optical parts and tools.
+- Dyed colours such as gold, red or blue: for cosmetic and decorative parts.
+
+## What is chromate conversion (Alodine) and why does it stay conductive?
+
+Chromate conversion coating, widely known by the trade name Alodine, is a conversion coating: the aluminium surface reacts with a chemical solution and forms a very thin film, with no electric current and no other metal deposited. The film is so thin that part dimensions are effectively unchanged and the surface stays electrically conductive.
+
+That is what makes chromate the right call for electronic parts and enclosures that must be grounded or provide EMI shielding, where an insulating anodized layer gets in the way. Chromate is also a good paint base: applied before powder coating on aluminium, it improves adhesion.
+
+Know its limits, though. The film is soft and thin and does not resist wear and scratching the way anodizing does. Chromate is typically specified per MIL-DTL-5541, which has separate classes for maximum corrosion protection and for low electrical resistance. If your product has to comply with restrictions on hexavalent chromium, say so when you order.
+
+## Why plate brass with silver or gold?
+
+Brass is a common choice for electrical parts and fittings because it machines easily and conducts reasonably well. But brass oxidises and dulls in air, and its contact resistance creeps up over time. HyperFab carries out silver and gold plating on brass and other metals for production runs, and it pairs naturally with batch CNC turning of brass parts: the turned part comes back plated and ready to fit.
+
+Which one to choose depends on use, environment and budget. Silver costs less but tarnishes; gold costs more but does not oxidise. Gold on brass is usually applied over an underlayer such as nickel, which stops the base metal from migrating into the gold. The three main reasons to plate brass:
+
+- Conductivity: silver has the highest electrical conductivity of any metal, so it is used on busbars, high-current contacts and RF parts.
+- Reliable contact: gold does not oxidise, so its contact resistance stays stable over time; the choice for signal connectors and electronics.
+- Appearance: a bright silver or gold look for hardware, statuettes, badges and corporate gifts.
+
+## Which finish suits my part? Choosing by base metal and use
+
+Fix the base metal first, then the part's main requirement. If you are still unsure, describe the part's use and environment over the phone:
+
+- Aluminium part that needs wear and corrosion resistance, in black or a colour: anodizing.
+- Aluminium part that must stay conductive, be grounded or be painted later: chromate (Alodine).
+- Aluminium part that needs both: anodizing with the contact areas masked, or chromate all over, depending on whether wear or conductivity matters more.
+- Brass or copper contacts, busbars or connectors carrying high current: silver plating.
+- Signal connectors, or contacts that must stay reliable in humid conditions: gold plating.
+- Steel parts: aluminium anodizing and chromate do not apply; powder coating is the usual choice for protection and appearance.
+
+## How to prepare drawings for plating and anodizing (masking)
+
+Most problems in batch finishing start with an ambiguous drawing. Masking means temporarily covering part of the component with plugs, tape or a special lacquer so the finish does not reach it. It is manual work and adds cost, so mask only what really needs it. When parts are finished on racks, the contact point with the rack is usually left bare; mark a hidden surface for it. Parts should also arrive free of burrs, oil and swarf, because a finish does not hide surface defects and often makes them more visible.
+
+Before you send the drawing, make sure it or the order notes state:
+
+- The exact material and alloy, for example the brass grade or aluminium alloy.
+- The finish, colour and gloss, and any standard it is specified to (for example ISO 7599 for anodizing).
+- Surfaces that must stay uncoated: threads, precision bores, mating faces and grounding points.
+- Whether the drawing dimensions apply before or after finishing, especially for threads and fits.
+
+## What affects the cost of plating, anodizing and chromate?
+
+Each project is quoted after the part has been reviewed. The main factors are:
+
+- Finish type: gold plating costs more than silver, anodizing or chromate because of the precious metal.
+- The coating thickness called out on the drawing and any standard requirements.
+- Part size, surface area and shape, and how many parts fit on a rack or in a tank at once.
+- Masking, and how many surfaces must stay uncoated.
+- Anodizing colour and any requirement for colour matching between batches.
+- The condition of the parts and the preparation needed before finishing.
+- Quantity: the service is for production runs, and one-off parts are accepted only rarely.
+
+For an exact quote, have the part material, the finish, a drawing or sample and the quantity ready, and call 09962233898.
+
+## FAQ
+
+### Can steel be anodized?
+
+No. In industry, anodizing is mainly used on aluminium and a few other light metals; steel does not form a protective, adherent oxide, and its oxide is simply rust. HyperFab anodizes aluminium only, and powder coating is the usual finish for steel parts.
+
+### Is chromate conversion conductive?
+
+Yes. The chromate (Alodine) film is thin enough that the aluminium surface stays electrically conductive. That is why it is chosen for enclosures and parts that must be grounded, whereas anodizing insulates.
+
+### Does anodizing change part dimensions?
+
+Yes, slightly. Part of the anodic layer penetrates into the metal and part builds up on the surface, so outside dimensions grow a little and holes shrink a little. For threads and precision fits, either mask those areas or state on the drawing that dimensions apply after finishing.
+
+### Why plate brass with silver?
+
+Bare brass oxidises in air and its contact resistance rises. Silver plating gives it the highest conductivity of any metal and a bright white finish, which suits contacts, busbars and connectors. Silver tarnishes over time, so where stable contact over the long term is critical, gold is the better choice.
+
+---
+
+# Batch CNC Turning of Brass Fittings: What Drives the Price
+
+URL: https://hyperfabgroup.github.io/en/guides/brass-cnc-turning-batch/
+Updated: 2026-11-15
+
+The price of batch-turned brass fittings depends on the brass alloy and bar size, the part's complexity (threads, holes and secondary operations), the tolerances on fit and sealing surfaces, the quantity, and any finish such as plating. Machine setup is spread across the whole run, which is why HyperFab takes this work as production runs.
+
+## Where does the cost of a batch-turned brass fitting come from?
+
+Every turned brass fitting is priced from a handful of components: the brass itself, machine time per part, setup (programming, tooling, workholding and first-article approval), secondary operations such as threading and knurling, dimensional inspection, and any final finish. How much each one weighs depends on the design and the quantity.
+
+At low quantities, setup is a large share of each part's price. As the run grows, that share shrinks and machine time and material take over. That is why, in batch work, designing the part to be easier to make, for example dropping operations that add nothing or choosing a sensible bar diameter, is where most of the savings are.
+
+## Why are fittings made from brass? Brass vs steel vs stainless
+
+Brass, an alloy of copper and zinc, is the standard material for pipe fittings, valves, nozzles, bushings and mating parts. There are three main reasons: short chips and fast, clean cutting; good corrosion resistance in water and ordinary atmospheres; and a surface that takes silver and gold plating well. It also conducts electricity well, so it shows up in connectors and electrical parts.
+
+Carbon steel, by contrast, is stronger and cheaper as raw material but rusts without a coating, while stainless steel resists corrosion very well but cuts harder and slower. The table compares the three qualitatively for turned fittings.
+
+| Property | Brass | Carbon steel | Stainless steel |
+|---|---|---|---|
+| Machinability | Very good, short chips | Good | Fair to difficult, more tool wear |
+| Cycle time per part | Short | Medium | Long |
+| Corrosion resistance | Good in water and normal atmospheres | Poor without a coating | Very good |
+| Silver and gold plating | Good substrate | Possible, with more preparation | Possible, with special preparation |
+| Strength | Moderate | High | High |
+| Material cost (relative) | Higher than carbon steel | Low | Higher than carbon steel |
+| Typical uses | Plumbing and gas fittings, nozzles, connectors, mating parts | Shafts, pins, loaded parts | Sanitary, food, medical and marine fittings |
+
+## Why is brass fitting turning done in batches only?
+
+A lot happens before the first acceptable part comes off the machine: drawing review, programming, choosing and setting tools, workholding, making the first article, then measuring and adjusting until it is approved. That cost is roughly the same whether you need one part or a thousand.
+
+In a production run, that cost is spread over the whole batch and the price per part stays reasonable. That is why HyperFab's batch CNC turning service is for production runs: one-off parts are accepted only rarely, and a suitable quantity is recommended after reviewing the project. For single parts and prototypes, CNC machining on hyperfab.ir is the better fit.
+
+In batch work, the real challenge is not making one good part. It is making hundreds or thousands of fittings that are all exactly as good as the approved sample. You approve the first article before the run starts, and dimensions are checked during production and again before delivery.
+
+## Cheap turner or expensive turner: what are you actually paying for?
+
+Two quotes for the same drawing can be far apart. Part of the gap is work that the cheaper quote simply leaves out: nobody checks before cutting which face seals, which diameter has to mate with another part, or which thread needs gauging. The result tends to show up at assembly as a leak, a thread that will not tighten properly, or a part that will not seat. With brass fittings, a bad batch usually costs more than the original price difference, because the defect often appears only after plating and assembly.
+
+Precision beyond what the part needs is a cost too. HyperFab matches the production method and precision level to each part's requirements: no more expensive than needed, never below requirements. In a sound quote, this is what you are buying:
+
+- Drawing engineering before production: identifying fit surfaces, critical diameters, concentricity and sealing faces.
+- A technical briefing for the machinist, so they know where each part needs which accuracy and how it will be measured.
+- First-article approval before the production run starts.
+- Dimensional inspection during production and before delivery.
+- Suitable packing, so threads and fit surfaces arrive undamaged.
+
+## How do threads, knurling and secondary operations affect price?
+
+Few brass fittings are a plain turned profile. Internal and external threads, knurling for hand grip, cross holes, wrench flats or hexes, O-ring grooves and deburring each add time, and some add a separate operation.
+
+The earlier and more completely these are defined on the drawing, the more accurate the quote, and the less chance of unplanned costs later.
+
+- Threads: state the thread type and standard (tapered or parallel pipe thread, metric or inch) and its class precisely; gauged threads take longer to inspect.
+- Knurling: specify the pattern (straight or diamond) and where it runs on the part.
+- Hexes and flats: starting from hexagonal bar avoids a separate milling step and brings cost down.
+- Cross holes and milling: anything the lathe cannot do in the same setup may need re-clamping and more time.
+- Deburring and cleaning: on water and gas fittings and on parts going for plating, leftover burrs and oil cause trouble.
+
+## Can brass parts be plated after turning?
+
+Yes. Brass is a good base for silver and gold plating, and you can hand the plating to HyperFab in the same project and receive the part turned, plated and ready to use. Silver plating gives the highest electrical conductivity and is common on contacts and connectors; gold does not oxidise and keeps a stable contact resistance.
+
+If a part will be plated, plan for it from the start. Plating builds a layer on the surface, so precision threads and fit surfaces have to be designed and turned with that in mind. Mark any surfaces that must stay unplated on the drawing. Turned finish and deburring also show directly in the final appearance, because plating does not hide surface defects.
+
+Plating, like turning, is a batch service. If the part needs a decorative or electrical finish, or no finish at all, say so in the enquiry so it is reflected in the quote.
+
+## What to send for a quote, and what the price depends on
+
+A dimensioned drawing with tolerances is the key document. Send a 3D model (a STEP file, for example) if you have one, but it does not replace the drawing. The final price depends on:
+
+- The brass alloy and the bar size and shape (round or hexagonal)
+- Part complexity: the number of steps, threads, holes and secondary operations
+- Tolerances, fit surfaces and sealing faces
+- Quantity and whether the order repeats
+- Finish: silver plating, gold plating or none
+- Special inspection, such as thread gauging or a dimensional report
+- Packing requirements
+
+Have this information ready and call 09962233898 for an exact quote. HyperFab is based in Tehran and recommends a price and a suitable quantity after reviewing the drawing.
+
+## FAQ
+
+### Do you accept single pieces?
+
+HyperFab's batch CNC turning service is for production runs; one-off parts are accepted only rarely, and a suitable quantity is recommended after reviewing the project. For single parts and prototypes, see CNC machining on hyperfab.ir.
+
+### Can parts be plated after turning?
+
+Yes. Silver and gold plating on brass parts is available at HyperFab, and the finished part is delivered. If plating is needed, mention it up front so threads and fit surfaces are reviewed with the coating in mind.
+
+### What file do you need for a quote?
+
+A dimensioned drawing with tolerances, thread specifications, the material and the quantity. A 3D model such as a STEP file helps but does not replace the drawing. If you have no drawing, a sample part or a phone description can be a starting point.
+
+### Which brass alloy should I use for fittings?
+
+Turned fittings are usually made from free-cutting (leaded) brass, which breaks into short chips and machines quickly. Parts in contact with drinking water may need a low-lead or lead-free brass under the product standard. The designer or the product standard sets the alloy, and it can be discussed during the drawing review.
+
+---
+
+# From Design to Production: Injection Mould Making Step by Step
+
+URL: https://hyperfabgroup.github.io/en/guides/injection-mould-making-steps/
+Updated: 2026-11-15
+
+An injection moulding project runs from part design for moulding, through mould design and steel selection, CNC machining, EDM and polishing, to trial shots, corrections and finally production. Most of the risk sits in the early stages, so every change made before steel is cut costs far less than one made afterwards.
+
+## What are the stages of injection mould making?
+
+Mould making (mold making in US spelling) and injection moulding are two halves of one project. First a steel mould is built that carries the shape of the part; then an injection moulding machine fills it with molten polymer, shot after shot. Much of the final part quality is decided on the day the part design and mould design are frozen.
+
+At HyperFab the route starts with a mouldability review of the design. The mould is then designed and built, sampling and correction continue until you approve the part, and production follows with quality control.
+
+| Stage | What happens | Output |
+|---|---|---|
+| Design for moulding | Review of draft, wall thickness, ribs, undercuts and material | Corrected, mouldable 3D model |
+| Mould design | Parting line, cavity count, runner and gate, cooling and ejection | Mould drawings and steel selection |
+| Mould build | CNC machining, EDM, polishing and assembly | Mould ready for trials |
+| Trial shots (T0, T1) | Test moulding, measurement and mould corrections | Approved sample |
+| Production | Moulding runs on locked settings with quality checks | Parts ready for delivery |
+
+## Designing a part for injection moulding: draft, wall thickness and ribs
+
+A design that prints or machines well is not necessarily mouldable. The first rule is draft: walls parallel to the direction the mould opens need a slight taper so the part releases without scuffing or sticking. The right amount depends on the material, wall depth and surface texture, and is set during the design review.
+
+The second rule is uniform wall thickness. Polymer shrinks as it cools, and thick sections cool last, which causes warping, sink marks and internal voids. Instead of thick walls, use ribs for stiffness and bosses for screw points. A rib should be thinner than the wall it supports so it does not leave a mark on the opposite face.
+
+Undercuts, features that stop the part coming straight out of the mould, need slides or lifters and make the mould more expensive; a small design change can often remove them. Sharp internal corners are better rounded, which helps material flow and reduces stress concentration. Tolerances should be realistic for the chosen material and its shrinkage.
+
+## Mould design and choosing the mould steel
+
+Mould design settles a few key questions: where the parting line goes, how many cavities the mould has, where and through what kind of runner (cold or hot runner) the material enters, how the cooling channels cool the part evenly, and where the ejector pins sit. Gate position directly affects the part’s appearance, weld lines and warpage.
+
+Shrinkage is built into the cavity dimensions: the cavity is cut slightly larger than the finished part, by an amount that depends on the material. That is why the material must be fixed before the mould is built. Switching later, say from polyethylene to ABS, may mean modifying the mould.
+
+Steel choice depends on volume, polymer and the finish required. Pre-hardened mould steels suit many medium-volume projects and are easier to machine. For very high volumes or abrasive materials such as glass-filled grades, a hardened tool steel lasts longer, and stainless mould steel is used for corrosive polymers or high-gloss finishes.
+
+## Building the mould: CNC machining, EDM and polishing
+
+Most of the cavity and core material is removed by CNC milling. Where a cutter cannot reach, such as deep narrow ribs, sharp internal corners and fine detail, the shape is made by spark erosion, or electrical discharge machining (EDM): a graphite or copper electrode copies its form into the steel. Wire EDM is also used for precise holes and inserts.
+
+After machining, the cavity surfaces are polished. The level of polish depends on the part: a hidden industrial part needs only a basic finish, while a cosmetic or transparent part needs a high gloss. If a textured surface is required, say so at the start, because texture affects the draft the part needs. Finally the slides, ejector pins and cooling circuit are assembled and the mould is ready for trials.
+
+## What are T0 and T1 trial shots, and what gets corrected?
+
+The first test moulding with a new tool is usually called T0. Its purpose is to find problems, not to produce finished parts. The trial checks whether the cavity fills completely or gives short shots, whether flash appears on the parting line, and looks for sink marks, warpage, ejector marks and how easily the part releases. Samples are measured and compared with the drawing.
+
+Some issues are solved by adjusting process settings such as pressure, speed and cooling time; others need steel to be modified. Toolmakers often cut critical dimensions steel-safe, leaving a little extra metal, because removing steel is easier than adding it. After corrections, the next trial (T1, and further rounds if needed) brings the part into line with the drawing.
+
+At HyperFab, samples are moulded once the mould is built, and production starts only after you approve them.
+
+## How does the production run work?
+
+Once a sample is approved, the process settings are locked and recorded so that every production run produces the same part. Raw material is prepared before moulding; some polymers, such as nylon and polycarbonate, absorb moisture and are dried first. During production, parts are checked at intervals for dimensions and appearance, and the mould itself needs care: cleaning, lubricating the slides and checking the cooling circuit.
+
+HyperFab carries out production runs in polyethylene, polypropylene, ABS, nylon and engineering thermoplastics such as polycarbonate and acetal. Its team has taken four polyethylene injection moulds from build supervision to commissioning, and more than 80,000 parts have been produced with them. Orders for this service are arranged by phone.
+
+## What drives the cost of mould making and injection moulding?
+
+An injection project is priced in two parts, quoted separately: a one-off mould cost and a cost per shot in production. The main drivers are:
+
+- Part size and complexity, and therefore mould size.
+- Number of cavities.
+- Undercuts and the slides or lifters they require.
+- Required surface finish, polish or texture.
+- Mould steel and runner type (cold or hot runner).
+- Number of trial rounds and design changes after the build has started.
+- Per shot: polymer type, grade and colour, part weight, cycle time and run quantity.
+
+For an exact quote, have your 3D file, drawing or sample part ready and call 09962233898. After a mouldability review, HyperFab quotes the mould cost and the cost per shot separately. If you are not yet sure about volumes, you can make a first prototype with 3D printing on hyperfab.ir.
+
+## FAQ
+
+### What drives mould cost?
+
+The main factors are part size and complexity, the number of cavities, undercuts and slides, surface finish and the mould steel. HyperFab quotes the mould separately from the cost per shot after reviewing the design.
+
+### How many cavities do I need?
+
+It depends on total volume, part size, the injection machine’s capacity and your budget. A single-cavity mould is cheaper to build but keeps the cost per part higher; a multi-cavity mould is the reverse. The right number is recommended during the design review, based on your expected volumes.
+
+### Who owns the mould?
+
+By common practice, a mould the customer has paid for normally belongs to the customer. Even so, ownership, storage location, maintenance responsibility and the right to move the mould should be set out in writing in the agreement. Raise these points with HyperFab when you request a quote.
+
+### Can a 3D-printed prototype come first?
+
+Yes, and it is a good idea. An FDM 3D print lets you check form, dimensions and assembly on a real part, and you can price it online at hyperfab.ir. Keep in mind that a printed part does not have the mechanical properties or surface of a moulded one, so it mainly confirms geometry.
+
+---
+
+# MO40 vs CK45 Steel for Gauges and Turned Parts
+
+URL: https://hyperfabgroup.github.io/en/guides/mo40-vs-ck45-steel/
+Updated: 2026-11-15
+
+MO40 (42CrMo4, 1.7225) is a chromium-molybdenum alloy steel; CK45 (C45E, 1.1191) is a plain medium-carbon steel. MO40 hardens deeper and more evenly and stays tougher, so it suits heavily used gauges and loaded parts. CK45 costs less and responds well to induction hardening, which makes it the economical choice for simple gauges and general turned parts.
+
+## MO40 vs CK45 at a glance
+
+The short answer: MO40 is a chromium-molybdenum alloy steel, CK45 is a plain medium-carbon steel. Their carbon content is similar, so the surface hardness each reaches after quenching is not very different. What separates them is how deep and how evenly they harden, how tough they are after heat treatment, and what they cost.
+
+If a part works under load, impact or constant wear, or has a thick section that must harden through to the core, MO40 is the safer pick. If the part is simple, lightly loaded, or only needs a hard working surface, CK45 does the job for less money. The table compares the two qualitatively.
+
+| Property | MO40 (42CrMo4) | CK45 (C45E) |
+|---|---|---|
+| Steel type | Low-alloy chromium-molybdenum steel | Plain medium-carbon steel |
+| Hardenability (depth of hardening) | High; thicker sections harden through to the core | Low; thick sections mainly harden at the surface |
+| Toughness after heat treatment | High | Moderate |
+| Machinability | Good; harder on tools when bought quenched and tempered | Good and predictable, especially when normalised |
+| Typical uses | Loaded and impact-loaded shafts and parts, heavily used gauges | General shafts and pins, machine parts, simple gauges |
+| Relative cost | Higher | Lower |
+
+## What are the equivalents of MO40 and CK45, and how does their composition differ?
+
+MO40 is the name the Iranian market uses for 42CrMo4, material number 1.7225. It is a medium-carbon steel with chromium and molybdenum added, and those two elements are what raise its hardenability and toughness. The closest American equivalent is AISI 4140.
+
+CK45 is the old German DIN name for the steel now designated C45E, material number 1.1191. It is a plain medium-carbon steel with no significant alloying. The "k" in the old name refers to tighter control of impurities such as phosphorus and sulphur. Close equivalents are C45 and AISI 1045.
+
+Equivalents are close, not identical. Element ranges differ slightly between standards, and bar sold under one name in the market is not always exactly that grade. For gauges and other critical parts, ask for the mill certificate or have the material checked by analysis.
+
+## Which one hardens better? MO40 vs CK45 heat treatment
+
+It helps to separate hardness from hardenability. Hardness is how hard the surface gets after quenching, and it depends mostly on carbon content, which is similar in these two steels. Hardenability is how deep that hardness reaches below the surface, and this is where the chromium and molybdenum in MO40 make the difference.
+
+MO40 hardens to a good depth even with a milder quench. That makes it well suited to through-hardening followed by tempering (quench and temper), after which it is both strong and tough. It is also widely sold already quenched and tempered. CK45 needs a more severe quench to harden, which raises the risk of distortion and cracking, and in thick sections it effectively hardens only in an outer layer.
+
+That is why CK45 is the usual candidate for surface hardening: induction or flame hardening puts a hard skin on the working surface while the core stays tough. MO40 can be surface hardened or nitrided too, when a wear-resistant surface over a strong core is needed.
+
+- Through-hardening and tempering: the natural route for MO40, especially in thick sections.
+- Induction or flame hardening: the common route for CK45 shafts, pins and wear surfaces.
+- Nitriding: an option for MO40 when a hard surface is needed with minimal dimensional change.
+- Either way: the part is turned before heat treatment with enough stock left for final grinding.
+
+## Is MO40 or CK45 easier to machine?
+
+In the normalised or annealed condition both steels machine well, and CK45 is usually a little easier and cheaper to turn. When MO40 is bought quenched and tempered it is stronger, tools wear faster and cutting has to slow down, which feeds straight into machine time and cost per part.
+
+The order of operations matters as much as the grade. A part that will be hardened is typically rough-turned first, stress relieved if needed, then heat treated, and finally ground or finished on the precision surfaces. If that sequence is not stated on the drawing or in the enquiry, a part turned accurately in the soft state can distort in heat treatment and end up out of tolerance.
+
+In HyperFab's batch CNC turning, each part's critical points are engineered and briefed to the machinist before production: fit surfaces, critical diameters, concentricity and the grinding allowance. That keeps the production route matched to the material and to what the part actually has to do.
+
+## Which steel is better for gauges, MO40 or CK45?
+
+A gauge is the precision reference of a production line, and any error in it passes straight into the product. Three things drive the material choice: wear resistance on the measuring surfaces, dimensional stability over time, and the ability to survive knocks and drops on the shop floor.
+
+Gauges are usually heat treated after turning, and their measuring surfaces are ground so they end up both hard and accurate. Because MO40 hardens deeper and more evenly and moves less in heat treatment, it is the safer choice for heavily used gauges, thick-section gauges, and gauges with thin lips or slender features. CK45 is an economical choice for simple, lightly used gauges, or for gauges where only the working surface is induction hardened.
+
+For master gauges or gauges facing very severe wear, designers often move to tool steels instead. HyperFab has produced batch gauge parts in both MO40 and CK45, and those parts were approved by the customers. The final material call belongs to the gauge designer, and it can be discussed during the drawing review.
+
+## What drives the cost of an MO40 or CK45 turned part?
+
+Material is where the price starts, but not where it ends. These factors carry the most weight:
+
+- Grade and bar diameter: MO40 costs more than CK45, and unusual diameters can be more expensive to source.
+- Supply condition: machining quenched-and-tempered MO40 takes more machine time and tooling.
+- Heat treatment and grinding: the hardening method (through, induction or nitriding) and how many surfaces need grinding.
+- Tolerances and surface finish: more fit surfaces and critical diameters mean more time and inspection. General tolerances are typically specified per ISO 2768 on the drawing.
+- Part complexity: the number of steps, grooves, threads and secondary operations.
+- Quantity: setup and first-article approval are spread over more parts.
+
+For an exact quote, prepare a dimensioned drawing with tolerances, the material, the heat treatment you need and the quantity, and call 09962233898. HyperFab's CNC turning service is for production runs, and a first article is approved by you before the run starts.
+
+## FAQ
+
+### What is MO40's equivalent grade?
+
+MO40 is 42CrMo4, material number 1.7225, and its closest American equivalent is AISI 4140. These equivalents are close rather than identical, so check the mill certificate for critical parts.
+
+### Which gets harder after heat treatment, MO40 or CK45?
+
+Their surface hardness after quenching is similar, because their carbon content is similar. The difference is depth: MO40 hardens deeper and more evenly and is tougher after tempering, while CK45 in thick sections hardens mainly at the surface.
+
+### Can CK45 be induction hardened?
+
+Yes, and it is one of CK45's most common uses. Induction hardening gives a shaft, pin or gauge a hard working surface while the core stays tough. Precision surfaces are usually ground after hardening.
+
+### Which lasts longer as a gauge, MO40 or CK45?
+
+Under the same working conditions and with proper heat treatment, an MO40 gauge usually holds its dimensions better and resists wear and impact longer. For a lightly used gauge, hardened CK45 is often enough and costs less. The quality of the heat treatment and grinding matters as much as the grade.
+
+---
+
+# Powder Coating: Process, Powder Types and Finish Choices
+
+URL: https://hyperfabgroup.github.io/en/guides/powder-coating-process-finishes/
+Updated: 2026-11-15
+
+Powder coating is a dry powder that is electrostatically charged, sprayed onto a metal part and melted and cured in an oven into a hard, even layer. How well it performs depends on surface preparation, the powder chemistry (epoxy, polyester or hybrid) and a correct cure, while gloss and texture should be chosen to suit the part's use.
+
+## Powder types: epoxy, polyester or hybrid?
+
+Before you pick a colour or texture, the most important decision is the resin the powder is based on, because it decides how the coating behaves outdoors and in sunlight.
+
+The rule of thumb is simple: parts that see sunlight need polyester; where chemical resistance and adhesion indoors matter most, epoxy; and for most indoor parts where looks matter, a hybrid. For harsher conditions, such as coastal sites, the preparation and powder should be agreed together from the start.
+
+| Powder | Indoor or outdoor | UV resistance | Strength | Typical use |
+|---|---|---|---|---|
+| Epoxy | Indoor | Poor; chalks and fades in sunlight | Strong adhesion, chemical and corrosion resistance | Parts inside machines, sheltered industrial equipment, primer coats |
+| Polyester | Outdoor and indoor | Good; holds colour and gloss outdoors | Weather resistance | Outdoor structures and facades, aluminium profiles, outdoor furniture, vehicle parts |
+| Epoxy-polyester hybrid | Indoor | Moderate; not for direct sun | Good looks, balanced properties and cost | Appliances, office furniture, indoor shelving and electrical cabinets |
+
+## Why is surface preparation the most important step?
+
+Powder only bonds well to a clean, properly prepared surface. Most failures that show up months later as flaking or rust creeping under the coating trace back to poor preparation, not to the powder itself.
+
+Welded parts need extra care: spatter, slag, sharp edges and open seams must be dealt with before coating, because the powder will not hide them. Castings and galvanized parts can also release gas during curing and need specific preparation. Depending on the material and its condition, preparation may include:
+
+- Degreasing to remove cutting oil, grease and handling marks.
+- Removing rust, mill scale or oxide, mechanically by abrasive blasting or chemically.
+- A conversion coating for better adhesion and corrosion resistance: phosphating on steel, and chromate (Alodine) or its alternatives on aluminium.
+- Thorough rinsing and drying, because trapped moisture ends up sealed under the powder.
+
+## How is powder applied and cured?
+
+After preparation, parts are hung on hooks or racks in a spray booth. The electrostatic gun charges the powder particles and the grounded part attracts them, which is why powder also wraps around edges and onto the back of the part. Overspray is usually collected and reused.
+
+The part then goes into the oven. The powder melts, flows out over the surface and then cures chemically into a hard, continuous film. The cure schedule is set by the powder manufacturer and has to account for the metal thickness, since heavy parts take longer to reach temperature.
+
+Two design points follow from this. First, the part must survive the oven, so plastic and rubber parts, seals and bonded assemblies have to be removed beforehand. Second, the hanging point stays uncoated, so plan a hole or tab for it. Threads, precision bores and grounding points are usually masked with heat-resistant plugs or tape.
+
+## Gloss, matte, texture or pearl: choosing a finish and RAL colour
+
+Specify colour by its standard RAL code rather than a description or photo, since screens and prints never show colour accurately. Pearl and metallic powders can vary slightly between powder batches; if parts will sit side by side, coat them in one order and approve a reference sample. Some metallic powders need a clear topcoat for outdoor use.
+
+Once the powder type is settled, gloss and texture set the final look:
+
+- Gloss: makes colours look richer and is easy to clean, but shows surface unevenness and scratches more.
+- Satin and matte: a calmer, more industrial look that hides minor surface flaws better.
+- Texture and wrinkle: a rough surface that hides fingerprints and scratches; good for housings and high-touch parts.
+- Hammer: looks like hammered metal and hides imperfections; common on cabinets, tools and machinery.
+- Pearl and metallic: metallic or pearlescent particles give a lustrous sheen for cosmetic parts and premium products.
+
+## Common powder coating defects and how to prevent them
+
+Most powder coating defects can be prevented, and the cause is usually preparation, part design or curing. Adhesion is typically checked with a cross-cut test per ISO 2409. The usual suspects:
+
+- Flaking and poor adhesion: usually inadequate degreasing or preparation.
+- Pinholes and blisters (outgassing): gas escaping from castings, galvanized steel or weld seams during curing; reduced by proper preparation and pre-heating.
+- Orange peel: a wavy surface caused by the wrong film build or curing conditions.
+- Thin coverage in inside corners: the Faraday cage effect keeps powder out of deep recesses; more open corners in the design help.
+- Craters: contamination with oil or silicone; solved by cleaning and keeping silicone sprays away from parts before coating.
+- Yellowing or fading: over-curing, or using epoxy powder outdoors.
+- Rust starting at edges: powder builds thin on sharp edges, so chamfer or round them before coating.
+
+## Powder coating vs liquid paint: what is the difference?
+
+Powder coating builds a thicker, harder film than liquid paint in a single coat and stands up better to impact, scratches and corrosion. It contains no solvent, does not run, and overspray can be recovered. It is also more consistent across a batch, because film build and appearance repeat from part to part.
+
+Liquid paint is still the better choice in a few cases: parts that cannot take oven heat, such as plastics and wood; structures larger than the oven or that must be painted on site; and local touch-ups. Repairing damaged powder coating is also harder, and is usually done with a matching liquid paint.
+
+## What affects the cost of powder coating?
+
+Each order is quoted after the parts have been reviewed. The main factors are:
+
+- Part size and total surface area, and how many parts fit in the booth and oven at once.
+- Weight and metal thickness, which set how long the part takes to reach curing temperature.
+- Powder type (epoxy, polyester or hybrid) and special effects such as pearl, metallic or hammer.
+- Preparation required: simple degreasing, abrasive blasting, phosphating or chromate.
+- Masking of threads, holes and uncoated surfaces.
+- Uncommon colours and colour changes between orders.
+- Quantity: HyperFab's powder coating service is for production runs, and one-off parts are accepted only rarely.
+
+For an exact quote, have the part size and material, the powder type and colour and the quantity ready, or send a sample, and call 09962233898.
+
+## FAQ
+
+### Powder coating or liquid paint?
+
+For batch metal parts that can take oven heat, powder coating is usually more durable and more consistent. Liquid paint is better suited to heat-sensitive parts, very large structures, on-site painting and touch-ups.
+
+### Is powder coating suitable for outdoor use?
+
+Yes, with the right powder. Polyester powders are made for outdoor exposure and sunlight, while epoxy and hybrid powders chalk and fade in the sun. Good surface preparation matters just as much for outdoor durability.
+
+### Can aluminium be powder coated?
+
+Yes. HyperFab powder-coats steel, iron, aluminium and other metals. On aluminium, a chromate (Alodine) base improves paint adhesion and corrosion resistance.
+
+### What limits the size of a part for powder coating?
+
+The size of the oven and spray booth, the hanging capacity and the part's weight. Heavy, thick parts also take longer to reach curing temperature. For large parts and frames, give the dimensions and weight before ordering so feasibility can be checked.
+
+---
+
+# How Sheet and Tube Punching Cost Is Determined
+
+URL: https://hyperfabgroup.github.io/en/guides/punching-cost-sheet-tube-pe-pipe/
+Updated: 2026-11-15
+
+Sheet and tube punching is priced in two parts: a one-off cost to design and build the punching die, and a cost per stroke in production. The die cost depends on geometry, hole and slot count and required accuracy; the stroke cost on material, thickness, strokes per part and quantity. Larger runs shrink the die’s share of each part.
+
+## Short answer: what makes up the price of punching?
+
+Punching makes holes, slots and shaped cut-outs in sheet and tube with a press stroke and a die. Because each part reaches its final shape in one or a few strokes, the price is not worked out from cut length the way laser cutting is. It has two separate parts instead: a die that is built once, and strokes that repeat throughout production.
+
+HyperFab reviews the drawing, designs and builds a punching die for the material and thickness, punches a trial sample for your approval, and carries production and quality control through to delivery. The die cost and the cost per stroke are quoted separately after the drawing is reviewed. If HyperFab supplies the sheet or tube, material is added at current prices.
+
+## Die cost vs cost per stroke: what is the difference?
+
+The two costs behave differently. The die is built once and its cost is spread across the whole run, while the stroke cost repeats with every part. On a short run the die dominates the price of each part; on a long run, strokes and material take over.
+
+In practice, anything that simplifies the die pays off most on small quantities, and anything that cuts the number of strokes per part pays off most on large ones.
+
+|  | Punching die | Cost per stroke |
+|---|---|---|
+| Type of cost | One-off, before production starts | Recurring, for every stroke in production |
+| Main driver | Geometry, number of holes and slots, required accuracy | Material, thickness and strokes needed per part |
+| Kind of job | Simple, progressive or tube-specific die | Sheet or tube, metal or polymer |
+| Effect of quantity | Share per part falls as the run grows | Repeats with every part; also depends on run quantity |
+| What reduces it | Standardising hole sizes and simplifying geometry | Fewer strokes per part and a larger run |
+
+## Punching or laser cutting: which is cheaper for your quantity?
+
+Laser cutting needs no die, so it is cheaper for low quantities, prototypes and designs that are still changing. HyperFab’s metal laser cutting is an online service: upload a DXF file on hyperfab.ir and the price estimator quotes it instantly.
+
+Punching is built for repeat runs with a fixed hole pattern. Once the die exists, each part is made faster and cheaper in one or a few strokes, and every part comes out the same. HyperFab offers both and recommends the right one for your quantity and geometry.
+
+- Low quantity, a prototype or a design that is not final yet: laser cutting.
+- Repeat runs with a fixed hole pattern: punching.
+- Holes and slots in tube, profile or polyethylene pipe: punching with a tube-specific die.
+- Somewhere in between: compare the online laser price with a punching quote for the same quantity.
+
+## How is tube and profile punching different from sheet?
+
+Sheet lies flat and is fully supported on the die. Tube is round and hollow, and its wall deforms under the stroke. Tube and profile punching therefore usually needs a tube-specific die that holds the section in shape during the stroke, which is one reason a tube die is priced differently from a simple sheet die.
+
+HyperFab punches holes and slots in metal tube and profile for structures, fittings, shelving, railings and furniture. On a tube drawing, give the hole positions relative to the tube end and to each other, and their orientation around the circumference, as well as the hole shape. All of these feed directly into the die design.
+
+## How is polyethylene (PE) pipe punched?
+
+Punching polymer pipe is one of the harder jobs in this field. The pipe is round, the wall deforms under the stroke, and polyethylene behaves very differently from metal, so a die that works well on steel is not automatically right for PE.
+
+HyperFab’s team has punched kidney-shaped slots in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. In another industrial project, the team was responsible for quality control of 8,000 punched tubes. Typical uses are drainage, filter, and water and air distribution pipes.
+
+For a PE pipe quote, give the pipe diameter, wall thickness and pressure rating, the slot or hole shape, how it repeats along the length and around the circumference, and the quantity. A trial sample is punched before production so you can check the slots on the real pipe and approve them.
+
+## How to lower punching cost: design tips before the die is built
+
+The die is the most expensive part of the project, and most savings are made before it is built. HyperFab reviews every design from the die’s point of view, and you can get ahead of that review with a few rules:
+
+- Keep holes a sensible distance from the edge; a hole too close to the edge distorts it under the stroke.
+- Size holes in proportion to the material thickness; a hole that is very small for the thickness puts heavy load on the punch.
+- Standardise hole sizes and shapes where you can; every new shape means another punch and a more complex die.
+- Put tight tolerances on functional dimensions only.
+- Freeze the design before the die is built; while you are still testing, make samples by laser cutting.
+- State the total quantity up front so the die cost is spread over the real number of parts.
+
+## What to send for a punching quote, and what drives the price
+
+Send a drawing or a physical sample, the material and thickness, and an approximate quantity, or describe them by phone. For tube, add the diameter, wall thickness and hole positions along the length and around the circumference. HyperFab is based in Tehran and ships punched parts across Iran. The final price comes from the combination of the factors below, and no meaningful figure can be given before the drawing is reviewed.
+
+- Geometry, and the number and shape of holes and slots.
+- Die type: simple, progressive or tube-specific.
+- Required accuracy of dimensions and hole positions.
+- Material and thickness: mild steel, galvanised, stainless steel, aluminium or polymers such as polyethylene.
+- Strokes needed per part, and run quantity.
+- Whether HyperFab or the customer supplies the material.
+- Follow-on work such as powder coating the punched parts.
+
+For an exact quote on a punching project, call HyperFab’s industrial projects specialist on 09962233898 (+98 996 223 3898) or send the drawing on Bale. If the part can also be laser cut, you can get that price instantly on hyperfab.ir.
+
+## FAQ
+
+### Who owns the punching die?
+
+The die is designed and built for your part, and its cost is quoted once, separately from the cost per stroke. Agree ownership, storage and reuse of the die for later orders with HyperFab when you receive the quotation.
+
+### Is there a minimum quantity for punching?
+
+Punching needs a die, so it suits repeat quantities; for low quantities, laser cutting is usually cheaper because there is no die cost. HyperFab recommends the right process for your quantity and geometry.
+
+### Can polyethylene pipe be punched cleanly?
+
+Yes, provided the die is designed for how polyethylene behaves rather than for metal. HyperFab’s team has punched kidney-shaped slots in 125 mm PE pipe with a 5 mm wall and 6-bar rating, and a trial sample is punched for your approval before production.
+
+### Punching or laser cutting for a few hundred parts?
+
+It depends on the geometry and whether the order repeats: with a fixed design and repeat orders, the die cost is spread over every run and punching can pay off. For a one-off batch or a design that may change, laser cutting is usually cheaper. Get an instant laser price on hyperfab.ir and compare it with a punching quote.
+
+---
+
+# TIG vs MIG Welding for Stainless Steel and 6000-Series Aluminium
+
+URL: https://hyperfabgroup.github.io/en/guides/tig-vs-mig-stainless-aluminium/
+Updated: 2026-11-15
+
+TIG welding uses a non-consumable tungsten electrode with filler added separately, giving clean, precise, spatter-free welds that suit thin sheet, medical equipment and cosmetic parts. MIG feeds wire continuously, so it is faster and cheaper on long structural seams. The right choice depends on material, thickness, required finish and the weld tests your project specifies.
+
+## What is the difference between TIG and MIG welding?
+
+The short answer: TIG is slower but more controllable and leaves a clean, even bead; MIG is faster and cheaper on long and structural welds. Neither is better across the board. Material, thickness, joint type and any cosmetic or hygiene requirements decide which one fits.
+
+A note on names, since Iranian suppliers use Persian trade terms: “argon welding” usually means TIG, while “CO2 welding” means continuous-wire welding, the MIG/MAG family. Strictly, MIG uses an inert shielding gas such as argon and is the wire process for aluminium; with an active gas such as CO2 on carbon steel, the correct name is MAG. So “CO2 welding” is really MAG, and aluminium is never welded under CO2. TIG also runs on argon, which is why both processes sometimes get called argon welding.
+
+| Criterion | TIG (GTAW) | MIG (GMAW) |
+|---|---|---|
+| Speed | Slower; filler rod is added by hand | Faster; wire feeds continuously through the torch |
+| Appearance | Clean, even bead with no spatter | Good, with some spatter that may need cleaning up |
+| Thin vs thick material | Better on thin sheet, tube and delicate joints | More economical on thicker sections and long seams |
+| Distortion | Fine heat control on thin sheet, though slow travel spreads heat on long seams | Faster travel on long seams; risk of burn-through and warping on thin sheet unless well tuned |
+| Welder skill | Demands more skill and two-handed coordination | Easier to learn, but machine setup is critical |
+| Typical use | Medical and food equipment, stainless tube, cosmetic parts, root passes | Chassis and frames, large structures, batch work |
+
+## What is TIG welding and where is it used?
+
+In TIG welding (Tungsten Inert Gas, standardised as GTAW), the arc burns between a non-consumable tungsten electrode and the workpiece while argon shields the pool from the air. Filler is added separately, so the welder controls heat and deposited metal independently and has fine command of bead shape and penetration.
+
+The result is a narrow, clean, spatter-free weld, which is why TIG is the default for thin stainless sheet and tube, cosmetic parts, root passes, and medical and food equipment. Its weakness is speed: on long seams or thick sections labour hours and cost climb quickly.
+
+## What is MIG welding, and how does it relate to “CO2 welding”?
+
+In MIG welding (Metal Inert Gas, standardised as GMAW), wire feeds continuously from a spool through the torch and serves as both electrode and filler. Deposition is high, so long seams fill faster and more consistently.
+
+What separates MIG from market “CO2 welding” is the shielding gas: inert for MIG, active for MAG. Aluminium needs inert gas, and stainless is normally welded with argon-based mixtures. Pulsed MIG reduces spatter and heat input, but the bead rarely looks as even as TIG. MIG earns its place on chassis, frames, machine bodies and large structures, where speed and cost matter most.
+
+## Welding stainless steel: heat tint, pickling and passivation
+
+Stainless steel resists corrosion thanks to an extremely thin chromium-oxide film. Welding heat leaves straw-to-blue colours beside the seam, called heat tint. The darker the tint, the more chromium-depleted the surface beneath it and the sooner it rusts. Controlling heat input helps, and on tube and vessels the back of the joint is purged with argon (back purging).
+
+After welding, heat tint is usually removed by pickling or mechanical means, and the surface is passivated so the protective film reforms evenly. The details depend on the grade, service environment and project specification, so they belong on the drawing or order. Tools and brushes reserved for stainless matter too, so no carbon-steel particles are left on the surface.
+
+In medical, food and sanitary equipment, welds must be smooth, free of crevices and pores, and easy to clean so contamination has nowhere to collect; full-penetration TIG with dressed beads is the norm. HyperFab has built many units for the medical and marine industries.
+
+## Welding 6061 and 6063 aluminium: what to watch for
+
+Aluminium is always covered by a thin, tough oxide skin that melts at a far higher temperature than the metal underneath. If it is not broken up, the joint does not fuse properly and oxide gets trapped in the weld. That is why aluminium is TIG welded on alternating current (AC): during the electrode-positive half-cycle the arc scours away the oxide (cleaning action), and during the other half more heat goes into the work for penetration. In MIG the wire runs electrode-positive, which gives the same cleaning action. Degreasing and brushing the joint just before welding also matter, because moisture and grease are the main causes of porosity.
+
+The 6000-series alloys, such as 6061 and 6063, owe much of their strength to heat treatment. Welding heat partly undoes it in the heat-affected zone (HAZ), leaving that band softer than the parent metal. This happens with both TIG and MIG and must be allowed for in the structural design. These alloys are also prone to hot cracking without a suitable filler, so filler selection is part of the welding procedure.
+
+## Weld inspection: when to use VT, PT or PAUT
+
+HyperFab carries out visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests on request. Which one you need depends on the defect you are worried about:
+
+Agree acceptance criteria up front too. For fusion welds in steel, including stainless, quality levels are typically specified per ISO 5817, and for arc welds in aluminium per ISO 10042; NDT personnel qualification is commonly requested per ISO 9712. If your project calls for a particular standard or quality level, state it with the drawings.
+
+- VT (visual testing): the baseline for every weld; checks weld shape and size, surface cracks, undercut, spatter and heat tint.
+- PT (liquid penetrant): reveals surface-breaking cracks and discontinuities; the usual surface method for stainless steel and aluminium, which are generally non-magnetic.
+- PAUT (phased-array ultrasonics): finds internal defects such as lack of fusion, internal cracks and porosity, with a cross-sectional image of the weld; used on full-penetration and load-bearing structural joints.
+
+## What drives the cost of TIG and MIG welding?
+
+Structural design is the client’s, and HyperFab fabricates to your approved drawings. The drawings are first checked for manufacturability, welding sequence and distortion control, and then quoted. The main cost drivers are:
+
+- Material: stainless steel or 6000-series aluminium
+- Weld length and type, and the process; TIG is slower, MIG faster
+- Structure size and fixturing; on large frames, such as a framed chassis mounted on wheels that runs on rails, flatness and alignment over long lengths drive the effort
+- Cosmetic and hygiene requirements: weld dressing, back purging and heat-tint removal
+- Requested tests: VT, PT, PAUT or others
+- Quantity and how repeatable the work is
+
+For an exact quote, have your drawings, material, quantity and required tests ready and call 09962233898.
+
+## FAQ
+
+### Which is stronger, TIG or MIG?
+
+Neither is inherently stronger; joint strength comes from full fusion and penetration, the right filler, and freedom from defects such as porosity and lack of fusion. On 6000-series aluminium, HAZ softening limits strength whichever process is used.
+
+### Why does aluminium need AC TIG?
+
+Aluminium’s oxide skin melts at a far higher temperature than the metal itself. On alternating current, the electrode-positive half-cycle breaks up that oxide and the other half delivers heat and penetration; without this cleaning action, oxide is trapped in the weld.
+
+### What does PT detect?
+
+Liquid penetrant testing (PT) reveals cracks, pores and other discontinuities open to the surface. A dyed liquid seeps into the flaw and, once the surface is cleaned and developer applied, the indication shows. It cannot find fully internal defects; those need ultrasonic testing.
+
+### When is PAUT needed?
+
+When internal defects such as lack of fusion, internal cracks or porosity matter for safety or function, typically in full-penetration and load-bearing structural welds.
+
+---
+
 <!-- language: fa -->
 
 # ساخت آنلاین قطعه و تولید صنعتی در تهران | هایپرفب
@@ -2575,3 +3437,865 @@ URL: https://hyperfabgroup.github.io/powder-coating/
 ### رنگ کوره‌ای هایپرفب کجاست؟
 
 هایپرفب در تهران است: تهران، خیابان انقلاب، پیچ شمیران، خیابان صفی‌علیشاه، نبش کوچه تهرانی، پلاک ۳۹، واحد ۱. مشاوره و سفارش رنگ کوره‌ای تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸، و در پیام‌رسان بله: @hyperfab_pro.
+
+---
+
+# پرینت سه‌بعدی، CNC یا تزریق پلاستیک؟ انتخاب روش ساخت بر اساس تعداد
+
+URL: https://hyperfabgroup.github.io/guides/3d-printing-vs-cnc-vs-injection/
+Updated: 2026-11-15
+
+اگر فقط یک تا چند قطعه لازم دارید، پرینت سه‌بعدی معمولاً ارزان‌ترین و سریع‌ترین راه است. برای ده‌ها تا صدها قطعه، بسته به جنس، هندسه و دقت، پرینت سه‌بعدی یا ماشین‌کاری CNC انتخاب می‌شود. وقتی تیراژ به هزاران قطعه می‌رسد، هزینه‌ی قالب سرشکن می‌شود و تزریق پلاستیک کمترین قیمت هر قطعه را می‌دهد.
+
+## فرق پرینت سه‌بعدی، CNC و تزریق پلاستیک چیست؟
+
+این سه روش رایج ساخت قطعه منطق هزینه‌ی کاملاً متفاوتی دارند. پرینت سه‌بعدی (3D Printing)، که «پرینت سه بعدی» یا «چاپ سه‌بعدی» هم نوشته می‌شود، قطعه را بدون هیچ ابزار و قالبی لایه‌به‌لایه از روی فایل می‌سازد. ماشین‌کاری CNC (CNC Machining) قطعه را با فرز و تراش از یک تکه‌ی خام درمی‌آورد. تزریق پلاستیک (Injection Molding) پلیمر ذوب‌شده را درون قالب فولادی می‌فرستد و هر ضرب یک یا چند قطعه‌ی یکسان بیرون می‌دهد.
+
+تفاوت اصلی در هزینه‌ی راه‌اندازی است. پرینت سه‌بعدی تقریباً هزینه‌ی راه‌اندازی ندارد، CNC به برنامه‌نویسی و بستن قطعه نیاز دارد و تزریق پلاستیک بدون طراحی و ساخت قالب (قالب‌سازی) شروع نمی‌شود. در عوض، قیمت هر قطعه در تزریق با بالا رفتن تیراژ به‌شدت پایین می‌آید، در حالی که در پرینت سه‌بعدی تقریباً ثابت می‌ماند.
+
+| معیار | پرینت سه‌بعدی | ماشین‌کاری CNC | تزریق پلاستیک |
+|---|---|---|---|
+| هزینه‌ی راه‌اندازی | تقریباً صفر؛ بدون ابزار و قالب | کم؛ برنامه‌نویسی و فیکسچر | زیاد؛ طراحی و ساخت قالب |
+| قیمت هر قطعه با افزایش تعداد | تقریباً ثابت؛ فقط تخفیف پلکانی | کمی کاهش پیدا می‌کند | به‌شدت کاهش پیدا می‌کند |
+| تیراژ مناسب | یک تا ده‌ها قطعه | یک تا صدها قطعه | هزاران قطعه و بیشتر |
+| متریال در هایپرفب | PLA، PETG، ABS، TPU و رزین | پلی‌اتیلن، پلی‌استال، تفلون، نایلون، پلکسی، برنج | پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون، پلی‌کربنات، پلی‌استال |
+| دقت و سطح | مناسب نمونه؛ رزینی جزئیات ریزتری دارد | بیشترین کنترل روی ابعاد و سطح | تکرارپذیر؛ وابسته به قالب و جمع‌شدگی |
+| تغییر طرح | آسان؛ فقط فایل عوض می‌شود | آسان؛ برنامه اصلاح می‌شود | پرهزینه؛ قالب باید اصلاح شود |
+| قیمت‌گذاری در هایپرفب | FDM آنلاین و لحظه‌ای در hyperfab.ir | پس از بررسی نقشه | هزینه‌ی قالب + هزینه‌ی هر ضرب، تلفنی |
+
+## برای یک تا چند قطعه کدام روش ارزان‌تر است؟
+
+وقتی فقط یک نمونه یا چند قطعه لازم دارید، هزینه‌ی راه‌اندازی تعیین‌کننده است. پرینت سه‌بعدی FDM در این بازه تقریباً همیشه ارزان‌ترین گزینه است، چون نه قالبی لازم است و نه برنامه‌ی ماشین‌کاری؛ فایل STL یا 3MF مستقیم به قطعه تبدیل می‌شود. در هایپرفب حداقل سفارش یک قطعه است و تخمین‌گر آنلاین قیمت در hyperfab.ir قیمت FDM را همان لحظه نشان می‌دهد.
+
+برای قطعه‌ی کوچک با جزئیات ریز یا سطح صاف، مثل مدل نمایشی یا قطعه‌ی دقیق مونتاژی، پرینت رزینی (SLA / DLP) نتیجه‌ی بهتری می‌دهد. اگر قطعه باید از جنس واقعی مهندسی مثل تفلون، پلی‌استال یا برنج باشد، یا روی آن رزوه و سطح آب‌بندی دقیق لازم است، ماشین‌کاری CNC حتی برای یک قطعه هم منطقی است.
+
+## برای ده‌ها تا صدها قطعه پرینت سه‌بعدی بهتر است یا CNC؟
+
+در این بازه، انتخاب بیشتر به هندسه و جنس بستگی دارد تا به تعداد. پرینت سه‌بعدی برای قطعات با هندسه‌ی پیچیده، حفره‌های داخلی یا شکل‌های ارگانیک مناسب است، چون پیچیدگی تقریباً هزینه‌ای اضافه نمی‌کند. تخفیف پلکانی قیمت واحد را پایین می‌آورد، اما هر قطعه همچنان زمان چاپ و متریال خودش را می‌خواهد.
+
+ماشین‌کاری CNC برای قطعات منشوری و ساده‌تر، مثل بوش، واشر، غلتک و فیکسچر، و هر جا که جنس واقعی و دقت ابعادی اهمیت دارد برنده است. وقتی برنامه‌ی ماشین‌کاری یک بار نوشته شد، هزینه‌ی راه‌اندازی بین قطعات تقسیم می‌شود. برای قطعات چرخشی فلزی در تیراژ بالاتر، مثل اتصالات برنجی، تراشکاری CNC تیراژی هایپرفب مسیر جداگانه‌ای است.
+
+## تزریق پلاستیک از چه تیراژی به‌صرفه است؟
+
+وقتی تعداد به هزاران قطعه و بیشتر می‌رسد، تزریق پلاستیک معمولاً اقتصادی‌ترین روش است. هزینه‌ی ساخت قالب یک بار پرداخت می‌شود و بین همه‌ی قطعات سرشکن می‌شود. بعد از آن، قیمت هر قطعه بیشتر به جنس، وزن قطعه و زمان سیکل بستگی دارد.
+
+تزریق علاوه بر قیمت، یکنواختی هم می‌دهد: قطعه‌ی آخر همان ابعاد قطعه‌ی اول را دارد. در هایپرفب پروژه‌ی تزریق با بررسی قالب‌پذیری طرح شروع می‌شود و هزینه‌ی ساخت قالب و هزینه‌ی هر ضرب جدا و شفاف اعلام می‌شود. این مسیر تلفنی هماهنگ می‌شود، نه از راه سفارش آنلاین.
+
+## جنس و دقت قطعه چطور روش ساخت را تغییر می‌دهد؟
+
+تعداد تنها معیار نیست و گاهی جنس قطعه انتخاب را از پیش مشخص می‌کند. اگر قطعه باید از برنج، تفلون (PTFE) یا پلی‌استال باشد، پرینت سه‌بعدی جایگزین واقعی آن نیست و CNC گزینه‌ی طبیعی است. اگر قطعه از پلی‌اتیلن یا پلی‌پروپیلن و در تیراژ بالا لازم است، تزریق پلاستیک همان جنس را با هزینه‌ی کمتر می‌دهد.
+
+در دقت هم تفاوت روشن است. CNC بیشترین کنترل را روی ابعاد و کیفیت سطح دارد و برای سطوح جفت‌شونده و جای بلبرینگ مناسب است. تزریق پلاستیک ابعاد تکرارپذیر می‌دهد، اما دقت نهایی به طراحی قالب و جمع‌شدگی (Shrinkage) پلیمر وابسته است. پرینت FDM خطوط لایه دارد و استحکامش در جهت عمود بر لایه‌ها کمتر است.
+
+## نقطه‌ی سربه‌سر بین روش‌ها چطور مشخص می‌شود؟
+
+منطق مقایسه حتی بدون عدد ساده است. هزینه‌ی کل هر روش دو بخش دارد: هزینه‌ی ثابت (ابزار، قالب، برنامه‌نویسی) و هزینه‌ی متغیر (قیمت هر قطعه ضرب در تعداد). پرینت سه‌بعدی هزینه‌ی ثابت تقریباً صفر و هزینه‌ی متغیر بالاتری دارد. تزریق پلاستیک برعکس است: هزینه‌ی ثابت زیاد و هزینه‌ی هر قطعه‌ی کم. CNC میان این دو قرار می‌گیرد.
+
+اگر هزینه‌ی کل هر روش را بر حسب تعداد روی یک نمودار رسم کنید، خط‌ها جایی همدیگر را قطع می‌کنند؛ آن نقطه، نقطه‌ی سربه‌سر (Break-even) است. پایین‌تر از آن روش بدون قالب ارزان‌تر است و بالاتر از آن قالب هزینه‌ی خودش را برمی‌گرداند. جای دقیق این نقطه برای هر قطعه فرق می‌کند، پس باید برای هر پروژه جداگانه حساب شود. پیش از تصمیم، به این پرسش‌ها جواب دهید:
+
+- کل تیراژ در طول عمر محصول چقدر است، نه فقط سفارش اول؟
+- آیا طرح نهایی است یا هنوز احتمال تغییر دارد؟
+- قطعه باید از چه جنسی باشد و چه بار، دما یا محیطی را تحمل کند؟
+- کدام ابعاد واقعاً حساس‌اند و چه کیفیت سطحی لازم است؟
+- هندسه‌ی قطعه پیچیده است یا منشوری و ساده؟
+
+## قیمت ساخت قطعه با هر روش به چه عواملی بستگی دارد؟
+
+قیمت هیچ‌کدام از این روش‌ها بدون دیدن فایل یا نقشه قابل اعلام نیست؛ عوامل اصلی این‌ها هستند:
+
+- پرینت سه‌بعدی: حجم و وزن متریال، زمان چاپ، ضخامت لایه، میزان پرشدگی (Infill)، نوع فیلامنت یا رزین و تعداد.
+- ماشین‌کاری CNC: جنس و اندازه‌ی ماده‌ی خام، تعداد عملیات و دفعات بستن قطعه، تلرانس‌ها و کیفیت سطح، و تعداد.
+- تزریق پلاستیک، بخش قالب: اندازه و پیچیدگی قطعه، تعداد حفره‌ها، زیربرش‌ها و کشویی‌ها، کیفیت سطح و جنس فولاد قالب.
+- تزریق پلاستیک، بخش تولید: جنس و وزن قطعه، زمان سیکل و تیراژ.
+
+برای پرینت سه‌بعدی FDM، قیمت را همین حالا با بارگذاری فایل در تخمین‌گر آنلاین hyperfab.ir ببینید؛ برای CNC هم فایل یا نقشه را در همان سایت بارگذاری کنید تا پس از بررسی، قیمت اعلام شود. برای پروژه‌ی قالب‌سازی و تزریق پلاستیک، یا اگر مطمئن نیستید کدام روش برای تیراژ شما مناسب است، با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید تا پس از بررسی طرح، روش و قیمت دقیق پیشنهاد شود.
+
+## FAQ
+
+### برای ده قطعه کدام روش ارزان‌تر است؟
+
+برای ده قطعه معمولاً پرینت سه‌بعدی FDM ارزان‌ترین گزینه است، چون هزینه‌ی راه‌اندازی ندارد و قیمتش را همان لحظه در تخمین‌گر آنلاین hyperfab.ir می‌بینید. اگر قطعه باید از جنس مهندسی مثل تفلون یا برنج باشد یا دقت بالایی بخواهد، ماشین‌کاری CNC انتخاب بهتری است. ساخت قالب تزریق برای این تعداد توجیه اقتصادی ندارد.
+
+### قالب تزریق از چه زمانی هزینه‌ی خودش را برمی‌گرداند؟
+
+وقتی صرفه‌جویی در قیمت هر قطعه، ضرب در تعداد کل، از هزینه‌ی ساخت قالب بیشتر شود. این نقطه به اندازه، پیچیدگی و جنس قطعه بستگی دارد و معمولاً در تیراژهای بالا رخ می‌دهد. هایپرفب پس از بررسی طرح، هزینه‌ی قالب و هزینه‌ی هر ضرب را جدا اعلام می‌کند تا بتوانید مقایسه کنید.
+
+### آیا قطعه‌ی پرینت سه‌بعدی به اندازه‌ی کافی محکم است؟
+
+برای نمونه‌ی اولیه، فیکسچر، جیگ و بسیاری از قطعات کاربردی با بار متوسط بله، به‌ویژه با PETG یا ABS و جهت‌گیری درست در چاپ. قطعه‌ی FDM در جهت عمود بر لایه‌ها ضعیف‌تر است، پس برای بار سنگین یا سایش دائمی، ماشین‌کاری CNC از نایلون یا پلی‌استال یا تزریق پلاستیک مطمئن‌تر است.
+
+### می‌توانم بعداً روش ساخت را عوض کنم؟
+
+بله و مسیر رایج همین است: نمونه با پرینت سه‌بعدی، تیراژ کم با پرینت یا CNC و در نهایت تزریق پلاستیک. اگر از اول زاویه‌ی خروج، ضخامت دیواره‌ی یکنواخت و ریب‌ها را در طرح رعایت کنید، انتقال به قالب بدون طراحی دوباره انجام می‌شود.
+
+---
+
+# سفارش پروفیل آلومینیوم اختصاصی: قالب اکستروژن، تناژ پرس و طراحی مقطع
+
+URL: https://hyperfabgroup.github.io/guides/aluminium-extrusion-die-design/
+Updated: 2026-11-15
+
+برای سفارش پروفیل آلومینیوم اختصاصی، مقطع با مشاوره‌ی گروه مهندسی هایپرفب نهایی می‌شود، قالب اکستروژن اختصاصی ساخته می‌شود و پروفیل در تناژ سفارش تولید می‌شود. سهم شما تناژ لازم و هزینه‌ی ساخت قالب است. نوع قالب، اندازه‌ی مقطع نسبت به ظرفیت پرس و رعایت قواعد طراحی، ساخت‌پذیری و هزینه را تعیین می‌کنند.
+
+## پاسخ کوتاه: پروفیل آلومینیوم اختصاصی چطور سفارش داده می‌شود؟
+
+هایپرفب به‌طور تخصصی و فقط روی اکسترود آلومینیوم کار می‌کند؛ فلزات دیگر مثل فولاد، برنج و مس در هایپرفب اکسترود نمی‌شوند. مدل همکاری ساده است: شما تناژ لازم را دارید و هزینه‌ی ساخت قالب را می‌پردازید، و مشاوره‌ی طراحی مقطع، ساخت قالب، تولید پروفیل، کنترل کیفیت و تحویل با گروه مهندسی هایپرفب است.
+
+این خدمت تیراژی است و سفارش بر اساس تناژ، یعنی وزن پروفیل سفارشی، انجام می‌شود. هزینه‌ی قالب و قیمت پروفیل، که به آلیاژ، وزن و تناژ بستگی دارد، جدا اعلام می‌شوند. در جست‌وجو هر دو شکل «اکسترود» و «اکستروژن» رایج است و آلومینیوم را گاهی «آلمینیوم» هم می‌نویسند؛ منظور در هر دو حالت همین فرایند است.
+
+## اکستروژن آلومینیوم چیست و چطور کار می‌کند؟
+
+اکستروژن آلومینیوم (Aluminium Extrusion) یعنی عبور دادن شمش داغ آلومینیوم با فشار پرس از یک قالب فولادی، تا پروفیلی با مقطع ثابت و طول بلند ساخته شود. شمش گرم‌شده درون محفظه‌ی پرس قرار می‌گیرد، سنبه‌ی پرس آن را به سمت قالب می‌راند و فلز از دهانه‌ی قالب به شکل مقطع بیرون می‌آید. پس از خروج، پروفیل خنک، صاف و به طول برش داده می‌شود و در صورت نیاز با عملیات پیرسازی (aging) به حالت نهایی می‌رسد.
+
+تقریباً هر مقطعی که بتوان روی کاغذ کشید با یک قالب اختصاصی ساختنی است: توپر، توخالی، شیاردار، پره‌دار یا با جای پیچ. همین است که اکستروژن را اقتصادی‌ترین راه ساخت قطعات آلومینیومی بلند و یکنواخت می‌کند. اما قالب اکستروژن گران است و مقطعی که بد طراحی شده باشد ممکن است به تاب‌برداشتن پروفیل، سطح ناهموار یا شکستن قالب ختم شود؛ برای همین مشاوره‌ی مقطع پیش از ساخت قالب انجام می‌شود.
+
+## فرق قالب توپر، نیمه‌توخالی و توخالی در اکستروژن چیست؟
+
+نوع قالب را شکل مقطع تعیین می‌کند، نه سلیقه‌ی سفارش‌دهنده. هرچه مقطع حفره‌های بسته‌ی بیشتری داشته باشد، قالب پیچیده‌تر و گران‌تر می‌شود.
+
+قالب اکستروژن برای مقطع شما طراحی و ساخته می‌شود و فقط پروفیل شما را تولید می‌کند؛ برای همین هزینه‌ی ساخت آن جزو هزینه‌ی ابزار محصول شماست و آن را مشتری می‌پردازد. این هزینه جدا از قیمت پروفیل اعلام می‌شود. شرایط نگهداری قالب و استفاده از آن در سفارش‌های تکراری را هنگام دریافت پیشنهاد قیمت با هایپرفب روشن کنید.
+
+| نوع قالب | برای چه مقطعی | ساختار قالب | پیچیدگی و هزینه‌ی نسبی |
+|---|---|---|---|
+| قالب توپر (Solid die) | مقطع بدون حفره‌ی بسته؛ مثل نبشی، ناودانی، تسمه و بسیاری از هیت‌سینک‌ها | صفحه‌ی فولادی با دهانه‌ای به شکل مقطع | ساده‌ترین نوع؛ کمترین هزینه‌ی نسبی |
+| قالب نیمه‌توخالی (Semi-hollow die) | مقطعی که حفره را تقریباً می‌بندد اما دهانه‌ی باریکی دارد؛ مثل شیار عمیق یا جای پیچ باز | زبانه‌ای در قالب که فضای داخلی را شکل می‌دهد و باید زیر فشار سالم بماند | حساس به نسبت عمق به عرض شیار؛ معمولاً گران‌تر از قالب توپر |
+| قالب توخالی (Hollow die) | مقطع با یک یا چند حفره‌ی کاملاً بسته؛ مثل لوله، قوطی، بدنه‌ی دستگاه و پروفیل چندحفره | دوتکه: ماندرل (mandrel) روی پل‌ها حفره را می‌سازد و فلز پس از جداشدن دوباره در محفظه‌ی جوش به هم می‌پیوندد | پیچیده‌ترین نوع؛ بیشترین هزینه‌ی نسبی |
+
+## تناژ پرس و دایره‌ی محیطی مقطع چه اثری دارند؟
+
+در صحبت با تولیدکننده‌ها «تناژ» دو معنا دارد. تناژ پرس یعنی نیرو و ظرفیت پرسی که پروفیل را اکسترود می‌کند؛ تناژ سفارش یعنی وزن پروفیلی که سفارش می‌دهید. وقتی هایپرفب از «تناژ لازم» حرف می‌زند، منظور تناژ سفارش است؛ اینکه مقطع شما با کدام ظرفیت پرس ساختنی است، در مشاوره‌ی مقطع بررسی می‌شود.
+
+دایره‌ی محیطی (circumscribing circle) کوچک‌ترین دایره‌ای است که کل مقطع درون آن جا می‌گیرد. هر پرس، با محفظه و قالبی که دارد، فقط مقاطعی را اکسترود می‌کند که دایره‌ی محیطی‌شان در محدوده‌ی آن باشد؛ مقطع بزرگ‌تر پرس بزرگ‌تری لازم دارد.
+
+اندازه تنها معیار نیست. دیواره‌ی خیلی نازک نسبت به ابعاد مقطع، حفره‌های بسته‌ی متعدد و آلیاژهای سخت‌اکسترود، فشار بیشتری لازم دارند؛ ممکن است مقطعی در دایره جا بگیرد اما باز هم اکسترود کردنش دشوار باشد. اگر مقطع به مرز محدوده‌ی تولید نزدیک است، گاهی تقسیم آن به دو پروفیل که با کلیک یا پیچ به هم وصل می‌شوند راه‌حل عملی‌تری است؛ این گزینه در مشاوره بررسی می‌شود.
+
+## قواعد طراحی مقطع پروفیل اکستروژن چیست؟
+
+این قواعد عمر قالب را بالا و هزینه‌ی هر کیلو پروفیل را پایین می‌آورند. گروه مهندسی هایپرفب همه‌ی آن‌ها را پیش از ساخت قالب بررسی می‌کند و اصلاحات لازم را پیشنهاد می‌دهد:
+
+- ضخامت دیواره‌ی یکنواخت: اختلاف زیاد ضخامت، جریان فلز را نامتوازن می‌کند و پروفیل تاب برمی‌دارد.
+- گوشه‌های گرد: گوشه‌ی تیز را با شعاع کوچک گرد کنید؛ هم عمر قالب بیشتر می‌شود و هم سطح بهتر.
+- مقطع متعادل: مقطع متقارن و متعادل، اکستروژن پایدارتر و دقیق‌تری دارد.
+- پرهیز از شیار عمیق و باریک: چنین شیاری زبانه‌ی قالب را ضعیف می‌کند؛ نسبت عمق به عرض باید کنترل شود.
+- حفره‌ی بسته فقط جایی که لازم است: اگر کاربرد اجازه دهد، باز کردن یک حفره ممکن است قالب را از نوع توخالی به نوع ساده‌تر تبدیل کند.
+- تلرانس سخت فقط روی ابعاد عملکردی؛ تلرانس پروفیل‌های اکسترودی معمولاً بر اساس EN 755 مشخص می‌شود.
+
+## کدام آلیاژ آلومینیوم برای اکستروژن مناسب است؟ (سری ۶۰۰۰ و حالت عملیات حرارتی)
+
+بیشتر پروفیل‌های اکسترودی از آلیاژهای سری ۶۰۰۰ ساخته می‌شوند و 6063 و 6061 پرکاربردترین آن‌ها هستند. 6063 راحت‌تر اکسترود می‌شود، سطح بهتری می‌دهد و برای پروفیل‌های معماری و تزئینی، مقاطع نازک و پیچیده و قطعاتی که آندایز (آندایز) می‌شوند مناسب است. 6061 استحکام بیشتری دارد و برای کاربردهای سازه‌ای انتخاب می‌شود، اما اکسترود کردنش سخت‌تر است و مقاطع نازک و پیچیده با آن دشوارترند.
+
+حالت عملیات حرارتی (temper) هم بخشی از مشخصات پروفیل است و معمولاً با نمادهایی مثل T5 یا T6 روی نقشه نوشته می‌شود. اگر آلیاژ و حالت را می‌دانید، روی نقشه بنویسید؛ اگر نه، کاربرد، نوع بارگذاری و پوشش نهایی را بگویید تا گروه مهندسی پیشنهاد دهد. آلیاژ روی قیمت پروفیل هم اثر دارد.
+
+پروفیل اکسترودشده معمولاً هنوز محصول نهایی نیست؛ آندایز، رنگ کوره‌ای، ماشین‌کاری، پانچ و جوشکاری آلومینیوم هم در هایپرفب انجام می‌شود.
+
+## سفارش پروفیل آلومینیوم چه مراحلی دارد و قیمت به چه عواملی بستگی دارد؟
+
+مراحل سفارش پنج گام است: ارسال نقشه‌ی مقطع، فایل DXF یا حتی طرح دستی همراه با کاربرد پروفیل؛ مشاوره‌ی مقطع و اعلام تناژ مناسب؛ پیشنهاد قیمت با هزینه‌ی قالب و قیمت پروفیل به‌طور جدا؛ ساخت قالب و تولید نمونه‌ی پروفیل برای تأیید شما؛ و در پایان تولید در تناژ سفارش، کنترل کیفیت و تحویل. قیمت از ترکیب عوامل زیر به دست می‌آید و پیش از مشاوره‌ی مقطع، عدد دقیقی برایش نمی‌شود گفت.
+
+- نوع و پیچیدگی قالب: توپر، نیمه‌توخالی یا توخالی.
+- اندازه‌ی مقطع و دایره‌ی محیطی آن نسبت به محدوده‌ی تولید.
+- وزن مقطع و ضخامت دیواره‌ها.
+- آلیاژ و حالت عملیات حرارتی.
+- تناژ سفارش.
+- تلرانس‌ها و الزامات سطح.
+- عملیات بعدی مثل آندایز، رنگ کوره‌ای و ماشین‌کاری.
+
+برای مشاوره و قیمت دقیق، با کارشناس پروژه‌های صنعتی هایپرفب به شماره‌ی ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید یا نقشه‌ی مقطع را در پیام‌رسان بله بفرستید.
+
+## FAQ
+
+### قالب اکستروژن متعلق به کیست؟
+
+هزینه‌ی ساخت قالب اختصاصی را مشتری می‌پردازد و قالب فقط برای مقطع او ساخته می‌شود. شرایط مالکیت، نگهداری و استفاده از قالب در سفارش‌های بعدی را هنگام دریافت پیشنهاد قیمت با هایپرفب مشخص کنید.
+
+### حداقل سفارش اکسترود آلومینیوم چقدر است؟
+
+سفارش اکسترود در هایپرفب بر اساس تناژ است. تناژ مناسب به اندازه و وزن مقطع بستگی دارد و پس از مشاوره اعلام می‌شود.
+
+### آیا هایپرفب غیر از آلومینیوم، فلزات دیگر را هم اکسترود می‌کند؟
+
+خیر. هایپرفب در حوزه‌ی اکستروژن فقط روی آلومینیوم کار می‌کند. اگر قطعه‌ی برنجی یا فولادی لازم دارید، بسته به شکل قطعه ممکن است تراشکاری CNC تیراژی هایپرفب گزینه‌ی مناسبی باشد.
+
+### برای سفارش پروفیل چه نقشه یا فایلی لازم است؟
+
+نقشه‌ی مقطع، فایل DXF یا حتی طرح دستی، همراه با کاربرد پروفیل کافی است. اگر آلیاژ، حالت عملیات حرارتی و پوشش نهایی را می‌دانید، آن‌ها را هم بنویسید؛ می‌توانید مشخصات را تلفنی یا در پیام‌رسان بله هم بفرستید.
+
+---
+
+# فرق آندایز، آبکاری و کروماته چیست؟ کدام پوشش برای قطعه شما مناسب است
+
+URL: https://hyperfabgroup.github.io/guides/anodizing-vs-plating-vs-chromate/
+Updated: 2026-11-15
+
+آندایز (Anodizing) لایه‌ی اکسید سخت و عایق را از خودِ آلومینیوم رشد می‌دهد، کروماته یا آلوداین (Chromate Conversion) پوشش تبدیلی نازک و رسانایی روی آلومینیوم می‌سازد و آبکاری (Electroplating) لایه‌ای از فلز دیگر، مثل نقره یا طلا، را روی برنج و فلزات دیگر می‌نشاند. انتخاب اول به فلز پایه و بعد به نیاز رسانایی، ظاهر و محیط کار بستگی دارد.
+
+## فرق آندایز، آبکاری و کروماته در یک نگاه
+
+این سه پوشش اغلب با هم اشتباه گرفته می‌شوند، چون هر سه «پوشش سطح» حساب می‌شوند، اما سازوکارشان کاملاً متفاوت است. آندایز و کروماته روی خودِ آلومینیوم انجام می‌شوند و لایه‌ای از ترکیبات همان فلز می‌سازند؛ آبکاری الکتریکی لایه‌ای از یک فلز دیگر را روی قطعه رسوب می‌دهد. به همین دلیل رسانایی، ظاهر و تغییر ابعاد قطعه در هر روش فرق می‌کند.
+
+| پوشش | فلز پایه | نحوه‌ی تشکیل لایه | رسانایی سطح | ظاهر | کاربرد رایج |
+|---|---|---|---|---|---|
+| آندایز | آلومینیوم | اکسید شدن کنترل‌شده‌ی خود آلومینیوم در حمام الکترولیت با جریان برق | عایق | مات تا نیم‌براق؛ طبیعی، مشکی یا رنگی | بدنه‌ی دستگاه، پروفیل، قطعات صنعتی و تزئینی |
+| کروماته (آلوداین) | آلومینیوم | واکنش شیمیایی سطح با محلول تبدیلی، بدون جریان برق | رسانا | شفاف یا زرد طلایی کم‌رنگ | قطعات الکترونیکی، بدنه‌ها، پایه‌ی رنگ |
+| آبکاری نقره | برنج، مس و فلزات دیگر | رسوب الکتریکی نقره روی قطعه در حمام آبکاری | بیشترین رسانایی | سفید نقره‌ای درخشان؛ به‌مرور تیره می‌شود | کنتاکت، کانکتور، شینه، قطعات RF، اقلام زینتی |
+| آبکاری طلا | برنج، مس و فلزات دیگر | رسوب الکتریکی طلا، معمولاً روی یک لایه‌ی زیرین | رسانا با مقاومت تماسی پایدار | طلایی؛ اکسید نمی‌شود | کانکتور و الکترونیک، یراق‌آلات لوکس، اقلام زینتی |
+
+## آندایز آلومینیوم چیست و چه رنگ‌هایی دارد؟
+
+آندایز (Anodizing) که در بازار به شکل‌های آنودایز و آنادایز هم نوشته می‌شود، فرایندی الکتروشیمیایی است که در آن قطعه‌ی آلومینیومی آندِ مدار قرار می‌گیرد و لایه‌ی اکسید طبیعی سطحش به‌شکل کنترل‌شده ضخیم می‌شود. این لایه رنگ یا پوششی نیست که روی فلز بنشیند؛ از خود آلومینیوم رشد می‌کند و به همین دلیل پوسته نمی‌شود. نتیجه سطحی سخت‌تر و مقاوم‌تر در برابر خوردگی و سایش است.
+
+آندایز مخصوص آلومینیوم است و آلیاژ هم در نتیجه اثر دارد: آلیاژهای سری ۶۰۰۰ پروفیل‌های اکسترودی معمولاً ظاهر یکنواختی می‌گیرند، ولی آلیاژهای پرمس یا ریختگی ممکن است کدرتر و ناهمگون‌تر شوند.
+
+یکی از مزیت‌های آندایز امکان رنگ‌کردن آن است. لایه‌ی اکسید تازه متخلخل است و پیش از آب‌بندی (Sealing) رنگ را جذب می‌کند؛ پس از آب‌بندی، رنگ در خود لایه حبس می‌شود. ظاهر نهایی به پرداخت سطح پیش از آندایز هم بستگی دارد: سطح سندبلاست‌شده مات و یکدست می‌شود و سطح پولیش‌شده براق‌تر. گزینه‌های رایج رنگ:
+
+- طبیعی یا بی‌رنگ: ظاهر نقره‌ای خود آلومینیوم حفظ می‌شود.
+- مشکی: رایج برای بدنه‌ی دستگاه، قطعات اپتیکی و ابزار.
+- رنگی، مانند طلایی، قرمز یا آبی: برای قطعات ظاهری و تزئینی.
+
+## کروماته یا آلوداین چیست و چرا رسانایی برق را حفظ می‌کند؟
+
+کروماته (Chromate Conversion Coating) که با نام تجاری آلوداین (Alodine) شناخته می‌شود، یک پوشش تبدیلی است: سطح آلومینیوم با محلولی شیمیایی واکنش می‌دهد و لایه‌ی بسیار نازکی تشکیل می‌شود، بدون جریان برق و بدون رسوب فلز دیگر. این لایه آن‌قدر نازک است که ابعاد قطعه عملاً تغییر نمی‌کند و رسانایی الکتریکی سطح حفظ می‌شود.
+
+همین ویژگی کروماته را برای قطعات الکترونیکی و بدنه‌هایی که باید زمین شوند یا در برابر تداخل الکترومغناطیسی (EMI) شیلد باشند مناسب می‌کند؛ جایی که لایه‌ی آندایز به دلیل عایق بودن دردسرساز است. کروماته پایه‌ی خوبی برای رنگ هم هست و پیش از رنگ کوره‌ای روی آلومینیوم، چسبندگی رنگ را بیشتر می‌کند.
+
+محدودیت‌ها را هم باید دانست: لایه‌ی کروماته نرم و نازک است و در برابر سایش و خط‌وخش مقاومتی هم‌اندازه‌ی آندایز ندارد. این پوشش معمولاً طبق MIL-DTL-5541 مشخص می‌شود که برای حداکثر محافظت در برابر خوردگی و برای مقاومت الکتریکی پایین، کلاس‌های جداگانه دارد. اگر محصول شما باید با محدودیت‌های مربوط به کروم شش‌ظرفیتی سازگار باشد، این نکته را هنگام سفارش اعلام کنید.
+
+## چرا روی برنج آبکاری نقره یا طلا انجام می‌شود؟
+
+برنج برای قطعات الکتریکی و اتصالات انتخاب رایجی است، چون به‌راحتی تراشکاری می‌شود و رسانایی قابل‌قبولی دارد. اما سطح برنج در هوا اکسید و کدر می‌شود و مقاومت تماسی آن به‌مرور بالا می‌رود. هایپرفب آبکاری نقره و طلا را روی برنج و انواع فلزات به‌صورت تیراژی انجام می‌دهد و این خدمت با تراشکاری CNC تیراژی قطعات برنجی ترکیب خوبی دارد: قطعه‌ی تراش‌خورده، آبکاری‌شده و آماده تحویل می‌شود.
+
+انتخاب میان این دو به کاربرد، محیط و بودجه بستگی دارد. نقره اقتصادی‌تر است ولی به‌مرور تیره می‌شود؛ طلا گران‌تر است ولی اکسید نمی‌شود. در آبکاری طلا روی برنج، معمولاً یک لایه‌ی زیرین مانند نیکل پیش از طلا اعمال می‌شود تا از نفوذ فلز پایه به لایه‌ی طلا جلوگیری کند. سه دلیل اصلی آبکاری برنج این‌هاست:
+
+- رسانایی: نقره بیشترین رسانایی الکتریکی را میان فلزات دارد و برای شینه، کنتاکت‌های جریان بالا و قطعات RF به کار می‌رود.
+- تماس پایدار: طلا اکسید نمی‌شود و مقاومت تماسی‌اش در طول زمان ثابت می‌ماند؛ مناسب کانکتورهای سیگنال و قطعات الکترونیکی.
+- ظاهر: درخشش نقره‌ای یا طلایی برای یراق‌آلات، تندیس، نشان و هدایای سازمانی.
+
+## کدام پوشش برای قطعه‌ی من مناسب است؟ انتخاب بر اساس فلز پایه و کاربرد
+
+اول فلز پایه را مشخص کنید و بعد نیاز اصلی قطعه را. اگر مردد ماندید، کاربرد و محیط کار قطعه را تلفنی توضیح دهید:
+
+- قطعه‌ی آلومینیومی که باید در برابر سایش و خوردگی مقاوم باشد و ظاهر مشکی یا رنگی بخواهد: آندایز.
+- قطعه‌ی آلومینیومی که باید رسانا بماند، زمین شود یا بعداً رنگ شود: کروماته (آلوداین).
+- قطعه‌ی آلومینیومی با هر دو نیاز: آندایز با ماسک‌کردن نواحی تماس، یا کروماته روی کل قطعه؛ بسته به اینکه سایش مهم‌تر است یا رسانایی.
+- کنتاکت، شینه یا کانکتور برنجی و مسی در مدار جریان بالا: آبکاری نقره.
+- کانکتور سیگنال یا قطعه‌ای که در محیط مرطوب باید تماس پایدار داشته باشد: آبکاری طلا.
+- قطعه‌ی فولادی: آندایز و کروماته آلومینیوم برای آن کاربرد ندارند؛ برای محافظت و ظاهر، رنگ کوره‌ای گزینه‌ی رایج است.
+
+## نقشه را برای آبکاری و آندایز چطور آماده کنیم؟ (ماسک‌کاری)
+
+بیشتر مشکلات پوشش‌دهی تیراژی از ابهام در نقشه شروع می‌شود. ماسک‌کاری (Masking) یعنی پوشاندن موقت بخشی از قطعه با درپوش، چسب یا لاک مخصوص تا پوشش به آن نرسد. ماسک‌کاری کار دستی است و روی هزینه اثر دارد، پس فقط سطوحی را ماسک کنید که واقعاً لازم است. وقتی قطعه روی آویز (Rack) پوشش می‌گیرد، محل تماس آن با آویز معمولاً بدون پوشش می‌ماند؛ بهتر است این محل را روی سطحی پنهان مشخص کنید. قطعه هم باید بدون پلیسه، روغن و براده تحویل شود، چون پوشش عیوب سطح را نمی‌پوشاند و گاهی آن‌ها را برجسته‌تر می‌کند.
+
+پیش از ارسال، این موارد را روی نقشه یا در توضیح سفارش مشخص کنید:
+
+- جنس و آلیاژ دقیق قطعه، مثلاً نوع برنج یا آلیاژ آلومینیوم.
+- نوع پوشش، رنگ و براقیت، و استانداردی که پوشش طبق آن مشخص می‌شود (مثلاً ISO 7599 برای آندایز).
+- سطوحی که نباید پوشش بگیرند: رزوه‌ها، سوراخ‌های دقیق، سطوح جفت‌شونده و نقاط اتصال زمین.
+- اینکه ابعاد نقشه مربوط به پیش از پوشش است یا پس از آن؛ به‌خصوص برای رزوه‌ها و انطباق‌ها.
+
+## قیمت آبکاری، آندایز و کروماته به چه عواملی بستگی دارد؟
+
+قیمت هر پروژه پس از بررسی قطعه اعلام می‌شود. مهم‌ترین عوامل:
+
+- نوع پوشش: آبکاری طلا به دلیل فلز گران‌بها هزینه‌ی بیشتری از نقره، آندایز یا کروماته دارد.
+- ضخامت لایه‌ی مشخص‌شده در نقشه و الزامات استاندارد.
+- ابعاد، سطح و شکل قطعه و تعداد قطعه‌ای که هم‌زمان روی آویز یا در وان جا می‌شود.
+- ماسک‌کاری و تعداد سطوحی که نباید پوشش بگیرند.
+- رنگ آندایز و الزام یکسانی رنگ میان سری‌ها.
+- وضعیت سطح قطعه و آماده‌سازی لازم پیش از پوشش.
+- تیراژ: این خدمت مخصوص سفارش‌های تیراژی است و کار تک‌قطعه فقط به‌ندرت پذیرفته می‌شود.
+
+برای دریافت قیمت دقیق، جنس قطعه، نوع پوشش، نقشه یا نمونه و تیراژ را آماده کنید و با شماره‌ی ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید.
+
+## FAQ
+
+### آیا فولاد را می‌توان آندایز کرد؟
+
+خیر. آندایز در صنعت عمدتاً برای آلومینیوم و چند فلز سبک دیگر به کار می‌رود و روی فولاد لایه‌ی اکسید محافظی تشکیل نمی‌شود. هایپرفب آندایز را فقط روی آلومینیوم انجام می‌دهد و برای قطعات فولادی، رنگ کوره‌ای گزینه‌ی رایج است.
+
+### آیا کروماته رسانای برق است؟
+
+بله. لایه‌ی کروماته (آلوداین) آن‌قدر نازک است که رسانایی الکتریکی سطح آلومینیوم حفظ می‌شود. به همین دلیل برای بدنه‌ها و قطعاتی که باید زمین شوند انتخاب می‌شود، برخلاف آندایز که عایق است.
+
+### آیا آندایز ابعاد قطعه را تغییر می‌دهد؟
+
+بله، کمی. لایه‌ی آندایز بخشی به داخل فلز نفوذ می‌کند و بخشی بیرون از سطح رشد می‌کند، پس ابعاد بیرونی کمی بزرگ‌تر و سوراخ‌ها کمی کوچک‌تر می‌شوند. برای رزوه‌ها و انطباق‌های دقیق، یا آن نواحی را ماسک کنید یا در نقشه مشخص کنید که ابعاد مربوط به پس از پوشش است.
+
+### چرا روی برنج آبکاری نقره انجام می‌دهند؟
+
+سطح برنج در هوا اکسید می‌شود و مقاومت تماسی‌اش بالا می‌رود. آبکاری نقره سطحی با بیشترین رسانایی الکتریکی و ظاهر سفید درخشان می‌سازد که برای کنتاکت، شینه و کانکتور مناسب است. نقره به‌مرور تیره می‌شود، پس جایی که تماس پایدار در طول زمان حیاتی است، طلا گزینه‌ی بهتری است.
+
+---
+
+# قیمت تراشکاری CNC سری‌کاری اتصالات برنجی به چه عواملی بستگی دارد؟
+
+URL: https://hyperfabgroup.github.io/guides/brass-cnc-turning-batch/
+Updated: 2026-11-15
+
+قیمت تراشکاری سری‌کاری اتصالات برنجی به آلیاژ و قطر شمش برنج، پیچیدگی قطعه (رزوه، سوراخ و عملیات جانبی)، تلرانس سطوح انطباقی و آب‌بندی، تیراژ و پوشش نهایی مثل آبکاری بستگی دارد. هزینه‌ی راه‌اندازی دستگاه روی کل سری سرشکن می‌شود؛ برای همین هایپرفب این کار را برای سفارش‌های تیراژی انجام می‌دهد.
+
+## هزینه‌ی تراشکاری سری‌کاری اتصالات برنجی از کجا می‌آید؟
+
+قیمت هر اتصال برنجی تراش‌خورده از چند جزء ساخته می‌شود: برنج مصرفی، زمان دستگاه برای هر قطعه، هزینه‌ی راه‌اندازی (برنامه‌نویسی، ابزار، نگه‌دارنده و تأیید نمونه‌ی اول)، عملیات جانبی مثل رزوه و آج، کنترل ابعادی و در صورت نیاز پوشش نهایی. سهم هر کدام به طرح قطعه و تیراژ بستگی دارد.
+
+در تیراژ پایین، هزینه‌ی راه‌اندازی بخش بزرگی از قیمت هر قطعه است. با بالا رفتن تیراژ این سهم کوچک می‌شود و زمان دستگاه و جنس تعیین‌کننده می‌شوند. برای همین در سری‌کاری (که به آن تولید تیراژی هم می‌گویند) طراحی قطعه برای ساخت ساده‌تر، مثل حذف عملیات غیرضروری یا انتخاب قطر شمش مناسب، بیشترین صرفه‌جویی را دارد. این راهنما درباره‌ی تراشکاری CNC (سی‌ان‌سی) است که گاهی «تراش‌کاری» هم نوشته می‌شود.
+
+## چرا اتصالات را از برنج می‌سازند؟ مقایسه با فولاد و استیل
+
+برنج (Brass)، آلیاژ مس و روی، جنس رایج اتصالات لوله، شیر، نازل، بوش و قطعات جفت‌شونده است. سه دلیل اصلی دارد: براده‌ی کوتاه و تراش سریع و تمیز، مقاومت خوب در برابر خوردگی در آب و هوای معمولی، و سطحی که آبکاری نقره و طلا را خوب می‌پذیرد. برنج رسانای خوبی برای برق هم هست و در کانکتور و قطعات الکتریکی هم به کار می‌رود.
+
+در مقابل، فولاد کربنی استحکام بیشتر و مواد ارزان‌تری دارد ولی بدون پوشش زنگ می‌زند، و استیل ضدزنگ مقاومت خوردگی بالایی دارد ولی سخت‌تر و کندتر تراش می‌خورد. جدول زیر مقایسه‌ی کیفی این سه جنس برای اتصالات تراشکاری است.
+
+| ویژگی | برنج | فولاد کربنی | استیل ضدزنگ |
+|---|---|---|---|
+| ماشین‌کاری | بسیار خوب، براده‌ی کوتاه | خوب | متوسط تا دشوار، سایش ابزار بیشتر |
+| زمان تراش هر قطعه | کوتاه | متوسط | بلند |
+| مقاومت به خوردگی | خوب در آب و هوای معمولی | ضعیف بدون پوشش | بسیار خوب |
+| آبکاری نقره و طلا | پایه‌ی مناسب | ممکن، با آماده‌سازی بیشتر | ممکن، با آماده‌سازی ویژه |
+| استحکام | متوسط | بالا | بالا |
+| قیمت مواد (نسبی) | بالاتر از فولاد کربنی | پایین | بالاتر از فولاد کربنی |
+| کاربرد رایج | اتصالات لوله و گاز، نازل، کانکتور، قطعات جفت‌شونده | شفت، پین، قطعات تحت بار | اتصالات بهداشتی، غذایی، پزشکی و دریایی |
+
+## چرا تراشکاری اتصالات برنجی فقط تیراژی انجام می‌شود؟
+
+پیش از این‌که اولین قطعه‌ی قابل‌قبول از دستگاه بیرون بیاید، کار زیادی انجام شده است: بررسی نقشه، برنامه‌نویسی، انتخاب و تنظیم ابزار، بستن قطعه، ساخت نمونه‌ی اول، اندازه‌گیری و اصلاح تا نمونه تأیید شود. این هزینه برای یک قطعه و هزار قطعه تقریباً یکسان است.
+
+در تولید تیراژی، این هزینه روی کل سری سرشکن می‌شود و قیمت هر قطعه منطقی می‌ماند. به همین دلیل تراشکاری CNC تیراژی هایپرفب مخصوص سفارش‌های سری است و سفارش تک‌قطعه فقط به‌ندرت پذیرفته می‌شود؛ تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود. برای تک‌قطعه و نمونه‌ی اولیه، ماشین‌کاری CNC در سایت hyperfab.ir گزینه‌ی مناسب‌تری است.
+
+در سری‌کاری، چالش واقعی ساختن یک قطعه‌ی خوب نیست؛ چالش این است که صدها و هزاران اتصال، همه دقیقاً مثل همان نمونه‌ی تأییدشده باشند. نمونه‌ی اول پیش از تولید سری به تأیید شما می‌رسد و کنترل ابعادی در طول تولید و پیش از تحویل انجام می‌شود.
+
+## تراشکار ارزان یا گران؛ در قیمت تراشکاری پول چه چیزی را می‌دهید؟
+
+دو پیشنهاد قیمت برای یک نقشه ممکن است فاصله‌ی زیادی با هم داشته باشند. بخشی از این فاصله در کارهایی است که در قیمت ارزان‌تر دیده نمی‌شوند: کسی پیش از تراش بررسی نمی‌کند کدام سطح آب‌بندی می‌کند، کدام قطر باید با قطعه‌ی دیگر جفت شود و کدام رزوه باید با گیج کنترل شود. نتیجه‌اش معمولاً در مونتاژ معلوم می‌شود: نشتی، رزوه‌ای که درست سفت نمی‌شود یا قطعه‌ای که در جای خودش نمی‌نشیند. در اتصالات برنجی، هزینه‌ی یک سری معیوب اغلب از اختلاف قیمت اولیه بیشتر است، چون ایراد قطعه معمولاً بعد از آبکاری و مونتاژ خودش را نشان می‌دهد.
+
+در عین حال، دقت بیشتر از نیاز هم هزینه است. هایپرفب روش ساخت و سطح دقت هر قطعه را متناسب با الزاماتش انتخاب می‌کند؛ نه گران‌تر از لازم، نه ضعیف‌تر از الزامات. چیزی که در یک پیشنهاد قیمت درست می‌خرید این‌هاست:
+
+- مهندسی نقشه پیش از تولید: شناسایی سطوح انطباقی، قطرهای حساس، هم‌محوری و سطوح آب‌بندی.
+- ابلاغ نکات فنی به تراشکار، تا بداند کجای قطعه چه دقتی می‌خواهد و چطور اندازه‌گیری می‌شود.
+- تأیید نمونه‌ی اول پیش از شروع تولید سری.
+- کنترل ابعادی در طول تولید و پیش از تحویل.
+- بسته‌بندی متناسب، تا رزوه‌ها و سطوح انطباقی آسیب نبینند.
+
+## رزوه، آج‌زنی و عملیات جانبی چه اثری بر قیمت دارند؟
+
+بیشتر اتصالات برنجی فقط یک تراش ساده نیستند. رزوه‌ی داخلی و خارجی، آج‌زنی (Knurling) برای گرفتن با دست، سوراخ عرضی، شش‌گوشی برای آچار، شیار اورینگ و پلیسه‌گیری، هر کدام زمان و گاهی یک مرحله‌ی جداگانه به کار اضافه می‌کنند.
+
+هرچه این عملیات زودتر و کامل‌تر در نقشه مشخص باشد، پیشنهاد قیمت دقیق‌تر است و بعداً هزینه‌ی پیش‌بینی‌نشده‌ای اضافه نمی‌شود.
+
+- رزوه: نوع و استاندارد رزوه (لوله‌ای مخروطی یا موازی، متریک یا اینچی) و کلاس آن را دقیق در نقشه بنویسید؛ رزوه‌ای که با گیج کنترل می‌شود زمان کنترل بیشتری دارد.
+- آج‌زنی: نوع آج (صاف یا ضربدری) و محدوده‌ی آن روی قطعه را مشخص کنید.
+- شش‌گوش و سطوح تخت: اگر قطعه از شمش شش‌گوش شروع شود، فرزکاری جداگانه لازم نیست و هزینه پایین می‌آید.
+- سوراخ عرضی و فرزکاری: هر عملیاتی که روی تراش انجام نشود، ممکن است بستن دوباره‌ی قطعه و زمان بیشتری بخواهد.
+- پلیسه‌گیری و شست‌وشو: در اتصالات آب و گاز و قطعاتی که آبکاری می‌شوند، پلیسه و روغن باقی‌مانده دردسرساز است.
+
+## آیا قطعه‌ی برنجی را بعد از تراشکاری می‌شود آبکاری کرد؟
+
+بله. برنج پایه‌ی خوبی برای آبکاری نقره و طلا است و آبکاری را می‌توانید در همان پروژه به هایپرفب بسپارید تا قطعه‌ی تراش‌خورده، آبکاری‌شده و آماده تحویل بگیرید. آبکاری نقره بیشترین رسانایی الکتریکی را دارد و برای کنتاکت و کانکتور رایج است؛ طلا اکسید نمی‌شود و مقاومت تماسی پایداری دارد.
+
+اگر قطعه قرار است آبکاری شود، چند نکته را از ابتدا در نظر بگیرید. پوشش لایه‌ای روی سطح می‌سازد، پس رزوه‌ها و سطوح انطباقی دقیق باید با در نظر گرفتن آن طراحی و تراش داده شوند. سطوحی را که نباید پوشش بگیرند در نقشه مشخص کنید. کیفیت سطح تراش و پلیسه‌گیری هم روی ظاهر نهایی اثر مستقیم دارد، چون آبکاری عیوب سطح را نمی‌پوشاند.
+
+آبکاری هم مثل تراشکاری مخصوص سفارش‌های تیراژی است. اگر قطعه به پوشش زینتی، الکتریکی یا هیچ پوششی نیاز ندارد، این را هم در درخواست بگویید تا در قیمت لحاظ شود.
+
+## برای استعلام قیمت چه بفرستید و قیمت به چه عواملی بستگی دارد؟
+
+نقشه‌ی ابعادگذاری‌شده با تلرانس‌ها مهم‌ترین مدرک است. اگر مدل سه‌بعدی (مثلاً فایل STEP) هم دارید بفرستید، ولی جای نقشه را نمی‌گیرد. قیمت نهایی به این عوامل بستگی دارد:
+
+- آلیاژ برنج و قطر یا شکل شمش (گرد یا شش‌گوش)
+- پیچیدگی قطعه: تعداد پله، رزوه، سوراخ و عملیات جانبی
+- تلرانس‌ها، سطوح انطباقی و سطوح آب‌بندی
+- تیراژ و تکرار سفارش
+- نوع پوشش: آبکاری نقره، آبکاری طلا یا بدون پوشش
+- کنترل ویژه، مثل کنترل رزوه با گیج یا گزارش ابعادی
+- نوع بسته‌بندی
+
+این اطلاعات را آماده کنید و برای قیمت دقیق با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید. هایپرفب در تهران است و پس از بررسی نقشه، قیمت و تیراژ مناسب را پیشنهاد می‌کند.
+
+## FAQ
+
+### تراشکاری تک‌قطعه‌ی برنجی هم انجام می‌دهید؟
+
+تراشکاری CNC تیراژی هایپرفب مخصوص سفارش‌های سری است و تک‌قطعه فقط به‌ندرت پذیرفته می‌شود؛ تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود. برای تک‌قطعه و نمونه‌ی اولیه، ماشین‌کاری CNC در سایت hyperfab.ir را ببینید.
+
+### قطعات را بعد از تراشکاری آبکاری هم می‌کنید؟
+
+بله. آبکاری نقره و طلا روی قطعات برنجی در هایپرفب انجام می‌شود و قطعه‌ی نهایی تحویل داده می‌شود. اگر آبکاری لازم است، از ابتدا در درخواست بگویید تا رزوه‌ها و سطوح انطباقی با در نظر گرفتن پوشش بررسی شوند.
+
+### برای استعلام قیمت چه فایلی لازم است؟
+
+نقشه‌ی ابعادگذاری‌شده با تلرانس‌ها، مشخصات رزوه‌ها، جنس و تیراژ. مدل سه‌بعدی مثل فایل STEP کمک می‌کند ولی جای نقشه را نمی‌گیرد. اگر نقشه ندارید، نمونه‌ی قطعه یا شرح تلفنی هم می‌تواند نقطه‌ی شروع باشد.
+
+### برای اتصالات چه آلیاژ برنجی مناسب است؟
+
+برای اتصالات تراشکاری معمولاً برنج خوش‌تراش (سرب‌دار) به کار می‌رود که براده‌ی کوتاه می‌دهد و سریع تراش می‌خورد. برای قطعاتی که با آب آشامیدنی تماس دارند، ممکن است استاندارد محصول برنج کم‌سرب یا بدون سرب بخواهد. آلیاژ را طراح یا استاندارد محصول تعیین می‌کند و در بررسی نقشه درباره‌اش مشورت داده می‌شود.
+
+---
+
+# مراحل قالب‌سازی و تزریق پلاستیک از طراحی تا تولید انبوه
+
+URL: https://hyperfabgroup.github.io/guides/injection-mould-making-steps/
+Updated: 2026-11-15
+
+یک پروژه‌ی تزریق پلاستیک از طراحی قطعه برای قالب‌گیری شروع می‌شود و با طراحی قالب و انتخاب فولاد، ماشین‌کاری و اسپارک و پولیش، نمونه‌گیری آزمایشی و اصلاح، و در نهایت تولید انبوه ادامه پیدا می‌کند. بیشترین ریسک در مراحل اول است، پس هر اصلاحی پیش از برش فولاد ارزان‌تر تمام می‌شود.
+
+## قالب‌سازی تزریق پلاستیک چه مراحلی دارد؟
+
+قالب‌سازی (Mould Making)، که «قالب سازی» هم نوشته می‌شود، و تزریق پلاستیک (Injection Molding) دو نیمه‌ی یک پروژه‌اند: اول قالبی فولادی ساخته می‌شود که شکل قطعه را در خود دارد و بعد دستگاه تزریق پلیمر ذوب‌شده را بارها درون آن می‌فرستد. کیفیت قطعه‌ی نهایی تا حد زیادی همان روزی تعیین می‌شود که طرح قطعه و قالب نهایی می‌شود.
+
+در هایپرفب این مسیر با بررسی قالب‌پذیری طرح شروع می‌شود، قالب طراحی و ساخته می‌شود، نمونه‌گیری و اصلاح تا تأیید شما ادامه پیدا می‌کند و بعد تولید ضربی با کنترل کیفیت انجام می‌شود.
+
+| مرحله | چه کاری انجام می‌شود | خروجی |
+|---|---|---|
+| طراحی قطعه برای قالب‌گیری | بررسی زاویه‌ی خروج، ضخامت دیواره، ریب، زیربرش و جنس | مدل سه‌بعدی اصلاح‌شده و قالب‌پذیر |
+| طراحی قالب | خط جدایش، تعداد حفره، راهگاه و نقطه‌ی تزریق، خنک‌کاری و بیرون‌انداز | نقشه‌های قالب و انتخاب فولاد |
+| ساخت قالب | ماشین‌کاری CNC، اسپارک (EDM)، پولیش و مونتاژ | قالب آماده‌ی نمونه‌گیری |
+| نمونه‌گیری T0 و T1 | تزریق آزمایشی، اندازه‌گیری و اصلاح قالب | نمونه‌ی تأییدشده |
+| تولید انبوه | تزریق ضربی با تنظیمات ثابت و کنترل کیفیت | قطعات آماده‌ی تحویل |
+
+## طراحی قطعه برای تزریق پلاستیک: زاویه‌ی خروج، ضخامت دیواره و ریب
+
+طرحی که برای پرینت سه‌بعدی یا ماشین‌کاری مناسب است، لزوماً قالب‌پذیر نیست. اولین قاعده زاویه‌ی خروج (Draft) است: دیواره‌هایی که در جهت باز شدن قالب قرار دارند باید کمی شیب داشته باشند تا قطعه بدون خش و گیر بیرون بیاید. مقدار مناسب به جنس، عمق دیواره و بافت سطح بستگی دارد و در بررسی طرح تعیین می‌شود.
+
+قاعده‌ی دوم ضخامت دیواره‌ی یکنواخت است. پلیمر هنگام سرد شدن جمع می‌شود و جاهای ضخیم دیرتر سرد می‌شوند؛ نتیجه‌ی آن تاب برداشتن قطعه، فرورفتگی سطحی (Sink mark) و حفره‌ی داخلی است. به‌جای دیواره‌ی ضخیم، از ریب (Rib) برای سفتی و از باس (Boss) برای محل پیچ استفاده می‌شود. ریب باید نازک‌تر از دیواره‌ی اصلی باشد تا روی سطح مقابل اثر نگذارد.
+
+زیربرش‌ها (Undercut)، یعنی بخش‌هایی که مانع بیرون آمدن مستقیم قطعه می‌شوند، به کشویی یا ماهیچه‌ی متحرک (Lifter) در قالب نیاز دارند و قالب را گران‌تر می‌کنند؛ گاهی با تغییر کوچکی در طرح حذف می‌شوند. گوشه‌های تیز داخلی هم بهتر است گرد شوند تا جریان مواد روان‌تر و تمرکز تنش کمتر شود. تلرانس‌ها هم باید با جنس و جمع‌شدگی (Shrinkage) پلیمر واقع‌بینانه تعیین شوند.
+
+## طراحی قالب تزریق و انتخاب فولاد قالب چطور انجام می‌شود؟
+
+در طراحی قالب، چند تصمیم اصلی گرفته می‌شود: خط جدایش (Parting line) کجا باشد، قالب چند حفره (Cavity) داشته باشد، مواد از کجا و با چه نوع راهگاهی (راهگاه سرد یا گرم) وارد شوند، کانال‌های خنک‌کاری چطور قطعه را یکنواخت سرد کنند و پین‌های بیرون‌انداز کجا قرار بگیرند. محل نقطه‌ی تزریق روی ظاهر قطعه، خطوط جوش جریان و تاب برداشتن اثر مستقیم دارد.
+
+جمع‌شدگی پلیمر هم در ابعاد حفره لحاظ می‌شود؛ یعنی حفره‌ی قالب کمی بزرگ‌تر از قطعه‌ی نهایی ساخته می‌شود و مقدار آن به جنس بستگی دارد. به همین دلیل جنس قطعه باید پیش از ساخت قالب قطعی شود و تغییر بعدی آن، مثلاً از پلی‌اتیلن به ABS، ممکن است اصلاح قالب لازم داشته باشد.
+
+انتخاب فولاد قالب به تیراژ، جنس پلیمر و کیفیت سطح مورد نیاز بستگی دارد. فولادهای پیش‌سخت‌کاری‌شده (Pre-hardened) برای بسیاری از پروژه‌ها با تیراژ متوسط مناسب‌اند و ماشین‌کاری ساده‌تری دارند. برای تیراژ بسیار بالا یا پلیمرهای ساینده مثل گریدهای تقویت‌شده با الیاف شیشه، فولاد ابزار سخت‌کاری‌شده عمر بیشتری دارد و برای پلیمرهای خورنده یا سطح پولیش بسیار براق، فولاد ضدزنگ قالب به کار می‌رود.
+
+## ساخت قالب: ماشین‌کاری CNC، اسپارک (EDM) و پولیش
+
+بیشتر حجم حفره و ماهیچه‌ی قالب با ماشین‌کاری CNC (فرزکاری) برداشته می‌شود. جاهایی که ابزار فرز به آن‌ها نمی‌رسد، مثل ریب‌های عمیق و باریک، گوشه‌های تیز داخلی و جزئیات ریز، با اسپارک یا ماشین‌کاری تخلیه‌ی الکتریکی (EDM) ساخته می‌شوند. در این روش الکترودی از گرافیت یا مس شکل خود را روی فولاد کپی می‌کند. برای سوراخ‌ها و قطعات داخلی دقیق از وایرکات (Wire EDM) هم استفاده می‌شود.
+
+پس از ماشین‌کاری، سطح حفره پولیش می‌شود. درجه‌ی پولیش به کاربرد قطعه بستگی دارد: قطعه‌ی صنعتی پنهان به پولیش ساده کفایت می‌کند، اما قطعه‌ی ظاهری یا شفاف سطح بسیار براق می‌خواهد. اگر سطح بافت‌دار (Texture) لازم است، باید از ابتدا گفته شود، چون روی زاویه‌ی خروج لازم اثر دارد. در پایان، کشویی‌ها، پین‌های بیرون‌انداز و مدار خنک‌کاری مونتاژ و قالب برای نمونه‌گیری آماده می‌شود.
+
+## نمونه‌گیری T0 و T1 چیست و چه اصلاحاتی انجام می‌شود؟
+
+اولین تزریق آزمایشی با قالب نو را معمولاً T0 می‌نامند. هدف آن یافتن مشکلات است، نه گرفتن قطعه‌ی نهایی. در این مرحله پر شدن کامل حفره (یا ناقص‌پرشدن، Short shot)، پلیسه (Flash) روی خط جدایش، فرورفتگی سطحی، تاب برداشتن، اثر پین‌های بیرون‌انداز و راحتی بیرون آمدن قطعه بررسی می‌شود. نمونه‌ها اندازه‌گیری و با نقشه مقایسه می‌شوند.
+
+برخی مشکلات با تنظیم پارامترهای تزریق مثل فشار، سرعت و زمان سرد شدن حل می‌شوند و برخی به اصلاح فولاد قالب نیاز دارند. قالب‌سازان معمولاً ابعاد حساس را با کمی فولاد اضافه (Steel-safe) می‌سازند، چون برداشتن فولاد ساده‌تر از اضافه کردن آن است. پس از اصلاحات، نمونه‌گیری بعدی (T1 و در صورت لزوم دورهای بعدی) انجام می‌شود تا قطعه با نقشه هماهنگ شود.
+
+در هایپرفب نمونه پس از ساخت قالب زده می‌شود و تولید ضربی تنها پس از تأیید نمونه توسط شما شروع می‌شود.
+
+## تولید انبوه با قالب تزریق چطور پیش می‌رود؟
+
+وقتی نمونه تأیید شد، تنظیمات فرایند ثابت و ثبت می‌شود تا قطعات همه‌ی دوره‌های تولید یکسان باشند. مواد اولیه پیش از تزریق آماده می‌شوند؛ برخی پلیمرها مثل نایلون و پلی‌کربنات رطوبت جذب می‌کنند و پیش از تزریق خشک می‌شوند. در طول تولید، قطعات به‌صورت دوره‌ای از نظر ابعاد و ظاهر کنترل می‌شوند و قالب هم نیاز به نگه‌داری دارد: تمیزکاری، روغن‌کاری کشویی‌ها و بررسی مدار خنک‌کاری.
+
+هایپرفب تولید ضربی را با پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون و ترموپلاستیک‌های مهندسی مثل پلی‌کربنات و پلی‌استال انجام می‌دهد. تیم هایپرفب چهار قالب تزریق پلی‌اتیلن را از نظارت بر ساخت تا راه‌اندازی رسانده و با همان قالب‌ها بیش از ۸۰٬۰۰۰ قطعه تولید شده است. سفارش این خدمت تلفنی هماهنگ می‌شود.
+
+## قیمت قالب‌سازی و تزریق پلاستیک به چه عواملی بستگی دارد؟
+
+قیمت پروژه‌ی تزریق دو بخش اصلی دارد که جدا اعلام می‌شوند: هزینه‌ی یک‌باره‌ی ساخت قالب و هزینه‌ی هر ضرب در تولید. عوامل مؤثر بر آن‌ها این‌هاست:
+
+- اندازه و پیچیدگی قطعه و در نتیجه اندازه‌ی قالب.
+- تعداد حفره‌های قالب.
+- زیربرش‌ها و نیاز به کشویی یا ماهیچه‌ی متحرک.
+- کیفیت سطح، پولیش یا بافت مورد نیاز.
+- جنس فولاد قالب و نوع راهگاه (سرد یا گرم).
+- تعداد دورهای نمونه‌گیری و تغییرات طرح پس از شروع ساخت.
+- برای هر ضرب: جنس، گرید و رنگ پلیمر، وزن قطعه، زمان سیکل و تیراژ.
+
+برای دریافت قیمت دقیق، فایل سه‌بعدی، نقشه یا نمونه‌ی قطعه را آماده کنید و با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید. پس از بررسی قالب‌پذیری طرح، هزینه‌ی ساخت قالب و هزینه‌ی هر ضرب جداگانه اعلام می‌شود. اگر هنوز درباره‌ی تیراژ مطمئن نیستید، نمونه‌ی اولیه را می‌توانید با پرینت سه‌بعدی از hyperfab.ir بسازید.
+
+## FAQ
+
+### هزینه‌ی ساخت قالب تزریق به چه چیزی بستگی دارد؟
+
+مهم‌ترین عوامل اندازه و پیچیدگی قطعه، تعداد حفره‌ها، زیربرش‌ها و کشویی‌ها، کیفیت سطح و جنس فولاد قالب هستند. هایپرفب پس از بررسی طرح، هزینه‌ی قالب را جدا از هزینه‌ی هر ضرب اعلام می‌کند.
+
+### قالب من چند حفره لازم دارد؟
+
+به تیراژ کل، اندازه‌ی قطعه، ظرفیت دستگاه تزریق و بودجه بستگی دارد. قالب تک‌حفره ارزان‌تر ساخته می‌شود اما هزینه‌ی هر قطعه را بالاتر نگه می‌دارد؛ قالب چندحفره برعکس است. تعداد مناسب در بررسی طرح و با توجه به تیراژ پیش‌بینی‌شده پیشنهاد می‌شود.
+
+### مالکیت قالب با چه کسی است؟
+
+در عرف بازار، قالبی که هزینه‌ی ساختش را مشتری پرداخت کرده معمولاً متعلق به مشتری است. با این حال مالکیت، محل نگه‌داری، مسئولیت نگه‌داری و امکان جابه‌جایی قالب باید هنگام قرارداد مکتوب شود. این موارد را هنگام دریافت پیشنهاد قیمت از هایپرفب بپرسید.
+
+### می‌توانم اول نمونه را با پرینت سه‌بعدی بسازم؟
+
+بله و توصیه هم می‌شود. با پرینت سه‌بعدی FDM می‌توانید فرم، ابعاد و مونتاژ را روی قطعه‌ی واقعی بسنجید و قیمتش را آنلاین در hyperfab.ir ببینید. فقط در نظر داشته باشید که قطعه‌ی چاپی خواص مکانیکی و سطح قطعه‌ی تزریقی را ندارد و بیشتر برای تأیید هندسه است.
+
+---
+
+# فرق فولاد MO40 و CK45 چیست؟ انتخاب برای گیج و قطعات تراشکاری
+
+URL: https://hyperfabgroup.github.io/guides/mo40-vs-ck45-steel/
+Updated: 2026-11-15
+
+MO40 (معادل 42CrMo4 با شماره‌ی 1.7225) فولاد آلیاژی کروم-مولیبدن است و CK45 (معادل C45E با شماره‌ی 1.1191) فولاد کربنی ساده. MO40 عمیق‌تر و یکنواخت‌تر سخت می‌شود و چقرمه‌تر می‌ماند؛ CK45 ارزان‌تر است و برای سخت‌کاری سطحی مناسب. برای گیج‌های پرکار و قطعات تحت بار MO40، و برای گیج‌های ساده و قطعات عمومی CK45 انتخاب رایج است.
+
+## فرق MO40 و CK45 در یک نگاه چیست؟
+
+پاسخ کوتاه: MO40 فولاد آلیاژی کروم-مولیبدن است و CK45 فولاد کربنی ساده با کربن متوسط. مقدار کربن این دو نزدیک به هم است، پس سختی سطحی‌ای که پس از عملیات حرارتی می‌گیرند تفاوت زیادی ندارد. فرق اصلی در عمق و یکنواختی سخت شدن، چقرمگی پس از عملیات حرارتی و قیمت است.
+
+اگر قطعه زیر بار، ضربه یا سایش مداوم کار می‌کند، یا مقطع ضخیمی دارد که باید تا مغز سخت شود، MO40 انتخاب مطمئن‌تری است. اگر قطعه ساده است، بار سنگینی تحمل نمی‌کند یا فقط سطح کاری‌اش باید سخت شود، CK45 همان کار را با هزینه‌ی کمتر انجام می‌دهد. جدول زیر تفاوت‌ها را به‌صورت کیفی کنار هم گذاشته است.
+
+| ویژگی | MO40 (42CrMo4) | CK45 (C45E) |
+|---|---|---|
+| نوع فولاد | فولاد کم‌آلیاژ کروم-مولیبدن | فولاد کربنی ساده با کربن متوسط |
+| سختی‌پذیری (عمق سخت شدن) | زیاد؛ مقاطع ضخیم‌تر هم تا مغز سخت می‌شوند | کم؛ در مقاطع ضخیم عمدتاً لایه‌ی سطحی سخت می‌شود |
+| چقرمگی پس از عملیات حرارتی | بالا | متوسط |
+| ماشین‌کاری | خوب؛ در حالت سخت‌کاری‌شده ابزار را بیشتر می‌ساید | خوب و قابل پیش‌بینی، به‌ویژه در حالت نرمالیزه |
+| کاربرد رایج | شفت و قطعات تحت بار و ضربه، گیج‌های پرکار | شفت و پین عمومی، قطعات ماشین‌آلات، گیج‌های ساده |
+| هزینه‌ی نسبی | بالاتر | پایین‌تر |
+
+## معادل فولاد MO40 و CK45 چیست و ترکیبشان چه فرقی دارد؟
+
+MO40 نامی است که در بازار ایران برای فولاد 42CrMo4 با شماره‌ی مواد 1.7225 رایج است. این فولاد کربن متوسط دارد و کروم و مولیبدن به آن اضافه شده است؛ همین دو عنصر سختی‌پذیری و چقرمگی‌اش را بالا می‌برند. نزدیک‌ترین معادل آمریکایی آن AISI 4140 است. در بازار این فولاد را گاهی «مو ۴۰» یا «ام‌او ۴۰» هم می‌نویسند.
+
+CK45 نام قدیمی آلمانی (DIN) فولادی است که امروز با نام C45E و شماره‌ی مواد 1.1191 شناخته می‌شود. این فولاد کربنی ساده با کربن متوسط است و عنصر آلیاژی مؤثری ندارد. حرف k در نام قدیمی به کنترل دقیق‌تر ناخالصی‌هایی مثل فسفر و گوگرد اشاره دارد. معادل‌های نزدیک آن C45 و AISI 1045 است و در بازار به آن «سی‌کا ۴۵» هم می‌گویند.
+
+معادل‌ها نزدیک‌اند، نه یکسان. محدوده‌ی عناصر در استانداردهای مختلف کمی فرق دارد و فولادی که در بازار با یک نام فروخته می‌شود همیشه دقیقاً همان نیست. برای گیج و قطعه‌ی حساس، گواهی متریال (Mill Certificate) را بخواهید یا جنس را با آنالیز کنترل کنید.
+
+## کدام بهتر سخت می‌شود؟ عملیات حرارتی MO40 و CK45 چه فرقی دارد؟
+
+این‌جا باید بین «سختی» و «سختی‌پذیری» (Hardenability) فرق گذاشت. سختی یعنی سطح قطعه پس از کوئنچ چقدر سخت می‌شود و بیشتر به مقدار کربن بستگی دارد، که در این دو فولاد نزدیک است. سختی‌پذیری یعنی سختی تا چه عمقی از سطح به داخل نفوذ می‌کند، و این‌جاست که کروم و مولیبدن MO40 تفاوت را می‌سازند.
+
+MO40 با سرد کردن ملایم‌تر هم تا عمق زیادی سخت می‌شود. برای همین برای سخت‌کاری کامل (Through-hardening) و بعد بازپخت، یعنی کوئنچ و تمپر، مناسب است و پس از آن هم محکم است و هم چقرمه. این فولاد در بازار به‌صورت سخت‌کاری و بازپخت‌شده هم عرضه می‌شود. CK45 برای سخت شدن به سرد کردن تندتری نیاز دارد که خطر تاب برداشتن و ترک را بالا می‌برد، و در مقاطع ضخیم عملاً فقط لایه‌ی بیرونی‌اش سخت می‌شود.
+
+به همین دلیل CK45 گزینه‌ی رایج سخت‌کاری سطحی است: سخت‌کاری القایی (Induction Hardening) یا شعله‌ای، که فقط سطح کاری را سخت می‌کند و مغز قطعه چقرمه می‌ماند. MO40 را هم می‌توان سطحی سخت یا نیتراته کرد، وقتی سطحی مقاوم به سایش روی مغزی محکم لازم است.
+
+- سخت‌کاری کامل و بازپخت: انتخاب طبیعی MO40، به‌ویژه برای مقاطع ضخیم.
+- سخت‌کاری القایی یا شعله‌ای: کاربرد رایج CK45 برای شفت، پین و سطوح سایشی.
+- نیتراته کردن: برای MO40، وقتی سطح سخت با کمترین تغییر ابعاد لازم است.
+- در هر دو حالت: قطعه پیش از عملیات حرارتی با اضافه‌ی کافی برای سنگ‌زنی نهایی تراش می‌خورد.
+
+## ماشین‌کاری MO40 و CK45؛ کدام راحت‌تر تراش می‌خورد؟
+
+در حالت نرمالیزه یا آنیل، هر دو فولاد ماشین‌کاری خوبی دارند و CK45 معمولاً کمی راحت‌تر و ارزان‌تر تراش می‌خورد. وقتی MO40 به‌صورت سخت‌کاری و بازپخت‌شده خریداری شود، استحکامش بالاتر است، ابزار زودتر ساییده می‌شود و سرعت کار پایین‌تر می‌آید؛ این مستقیماً روی زمان دستگاه و هزینه‌ی هر قطعه اثر دارد.
+
+ترتیب عملیات هم به اندازه‌ی جنس مهم است. برای قطعه‌ای که باید سخت شود، معمولاً اول خشن‌تراشی انجام می‌شود، بعد در صورت نیاز تنش‌زدایی، بعد عملیات حرارتی و در آخر سنگ‌زنی یا پرداخت سطوح دقیق. اگر این ترتیب در نقشه یا درخواست مشخص نباشد، ممکن است قطعه‌ای که در حالت نرم دقیق تراش خورده، پس از عملیات حرارتی تاب بردارد و از تلرانس خارج شود.
+
+در تراشکاری CNC تیراژی هایپرفب، نکات فنی هر قطعه پیش از تولید مهندسی و به تراشکار ابلاغ می‌شود: سطوح انطباقی، قطرهای حساس، هم‌محوری و اضافه‌ی لازم برای سنگ‌زنی. این‌طوری روش ساخت با جنس و الزامات قطعه هماهنگ می‌شود و تراشکار می‌داند کجای قطعه چه دقتی می‌خواهد.
+
+## برای ساخت گیج، MO40 بهتر است یا CK45؟
+
+گیج (Gauge) خودش مرجع دقت خط تولید است و هر خطایش مستقیم به محصول منتقل می‌شود. سه چیز در انتخاب جنس گیج تعیین‌کننده است: مقاومت سطوح اندازه‌گیری در برابر سایش، پایداری ابعادی در طول زمان، و تحمل ضربه و افتادن در محیط کارگاه.
+
+گیج‌ها معمولاً پس از تراشکاری عملیات حرارتی می‌شوند و سطوح اندازه‌گیری‌شان سنگ‌زنی می‌شود تا هم سخت باشند و هم دقیق. MO40 به خاطر سخت شدن عمیق‌تر و یکنواخت‌تر و تغییر ابعاد کمتر در عملیات حرارتی، برای گیج‌های پرکار، گیج‌های با مقطع ضخیم و گیج‌هایی که لبه یا زائده‌ی باریک دارند گزینه‌ی مطمئن‌تری است. CK45 برای گیج‌های ساده و کم‌مصرف، یا گیج‌هایی که فقط سطح کاری‌شان با سخت‌کاری القایی سخت می‌شود، انتخابی اقتصادی است.
+
+برای گیج‌های مرجع یا گیج‌هایی که سایش بسیار شدیدی دارند، طراحان اغلب سراغ فولادهای ابزار می‌روند. هایپرفب قطعات گیج را از هر دو فولاد MO40 و CK45 به‌صورت تیراژی ساخته است و این قطعات تأیید مشتری را گرفته‌اند. انتخاب نهایی جنس با طراح گیج است و در بررسی نقشه درباره‌ی آن مشورت داده می‌شود.
+
+## قیمت قطعه‌ی تراشکاری از MO40 یا CK45 به چه عواملی بستگی دارد؟
+
+قیمت با جنس شروع می‌شود ولی به جنس محدود نمی‌ماند. این عوامل بیشترین اثر را دارند:
+
+- جنس و قطر میلگرد: MO40 گران‌تر از CK45 است و قطرهای غیررایج ممکن است با هزینه‌ی بیشتری تأمین شوند.
+- حالت تحویل متریال: ماشین‌کاری MO40 سخت‌کاری‌شده زمان دستگاه و سایش ابزار بیشتری دارد.
+- عملیات حرارتی و سنگ‌زنی: نوع سخت‌کاری (کامل، القایی یا نیتراته) و تعداد سطوحی که باید سنگ بخورند.
+- تلرانس‌ها و کیفیت سطح: هرچه سطوح انطباقی و قطرهای حساس بیشتر باشد، کنترل و زمان بیشتری لازم است. تلرانس‌های عمومی معمولاً طبق ISO 2768 در نقشه مشخص می‌شوند.
+- پیچیدگی قطعه: تعداد پله، شیار، رزوه و عملیات جانبی.
+- تیراژ: هزینه‌ی راه‌اندازی و تأیید نمونه‌ی اول روی تعداد بیشتری سرشکن می‌شود.
+
+برای قیمت دقیق، نقشه‌ی ابعادگذاری‌شده با تلرانس‌ها، جنس، نوع عملیات حرارتی و تیراژ را آماده کنید و با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید. تراشکاری CNC هایپرفب مخصوص سفارش‌های تیراژی است و نمونه‌ی اول پیش از تولید سری به تأیید شما می‌رسد.
+
+## FAQ
+
+### معادل فولاد MO40 چیست؟
+
+MO40 همان 42CrMo4 با شماره‌ی مواد 1.7225 است و نزدیک‌ترین معادل آمریکایی آن AISI 4140 است. این معادل‌ها نزدیک‌اند، نه کاملاً یکسان؛ پس برای قطعه‌ی حساس گواهی متریال را کنترل کنید.
+
+### MO40 بعد از عملیات حرارتی سخت‌تر می‌شود یا CK45؟
+
+سختی سطحی این دو پس از کوئنچ نزدیک به هم است، چون مقدار کربنشان نزدیک است. تفاوت در عمق سخت شدن است: MO40 تا عمق بیشتری و یکنواخت‌تر سخت می‌شود و پس از بازپخت چقرمه‌تر است، ولی CK45 در مقاطع ضخیم بیشتر سطحی سخت می‌شود.
+
+### آیا CK45 را می‌شود سخت‌کاری القایی کرد؟
+
+بله، و این یکی از رایج‌ترین کاربردهای CK45 است. سخت‌کاری القایی سطح کاری شفت، پین یا گیج را سخت می‌کند و مغز قطعه چقرمه می‌ماند. سطوح دقیق معمولاً پس از سخت‌کاری سنگ‌زنی می‌شوند.
+
+### گیج از MO40 عمر بیشتری دارد یا CK45؟
+
+در شرایط کاری مشابه و با عملیات حرارتی مناسب، گیج MO40 معمولاً پایداری ابعادی و مقاومت بیشتری در برابر سایش و ضربه دارد و دیرتر از رده خارج می‌شود. برای گیج کم‌مصرف، CK45 سخت‌کاری‌شده اغلب کافی و اقتصادی‌تر است. کیفیت عملیات حرارتی و سنگ‌زنی به اندازه‌ی جنس در عمر گیج اثر دارد.
+
+---
+
+# رنگ پودری الکترواستاتیک (کوره‌ای) چیست؟ مراحل، انواع پودر و انتخاب بافت
+
+URL: https://hyperfabgroup.github.io/guides/powder-coating-process-finishes/
+Updated: 2026-11-15
+
+رنگ پودری الکترواستاتیک یا رنگ کوره‌ای (Powder Coating) پودری خشک است که با بار الکتریکی روی قطعه‌ی فلزی می‌نشیند و در کوره ذوب و پخت می‌شود تا لایه‌ای سخت و یکنواخت بسازد. کیفیت نتیجه به آماده‌سازی سطح، نوع پودر (اپوکسی، پلی‌استر یا هیبرید) و پخت درست بستگی دارد و بافت و براقیت را باید بر اساس کاربرد انتخاب کرد.
+
+## انواع رنگ پودری: اپوکسی، پلی‌استر یا هیبرید؟
+
+رنگ کوره‌ای را در بازار با نام‌های رنگ پودری، رنگ الکترواستاتیک و پودر کوره‌ای هم می‌شناسند. پیش از انتخاب رنگ و بافت، مهم‌ترین تصمیم نوع رزین پودر است، چون تعیین می‌کند پوشش در فضای باز و زیر نور خورشید چطور رفتار کند.
+
+قاعده‌ی کلی ساده است: قطعه‌ای که زیر آفتاب قرار می‌گیرد پلی‌استر می‌خواهد؛ جایی که مقاومت شیمیایی و چسبندگی در فضای سرپوشیده مهم‌تر است، اپوکسی؛ و برای بیشتر قطعات داخلی که ظاهرشان مهم است، هیبرید. برای شرایط سخت‌تر، مثل محیط ساحلی، ترکیب آماده‌سازی و پودر را باید از ابتدا بررسی کرد.
+
+| نوع پودر | داخلی یا بیرونی | مقاومت در برابر UV | نقطه‌ی قوت | کاربرد رایج |
+|---|---|---|---|---|
+| اپوکسی (Epoxy) | داخلی | ضعیف؛ زیر آفتاب گچی و کدر می‌شود | چسبندگی و مقاومت شیمیایی و خوردگی بالا | قطعات داخل دستگاه، تجهیزات صنعتی سرپوشیده، لایه‌ی آستر |
+| پلی‌استر (Polyester) | بیرونی و داخلی | خوب؛ رنگ و براقیت را در فضای باز حفظ می‌کند | مقاومت در برابر هوازدگی | سازه و نمای بیرونی، پروفیل آلومینیوم، مبلمان فضای باز، قطعات خودرو |
+| هیبرید اپوکسی‌پلی‌استر (Hybrid) | داخلی | متوسط؛ برای آفتاب مستقیم توصیه نمی‌شود | ظاهر خوب و تعادل خواص و هزینه | لوازم خانگی، مبلمان اداری، قفسه و تابلو برق داخلی |
+
+## آماده‌سازی سطح پیش از رنگ کوره‌ای چیست و چرا مهم‌ترین مرحله است؟
+
+پودر فقط به سطح تمیز و آماده خوب می‌چسبد. بیشتر عیوبی که ماه‌ها بعد به شکل پوسته‌شدن یا زنگ‌زدگی زیر رنگ ظاهر می‌شوند، ریشه در آماده‌سازی ضعیف دارند، نه در خود پودر.
+
+قطعات جوشکاری‌شده توجه بیشتری می‌خواهند: پاشش و سرباره‌ی جوش، لبه‌های تیز و درزهای باز باید پیش از رنگ رفع شوند، چون رنگ آن‌ها را نمی‌پوشاند. قطعات ریختگی و گالوانیزه هم ممکن است هنگام پخت گاز آزاد کنند و آماده‌سازی خاص بخواهند. بسته به جنس و وضعیت قطعه، آماده‌سازی ممکن است شامل این مراحل باشد:
+
+- چربی‌گیری (Degreasing) برای حذف روغن تراشکاری، گریس و اثر دست.
+- زنگ‌زدایی و حذف پوسته‌ی نورد یا اکسید، به روش مکانیکی مانند سندبلاست یا به روش شیمیایی.
+- پوشش تبدیلی برای چسبندگی و مقاومت خوردگی بیشتر: فسفاته روی فولاد، و کروماته (آلوداین) یا جایگزین‌های آن روی آلومینیوم.
+- شست‌وشو و خشک‌کردن کامل، چون رطوبت باقی‌مانده زیر پودر حبس می‌شود.
+
+## رنگ کوره‌ای چطور پاشیده و پخته می‌شود؟
+
+پس از آماده‌سازی، قطعات روی قلاب یا آویز در کابین پاشش قرار می‌گیرند. تفنگ الکترواستاتیک به ذرات پودر بار الکتریکی می‌دهد و قطعه‌ی متصل به زمین آن‌ها را جذب می‌کند؛ به همین دلیل پودر پشت لبه‌ها و اطراف قطعه هم می‌نشیند. پودری که روی قطعه ننشیند معمولاً جمع‌آوری و دوباره استفاده می‌شود.
+
+سپس قطعه وارد کوره می‌شود. پودر ابتدا ذوب می‌شود، روی سطح پخش می‌شود و بعد پخت (Curing) شیمیایی پیدا می‌کند و به لایه‌ای سخت و پیوسته تبدیل می‌شود. دما و زمان پخت را سازنده‌ی پودر تعیین می‌کند و باید با ضخامت فلز هم هماهنگ باشد، چون قطعه‌ی سنگین دیرتر به دمای لازم می‌رسد.
+
+دو نکته‌ی طراحی از همین مرحله می‌آید. اول، قطعه باید دمای کوره را تحمل کند؛ پس قطعات پلاستیکی و لاستیکی، واشرها و مونتاژهای چسبی باید پیش از رنگ جدا شوند. دوم، محل آویز قطعه بدون رنگ می‌ماند، پس بهتر است سوراخ یا محل آویز را در طراحی پیش‌بینی کنید. رزوه‌ها، سوراخ‌های انطباقی و نقاط اتصال زمین هم معمولاً با درپوش یا چسب مقاوم به حرارت ماسک می‌شوند.
+
+## براق، مات، بافت‌دار یا صدفی؛ کدام بافت و رنگ RAL را انتخاب کنیم؟
+
+رنگ را بهتر است با کد استاندارد RAL اعلام کنید، نه با توصیف یا عکس، چون نمایشگر و چاپ رنگ را دقیق نشان نمی‌دهند. در رنگ‌های صدفی و متالیک، ظاهر ممکن است میان دو سری پودر کمی فرق کند؛ اگر قطعات کنار هم نصب می‌شوند، آن‌ها را در یک سفارش رنگ کنید و نمونه‌ی مرجع را تأیید کنید. برخی پودرهای متالیک برای فضای باز به لایه‌ی رویه‌ی شفاف (Clear Coat) نیاز دارند.
+
+پس از نوع پودر، ظاهر نهایی را با براقیت و بافت تعیین می‌کنید:
+
+- براق (Gloss): رنگ را زنده‌تر نشان می‌دهد و تمیزکاری‌اش آسان است، ولی ناصافی و خط‌وخش سطح را بیشتر نمایان می‌کند.
+- نیم‌براق و مات (Satin / Matte): ظاهری آرام‌تر و صنعتی‌تر دارد و عیوب جزئی سطح را بهتر می‌پوشاند.
+- بافت‌دار و چروک (Texture / Wrinkle): سطح زبری که اثر انگشت و خط‌وخش را کمتر نشان می‌دهد؛ برای بدنه‌ی دستگاه و قطعات پرتماس.
+- چکشی (Hammer): بافتی شبیه فلز چکش‌کاری‌شده که عیب‌پوش است؛ رایج روی تابلو، ابزار و ماشین‌آلات.
+- صدفی، متالیک و پرلسنت (Pearl / Metallic): ذرات متالیک یا صدفی جلوه‌ی براق فلزی می‌دهند؛ برای قطعات ظاهری و محصولات لوکس.
+
+## عیوب رایج رنگ کوره‌ای و راه جلوگیری از آن‌ها
+
+بیشتر عیوب رنگ کوره‌ای قابل پیشگیری‌اند و ریشه‌ی آن‌ها معمولاً آماده‌سازی، طراحی قطعه یا پخت است. چسبندگی پوشش معمولاً با آزمون برش متقاطع (Cross-cut) طبق ISO 2409 کنترل می‌شود. عیوب رایج:
+
+- پوسته‌شدن و چسبندگی ضعیف: معمولاً از چربی‌گیری یا آماده‌سازی ناکافی.
+- حفره‌ی ریز و حباب (Pinhole / Outgassing): گاز آزادشده از قطعات ریختگی، گالوانیزه یا درزهای جوش هنگام پخت؛ با آماده‌سازی و پیش‌گرم مناسب کم می‌شود.
+- پوست‌پرتقالی (Orange Peel): موج‌دار شدن سطح بر اثر ضخامت نامناسب پودر یا شرایط پخت.
+- پوشش ناقص در کنج‌های داخلی: اثر قفس فارادی (Faraday Cage) ورود پودر به کنج‌های عمیق را سخت می‌کند؛ کنج‌های بازتر در طراحی کمک می‌کنند.
+- دهانه و لکه (Crater): آلودگی سطح به روغن یا سیلیکون؛ با تمیزکاری و پرهیز از اسپری‌های سیلیکونی پیش از رنگ رفع می‌شود.
+- زرد شدن یا کدر شدن: پخت بیش از حد، یا استفاده از پودر اپوکسی در فضای باز.
+- زنگ‌زدگی از لبه‌ها: رنگ روی لبه‌های تیز نازک می‌نشیند؛ پخ‌زدن یا گردکردن لبه‌ها پیش از رنگ کمک می‌کند.
+
+## فرق رنگ پودری و رنگ مایع چیست؟
+
+رنگ کوره‌ای در یک بار پاشش لایه‌ی ضخیم‌تر و سخت‌تری از رنگ مایع می‌سازد و در برابر ضربه، خط‌وخش و خوردگی دوام بیشتری دارد. حلال ندارد، شره نمی‌کند و پودر اضافه قابل بازیافت است. در تیراژ هم یکنواخت‌تر است، چون ضخامت و ظاهر روی همه‌ی قطعات یک سری تکرارپذیر است.
+
+رنگ مایع هنوز در چند جا انتخاب بهتری است: قطعاتی که دمای کوره را تحمل نمی‌کنند، مثل پلاستیک و چوب؛ سازه‌هایی که از کوره بزرگ‌ترند یا باید در محل رنگ شوند؛ و ترمیم موضعی. ترمیم رنگ کوره‌ای آسیب‌دیده هم از رنگ مایع سخت‌تر است و معمولاً با رنگ مایع هم‌رنگ انجام می‌شود.
+
+## قیمت رنگ کوره‌ای به چه عواملی بستگی دارد؟
+
+قیمت هر سفارش پس از بررسی قطعه اعلام می‌شود. مهم‌ترین عوامل:
+
+- ابعاد و سطح کل قطعه و تعداد قطعه‌ای که هم‌زمان در کابین و کوره جا می‌شود.
+- وزن و ضخامت فلز، که زمان رسیدن به دمای پخت را تعیین می‌کند.
+- نوع پودر (اپوکسی، پلی‌استر یا هیبرید) و جلوه‌های خاص مانند صدفی، متالیک یا چکشی.
+- آماده‌سازی لازم: چربی‌گیری ساده، سندبلاست، فسفاته یا کروماته.
+- ماسک‌کاری رزوه‌ها، سوراخ‌ها و سطوح بدون رنگ.
+- رنگ‌های غیررایج و تعویض رنگ میان سفارش‌ها.
+- تیراژ: رنگ کوره‌ای هایپرفب برای سفارش‌های تیراژی است و کار تک‌قطعه فقط به‌ندرت پذیرفته می‌شود.
+
+برای قیمت دقیق، ابعاد و جنس قطعه، نوع پودر و رنگ و تیراژ را آماده کنید یا نمونه بفرستید و با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید.
+
+## FAQ
+
+### رنگ پودری بهتر است یا رنگ مایع؟
+
+برای قطعات فلزی تیراژی که دمای کوره را تحمل می‌کنند، رنگ پودری معمولاً بادوام‌تر و یکنواخت‌تر است. رنگ مایع برای قطعات حساس به حرارت، سازه‌های خیلی بزرگ، رنگ‌آمیزی در محل و ترمیم مناسب‌تر است.
+
+### آیا رنگ کوره‌ای برای فضای باز مناسب است؟
+
+بله، به شرط انتخاب پودر مناسب. پودرهای پلی‌استر برای فضای باز و تابش آفتاب ساخته شده‌اند، در حالی که پودر اپوکسی و هیبرید زیر آفتاب کدر و گچی می‌شوند. آماده‌سازی خوب سطح هم برای دوام در فضای باز به همان اندازه مهم است.
+
+### آیا آلومینیوم را می‌توان رنگ کوره‌ای کرد؟
+
+بله. هایپرفب رنگ کوره‌ای را روی فولاد، آهن، آلومینیوم و فلزات دیگر انجام می‌دهد. روی آلومینیوم، کروماته (آلوداین) به‌عنوان پایه، چسبندگی رنگ و مقاومت در برابر خوردگی را بیشتر می‌کند.
+
+### چه چیزی اندازه‌ی قطعه را برای رنگ کوره‌ای محدود می‌کند؟
+
+ابعاد کوره و کابین پاشش، ظرفیت آویز و وزن قطعه. قطعات سنگین و ضخیم هم دیرتر به دمای پخت می‌رسند. برای قطعات و سازه‌های بزرگ، ابعاد و وزن را پیش از سفارش اعلام کنید تا امکان اجرا بررسی شود.
+
+---
+
+# قیمت پانچ ورق و لوله به چه عواملی بستگی دارد؟ (هزینه قالب و هزینه هر ضرب)
+
+URL: https://hyperfabgroup.github.io/guides/punching-cost-sheet-tube-pe-pipe/
+Updated: 2026-11-15
+
+قیمت پانچ ورق و لوله از دو بخش تشکیل می‌شود: هزینه‌ی یک‌باره‌ی طراحی و ساخت قالب پانچ، و هزینه‌ی هر ضرب در تولید. هزینه‌ی قالب به هندسه، تعداد سوراخ‌ها و شیارها و دقت لازم بستگی دارد و هزینه‌ی ضرب به جنس، ضخامت، تعداد ضرب هر قطعه و تیراژ. هرچه تیراژ بیشتر باشد، سهم قالب در قیمت هر قطعه کمتر می‌شود.
+
+## پاسخ کوتاه: قیمت پانچ از چه اجزایی تشکیل می‌شود؟
+
+پانچ (Punching)، که گاهی پانچینگ هم نوشته می‌شود، یعنی ایجاد سوراخ، شیار و فرم‌های خاص روی ورق و لوله با ضربه‌ی پرس و قالب. چون هر قطعه با یک یا چند ضرب به شکل نهایی می‌رسد، قیمت آن مثل برش لیزر از طول مسیر برش به دست نمی‌آید؛ بلکه دو بخش جدا دارد: قالبی که یک بار ساخته می‌شود و ضرب‌هایی که در تولید تکرار می‌شوند.
+
+هایپرفب نقشه را بررسی می‌کند، قالب پانچ را متناسب با جنس و ضخامت قطعه طراحی می‌کند و می‌سازد، نمونه‌ی آزمایشی را برای تأیید شما می‌زند و تولید ضربی و کنترل کیفیت را تا تحویل پیش می‌برد. هزینه‌ی قالب و هزینه‌ی هر ضرب پس از بررسی نقشه جدا و شفاف اعلام می‌شوند. اگر ورق یا لوله را هم هایپرفب تأمین کند، متریال به قیمت روز به این دو بخش اضافه می‌شود.
+
+## فرق هزینه‌ی قالب پانچ و هزینه‌ی هر ضرب چیست؟
+
+این دو هزینه رفتار متفاوتی دارند. قالب یک بار ساخته می‌شود و هزینه‌اش روی کل تیراژ سرشکن می‌شود، اما هزینه‌ی ضرب با هر قطعه تکرار می‌شود. برای همین در تیراژ کم، قالب بخش اصلی قیمت هر قطعه است و در تیراژ بالا، هزینه‌ی ضرب و متریال تعیین‌کننده می‌شوند.
+
+نتیجه‌ی عملی این است که هر تغییری که قالب را ساده‌تر کند، در تیراژ کم بیشترین اثر را دارد، و هر تغییری که تعداد ضرب لازم برای هر قطعه را کم کند، در تیراژ بالا.
+
+|  | هزینه‌ی ساخت قالب | هزینه‌ی هر ضرب |
+|---|---|---|
+| ماهیت هزینه | یک‌باره، پیش از شروع تولید | تکرارشونده، برای هر ضرب در تولید |
+| عامل اصلی | هندسه و تعداد سوراخ‌ها و شیارها و دقت لازم | جنس و ضخامت متریال و تعداد ضرب لازم برای هر قطعه |
+| نوع کار | قالب ساده، چندمرحله‌ای یا مخصوص لوله | ورق یا لوله، فلز یا پلیمر |
+| اثر تیراژ | با تیراژ بیشتر، سهم آن در هر قطعه کمتر می‌شود | با هر قطعه تکرار می‌شود و به تیراژ سفارش هم بستگی دارد |
+| چه چیزی کمش می‌کند | یکسان‌کردن اندازه‌ی سوراخ‌ها و ساده‌کردن هندسه | کم‌کردن تعداد ضرب هر قطعه و تیراژ بزرگ‌تر |
+
+## پانچ یا برش لیزر: کدام برای تیراژ شما به‌صرفه‌تر است؟
+
+برش لیزر قالب ندارد؛ برای همین در تیراژ کم، در نمونه‌سازی یا وقتی طرح هنوز تغییر می‌کند اقتصادی‌تر است. برش لیزر فلزات در هایپرفب یک سرویس آنلاین است: فایل DXF قطعه را در hyperfab.ir بارگذاری می‌کنید و تخمین‌گر قیمت، قیمت را همان لحظه می‌دهد.
+
+پانچ برای تیراژ تکراری با الگوی سوراخ ثابت ساخته شده است. پس از ساخت قالب، هر قطعه با یک یا چند ضرب سریع‌تر و ارزان‌تر ساخته می‌شود و همه‌ی قطعات یکسان درمی‌آیند. هایپرفب هر دو روش را ارائه می‌دهد و بر اساس تیراژ و هندسه‌ی قطعه، روش مناسب را پیشنهاد می‌کند.
+
+- تیراژ کم، نمونه‌ی اولیه یا طرحی که هنوز نهایی نشده: برش لیزر.
+- تیراژ تکراری با الگوی سوراخ ثابت: پانچ.
+- سوراخ و شیار روی لوله، پروفیل و لوله‌ی پلی‌اتیلن: پانچ با قالب مخصوص لوله.
+- تیراژ میانه: مقایسه‌ی قیمت لیزر آنلاین با پیشنهاد قیمت پانچ برای همان تعداد.
+
+## پانچ لوله و پروفیل فلزی چه تفاوتی با پانچ ورق دارد؟
+
+ورق تخت است و روی قالب تکیه‌گاه کامل دارد، اما لوله گرد و توخالی است و دیواره‌اش زیر ضربه تغییر شکل می‌دهد. برای همین پانچ لوله و پروفیل معمولاً قالب مخصوص لوله لازم دارد که شکل مقطع را حین ضربه حفظ کند. این یکی از دلایلی است که هزینه‌ی قالب لوله با قالب ساده‌ی ورق فرق دارد.
+
+هایپرفب سوراخ‌کاری و شیارزنی لوله و پروفیل فلزی را برای سازه، اتصالات، قفسه، نرده و مبلمان انجام می‌دهد. در نقشه‌ی لوله، علاوه بر شکل سوراخ، جای سوراخ‌ها نسبت به سر لوله و نسبت به هم، و جهت آن‌ها دور محیط لوله را مشخص کنید؛ این اطلاعات مستقیماً روی طراحی قالب اثر دارند.
+
+## پانچ لوله‌ی پلی‌اتیلن (PE) چطور انجام می‌شود؟
+
+پانچ لوله‌ی پلیمری از کارهای دشوار این حوزه است. لوله گرد است، دیواره زیر ضربه تغییر شکل می‌دهد و پلی‌اتیلن (که پلی اتیلن هم نوشته می‌شود) رفتاری کاملاً متفاوت با فلز دارد؛ بنابراین قالبی که برای فلز درست کار می‌کند، لزوماً برای پلی‌اتیلن مناسب نیست.
+
+تیم هایپرفب روی لوله‌ی پلی‌اتیلن با قطر ۱۲۵ میلی‌متر، ضخامت دیواره‌ی ۵ میلی‌متر و فشار کاری ۶ بار، شیارهای لوبیایی (kidney-shaped) پانچ کرده است. در یک پروژه‌ی صنعتی دیگر هم کنترل کیفیت ۸٬۰۰۰ لوله‌ی پانچ‌شده با این تیم بوده است. کاربرد رایج این کار، لوله‌های زهکش، فیلتر و توزیع آب و هواست.
+
+برای قیمت پانچ لوله‌ی پلی‌اتیلن، قطر، ضخامت دیواره و فشار کاری لوله، شکل شیار یا سوراخ، الگوی تکرار آن روی طول و محیط لوله و تیراژ را اعلام کنید. نمونه‌ی آزمایشی پیش از تولید زده می‌شود تا کیفیت شیار را روی لوله‌ی واقعی ببینید و تأیید کنید.
+
+## چطور هزینه‌ی پانچ را کم کنیم؟ نکات طراحی پیش از ساخت قالب
+
+قالب گران‌ترین بخش پروژه است و بیشترین صرفه‌جویی پیش از ساخت آن به دست می‌آید. هایپرفب پیش از ساخت قالب، طرح را از نگاه قالب بررسی می‌کند؛ این نکات را هم خودتان می‌توانید از ابتدا رعایت کنید:
+
+- فاصله‌ی سوراخ از لبه را کافی نگه دارید؛ سوراخ خیلی نزدیک به لبه، لبه را زیر ضربه تغییر شکل می‌دهد.
+- قطر سوراخ را متناسب با ضخامت متریال انتخاب کنید؛ سوراخ خیلی کوچک نسبت به ضخامت، سنبه را تحت فشار زیاد قرار می‌دهد.
+- اندازه و شکل سوراخ‌ها را تا جای ممکن یکسان کنید؛ هر شکل تازه یعنی سنبه‌ی بیشتر و قالب پیچیده‌تر.
+- تلرانس سخت را فقط روی ابعاد عملکردی بگذارید.
+- طرح را پیش از ساخت قالب نهایی کنید؛ اگر هنوز در حال آزمایش طرح هستید، نمونه‌ها را با برش لیزر بسازید.
+- تیراژ کل را از ابتدا اعلام کنید تا هزینه‌ی قالب روی تعداد واقعی سرشکن شود.
+
+## برای قیمت پانچ چه بفرستیم و قیمت به چه عواملی بستگی دارد؟
+
+نقشه یا نمونه‌ی فیزیکی قطعه، جنس و ضخامت متریال و تیراژ تقریبی را بفرستید یا تلفنی شرح دهید. برای لوله، قطر و ضخامت دیواره و جای سوراخ‌ها روی طول و محیط لوله را هم اضافه کنید. هایپرفب در تهران است و قطعات پانچ‌شده را به سراسر ایران ارسال می‌کند. قیمت نهایی از ترکیب عوامل زیر به دست می‌آید و پیش از بررسی نقشه نمی‌شود عدد دقیقی برایش گفت.
+
+- هندسه، تعداد و شکل سوراخ‌ها و شیارها.
+- نوع قالب: ساده، چندمرحله‌ای یا مخصوص لوله.
+- دقت لازم در ابعاد و جای سوراخ‌ها.
+- جنس و ضخامت متریال: فولاد، گالوانیزه، استیل، آلومینیوم یا پلیمرهایی مثل پلی‌اتیلن.
+- تعداد ضرب لازم برای هر قطعه و تیراژ سفارش.
+- تأمین متریال توسط هایپرفب یا مشتری.
+- عملیات بعدی مثل رنگ کوره‌ای قطعات پانچ‌شده.
+
+برای قیمت دقیق پروژه‌ی پانچ، با کارشناس پروژه‌های صنعتی هایپرفب به شماره‌ی ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید یا نقشه را در پیام‌رسان بله بفرستید؛ اگر قطعه با برش لیزر هم ساختنی است، قیمت آن را می‌توانید همان لحظه در hyperfab.ir بگیرید.
+
+## FAQ
+
+### قالب پانچ متعلق به کیست؟
+
+قالب مخصوص قطعه‌ی شما طراحی و ساخته می‌شود و هزینه‌اش یک‌بار و جدا از هزینه‌ی ضرب اعلام می‌شود. شرایط مالکیت، نگهداری و استفاده‌ی دوباره از قالب در سفارش‌های بعدی را هنگام دریافت پیشنهاد قیمت با هایپرفب روشن کنید.
+
+### حداقل تیراژ سفارش پانچ چقدر است؟
+
+پانچ چون قالب دارد، برای تیراژ تکراری به‌صرفه است و برای تیراژ کم، برش لیزر اقتصادی‌تر است. هایپرفب بر اساس تیراژ و هندسه‌ی قطعه، روش مناسب را پیشنهاد می‌کند.
+
+### آیا لوله‌ی پلی‌اتیلن را می‌شود تمیز پانچ کرد؟
+
+بله، به شرط اینکه قالب برای رفتار پلی‌اتیلن طراحی شده باشد، نه برای فلز. تیم هایپرفب روی لوله‌ی پلی‌اتیلن ۱۲۵ میلی‌متری با دیواره‌ی ۵ میلی‌متر و فشار کاری ۶ بار، شیار لوبیایی پانچ کرده است و پیش از تولید، نمونه‌ی آزمایشی برای تأیید شما زده می‌شود.
+
+### برای چند صد قطعه، پانچ بهتر است یا برش لیزر؟
+
+به هندسه و تکرار سفارش بستگی دارد: اگر طرح ثابت است و سفارش تکرار می‌شود، هزینه‌ی قالب روی کل تیراژها سرشکن می‌شود و پانچ می‌تواند به‌صرفه باشد. اگر سفارش یک‌باره است یا طرح ممکن است عوض شود، برش لیزر معمولاً اقتصادی‌تر است. قیمت لیزر را آنلاین در hyperfab.ir بگیرید و با پیشنهاد قیمت پانچ مقایسه کنید.
+
+---
+
+# فرق جوش آرگون (TIG) و جوش میگ (MIG) برای استیل و آلومینیوم
+
+URL: https://hyperfabgroup.github.io/guides/tig-vs-mig-stainless-aluminium/
+Updated: 2026-11-15
+
+جوش TIG یا همان جوش آرگون، با الکترود تنگستنی و سیم‌جوش جداگانه، جوشی تمیز، دقیق و بدون پاشش می‌دهد و برای ورق نازک، تجهیزات پزشکی و قطعات ظاهری مناسب‌تر است. جوش MIG سیم‌جوش را پیوسته تغذیه می‌کند، سریع‌تر است و برای درزهای طولانی و سازه‌ای اقتصادی‌تر. انتخاب نهایی به جنس، ضخامت، ظاهر موردنیاز و آزمون‌های جوش بستگی دارد.
+
+## فرق جوش TIG و MIG چیست؟
+
+پاسخ کوتاه: TIG کندتر ولی کنترل‌پذیرتر است و جوشی تمیز و یکدست می‌دهد؛ MIG سریع‌تر است و در جوش‌های طولانی و سازه‌ای هزینه‌ی کمتری دارد. هیچ‌کدام ذاتاً بهتر نیست و روش مناسب را جنس، ضخامت، نوع اتصال و الزامات ظاهری و بهداشتی تعیین می‌کند.
+
+درباره‌ی نام‌ها: در بازار ایران «جوش آرگون» معمولاً به TIG گفته می‌شود و «جوش CO2» به جوشکاری با سیم‌جوش پیوسته، یعنی خانواده‌ی MIG/MAG. در اصطلاح فنی، MIG با گاز محافظ بی‌اثر (Inert) مثل آرگون کار می‌کند و روش سیمی مناسب آلومینیوم است؛ اگر گاز محافظ فعال (Active) باشد، مثل CO2 روی فولاد، نام درست آن MAG است. پس «جوش CO2» در اصل MAG است و آلومینیوم با CO2 جوش داده نمی‌شود. TIG هم با آرگون کار می‌کند و به همین دلیل گاهی به هر دو روش جوشکاری آرگون می‌گویند. املای «جوش‌کاری» و نام‌های «تیگ» و «میگ» هم رایج است.
+
+| معیار | جوش TIG (آرگون) | جوش MIG |
+|---|---|---|
+| سرعت | کندتر؛ سیم‌جوش جداگانه با دست اضافه می‌شود | سریع‌تر؛ سیم‌جوش پیوسته از مشعل تغذیه می‌شود |
+| ظاهر جوش | تمیز و یکدست، بدون پاشش | خوب، با کمی پاشش که ممکن است پرداخت بخواهد |
+| ورق نازک یا ضخیم | برای ورق نازک، لوله و درزهای حساس مناسب‌تر | برای مقاطع ضخیم‌تر و درزهای طولانی اقتصادی‌تر |
+| اعوجاج | کنترل دقیق حرارت روی ورق نازک؛ در درز طولانی، سرعت کم حرارت را پخش می‌کند | حرکت سریع‌تر در درز طولانی؛ روی ورق نازک بدون تنظیم دقیق، خطر سوراخ‌شدن و تاب |
+| مهارت جوشکار | مهارت و هماهنگی دو دست بیشتری می‌خواهد | یادگیری ساده‌تر، ولی تنظیم دستگاه تعیین‌کننده است |
+| کاربرد رایج | تجهیزات پزشکی و غذایی، لوله‌ی استیل، قطعات ظاهری، پاس ریشه | شاسی و فریم، سازه‌های بزرگ، کار تیراژی |
+
+## جوش TIG یا جوش آرگون چیست و کجا به کار می‌رود؟
+
+در جوش TIG (مخفف Tungsten Inert Gas، با نام استاندارد GTAW) قوس بین یک الکترود تنگستنی مصرف‌نشدنی و قطعه برقرار می‌شود و آرگون حوضچه‌ی مذاب را از هوا محافظت می‌کند. سیم‌جوش یا فیلر (Filler) جداگانه اضافه می‌شود و جوشکار حرارت و مقدار فلز جوش را مستقل کنترل می‌کند؛ نتیجه جوشی باریک، تمیز و بدون پاشش است.
+
+به همین دلیل TIG برای ورق و لوله‌ی نازک استیل، قطعات ظاهری، پاس ریشه و تجهیزات پزشکی و غذایی روش رایج است. ضعف آن سرعت است و در درزهای طولانی یا مقاطع ضخیم، ساعت‌کار و هزینه بالا می‌رود.
+
+## جوش MIG چیست و چه فرقی با جوش CO2 دارد؟
+
+در جوش MIG (مخفف Metal Inert Gas، با نام استاندارد GMAW) سیم‌جوش پیوسته از قرقره و از داخل مشعل به حوضچه می‌رسد و هم الکترود است و هم فلز پرکننده. نرخ رسوب بالاست و درزهای طولانی سریع‌تر و یکنواخت‌تر پر می‌شوند.
+
+فرق MIG با آنچه در بازار «جوش CO2» نامیده می‌شود در گاز محافظ است: بی‌اثر در MIG و فعال در MAG. برای آلومینیوم فقط گاز بی‌اثر مناسب است و روی استیل ضدزنگ معمولاً مخلوط‌های پایه‌ی آرگون به کار می‌رود. ظاهر جوش MIG، حتی در حالت پالسی (Pulsed)، معمولاً به یکدستی TIG نمی‌رسد. جای اصلی MIG شاسی، فریم، بدنه‌ی دستگاه و سازه‌های بزرگ است، جایی که سرعت و هزینه تعیین‌کننده‌اند.
+
+## جوشکاری استیل ضدزنگ: تغییر رنگ، اسیدشویی و پسیواسیون چیست؟
+
+مقاومت استیل ضدزنگ در برابر خوردگی از لایه‌ی بسیار نازکی از اکسید کروم روی سطح می‌آید. حرارت جوش کنار درز رنگ‌های طلایی تا آبی ایجاد می‌کند که به آن تغییر رنگ حرارتی (Heat Tint) می‌گویند. هرچه رنگ تیره‌تر باشد، سطح زیر آن از کروم فقیرتر است و زودتر زنگ می‌زند. برای کم‌کردن آن حرارت ورودی کنترل می‌شود و در لوله و مخزن، پشت درز هم با آرگون محافظت می‌شود (Back Purging).
+
+پس از جوشکاری، تغییر رنگ معمولاً با اسیدشویی (Pickling) یا روش‌های مکانیکی برداشته می‌شود و با پسیواسیون (Passivation) لایه‌ی محافظ دوباره و یکنواخت شکل می‌گیرد. الزامات آن باید در نقشه یا شرح سفارش بیاید.
+
+در تجهیزات پزشکی، غذایی و بهداشتی، جوش باید صاف، بدون شکاف و حفره و قابل شست‌وشو باشد تا آلودگی در آن جمع نشود؛ برای همین TIG با نفوذ کامل و پرداخت جوش در این کاربردها رایج است. هایپرفب نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته است.
+
+## جوشکاری آلومینیوم ۶۰۶۱ و ۶۰۶۳ چه نکاتی دارد؟
+
+سطح آلومینیوم همیشه با لایه‌ی نازک و سختی از اکسید پوشیده است که دمای ذوبش بسیار بالاتر از خود فلز است. اگر این لایه شکسته نشود، اتصال درست شکل نمی‌گیرد و آخال اکسید در جوش می‌ماند. برای همین جوش TIG آلومینیوم با جریان متناوب (AC) انجام می‌شود: در نیم‌سیکلی که الکترود مثبت است قوس لایه‌ی اکسید را می‌شکند (اثر تمیزکنندگی) و در نیم‌سیکل دیگر حرارت بیشتری به قطعه می‌رسد و نفوذ ایجاد می‌کند. در MIG آلومینیوم، سیم‌جوش قطب مثبت است و همین قطبیت اثر تمیزکنندگی را می‌دهد. رطوبت و چربی هم عامل اصلی تخلخل‌اند، پس درز پیش از جوشکاری چربی‌زدایی و برس‌زده می‌شود.
+
+آلیاژهای سری ۶۰۰۰، مثل ۶۰۶۱ و ۶۰۶۳، استحکام خود را تا حد زیادی از عملیات حرارتی می‌گیرند. حرارت جوش این اثر را در ناحیه‌ی متأثر از حرارت (HAZ) تا حدی از بین می‌برد و این ناحیه از فلز پایه نرم‌تر می‌شود. این نرم‌شدن در TIG و MIG هر دو رخ می‌دهد و باید در طراحی سازه دیده شود. این آلیاژها بدون سیم‌جوش مناسب مستعد ترک گرم‌اند، پس انتخاب فیلر بخشی از دستورالعمل جوشکاری است.
+
+## بازرسی جوش: کی VT، کی PT و کی PAUT؟
+
+هایپرفب آزمون چشمی (VT)، مایع نافذ (PT)، فراصوتی آرایه‌فازی (PAUT) و آزمون‌های دیگر را به درخواست مشتری انجام می‌دهد. انتخاب آزمون به نوع عیبی بستگی دارد که نگران آن هستید:
+
+معیار پذیرش هم باید از پیش روشن باشد. برای جوش ذوبی فولاد، از جمله استیل ضدزنگ، سطح کیفی معمولاً طبق ISO 5817 و برای جوش قوسی آلومینیوم طبق ISO 10042 مشخص می‌شود و صلاحیت پرسنل آزمون غیرمخرب (NDT) معمولاً طبق ISO 9712 خواسته می‌شود. اگر پروژه‌ی شما سطح کیفی خاصی لازم دارد، آن را همراه نقشه اعلام کنید.
+
+- VT (بازرسی چشمی): پایه‌ی هر بازرسی و برای همه‌ی جوش‌ها؛ شکل و ابعاد جوش، ترک سطحی، بریدگی کناره (Undercut)، پاشش و تغییر رنگ را بررسی می‌کند.
+- PT (مایع نافذ): ترک‌ها و ناپیوستگی‌های باز به سطح را نشان می‌دهد؛ روش رایج آزمون سطحی برای استیل ضدزنگ و آلومینیوم که معمولاً غیرمغناطیسی‌اند.
+- PAUT (فراصوتی آرایه‌فازی): عیوب داخلی مثل عدم ذوب، ترک داخلی و حفره را با تصویر مقطع جوش نشان می‌دهد؛ برای جوش‌های نفوذ کامل و اتصال‌های سازه‌ای و باربر.
+
+## قیمت جوشکاری TIG و MIG به چه عواملی بستگی دارد؟
+
+طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد؛ نقشه پیش از شروع از نظر ساخت‌پذیری، ترتیب جوشکاری و کنترل اعوجاج بررسی و سپس قیمت اعلام می‌شود. عوامل اصلی قیمت:
+
+- جنس قطعه: استیل ضدزنگ یا آلومینیوم سری ۶۰۰۰
+- طول و نوع جوش و روش جوشکاری؛ TIG کندتر و MIG سریع‌تر است
+- ابعاد سازه و فیکسچربندی؛ در سازه‌های بزرگ، مثل شاسی شبکه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند، صافی و هم‌راستایی در طول زیاد تعیین‌کننده است
+- الزامات ظاهری و بهداشتی: پرداخت جوش، محافظت پشت درز و پاک‌سازی تغییر رنگ
+- آزمون‌های درخواستی: VT، PT، PAUT یا آزمون‌های دیگر
+- تعداد قطعات و تکرارپذیری کار
+
+برای قیمت دقیق، نقشه، جنس، تعداد و آزمون‌های لازم را آماده کنید و با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید.
+
+## FAQ
+
+### جوش TIG محکم‌تر است یا MIG؟
+
+هیچ‌کدام ذاتاً محکم‌تر نیست؛ استحکام اتصال به ذوب و نفوذ کامل، فیلر مناسب و نبود عیوبی مثل حفره و عدم ذوب بستگی دارد. در آلومینیوم سری ۶۰۰۰، نرم‌شدن ناحیه‌ی کنار جوش در هر دو روش استحکام را محدود می‌کند.
+
+### چرا جوش TIG آلومینیوم با جریان AC انجام می‌شود؟
+
+چون لایه‌ی اکسید سطح آلومینیوم دمای ذوب بسیار بالاتری از خود فلز دارد. در جریان متناوب، نیم‌سیکل الکترود مثبت این لایه را می‌شکند و نیم‌سیکل دیگر نفوذ می‌دهد؛ بدون این اثر، اکسید در جوش حبس می‌شود.
+
+### آزمون PT چه عیوبی را نشان می‌دهد؟
+
+آزمون مایع نافذ (PT) ترک‌ها، حفره‌ها و ناپیوستگی‌های باز به سطح را نشان می‌دهد. مایع رنگی به داخل عیب نفوذ می‌کند و پس از تمیزکردن سطح و زدن آشکارساز (Developer)، محل عیب دیده می‌شود. PT عیوب کاملاً داخلی را نشان نمی‌دهد.
+
+### چه زمانی آزمون PAUT لازم است؟
+
+وقتی عیوب داخلی، مثل عدم ذوب، ترک داخلی یا حفره، برای ایمنی یا عملکرد قطعه مهم باشد؛ معمولاً در جوش‌های نفوذ کامل و اتصال‌های سازه‌ای و باربر.
