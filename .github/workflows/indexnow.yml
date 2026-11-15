@@ -1,0 +1,32 @@
+# Tells Bing (and other IndexNow engines) about the site's pages after each update,
+# so new and changed pages are crawled quickly. The key file sits at the site root.
+name: IndexNow
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+  workflow_dispatch:
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wait for GitHub Pages to publish
+        run: sleep 120
+      - name: Submit sitemap URLs
+        run: |
+          python3 - <<'PY'
+          import json, re, urllib.request
+          key = '91ba02481f7cc012d3527ab7c38e112d'
+          host = 'hyperfabgroup.github.io'
+          urls = re.findall(r'<loc>([^<]+)</loc>', open('sitemap.xml', encoding='utf-8').read())
+          body = json.dumps({'host': host, 'key': key,
+                             'keyLocation': f'https://{host}/{key}.txt', 'urlList': urls}).encode()
+          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body,
+                                       headers={'Content-Type': 'application/json; charset=utf-8'})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              print('IndexNow', r.status, len(urls), 'URLs')
+          PY
