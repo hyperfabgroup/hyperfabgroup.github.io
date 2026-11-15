@@ -476,12 +476,118 @@ COATING = {
 }
 
 
+TUBELASER = {
+    'depth': 2,
+    'answer': ('<b>Tube and profile laser cutting</b> cuts box section, pipe and profiles to length and adds holes, slots and joint-ready ends '
+               'in one programmed setup. HyperFab, a manufacturing company in Tehran, Iran, does this on square and rectangular tube, round pipe, '
+               'angle, channel and special sections in mild steel, stainless steel and aluminium, from samples and small first runs to batch orders, '
+               'using your material or material sourced by HyperFab. The price depends on the section, material, number of cuts and holes per part '
+               'and quantity; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Laser cutting, hole-making and end preparation of tube and profiles'),
+        ('Sections', 'Square and rectangular tube (box section), round pipe, angle, channel and U, oval and special sections'),
+        ('Materials', 'Mild steel, stainless steel and aluminium'),
+        ('Quantities', 'Samples and small first runs, and batch orders'),
+        ('Material supply', 'Supplied by you, or sourced by HyperFab'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
+    'hero': {
+        'crumb': 'Tube & Profile Laser Cutting',
+        'h1': '<em>Tube and profile laser cutting</em><br>Box section, pipe, angle and channel in steel, stainless and aluminium',
+        'lead': 'HyperFab carries out precise, clean laser cutting, hole-making and end preparation of box section, pipe and open profiles in mild steel, stainless steel and aluminium, from the first sample to batch production.',
+        'ticks': [('Sections:', 'box section, round pipe, angle, channel and special sections', False),
+                  ('Materials:', 'mild steel, stainless steel and aluminium', False),
+                  ('Orders:', 'from samples and first runs to batches', False)],
+        'buttons': hero_btns(),
+        'img': IMG['tubelaser'], 'img_alt': 'Laser head cutting a steel profile with sparks (stock image, AI-generated)',
+        'stats': [('stack', 'Box · Pipe · Angle', '', 'sections'), ('layers', 'Steel · Stainless · Al', '', 'materials'),
+                  ('chart', 'Sample to batch', '', 'orders'), ('shield', 'Drawing to delivery', '', 'one responsible party')],
+    },
+    'sections': [
+        {'kicker': 'WHAT IT IS', 'title': 'What is tube and profile laser cutting?', 'id': 'what',
+         'paras': [
+             '<b>Tube and profile laser cutting</b> is laser cutting applied to long sections instead of flat sheet. A cutting program is generated from the part drawing, and the cut to length, holes, slots and end shapes are made on the different faces of the section in one sequence, without re-clamping the part. What comes off is a part ready for welding or assembly, not a length of stock that still needs sawing, drilling and grinding.',
+             'These sections go by many names. <b>Box section</b> — square or rectangular hollow tube — is itself a kind of profile. Alongside it, <b>round pipe</b>, open profiles such as <b>angle</b>, <b>channel</b> and U sections, and <b>oval and special sections</b> can all be laser cut. HyperFab does this work in <b>mild steel</b>, <b>stainless steel</b> and <b>aluminium</b>.',
+             'HyperFab’s team has long experience in profile laser cutting and focuses on what shows up at assembly: accurate lengths and hole positions, clean cut edges and parts that match across a batch. Orders are not limited to production runs either: samples and small first runs are accepted, so the part can be tried in a real assembly before the batch is cut.',
+         ],
+         'note': '<b>Your material or ours:</b> you can supply the tube, pipe or profile yourself, or have HyperFab source it. Just say which when you ask for a quote.'},
+        {'kicker': 'WHAT CAN BE CUT', 'title': 'Which features can be cut on tube and profiles?', 'id': 'features',
+         'sub': 'Cut to length, round and shaped holes, slots and windows, coped pipe ends, mitred ends and tab-and-slot features for welded frames; what is possible depends on the section and material.',
+         'adv': [
+             ('ruler', 'Cut to length', 'Lengths cut accurately with clean ends, so every part in a batch comes out the same — no sawing or marking out.'),
+             ('target', 'Round and shaped holes', 'Round, oval, square or any other hole shape on the faces of the section, positioned accurately from the part end. Very small holes relative to the wall thickness are confirmed after review.'),
+             ('sheet', 'Slots and windows', 'Slots for fasteners and adjustment, windows for cable routing or weight saving, and decorative cut-outs in tube and pipe walls.'),
+             ('link', 'Coped pipe ends', 'Pipe ends shaped to fit the mating pipe (fish-mouth or saddle cuts), so the two sit without gaps and weld evenly. On thick-wall pipe, after reviewing the drawing.'),
+             ('cube', 'Mitred ends', 'Angled end cuts for frame and box corners; the achievable angle depends on the section.'),
+             ('stack', 'Tab-and-slot frames', 'Tabs and slots that locate frame members in the right place before welding, reducing fixturing and improving frame accuracy.'),
+         ],
+         'note': '<b>On request, after review:</b> weld-prep bevels and laser marking or etching can be considered on request, depending on the section. On open profiles and special sections, the range of features is confirmed once the drawing has been reviewed.'},
+        {'kicker': 'WHY LASER', 'title': 'Why laser cut instead of sawing, drilling and punching?', 'id': 'why',
+         'sub': 'Every cut and hole in one setup and one program, with no tooling cost, holes positioned accurately from the part end and matching parts across the batch.',
+         'table': [
+             ('Aspect', 'Tube laser cutting', 'Saw, drill and punch'),
+             ('Operations', 'Cut to length, holes and slots in one setup', 'Several steps, with repeated handling and measuring'),
+             ('Tooling', 'No tooling; shapes are programmed from the drawing', 'Shaped holes need a die or special tool'),
+             ('Hole position', 'Accurate relative to the part end and to each other', 'Depends on marking out and operator skill'),
+             ('Cut edge', 'Clean edge with little finishing', 'Usually needs deburring and grinding'),
+             ('Repeatability', 'Parts in a batch match', 'Varies from part to part'),
+             ('Design changes', 'Update the drawing and program', 'New tool or template'),
+         ],
+         'note': '<b>Choosing fairly:</b> if a part has only a few simple, repeated holes and the volume is very high, <a href="../punching/">tube and sheet punching</a> can be more economical once the die is made. HyperFab does both and recommends the right process for the geometry and quantity.'},
+        {'kicker': 'DESIGN TIPS', 'title': 'How should a tube or profile part be drawn?', 'id': 'design',
+         'sub': 'A 3D STEP or IGES file is the best input; state the section, material and quantity, keep holes off the corner radii and allow for the weld seam of welded tube.',
+         'checks': [
+             '<b>3D file:</b> a STEP or IGES model of the part is the best input. If you do not have one, a 2D drawing, DXF or PDF is accepted, as long as the section and dimensions are clearly stated.',
+             '<b>Section, material and quantity:</b> note the section size and wall thickness, the material (mild steel, stainless steel or aluminium) and the quantity of each part.',
+             '<b>Clear of corner radii:</b> box section has rounded corners, and a hole that runs onto the radius changes shape. Keep the edges of holes and slots on the flat part of the face.',
+             '<b>Tab-and-slot clearance:</b> leave a little clearance in tabs and slots so parts fit together without forcing.',
+             '<b>Weld seam:</b> welded tube and pipe have a weld seam on the inside. If a hole or slot must not land on the seam, say so on the drawing.',
+             '<b>Visible faces:</b> if a face will be visible in the finished product, mark it so feature placement and handling take it into account.',
+         ]},
+        {'kicker': 'ONE CHAIN', 'title': 'Can HyperFab also weld and finish the frame?', 'id': 'chain',
+         'paras': [
+             'Yes. A tube or profile part is usually one member of a frame, chassis or structure. After laser cutting, you can also hand HyperFab the <a href="../welding/">TIG and MIG welding and frame fabrication</a>, followed by <a href="../powder-coating/">powder coating</a> or <a href="../plating-anodizing/">plating and anodizing</a>. Sheet parts for the same structure, such as base plates, brackets and gussets, can be ordered online through <a href="https://hyperfab.ir/services/laser-metal/">sheet metal laser cutting</a> and <a href="https://hyperfab.ir/services/bending/">sheet metal bending</a> on hyperfab.ir.',
+             'The advantage of one chain is one responsible party. If tabs and slots were designed for welding, HyperFab, having been responsible for the cut, is also responsible for welding the frame and checking the final dimensions. The part is not passed between workshops, and if something is wrong, it is clear who fixes it.',
+         ]},
+        {'kicker': 'HOW IT WORKS', 'title': 'How is tube and profile laser cutting ordered?', 'id': 'steps',
+         'sub': 'Five steps: send the drawing, engineering review and quote, sample or first run, batch production, and inspection and delivery.',
+         'steps': [
+             ('Send the drawing', 'Send a STEP file or drawing on Bale, or call and give the section, material and quantity.'),
+             ('Review and quote', 'The drawing is checked for cuttability and priced by section, material, number of cuts and holes and quantity; material from you or from HyperFab.'),
+             ('Sample or first run', 'The first few parts are cut so they can be tried and approved in a real assembly or weld.'),
+             ('Batch production', 'Once approved, the whole order is cut with the same program so the parts match.'),
+             ('Inspection and delivery', 'Parts are inspected and delivered, or moved on to welding and finishing.'),
+         ]},
+    ],
+    'faq': [
+        ('Which sections and materials can be laser cut?', 'Square and rectangular tube (box section), round pipe, open profiles such as angle, channel and U, and oval and special sections, in mild steel, stainless steel and aluminium.'),
+        ('Do you accept samples or small quantities?', 'Yes. HyperFab accepts samples and small first runs so the part can be tried in a real assembly before batch production. Once approved, the same program is used for the batch order.'),
+        ('Can I supply my own tube or profile?', 'Yes. You can supply the material yourself or have HyperFab source it. Say which you prefer when you ask for a quote.'),
+        ('What file do you need for tube laser cutting?', 'A 3D STEP or IGES file is the best input. A 2D drawing, DXF or PDF is also accepted, as long as the section, material and dimensions are clear. If you only have a physical sample part, you can bring that too.'),
+        ('What are the maximum size, wall thickness and accuracy?', 'They depend on the section and material. What is achievable for each project is confirmed by phone after the drawing has been reviewed: ' + TEL_EN + '.'),
+        ('Can you also weld and paint the frame?', 'Yes. After laser cutting, TIG and MIG welding and frame fabrication, powder coating, and plating or anodizing are also available at HyperFab, so the structure arrives finished.'),
+        ('How is tube laser cutting different from sheet laser cutting?', 'Sheet laser cutting works on flat sheet and is ordered online at hyperfab.ir with an instant price. Tube and profile laser cutting works on tube, pipe and profiles, covers several faces and end shapes, and is ordered by phone after the drawing has been reviewed.'),
+        ('Where is HyperFab’s tube laser cutting service based?', 'HyperFab is based in Tehran, Iran. Tube and profile laser cutting is ordered by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
+    ],
+    'cta_h': 'Send us your tube or profile drawing',
+    'cta_p': 'Send a STEP file or drawing with the section, material and quantity, or call. HyperFab’s industrial projects specialist answers by phone.',
+    'cta_btns': CTA_BTNS,
+    'schema': svc('HyperFab Tube & Profile Laser Cutting', ['Tube laser cutting', 'Profile laser cutting', 'Box section laser cutting', 'برش لیزر پروفیل و لوله'],
+                  'Laser cutting and hole-making of metal tube, pipe and profiles', '/en/tube-laser-cutting/',
+                  'Laser cutting, hole-making and end preparation of box section, round pipe, angle, channel and special sections in mild steel, stainless steel and aluminium, from samples and first runs to batch orders, with customer-supplied or HyperFab-sourced material.'),
+}
+
+
 def page(key, slug, title, desc, kw):
     return {'key': key, 'file': 'en/' + slug + '/index.html', 'path': '/en/' + slug + '/', 'alt_path': '/' + slug + '/',
             'alt_rel': slug + '/', 'priority': '0.8', 'title': title, 'desc': desc, 'keywords': kw}
 
 
 PAGES = {
+    'page_tubelaser': page('tubelaser', 'tube-laser-cutting', 'Tube & Profile Laser Cutting in Tehran, Iran | HyperFab',
+                           'HyperFab in Tehran, Iran laser-cuts box section, round pipe, angle and channel in steel, stainless and aluminium: clean, accurate cuts, sample to batch.',
+                           'tube laser cutting, profile laser cutting, box section laser cutting, RHS SHS laser cutting, round pipe laser cutting, angle and channel laser cutting, stainless steel tube laser cutting, aluminium profile laser cutting, tube laser cutting Tehran, tube laser cutting Iran, HyperFab'),
     'page_welding': page('welding', 'welding', 'TIG & MIG Welding, Stainless & Aluminium, Tehran | HyperFab',
                          'HyperFab in Tehran, Iran does TIG and MIG welding of stainless steel and 6000-series aluminium and welded structures to drawing, with VT, PT and PAUT.',
                          'TIG welding stainless steel Tehran, TIG welding Iran, MIG welding Iran, stainless steel welding Tehran, aluminium welding Iran, 6061 aluminium welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),
@@ -500,12 +606,13 @@ PAGES = {
 }
 
 FEATURE_PARAS = [
-    'When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: <a href="punching/">sheet and tube punching</a>, <a href="injection-molding/">mould making and injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="aluminium-extrusion/">aluminium extrusion</a>, <a href="welding/">welding and welded fabrication</a>, <a href="plating-anodizing/">plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. A part can go from production to final finish in one place.',
+    'When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: <a href="punching/">sheet and tube punching</a>, <a href="tube-laser-cutting/">tube and profile laser cutting</a>, <a href="injection-molding/">mould making and injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="aluminium-extrusion/">aluminium extrusion</a>, <a href="welding/">welding and welded fabrication</a>, <a href="plating-anodizing/">plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. A part can go from production to final finish in one place.',
     'HyperFab’s engineering team comes from Iran’s top universities, including Sharif University of Technology, and has worked in industry for years. It has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Its record also includes quality control of 8,000 punched tubes, mating brass parts and MO40 and CK45 gauges, and stainless and aluminium structures for the medical and marine industries.',
 ]
 
 FEATURE_POINTS = [
     '<b><a href="punching/">Sheet and tube punching</a>:</b> metal and polyethylene; punching die design and manufacture and production runs.',
+    '<b><a href="tube-laser-cutting/">Tube and profile laser cutting</a>:</b> box section, pipe, angle and channel in mild steel, stainless and aluminium; from sample to batch.',
     '<b><a href="injection-molding/">Mould making and injection moulding</a>:</b> mould making, sampling and production in PE, PP, ABS and nylon.',
     '<b><a href="cnc-turning/">Batch CNC turning</a>:</b> brass parts with fit tolerances and gauge parts in MO40 and CK45.',
     '<b><a href="aluminium-extrusion/">Aluminium extrusion</a>:</b> your section with a dedicated die; you bring tonnage and die cost, we do the rest.',
@@ -516,7 +623,7 @@ FEATURE_POINTS = [
 ]
 
 HOME_FAQ = [
-    ('Does HyperFab weld stainless steel and aluminium?', 'Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries.'),
+    ('Does HyperFab weld stainless steel and aluminium?', 'Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries. Laser cutting of the structure’s tube and box-section members can also be handled by HyperFab.'),
     ('Does HyperFab do batch CNC turning?', 'Yes. HyperFab produces batch turned parts to drawing, including brass parts with fit tolerances and gauge parts in MO40 and CK45 steel. Each part’s critical points are engineered and checked before production.'),
     ('Does HyperFab extrude aluminium profiles?', 'Yes, as a specialisation and for aluminium only. Profiles are made in the customer’s own section with a dedicated die. The customer has the required tonnage and pays for the die, and HyperFab’s engineering team handles everything from section consultation to delivery.'),
     ('Does HyperFab do plating, anodizing and powder coating?', 'Yes, for production runs. HyperFab does silver and gold plating on brass and other metals, and anodizing and chromate (Alodine) on aluminium. Powder coating in powder, pearl, hammer and textured finishes is also available.'),
@@ -524,26 +631,29 @@ HOME_FAQ = [
 
 
 def apply(C):
-    C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION})
+    C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION, 'tubelaser': TUBELASER})
     C.update(PAGES)
-    C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'injection', 'turning', 'extrusion', 'welding', 'plating', 'coating']
+    C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'tubelaser', 'injection', 'turning', 'extrusion', 'welding', 'plating', 'coating']
     f = C['home']['ind_feature']
     f.update({'title': 'Industrial and batch production: from moulds and turning to welding, plating and coating',
               'sub': 'A complete chain for batch parts, from production to final finish, with one responsible engineering team.',
               'paras': FEATURE_PARAS, 'points': FEATURE_POINTS,
               'img': 'assets/img/works/flange-steel-4.jpg', 'img_alt': 'Turning an AISI 304 stainless part on a HyperFab project', 'caption': 'Real photo: turning an AISI 304 stainless part on a HyperFab project.', 'img_w': 868, 'img_h': 1156,
               'more_rel': 'en/cnc-turning/', 'more': 'Batch CNC turning', 'try_url': 'en/welding/', 'try': 'Welding and welded fabrication'})
+    C['industrial_links'][1:1] = [('Tube and profile laser cutting', 'en/tube-laser-cutting/')]  # right after punching
     C['industrial_links'] += [('Batch CNC turning', 'en/cnc-turning/'), ('Aluminium extrusion', 'en/aluminium-extrusion/'),
                               ('Welding and welded fabrication', 'en/welding/'), ('Plating and anodizing', 'en/plating-anodizing/'),
                               ('Powder coating', 'en/powder-coating/')]
     for name, d, path in (('HyperFab Batch CNC Turning', TURNING, '/en/cnc-turning/'), ('HyperFab Aluminium Extrusion', EXTRUSION, '/en/aluminium-extrusion/'),
                           ('HyperFab Welding and Welded Fabrication', WELDING, '/en/welding/'), ('HyperFab Plating and Anodizing', PLATING, '/en/plating-anodizing/'),
-                          ('HyperFab Powder Coating', COATING, '/en/powder-coating/')):
+                          ('HyperFab Powder Coating', COATING, '/en/powder-coating/'),
+                          ('HyperFab Tube & Profile Laser Cutting', TUBELASER, '/en/tube-laser-cutting/')):
         C['tools_as_services'].append({'title': name, 'paras': [d['schema'][0]['description']], 'url': SITE + path})
     C['knows_about'] += ['CNC turning', 'batch production', 'TIG welding', 'MIG welding', 'stainless steel welding', 'aluminium welding',
                          'welded fabrication', 'non-destructive weld testing', 'gold plating', 'silver plating', 'anodizing',
-                         'chromate conversion coating', 'powder coating', 'aluminium extrusion', 'custom aluminium profiles']
-    C['org_desc'] = C['org_desc'].rstrip('.') + ', batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing, and powder coating.'
+                         'chromate conversion coating', 'powder coating', 'aluminium extrusion', 'custom aluminium profiles',
+                         'tube laser cutting', 'profile laser cutting', 'box section laser cutting']
+    C['org_desc'] = C['org_desc'].rstrip('.') + ', tube and profile laser cutting, batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing, and powder coating.'
     C['home']['faq'][-1:-1] = HOME_FAQ
     cnc = next(s for s in C['services'] if s['key'] == 'cnc')
     cnc['paras'].append('CNC machining at HyperFab is not only for mould making. HyperFab makes all kinds of parts to customers’ drawings with high quality and precision, from single parts and prototypes to <a href="cnc-turning/">batch production of turned parts</a> in brass and MO40 and CK45 steel.')

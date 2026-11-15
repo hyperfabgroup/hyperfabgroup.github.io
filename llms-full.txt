@@ -22,7 +22,7 @@ HyperFab (Persian: هایپرفب) is an online manufacturing platform in Tehran
 
 HyperFab’s 3D printing, CNC, laser and bending orders are usually ready within three working days, and the minimum order is one part. Parts are shipped across Iran by Post, Tipax and Snappbox, and pickup in Tehran is free. HyperFab’s Tekeyab service sources small pieces of industrial material — sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics — quotes a price and cuts them to size if needed.
 
-For industrial and batch production, HyperFab offers sheet and tube punching (metal and polyethylene), mould making and plastic injection moulding, batch CNC turning, custom aluminium extrusion, TIG and MIG welding, gold and silver plating and anodizing and powder coating. For punching, injection moulding and extrusion, tooling design and manufacture are part of the service, and parts are inspected before delivery. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. Industrial projects are handled by phone: +98 996 223 3898.
+For industrial and batch production, HyperFab offers sheet and tube punching (metal and polyethylene), tube and profile laser cutting, mould making and plastic injection moulding, batch CNC turning, custom aluminium extrusion, TIG and MIG welding, gold and silver plating and anodizing and powder coating. For punching, injection moulding and extrusion, tooling design and manufacture are part of the service, and parts are inspected before delivery. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. Industrial projects are handled by phone: +98 996 223 3898.
 
 ## Services and manufacturing processes
 
@@ -137,11 +137,12 @@ Tekeyab covers aluminium, stainless steel, carbon steel, copper and brass, engin
 
 A complete chain for batch parts, from production to final finish, with one responsible engineering team.
 
-When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: sheet and tube punching, mould making and injection moulding, batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing and powder coating. A part can go from production to final finish in one place.
+When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: sheet and tube punching, tube and profile laser cutting, mould making and injection moulding, batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing and powder coating. A part can go from production to final finish in one place.
 
 HyperFab’s engineering team comes from Iran’s top universities, including Sharif University of Technology, and has worked in industry for years. It has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Its record also includes quality control of 8,000 punched tubes, mating brass parts and MO40 and CK45 gauges, and stainless and aluminium structures for the medical and marine industries.
 
 - Sheet and tube punching: metal and polyethylene; punching die design and manufacture and production runs.
+- Tube and profile laser cutting: box section, pipe, angle and channel in mild steel, stainless and aluminium; from sample to batch.
 - Mould making and injection moulding: mould making, sampling and production in PE, PP, ABS and nylon.
 - Batch CNC turning: brass parts with fit tolerances and gauge parts in MO40 and CK45.
 - Aluminium extrusion: your section with a dedicated die; you bring tonnage and die cost, we do the rest.
@@ -242,7 +243,7 @@ Send a hand sketch, a photo of a sample part or a description of what it does. D
 
 ### Does HyperFab weld stainless steel and aluminium?
 
-Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries.
+Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries. Laser cutting of the structure’s tube and box-section members can also be handled by HyperFab.
 
 ### Does HyperFab do batch CNC turning?
 
@@ -643,6 +644,127 @@ For low quantities or designs that keep changing, laser cutting is cheaper becau
 ### Where is HyperFab, and does it deliver outside Tehran?
 
 HyperFab is based in Tehran, Iran, and punched parts are shipped across Iran. Punching projects are discussed by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+# Tube and profile laser cutting — Box section, pipe, angle and channel in steel, stainless and aluminium
+
+URL: https://hyperfabgroup.github.io/en/tube-laser-cutting/
+
+Tube and profile laser cutting cuts box section, pipe and profiles to length and adds holes, slots and joint-ready ends in one programmed setup. HyperFab, a manufacturing company in Tehran, Iran, does this on square and rectangular tube, round pipe, angle, channel and special sections in mild steel, stainless steel and aluminium, from samples and small first runs to batch orders, using your material or material sourced by HyperFab. The price depends on the section, material, number of cuts and holes per part and quantity; call +98 996 223 3898.
+
+HyperFab carries out precise, clean laser cutting, hole-making and end preparation of box section, pipe and open profiles in mild steel, stainless steel and aluminium, from the first sample to batch production.
+
+- Service: Laser cutting, hole-making and end preparation of tube and profiles
+- Sections: Square and rectangular tube (box section), round pipe, angle, channel and U, oval and special sections
+- Materials: Mild steel, stainless steel and aluminium
+- Quantities: Samples and small first runs, and batch orders
+- Material supply: Supplied by you, or sourced by HyperFab
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Sections: box section, round pipe, angle, channel and special sections
+- Materials: mild steel, stainless steel and aluminium
+- Orders: from samples and first runs to batches
+
+## What is tube and profile laser cutting?
+
+Tube and profile laser cutting is laser cutting applied to long sections instead of flat sheet. A cutting program is generated from the part drawing, and the cut to length, holes, slots and end shapes are made on the different faces of the section in one sequence, without re-clamping the part. What comes off is a part ready for welding or assembly, not a length of stock that still needs sawing, drilling and grinding.
+
+These sections go by many names. Box section — square or rectangular hollow tube — is itself a kind of profile. Alongside it, round pipe, open profiles such as angle, channel and U sections, and oval and special sections can all be laser cut. HyperFab does this work in mild steel, stainless steel and aluminium.
+
+HyperFab’s team has long experience in profile laser cutting and focuses on what shows up at assembly: accurate lengths and hole positions, clean cut edges and parts that match across a batch. Orders are not limited to production runs either: samples and small first runs are accepted, so the part can be tried in a real assembly before the batch is cut.
+
+Your material or ours: you can supply the tube, pipe or profile yourself, or have HyperFab source it. Just say which when you ask for a quote.
+
+## Which features can be cut on tube and profiles?
+
+Cut to length, round and shaped holes, slots and windows, coped pipe ends, mitred ends and tab-and-slot features for welded frames; what is possible depends on the section and material.
+
+- **Cut to length**: Lengths cut accurately with clean ends, so every part in a batch comes out the same — no sawing or marking out.
+- **Round and shaped holes**: Round, oval, square or any other hole shape on the faces of the section, positioned accurately from the part end. Very small holes relative to the wall thickness are confirmed after review.
+- **Slots and windows**: Slots for fasteners and adjustment, windows for cable routing or weight saving, and decorative cut-outs in tube and pipe walls.
+- **Coped pipe ends**: Pipe ends shaped to fit the mating pipe (fish-mouth or saddle cuts), so the two sit without gaps and weld evenly. On thick-wall pipe, after reviewing the drawing.
+- **Mitred ends**: Angled end cuts for frame and box corners; the achievable angle depends on the section.
+- **Tab-and-slot frames**: Tabs and slots that locate frame members in the right place before welding, reducing fixturing and improving frame accuracy.
+
+On request, after review: weld-prep bevels and laser marking or etching can be considered on request, depending on the section. On open profiles and special sections, the range of features is confirmed once the drawing has been reviewed.
+
+## Why laser cut instead of sawing, drilling and punching?
+
+Every cut and hole in one setup and one program, with no tooling cost, holes positioned accurately from the part end and matching parts across the batch.
+
+| Aspect | Tube laser cutting | Saw, drill and punch |
+|---|---|---|
+| Operations | Cut to length, holes and slots in one setup | Several steps, with repeated handling and measuring |
+| Tooling | No tooling; shapes are programmed from the drawing | Shaped holes need a die or special tool |
+| Hole position | Accurate relative to the part end and to each other | Depends on marking out and operator skill |
+| Cut edge | Clean edge with little finishing | Usually needs deburring and grinding |
+| Repeatability | Parts in a batch match | Varies from part to part |
+| Design changes | Update the drawing and program | New tool or template |
+
+Choosing fairly: if a part has only a few simple, repeated holes and the volume is very high, tube and sheet punching can be more economical once the die is made. HyperFab does both and recommends the right process for the geometry and quantity.
+
+## How should a tube or profile part be drawn?
+
+A 3D STEP or IGES file is the best input; state the section, material and quantity, keep holes off the corner radii and allow for the weld seam of welded tube.
+
+- 3D file: a STEP or IGES model of the part is the best input. If you do not have one, a 2D drawing, DXF or PDF is accepted, as long as the section and dimensions are clearly stated.
+- Section, material and quantity: note the section size and wall thickness, the material (mild steel, stainless steel or aluminium) and the quantity of each part.
+- Clear of corner radii: box section has rounded corners, and a hole that runs onto the radius changes shape. Keep the edges of holes and slots on the flat part of the face.
+- Tab-and-slot clearance: leave a little clearance in tabs and slots so parts fit together without forcing.
+- Weld seam: welded tube and pipe have a weld seam on the inside. If a hole or slot must not land on the seam, say so on the drawing.
+- Visible faces: if a face will be visible in the finished product, mark it so feature placement and handling take it into account.
+
+## Can HyperFab also weld and finish the frame?
+
+Yes. A tube or profile part is usually one member of a frame, chassis or structure. After laser cutting, you can also hand HyperFab the TIG and MIG welding and frame fabrication, followed by powder coating or plating and anodizing. Sheet parts for the same structure, such as base plates, brackets and gussets, can be ordered online through sheet metal laser cutting and sheet metal bending on hyperfab.ir.
+
+The advantage of one chain is one responsible party. If tabs and slots were designed for welding, HyperFab, having been responsible for the cut, is also responsible for welding the frame and checking the final dimensions. The part is not passed between workshops, and if something is wrong, it is clear who fixes it.
+
+## How is tube and profile laser cutting ordered?
+
+Five steps: send the drawing, engineering review and quote, sample or first run, batch production, and inspection and delivery.
+
+1. **Send the drawing**: Send a STEP file or drawing on Bale, or call and give the section, material and quantity.
+2. **Review and quote**: The drawing is checked for cuttability and priced by section, material, number of cuts and holes and quantity; material from you or from HyperFab.
+3. **Sample or first run**: The first few parts are cut so they can be tried and approved in a real assembly or weld.
+4. **Batch production**: Once approved, the whole order is cut with the same program so the parts match.
+5. **Inspection and delivery**: Parts are inspected and delivered, or moved on to welding and finishing.
+
+## FAQ
+
+### Which sections and materials can be laser cut?
+
+Square and rectangular tube (box section), round pipe, open profiles such as angle, channel and U, and oval and special sections, in mild steel, stainless steel and aluminium.
+
+### Do you accept samples or small quantities?
+
+Yes. HyperFab accepts samples and small first runs so the part can be tried in a real assembly before batch production. Once approved, the same program is used for the batch order.
+
+### Can I supply my own tube or profile?
+
+Yes. You can supply the material yourself or have HyperFab source it. Say which you prefer when you ask for a quote.
+
+### What file do you need for tube laser cutting?
+
+A 3D STEP or IGES file is the best input. A 2D drawing, DXF or PDF is also accepted, as long as the section, material and dimensions are clear. If you only have a physical sample part, you can bring that too.
+
+### What are the maximum size, wall thickness and accuracy?
+
+They depend on the section and material. What is achievable for each project is confirmed by phone after the drawing has been reviewed: +98 996 223 3898.
+
+### Can you also weld and paint the frame?
+
+Yes. After laser cutting, TIG and MIG welding and frame fabrication, powder coating, and plating or anodizing are also available at HyperFab, so the structure arrives finished.
+
+### How is tube laser cutting different from sheet laser cutting?
+
+Sheet laser cutting works on flat sheet and is ordered online at hyperfab.ir with an instant price. Tube and profile laser cutting works on tube, pipe and profiles, covers several faces and end shapes, and is ordered by phone after the drawing has been reviewed.
+
+### Where is HyperFab’s tube laser cutting service based?
+
+HyperFab is based in Tehran, Iran. Tube and profile laser cutting is ordered by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
 
 ---
 
@@ -2174,7 +2296,7 @@ URL: https://hyperfabgroup.github.io/
 
 برای خرید تکه‌ی کوچک متریال صنعتی، سرویس تکه‌یاب هایپرفب تکه را پیدا می‌کند، قیمت می‌دهد و در صورت نیاز به اندازه برش می‌زند: ورق، میلگرد، شفت، تسمه، لوله و پروفیل از آلومینیوم، استیل، فولاد، مس، برنج و پلاستیک مهندسی. ارسال به سراسر ایران با پست پیشتاز، تیپاکس و اسنپ‌باکس است و تحویل حضوری در تهران رایگان است.
 
-برای تولید صنعتی و تیراژی، هایپرفب پانچ ورق و لوله (فلزی و پلی‌اتیلن)، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری آرگون TIG و MIG، آبکاری و آندایز و رنگ کوره‌ای را انجام می‌دهد و کیفیت قطعات را پیش از تحویل کنترل می‌کند. در پانچ، تزریق و اکسترود، طراحی و ساخت قالب هم بخشی از خدمت است. گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور می‌آید و سال‌ها در دل صنعت کار کرده است. مشاوره‌ی این پروژه‌ها تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
+برای تولید صنعتی و تیراژی، هایپرفب پانچ ورق و لوله (فلزی و پلی‌اتیلن)، برش لیزر قوطی، لوله و پروفیل، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری آرگون TIG و MIG، آبکاری و آندایز و رنگ کوره‌ای را انجام می‌دهد و کیفیت قطعات را پیش از تحویل کنترل می‌کند. در پانچ، تزریق و اکسترود، طراحی و ساخت قالب هم بخشی از خدمت است. گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور می‌آید و سال‌ها در دل صنعت کار کرده است. مشاوره‌ی این پروژه‌ها تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
 
 ## خدمات و روش‌های تولید
 
@@ -2289,11 +2411,12 @@ URL: https://hyperfab.ir/services/bending/
 
 زنجیره‌ی کامل ساخت قطعات تیراژی، از ساخت قطعه تا پوشش نهایی، با یک گروه مهندسی مسئول.
 
-وقتی قطعه از نمونه به تیراژ می‌رسد، روش ساخت هم باید عوض شود. هایپرفب برای تولید صنعتی و تیراژی، زنجیره‌ی کاملی از خدمات دارد: پانچ ورق و لوله، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری و ساخت سازه‌های جوشی، آبکاری و آندایز و رنگ کوره‌ای. یعنی قطعه از ساخت تا پوشش نهایی یک‌جا انجام و تحویل می‌شود.
+وقتی قطعه از نمونه به تیراژ می‌رسد، روش ساخت هم باید عوض شود. هایپرفب برای تولید صنعتی و تیراژی، زنجیره‌ی کاملی از خدمات دارد: پانچ ورق و لوله، برش لیزر پروفیل و لوله، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری و ساخت سازه‌های جوشی، آبکاری و آندایز و رنگ کوره‌ای. یعنی قطعه از ساخت تا پوشش نهایی یک‌جا انجام و تحویل می‌شود.
 
 گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور، از جمله دانشگاه صنعتی شریف، می‌آید و سال‌ها در دل صنعت کار کرده است. چهار قالب تزریق پلی‌اتیلن را از ساخت تا راه‌اندازی برده و با آن‌ها بیش از ۸۰٬۰۰۰ قطعه تولید شده است. کنترل کیفیت ۸٬۰۰۰ لوله‌ی پانچ‌شده، قطعات برنجی جفت‌شونده و گیج‌های MO40 و CK45، و سازه‌های استیل و آلومینیوم برای صنایع پزشکی و دریایی هم در کارنامه‌اش است.
 
 - پانچ ورق و لوله: فلزی و پلی‌اتیلن؛ طراحی و ساخت قالب پانچ و تولید ضربی.
+- برش لیزر پروفیل و لوله: قوطی، لوله، نبشی و ناودانی از آهن، استیل و آلومینیوم؛ از نمونه تا تیراژ.
 - قالب‌سازی و تزریق پلاستیک: ساخت قالب، نمونه‌گیری و تولید ضربی با PE، PP، ABS و نایلون.
 - تراشکاری CNC تیراژی: قطعات برنجی با تلرانس انطباقی و قطعات گیج از MO40 و CK45.
 - اکسترود پروفیل آلومینیوم: مقطع دلخواه با قالب اختصاصی؛ تناژ و هزینه‌ی قالب با شما، بقیه با ما.
@@ -2394,7 +2517,7 @@ URL: https://hyperfab.ir/services/bending/
 
 ### هایپرفب جوشکاری آرگون استیل و آلومینیوم انجام می‌دهد؟
 
-بله. هایپرفب جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد و سازه‌های جوشی دستگاه و سازه‌های پلتفرمی بزرگ را بر اساس نقشه‌ی مشتری می‌سازد. آزمون‌های VT، PT و PAUT هم به درخواست انجام می‌شود و نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته شده است.
+بله. هایپرفب جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد و سازه‌های جوشی دستگاه و سازه‌های پلتفرمی بزرگ را بر اساس نقشه‌ی مشتری می‌سازد. آزمون‌های VT، PT و PAUT هم به درخواست انجام می‌شود و نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته شده است. برش لیزر قوطی و لوله‌ی اعضای سازه را هم می‌توانید به هایپرفب بسپارید.
 
 ### هایپرفب تراشکاری CNC تیراژی انجام می‌دهد؟
 
@@ -2793,6 +2916,127 @@ URL: https://hyperfabgroup.github.io/punching/
 ### هایپرفب کجاست و به شهرهای دیگر هم ارسال دارد؟
 
 هایپرفب در تهران است و قطعات پانچ‌شده را به سراسر ایران ارسال می‌کند. مشاوره و سفارش پروژه‌های پانچ تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
+
+---
+
+# برش لیزر پروفیل و لوله — قوطی، لوله، نبشی و ناودانی؛ آهن، استیل و آلومینیوم
+
+URL: https://hyperfabgroup.github.io/tube-laser-cutting/
+
+برش لیزر پروفیل و لوله یعنی بریدن قوطی، لوله و پروفیل به طول لازم و زدن سوراخ، شیار و فرم سرِ اتصال، همه با یک برنامه و در یک مرحله. هایپرفب در تهران این کار را روی قوطی، لوله‌ی گرد، نبشی، ناودانی و مقاطع خاص از آهن، استیل و آلومینیوم انجام می‌دهد؛ از نمونه و تیراژ اولیه‌ی کوچک تا سفارش تیراژی، با متریال خودتان یا متریالی که هایپرفب تأمین می‌کند. قیمت به مقطع، جنس، تعداد برش و سوراخ هر قطعه و تیراژ بستگی دارد؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+هایپرفب برش لیزر، سوراخکاری و آماده‌سازی سرِ قوطی، لوله و پروفیل را از آهن، استیل و آلومینیوم، دقیق و با لبه‌ی برش تمیز انجام می‌دهد؛ از اولین نمونه تا سفارش تیراژی.
+
+- خدمت: برش لیزر، سوراخکاری و آماده‌سازی سرِ قوطی، لوله و پروفیل
+- مقاطع: قوطی مربع و مستطیل، لوله‌ی گرد، نبشی، ناودانی و U، مقاطع بیضی و خاص
+- جنس: آهن، استیل و آلومینیوم
+- تیراژ: نمونه و تیراژ اولیه‌ی کوچک، و سفارش تیراژی
+- متریال: از طرف شما، یا تأمین توسط هایپرفب
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro
+- محل: تهران
+
+- مقاطع: قوطی، لوله، نبشی، ناودانی و مقاطع خاص
+- جنس: آهن، استیل و آلومینیوم
+- سفارش: از نمونه و تیراژ اولیه تا تولید تیراژی
+
+## برش لیزر پروفیل و لوله چیست و روی چه مقاطعی انجام می‌شود؟
+
+برش لیزر پروفیل و لوله (Tube & Profile Laser Cutting) همان برش لیزر است، اما به‌جای ورق تخت روی مقاطع بلند انجام می‌شود. برنامه‌ی برش از روی نقشه‌ی قطعه ساخته می‌شود و برش به طول، سوراخ‌ها، شیارها و فرم سرها روی وجه‌های مختلف مقطع، پشت سر هم و بدون باز و بسته کردن دوباره‌ی قطعه زده می‌شود. نتیجه قطعه‌ای است که آماده‌ی جوش یا مونتاژ است، نه شاخه‌ای که هنوز باید اره، مته و سنگ بخورد.
+
+در بازار به این مقاطع اسم‌های مختلفی می‌دهند. قوطی، یعنی مقطع توخالی مربع یا مستطیل، خودش یکی از انواع پروفیل است. در کنار قوطی، لوله‌ی گرد، پروفیل‌های باز مثل نبشی، ناودانی و مقطع U، و مقاطع بیضی و خاص هم برش لیزر می‌خورند. هایپرفب این کار را روی آهن (فولاد کربنی معمولی)، استیل و آلومینیوم انجام می‌دهد.
+
+گروه هایپرفب در برش لیزر پروفیل تجربه‌ی زیادی دارد و روی چیزهایی تمرکز می‌کند که سرِ مونتاژ معلوم می‌شوند: دقت طول و جای سوراخ‌ها، لبه‌ی برش تمیز و یکسان بودن قطعات یک سری. سفارش هم فقط تیراژی نیست؛ نمونه و تیراژ اولیه‌ی کوچک پذیرفته می‌شود تا قطعه پیش از تولید سری در مونتاژ واقعی امتحان شود.
+
+متریال با شما یا با هایپرفب: قوطی، لوله یا پروفیل را می‌توانید خودتان بیاورید یا تأمین آن را به هایپرفب بسپارید. فقط هنگام استعلام قیمت بگویید کدام حالت مدنظرتان است.
+
+## روی قوطی، لوله و پروفیل چه برش‌هایی زده می‌شود؟
+
+برش به طول، سوراخ گرد و فرم‌دار، شیار و پنجره، برش دهان‌ماهی (زین‌اسبی) سرِ لوله، برش فارسی‌بر و زبانه و شیار برای فریم‌های جوشی؛ امکان هر کدام به مقطع و جنس بستگی دارد.
+
+- **برش به طول**: بریدن شاخه به طول دقیق با سرِ تمیز؛ قطعات یک سری هم‌اندازه از کار درمی‌آیند و نیازی به اره و خط‌کشی نیست.
+- **سوراخ گرد و فرم‌دار**: سوراخ گرد، بیضی، مربعی یا هر شکل دیگر روی وجه‌های مقطع، با فاصله‌ی دقیق از سرِ قطعه. سوراخ‌های خیلی ریز نسبت به ضخامت دیواره پس از بررسی تأیید می‌شوند.
+- **شیار و پنجره**: شیار برای پیچ و تنظیم، پنجره برای عبور کابل یا سبک‌سازی، و برش‌های تزئینی روی بدنه‌ی قوطی و لوله.
+- **برش دهان‌ماهی سرِ لوله**: فرم‌دادن سرِ لوله به شکل لوله‌ی مقابل (برش زین‌اسبی)، تا دو لوله بی‌فاصله روی هم بنشینند و جوش یکنواخت شود. روی لوله‌های جدار ضخیم پس از بررسی نقشه.
+- **برش فارسی‌بر**: برش سرِ مایل (زاویه‌دار) برای گوشه‌های قاب و فریم؛ زاویه‌ی قابل‌اجرا به مقطع بستگی دارد.
+- **زبانه و شیار برای فریم**: زبانه و شیارهایی که قطعات فریم را پیش از جوش در جای درست نگه می‌دارند؛ نیاز به فیکسچر کم می‌شود و ابعاد فریم دقیق‌تر درمی‌آید.
+
+به درخواست و پس از بررسی: پخ آماده‌سازی جوش و علامت‌گذاری یا حکاکی لیزری روی قطعه، بسته به مقطع، به درخواست شما بررسی می‌شود. روی پروفیل‌های باز و مقاطع خاص هم دامنه‌ی برش‌ها پس از دیدن نقشه مشخص می‌شود.
+
+## چرا برش لیزر به‌جای اره، دریل و پانچ؟
+
+همه‌ی برش‌ها و سوراخ‌ها در یک مرحله و با یک برنامه، بدون هزینه‌ی قالب، با جای سوراخ دقیق نسبت به سرِ قطعه و قطعاتی یکسان در کل سری.
+
+| موضوع | برش لیزر پروفیل | اره، دریل و پانچ |
+|---|---|---|
+| تعداد مراحل | برش به طول، سوراخ و شیار در یک مرحله | چند مرحله، با چند بار جابه‌جایی و اندازه‌گیری |
+| ابزار و قالب | بدون قالب؛ شکل از روی نقشه برنامه‌ریزی می‌شود | سوراخ فرم‌دار قالب یا ابزار مخصوص می‌خواهد |
+| جای سوراخ‌ها | دقیق نسبت به سرِ قطعه و نسبت به هم | وابسته به خط‌کشی و دقت اپراتور |
+| لبه‌ی برش | لبه‌ی تمیز با کار تکمیلی کم | معمولاً پلیسه‌گیری و سنگ‌کاری می‌خواهد |
+| تکرارپذیری | قطعات یک سری مثل هم | از قطعه‌ای به قطعه‌ی دیگر فرق می‌کند |
+| تغییر طرح | اصلاح نقشه و برنامه | ابزار یا شابلون تازه |
+
+انتخاب منصفانه‌ی روش: اگر قطعه فقط چند سوراخ ساده و تکراری دارد و تیراژ خیلی بالاست، پانچ لوله و ورق پس از ساخت قالب ممکن است اقتصادی‌تر باشد. هایپرفب هر دو روش را انجام می‌دهد و روش مناسب را بر اساس هندسه و تیراژ پیشنهاد می‌کند.
+
+## نقشه‌ی قطعه‌ی پروفیلی را چطور آماده کنیم؟
+
+فایل سه‌بعدی STEP یا IGES بهترین ورودی است؛ مقطع، جنس و تعداد را بنویسید، سوراخ‌ها را از شعاع گوشه دور نگه دارید و درز جوش قوطی و لوله را در نظر بگیرید.
+
+- فایل سه‌بعدی: فایل STEP یا IGES قطعه بهترین ورودی است. اگر ندارید، نقشه‌ی دوبعدی، DXF یا PDF هم پذیرفته می‌شود، به شرطی که مقطع و ابعادش روشن نوشته شده باشد.
+- مقطع، جنس و تعداد: ابعاد مقطع و ضخامت دیواره، جنس (آهن، استیل یا آلومینیوم) و تعداد هر قطعه را کنار نقشه بنویسید.
+- فاصله از شعاع گوشه: گوشه‌ی قوطی گرد است و سوراخی که روی این شعاع بیفتد شکلش عوض می‌شود. لبه‌ی سوراخ‌ها و شیارها را روی بخش تخت وجه نگه دارید.
+- لقی زبانه و شیار: در طراحی زبانه و شیار کمی لقی بگذارید تا قطعات بدون ضربه و فشار در هم بنشینند.
+- درز جوش: قوطی و لوله‌ی درزدار، در داخل یک خط جوش دارند. اگر سوراخ یا شیاری نباید روی درز بیفتد، در نقشه بنویسید.
+- وجه نمایان: اگر وجهی از قطعه در محصول نهایی دیده می‌شود، آن را مشخص کنید تا در جانمایی برش‌ها و جابه‌جایی قطعه رعایت شود.
+
+## جوش و رنگ فریم هم در هایپرفب انجام می‌شود؟
+
+بله. قطعه‌ی پروفیلی معمولاً بخشی از یک فریم، شاسی یا سازه است. در هایپرفب می‌توانید بعد از برش لیزر، جوشکاری TIG و MIG و ساخت فریم و سپس رنگ کوره‌ای یا آبکاری و آندایز را هم بسپارید. قطعات ورقی همان سازه، مثل صفحه‌ی پایه، براکت و لچکی، از راه برش لیزر ورق و خم‌کاری ورق در hyperfab.ir آنلاین سفارش داده می‌شوند.
+
+مزیت این زنجیره یک طرف مسئول است. اگر زبانه و شیار برای جوش طراحی شده، هایپرفب که مسئول برش بوده، مسئول جوش فریم و کنترل ابعاد نهایی هم هست. قطعه بین چند کارگاه دست‌به‌دست نمی‌شود و اگر جایی ایراد داشته باشد، معلوم است چه کسی باید آن را درست کند.
+
+## سفارش برش لیزر پروفیل و لوله چه مراحلی دارد؟
+
+پنج مرحله: ارسال نقشه، بررسی مهندسی و قیمت، نمونه یا تیراژ اولیه، تولید سری، و کنترل و تحویل.
+
+1. **ارسال نقشه**: فایل STEP یا نقشه‌ی قطعه را در بله بفرستید یا تماس بگیرید و مقطع، جنس و تعداد را بگویید.
+2. **بررسی مهندسی و قیمت**: نقشه از نظر امکان برش بررسی می‌شود و قیمت بر اساس مقطع، جنس، تعداد برش و سوراخ و تیراژ اعلام می‌شود؛ متریال با شما یا با هایپرفب.
+3. **نمونه یا تیراژ اولیه**: چند قطعه‌ی اول برش می‌خورد تا در مونتاژ یا جوش واقعی امتحان و تأیید شود.
+4. **تولید سری**: پس از تأیید، کل سفارش با همان برنامه برش می‌خورد تا قطعات یکسان باشند.
+5. **کنترل و تحویل**: قطعات کنترل و تحویل می‌شوند، یا برای جوش و رنگ به مرحله‌ی بعد می‌روند.
+
+## FAQ
+
+### برش لیزر روی چه مقاطع و جنس‌هایی انجام می‌شود؟
+
+روی قوطی مربع و مستطیل، لوله‌ی گرد، پروفیل‌های باز مثل نبشی، ناودانی و U، و مقاطع بیضی و خاص؛ از جنس آهن، استیل و آلومینیوم.
+
+### سفارش نمونه یا تعداد کم را هم قبول می‌کنید؟
+
+بله. هایپرفب نمونه و تیراژ اولیه‌ی کوچک را می‌پذیرد تا قطعه پیش از تولید سری در مونتاژ واقعی امتحان شود. پس از تأیید، همان برنامه برای سفارش تیراژی به کار می‌رود.
+
+### می‌توانم قوطی و لوله را خودم بیاورم؟
+
+بله. متریال را می‌توانید خودتان بیاورید یا تأمین آن را به هایپرفب بسپارید. هنگام استعلام قیمت بگویید کدام حالت مدنظرتان است.
+
+### برای برش لیزر لوله و پروفیل چه فایلی لازم است؟
+
+بهترین ورودی فایل سه‌بعدی STEP یا IGES است. نقشه‌ی دوبعدی، DXF یا PDF هم پذیرفته می‌شود، به شرطی که مقطع، جنس و ابعاد روشن باشد. اگر فقط قطعه‌ی نمونه دارید، آن را هم می‌توانید بیاورید.
+
+### حداکثر ابعاد، ضخامت دیواره و دقت برش چقدر است؟
+
+به مقطع و جنس بستگی دارد. محدوده‌ی قابل‌اجرا در هر پروژه پس از دیدن نقشه، تلفنی تأیید می‌شود: ۰۹۹۶۲۲۳۳۸۹۸.
+
+### جوشکاری و رنگ فریم را هم انجام می‌دهید؟
+
+بله. بعد از برش لیزر، جوشکاری TIG و MIG و ساخت فریم، رنگ کوره‌ای و آبکاری یا آندایز هم در هایپرفب انجام می‌شود تا سازه را آماده تحویل بگیرید.
+
+### برش لیزر پروفیل با برش لیزر ورق چه فرقی دارد؟
+
+برش لیزر ورق روی صفحه‌ی تخت انجام می‌شود و در hyperfab.ir آنلاین و با قیمت فوری سفارش داده می‌شود. برش لیزر پروفیل روی قوطی، لوله و پروفیل انجام می‌شود، وجه‌های مختلف و فرم سرها را در بر می‌گیرد و سفارشش تلفنی و پس از بررسی نقشه است.
+
+### برش لیزر پروفیل و لوله هایپرفب کجاست؟
+
+هایپرفب در تهران است: تهران، خیابان انقلاب، پیچ شمیران، خیابان صفی‌علیشاه، نبش کوچه تهرانی، پلاک ۳۹، واحد ۱. مشاوره و سفارش برش لیزر پروفیل و لوله تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸، و در پیام‌رسان بله: @hyperfab_pro.
 
 ---
 

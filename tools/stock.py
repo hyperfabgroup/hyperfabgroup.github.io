@@ -17,6 +17,7 @@ MEDIA = {'bending': {'clip': None,
                 'photos': ['assets/img/stock/printing3d-1.jpg', 'assets/img/stock/printing3d-2.jpg', 'assets/img/stock/printing3d-3.jpg']},
  'punching': {'clip': None,
               'photos': ['assets/img/stock/punching-1.jpg', 'assets/img/stock/punching-2.jpg', 'assets/img/stock/punching-3.jpg']},
+ 'tubelaser': {'clip': ('assets/media/tubelaser-clip.mp4', 'assets/img/stock/tubelaser-clip.jpg'), 'photos': ['assets/img/stock/tubelaser-1.jpg']},
  'turning': {'clip': ('assets/media/turning-clip.mp4', 'assets/img/stock/turning-clip.jpg'),
              'photos': ['assets/img/stock/turning-1.jpg', 'assets/img/stock/turning-2.jpg', 'assets/img/stock/turning-3.jpg']},
  'welding': {'clip': ('assets/media/welding-clip.mp4', 'assets/img/stock/welding-clip.jpg'),
@@ -24,7 +25,7 @@ MEDIA = {'bending': {'clip': None,
 
 # صفحه‌ی هر خدمت ← موضوع(های) آرشیوی آن
 PAGE_TOPICS = {
-    'punching': ['punching'], 'injection': ['injection'], 'turning': ['turning'], 'extrusion': ['extrusion'],
+    'punching': ['punching'], 'tubelaser': ['tubelaser'], 'injection': ['injection'], 'turning': ['turning'], 'extrusion': ['extrusion'],
     'welding': ['welding'], 'plating': ['plating'], 'coating': ['coating'],
     'services': ['printing3d', 'laser', 'lasercut', 'bending'],
 }

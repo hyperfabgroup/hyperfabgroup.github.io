@@ -5,7 +5,7 @@
 """
 
 # صفحه‌های خدمت صنعتی، به ترتیب نمایش در کارت‌ها و زیرمنو
-INDUSTRIAL_KEYS = ['punching', 'injection', 'turning', 'extrusion', 'welding', 'plating', 'coating']
+INDUSTRIAL_KEYS = ['punching', 'tubelaser', 'injection', 'turning', 'extrusion', 'welding', 'plating', 'coating']
 
 HUBS = {
     'fa': {
@@ -20,10 +20,10 @@ HUBS = {
         'industrial': {
             'slug': 'industrial', 'priority': '0.9', 'img': 'assets/img/works/flange-steel-2.jpg',
             'title': 'تولید صنعتی و تیراژی قطعات در تهران | هایپرفب',
-            'desc': 'پانچ، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود آلومینیوم، جوشکاری، آبکاری و رنگ کوره‌ای در هایپرفب تهران؛ مشاوره‌ی تلفنی.',
+            'desc': 'پانچ، برش لیزر پروفیل و لوله، قالب‌سازی و تزریق، تراشکاری CNC تیراژی، اکسترود آلومینیوم، جوشکاری، آبکاری و رنگ کوره‌ای در هایپرفب تهران؛ مشاوره‌ی تلفنی.',
             'crumb': 'تولید صنعتی',
             'h1': '<em>تولید صنعتی و تیراژی</em><br>از قالب و تراش تا جوش، آبکاری و رنگ',
-            'lead': 'وقتی قطعه از نمونه به تیراژ می‌رسد، هایپرفب زنجیره‌ی کامل ساخت را از بررسی طرح تا تحویل قطعه پیش می‌برد: هفت خدمت صنعتی با یک گروه مهندسی مسئول. سفارش و مشاوره‌ی این خدمات تلفنی است.',
+            'lead': 'وقتی قطعه از نمونه به تیراژ می‌رسد، هایپرفب زنجیره‌ی کامل ساخت را از بررسی طرح تا تحویل قطعه پیش می‌برد: هشت خدمت صنعتی با یک گروه مهندسی مسئول. سفارش و مشاوره‌ی این خدمات تلفنی است.',
             'cta_h': 'پروژه‌ی صنعتی خود را با ما در میان بگذارید',
             'cta_p': 'نقشه یا نمونه‌ی قطعه را بفرستید یا تماس بگیرید. کارشناس پروژه‌های صنعتی هایپرفب تلفنی پاسخ‌گوی شماست.',
         },
@@ -72,10 +72,10 @@ HUBS = {
         'industrial': {
             'slug': 'industrial', 'priority': '0.8', 'img': 'assets/img/works/flange-steel-2.jpg',
             'title': 'Industrial & Batch Production in Tehran, Iran | HyperFab',
-            'desc': 'Punching, injection moulding, batch CNC turning, aluminium extrusion, welding, plating and powder coating by HyperFab in Tehran, Iran.',
+            'desc': 'Punching, tube laser cutting, injection moulding, batch CNC turning, aluminium extrusion, welding, plating and powder coating by HyperFab in Tehran, Iran.',
             'crumb': 'Industrial production',
             'h1': '<em>Industrial and batch production</em><br>From moulds and turning to welding, plating and coating',
-            'lead': 'When a part moves from prototype to volume, HyperFab runs the whole chain from design review to delivery: seven industrial services with one responsible engineering team. These services are arranged by phone.',
+            'lead': 'When a part moves from prototype to volume, HyperFab runs the whole chain from design review to delivery: eight industrial services with one responsible engineering team. These services are arranged by phone.',
             'cta_h': 'Tell us about your industrial project',
             'cta_p': 'Send a drawing or a sample part, or call. HyperFab’s industrial projects specialist answers by phone.',
         },

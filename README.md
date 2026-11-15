@@ -14,7 +14,7 @@
 | `/` و `/en/` | صفحه‌ی اصلی: همه‌ی خدمات، تخمین‌گر قیمت، تکه‌یاب، تیم، سؤالات متداول، تماس |
 | `/price-estimator/` و `/en/price-estimator/` | تخمین‌گر آنلاین قیمت |
 | `/tekeyab/` و `/en/tekeyab/` | تکه‌یاب |
-| `/punching/`، `/injection-molding/`، `/cnc-turning/`، `/aluminium-extrusion/`، `/welding/`، `/plating-anodizing/`، `/powder-coating/` (و نسخه‌ی `/en/` هر کدام) | خدمات تولید صنعتی و تیراژی؛ سفارش تلفنی |
+| `/punching/`، `/tube-laser-cutting/`، `/injection-molding/`، `/cnc-turning/`، `/aluminium-extrusion/`، `/welding/`، `/plating-anodizing/`، `/powder-coating/` (و نسخه‌ی `/en/` هر کدام) | خدمات تولید صنعتی و تیراژی؛ سفارش تلفنی |
 | `robots.txt`، `sitemap.xml`، `llms.txt`، `llms-full.txt` | راهنمای خزنده‌ها و هوش مصنوعی؛ `llms-full.txt` متن کامل همه‌ی صفحه‌ها در یک فایل است |
 
 ## ویرایش
@@ -52,7 +52,7 @@
 | `desc` | توضیح متا؛ فارسی حداکثر ۱۵۵ و انگلیسی ۱۶۰ نویسه |
 | `lead` | خلاصه‌ی پاسخ‌محور ۲ تا ۴ جمله‌ای؛ در کادر «پاسخ کوتاه» می‌آید |
 | `updated` | تاریخ به‌روزرسانی `YYYY-MM-DD` (میلادی؛ در صفحه‌ی فارسی خورشیدی نمایش داده می‌شود) |
-| `service` | کلید صفحه‌ی خدمت مرتبط: `punching`، `injection`، `turning`، `extrusion`، `welding`، `plating`، `coating`، `industrial`، `services`، `estimator` یا `tekeyab`. دکمه‌ی پایان راهنما به همین صفحه و به تلفن می‌رود و راهنما در ردیف «راهنماهای مرتبط» همان صفحه نمایش داده می‌شود |
+| `service` | کلید صفحه‌ی خدمت مرتبط: `punching`، `tubelaser`، `injection`، `turning`، `extrusion`، `welding`، `plating`، `coating`، `industrial`، `services`، `estimator` یا `tekeyab`. دکمه‌ی پایان راهنما به همین صفحه و به تلفن می‌رود و راهنما در ردیف «راهنماهای مرتبط» همان صفحه نمایش داده می‌شود |
 | `img`، `img_alt` | (اختیاری) تصویر موجود در `assets/img/` و متن جایگزین آن |
 | `keywords` | (اختیاری) کلیدواژه‌های متا |
 | `sections` | فهرست بخش‌ها: `{'h': 'تیتر', 'p': ['پاراگراف', ...], 'ul': ['مورد', ...], 'table': {'head': [...], 'rows': [[...], ...]}}`؛ `ul` و `table` اختیاری‌اند. فهرست مطالب از روی `h` ساخته می‌شود |
