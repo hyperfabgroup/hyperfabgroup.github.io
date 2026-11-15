@@ -34,7 +34,7 @@
    python3 tools/build.py
    ```
 3. کامیت و پوش کنید؛ GitHub Pages ظرف یکی دو دقیقه به‌روز می‌شود.
-   فقط ریپوی `hyperfabgroup` پوش می‌شود (`git push origin main`؛ ریموت `old` همان سایت قدیمی است و نباید به آن پوش شود).
+   فقط ریپوی `hyperfabgroup` پوش می‌شود (`git push group main`؛ ریموت‌های `origin` و `old` به سایت قدیمی اشاره می‌کنند و نباید به آن‌ها پوش شود).
    اگر دو پوش پشت‌سرهم بفرستید، GitHub ممکن است دومی را با خطای
    «Deployment request failed … due to in progress deployment» رد کند و ایمیل خطا بفرستد.
    این خطا از خود سایت نیست: صبر کنید انتشار قبلی تمام شود، بعد یک کامیت تازه پوش کنید.
