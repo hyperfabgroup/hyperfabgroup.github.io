@@ -14,6 +14,7 @@
 | `/` و `/en/` | صفحه‌ی اصلی: همه‌ی خدمات، تخمین‌گر قیمت، تکه‌یاب، تیم، سؤالات متداول، تماس |
 | `/price-estimator/` و `/en/price-estimator/` | تخمین‌گر آنلاین قیمت |
 | `/tekeyab/` و `/en/tekeyab/` | تکه‌یاب |
+| `/portfolio/<slug>/` و `/en/portfolio/<slug>/` | پروژه‌های واقعی هایپرفب با ویدیوی کارگاه (`tools/projects.py`) |
 | `/punching/`، `/tube-laser-cutting/`، `/injection-molding/`، `/cnc-turning/`، `/aluminium-extrusion/`، `/welding/`، `/plating-anodizing/`، `/powder-coating/` (و نسخه‌ی `/en/` هر کدام) | خدمات تولید صنعتی و تیراژی؛ سفارش تلفنی |
 | `robots.txt`، `sitemap.xml`، `llms.txt`، `llms-full.txt` | راهنمای خزنده‌ها و هوش مصنوعی؛ `llms-full.txt` متن کامل همه‌ی صفحه‌ها در یک فایل است |
 
@@ -63,6 +64,14 @@
 (مثلاً `<a href="{home}punching/">`) تا در هر دو زبان درست شود. عبارت‌های لاتین وسط متن فارسی را اگر وارونه دیده شدند
 داخل `<bdi>` بگذارید. با اجرای `build.py` صفحه‌ی `/guides/`، منوی «راهنماها»، sitemap، `llms.txt` و `llms-full.txt` خودکار به‌روز
 می‌شوند. اگر هیچ راهنمایی نباشد، صفحه‌ی `/guides/` و آیتم منو ساخته نمی‌شوند.
+
+### پروژه‌های واقعی و ویدیوهای کارگاه
+
+پروژه‌ها (case study، صفحه‌های `/portfolio/<slug>/` و `/en/portfolio/<slug>/`) در `tools/projects.py` (فهرست `PROJECTS`) هستند؛
+شرح کلیدها بالای همان فایل است. ویدیوهای واقعی کارگاه (`assets/media/work-*.mp4` با پوستر `assets/img/works/work-*.jpg`)
+در `REAL_VIDEOS` در `tools/media.py` تعریف می‌شوند و از همان‌جا نوار «کار واقعی» صفحه‌ی اصلی (`home`)، ویدیوهای صفحه‌ی پروژه
+(با `vid('شناسه', زبان)`) و بلوک «پروژه‌ی واقعی» صفحه‌ی خدمت (`service`) ساخته می‌شوند. VideoObject فقط در صفحه‌ی پروژه است.
+`build.py` کارت پروژه‌ها در `/portfolio/`، sitemap، بخش `## Projects` در `llms.txt` و `llms-full.txt` را خودکار به‌روز می‌کند.
 
 سایت قدیمی `hyperfab-ir.github.io` فقط صفحه‌های جابه‌جایی دارد که هر نشانی را به همان مسیر در
 `hyperfabgroup.github.io` می‌فرستد. اگر صفحه‌ی تازه‌ای اضافه شد، `python3 tools/redirect_stubs.py <پوشه>` را

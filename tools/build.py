@@ -26,7 +26,8 @@ import content_fa  # noqa: E402
 import content_en  # noqa: E402
 from common import SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
-from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
+from media import WORKS, VIDEOS, REAL_VIDEOS, video_url, video_embed  # noqa: E402
+from projects import PROJECTS, PROJECT_LABELS  # noqa: E402
 from structure import HUBS, NAV_LABELS, INDUSTRIAL_KEYS, GUIDES_HUB, GUIDE_LABELS  # noqa: E402
 import guides as guides_pkg  # noqa: E402
 from stock import MEDIA, PAGE_TOPICS  # noqa: E402
@@ -757,7 +758,8 @@ def page_home(c):
 </section>
 '''
     est, tek = dict(h['est_feature'], cls=''), dict(h['tek_feature'], cls=' section-alt')
-    body += (sec_online(c, depth) + sec_industrial(c, depth) + feature(c, depth, est) + feature(c, depth, tek)
+    body += (sec_online(c, depth) + sec_industrial(c, depth) + sec_real_work(c, depth)
+             + feature(c, depth, est) + feature(c, depth, tek)
              + sec_works(c, depth, limit=3, alt='') + faq_block(c, h['faq']) + home_cta(c))
     return depth, body
 
@@ -826,7 +828,8 @@ def page_hub(c, key, hb):
         body += sec_industrial(c, depth, on_hub=True) + feature(c, depth, ind, '../') + sec_why(c) \
             + hub_guides(c, depth, key) + cta_block(hb['cta_h'], hb['cta_p'], c['punching']['cta_btns'])
     elif key == 'portfolio':
-        body += sec_works(c, depth, alt='') + sec_videos(c, depth, alt=' section-alt') + home_cta(c)
+        body += sec_projects(c, depth) + sec_works(c, depth, alt=' section-alt' if c.get('projects') else '') \
+            + sec_videos(c, depth, alt='' if c.get('projects') else ' section-alt') + home_cta(c)
     elif key == 'about':
         body += sec_about(c, depth, '../') + sec_why(c, ' section-alt') + sec_how(c, '') + sec_academy(c) + home_cta(c)
     elif key == 'contact':
@@ -860,6 +863,8 @@ def hub_schema(c, key, hb, p):
         items = [(c[k]['hero']['crumb'], SITE + c['page_' + k]['path']) for k in INDUSTRIAL_KEYS]
     elif key == 'guides':
         items = [(g['title'], SITE + c['home_path'] + 'guides/' + g['slug'] + '/') for g in c['guides']]
+    elif key == 'portfolio':
+        items = [(pr['title'], SITE + c['home_path'] + 'portfolio/' + pr['slug'] + '/') for pr in c.get('projects', [])]
     else:
         items = []
     if items:
@@ -953,7 +958,7 @@ def page_tool(c, key):
                       f'{img(depth, v["img"], v["alt"])}'
                       f'<span><b>{e(v["title"])}</b>{e(v["desc"])}<em>{e(v["cta"])} {c['arrow']}</em></span></a>')
         sections += f'<section class="block{alt}"><div class="wrap">{inner}</div></section>\n'
-    body = (svc_hero(c, depth, d['hero']) + answer_block(c, d) + sections
+    body = (svc_hero(c, depth, d['hero']) + answer_block(c, d) + service_project_block(c, depth, key) + sections
             + stock_block(c, depth, key, d['hero']['crumb'])
             + related_block(c, depth, c['page_' + key]['path'], key)
             + faq_block(c, d['faq']) + cta_block(d['cta_h'], d['cta_p'], d['cta_btns']))
@@ -1222,6 +1227,290 @@ def page_guide(c, g):
     return depth, body
 
 
+# ---------------------------------------------------------------- projects (پروژه‌های واقعی، /portfolio/<slug>/)
+PROJECT_KEYS = ('slug', 'title', 'desc', 'lead', 'date', 'img', 'services', 'sections', 'cta')
+IRAN_TZ = '+03:30'  # ایران از ۱۴۰۱ ساعت تابستانی ندارد
+
+
+def load_projects():
+    """پروژه‌های tools/projects.py، بررسی‌شده و مرتب (تازه‌ترین اول): {'fa': [...], 'en': [...]}"""
+    out = {'fa': [], 'en': []}
+    seen = set()
+    online = {s['key'] for s in content_fa.C['services']}
+    for n, P in enumerate(PROJECTS, 1):
+        where = f'tools/projects.py [project {n}]'
+        ok, langs = True, {}
+        for lang in ('fa', 'en'):
+            pr = dict(P[lang])
+            missing = [k for k in PROJECT_KEYS if not pr.get(k)]
+            if missing:
+                warn(f'{where} [{lang}]: missing {", ".join(missing)}; project skipped')
+                ok = False
+                continue
+            if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', pr['slug']):
+                warn(f'{where} [{lang}]: bad slug {pr["slug"]!r}')
+                ok = False
+            try:
+                date.fromisoformat(pr['date'])
+            except (TypeError, ValueError):
+                warn(f'{where} [{lang}]: date must be YYYY-MM-DD: {pr["date"]}')
+                ok = False
+            if len(pr['desc']) > GUIDE_DESC_MAX[lang]:
+                warn(f'{where} [{lang}]: desc is {len(pr["desc"])} chars (> {GUIDE_DESC_MAX[lang]})')
+            if not os.path.exists(os.path.join(ROOT, pr['img'])):
+                warn(f'{where} [{lang}]: image not found: {pr["img"]}')
+                ok = False
+            bad = [k for k in pr['services'] if k not in service_keys() and k not in online]
+            if bad:
+                warn(f'{where} [{lang}]: unknown service key(s) {bad}; ignored')
+                pr['services'] = [k for k in pr['services'] if k not in bad]
+            for s in pr['sections']:
+                v = s.get('video')
+                if not s.get('h'):
+                    warn(f'{where} [{lang}]: every section needs "h"')
+                    ok = False
+                if v and not all(os.path.exists(os.path.join(ROOT, v[k])) for k in ('src', 'poster')):
+                    warn(f'{where} [{lang}]: video or poster not found: {v["src"]}')
+                    s.pop('video')
+            pr.setdefault('related_guides', [])
+            langs[lang] = pr
+        if ok and langs['fa']['slug'] != langs['en']['slug']:
+            warn(f'{where}: slug differs between fa and en')
+            ok = False
+        if ok and langs['fa']['slug'] in seen:
+            warn(f'{where}: duplicate slug {langs["fa"]["slug"]}')
+            ok = False
+        if ok:
+            seen.add(langs['fa']['slug'])
+            for lang in out:
+                out[lang].append(langs[lang])
+    for lang in out:
+        out[lang].sort(key=lambda x: x['date'], reverse=True)
+    return out
+
+
+def project_href(c, depth, slug=''):
+    return rel(depth, c['home_rel'] + 'portfolio/' + (slug + '/' if slug else ''))
+
+
+def project_by_slug(c, slug):
+    return next((pr for pr in c.get('projects', []) if pr['slug'] == slug), None)
+
+
+def project_videos(pr):
+    return [s['video'] for s in pr['sections'] if s.get('video')]
+
+
+def video_tag(depth, v, focus=''):
+    """ویدیوی میزبانی‌شده روی همین سایت؛ تا کاربر دکمه‌ی پخش را نزند چیزی جز پوستر بارگیری نمی‌شود."""
+    st = f' style="object-position:{focus}"' if focus else ''
+    return (f'<video controls muted playsinline preload="none" poster="{rel(depth, v["poster"])}" '
+            f'width="{v["w"]}" height="{v["h"]}"{st}><source src="{rel(depth, v["src"])}" type="video/mp4"></video>')
+
+
+def project_service(c, key):
+    """(نام، مسیر نسبت به ریشه‌ی سایت) خدمت مرتبط؛ کلید صفحه‌ی خدمت، کلید خدمت آنلاین یا services/industrial"""
+    s = next((s for s in c['services'] if s['key'] == key), None)
+    if s:
+        return s['title'], c['home_rel'] + 'services/#' + key
+    name, path, _ = guide_service(c, key)
+    return name, path
+
+
+def service_node_id(c, key):
+    """@id گره Service صفحه‌ی خدمت key (همان که page_schema می‌سازد)، اگر باشد"""
+    if key not in c['tool_keys']:
+        return None
+    node = next((n for n in c[key]['schema'] if {'Service', 'WebApplication'} & set(types_of(n))), None)
+    if node is None or 'Service' not in types_of(node):
+        return None
+    return node.get('@id') or SITE + c['page_' + key]['path'] + '#service'
+
+
+def project_page_meta(c, pr):
+    fa = c['lang'] == 'fa'
+    other_home_path, other_rel = ('/en/', 'en/') if fa else ('/', '')
+    sub = 'portfolio/' + pr['slug'] + '/'
+    brand = ' | ' + c['brand_name']
+    st = pr.get('seo_title') or pr['title']
+    return {'key': 'portfolio:' + pr['slug'], 'lang': c['lang'], 'file': c['home_rel'] + sub + 'index.html',
+            'path': c['home_path'] + sub, 'alt_path': other_home_path + sub, 'alt_rel': other_rel + sub,
+            'priority': '0.7' if fa else '0.6', 'title': st + brand if len(st + brand) <= 60 else st, 'desc': pr['desc'],
+            'keywords': pr.get('keywords') or pr['title'], 'og_img': pr['img'], 'og_alt': pr.get('img_alt') or pr['title'],
+            'og_type': 'article', 'lastmod': pr['date']}
+
+
+def project_hero(c, depth, pr):
+    PL = PROJECT_LABELS[c['lang']]
+    sep = ' ‹ ' if c['dir'] == 'rtl' else ' › '
+    crumb_label = 'مسیر صفحه' if c['lang'] == 'fa' else 'Breadcrumb'
+    portfolio = HUBS[c['lang']]['portfolio']['crumb']
+    return f'''<section class="hfs-hero guide-hero proj-hero">
+	<div class="wrap">
+		<div>
+			<nav class="hfs-crumb" aria-label="{crumb_label}"><a href="{rel(depth, c['home_rel']) or './'}">{e(c['brand_name'])}</a>{sep}<a href="{project_href(c, depth)}">{e(portfolio)}</a>{sep}<span aria-current="page">{e(pr.get('card') or pr['title'])}</span></nav>
+			<h1>{e(pr['title'])}</h1>
+			<p class="guide-meta">{icon('clock', 16)}<span>{e(PL['published'])}: <time datetime="{pr['date']}">{e(guide_date(c, pr['date']))}</time></span></p>
+		</div>
+		<figure class="hfs-hero-art has-pic">{img(depth, pr['img'], pr.get('img_alt') or pr['title'], eager=True, picture=True)}</figure>
+	</div>
+</section>
+'''
+
+
+def project_video_figure(c, depth, v):
+    PL = PROJECT_LABELS[c['lang']]
+    shape = 'is-portrait' if v['h'] > v['w'] else 'is-wide'
+    return (f'<figure class="proj-video {shape}" id="video-{v["id"]}">{video_tag(depth, v)}'
+            f'<figcaption><span class="real-tag">{e(PL["real_video"])}</span><span>{e(v["name"])} · '
+            f'<time datetime="{v["upload_date"]}">{e(guide_date(c, v["upload_date"]))}</time></span></figcaption></figure>')
+
+
+def project_body(c, depth, pr):
+    def t(x):
+        return isolate_ltr(fill_home(c, depth, x))
+    secs = ''
+    for k, s in enumerate(pr['sections'], 1):
+        inner = f'<h2>{e(s["h"])}</h2>' + ''.join(f'<p>{t(p)}</p>' for p in s.get('p', []))
+        if s.get('ul'):
+            inner += '<ul class="guide-ul">' + ''.join(f'<li>{t(x)}</li>' for x in s['ul']) + '</ul>'
+        if s.get('video'):
+            inner += project_video_figure(c, depth, s['video'])
+        secs += f'<section class="guide-sec" id="sec-{k}">{inner}</section>'
+    return (f'<section class="block guide-main"><div class="wrap">'
+            f'<article class="guide-body proj-body prose">{secs}</article></div></section>\n')
+
+
+def project_links(c, depth, pr):
+    """خدمت‌های به‌کاررفته و راهنماهای مرتبط"""
+    PL = PROJECT_LABELS[c['lang']]
+    chips = ''.join(f'<a class="rel-chip" href="{rel(depth, path)}">{e(name)}</a>'
+                    for name, path in (project_service(c, k) for k in pr['services']))
+    by = {g['slug']: g for g in c.get('guides', [])}
+    gs = [by[s] for s in pr['related_guides'] if s in by]
+    guides = ''.join(f'<a class="rel-chip guide-chip" href="{guide_href(c, depth, g["slug"])}">{e(g.get("short") or g["title"])}</a>'
+                     for g in gs)
+    guides += f'<a class="rel-chip" href="{project_href(c, depth)}">{e(PL["all_work"])}</a>'
+    return (f'<section class="block section-alt" id="project-services"><div class="wrap">'
+            f'{hfs_head("SERVICES", e(PL["services_h"]))}<div class="rel-chips">{chips}</div>'
+            f'<div class="guide-rel"><h3 class="guide-rel-h">{e(PL["guides_h"] if gs else PL["all_work"])}</h3>'
+            f'<div class="rel-chips">{guides}</div></div></div></section>\n')
+
+
+def project_cta(c, pr):
+    return cta_block(pr['cta']['h'], e(pr['cta']['p']), c['punching']['cta_btns'][:2])
+
+
+def page_project(c, pr):
+    depth = c['depth_home'] + 2
+    body = (project_hero(c, depth, pr) + answer_block(c, {'answer': fill_home(c, depth, pr['lead'])})
+            + project_body(c, depth, pr) + project_links(c, depth, pr) + project_cta(c, pr))
+    return depth, body
+
+
+def video_object(c, v, page_url):
+    return {'@type': 'VideoObject', '@id': page_url + '#video-' + v['id'], 'name': v['name'], 'description': v['desc'],
+            'thumbnailUrl': abs_url(v['poster']), 'contentUrl': abs_url(v['src']),
+            'uploadDate': v['upload_date'] + 'T12:00:00' + IRAN_TZ, 'duration': v['duration'],
+            'width': v['w'], 'height': v['h'], 'encodingFormat': 'video/mp4', 'inLanguage': c['lang'],
+            'publisher': {'@id': ORG_ID}}
+
+
+def project_schema(c, pr, p):
+    url = SITE + p['path']
+    website_id = SITE + c['home_path'] + '#website'
+    pic = image_object(pr['img'], pr.get('img_alt') or pr['title'])
+    videos = [video_object(c, v, url) for v in project_videos(pr)]
+    about = [{'@id': i} for i in (service_node_id(c, k) for k in pr['services']) if i]
+    webpage = {'@type': 'WebPage', '@id': url, 'url': url, 'name': p['title'], 'description': pr['desc'],
+               'inLanguage': c['lang'], 'datePublished': pr['date'], 'dateModified': pr['date'],
+               'isPartOf': {'@id': website_id}, 'breadcrumb': {'@id': url + '#breadcrumb'},
+               'mainEntity': {'@id': url + '#article'}, 'primaryImageOfPage': pic}
+    article = {'@type': 'Article', '@id': url + '#article', 'headline': pr['title'], 'description': pr['desc'],
+               'inLanguage': c['lang'], 'datePublished': pr['date'], 'dateModified': pr['date'],
+               'author': {'@id': ORG_ID}, 'publisher': {'@id': ORG_ID}, 'mainEntityOfPage': {'@id': url},
+               'isPartOf': {'@id': website_id}, 'image': pic}
+    if about:
+        article['about'] = about
+    if videos:
+        article['video'] = [{'@id': v['@id']} for v in videos]
+    return [org_schema(c), website_node(c), webpage, article, *videos,
+            {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
+                {'@type': 'ListItem', 'position': 2, 'name': HUBS[c['lang']]['portfolio']['crumb'],
+                 'item': SITE + c['home_path'] + 'portfolio/'},
+                {'@type': 'ListItem', 'position': 3, 'name': pr['title'], 'item': url}]}]
+
+
+def project_cards(c, depth):
+    PL = PROJECT_LABELS[c['lang']]
+    cards = ''
+    for pr in c.get('projects', []):
+        cards += (f'<a class="hfs-index-card proj-card" href="{project_href(c, depth, pr["slug"])}">'
+                  f'<div class="im">{img(depth, pr["img"], pr.get("img_alt") or pr["title"], picture=True)}</div><div class="bd">'
+                  f'<span class="real-tag">{e(PL["real_video"])}</span><h3>{e(pr["title"])}</h3><p>{e(pr["desc"])}</p>'
+                  f'<span class="go">{e(PL["read"])} {c["arrow"]}</span></div></a>')
+    return f'<div class="proj-index">{cards}</div>'
+
+
+def sec_projects(c, depth, alt=''):
+    """فهرست پروژه‌ها، بالای صفحه‌ی نمونه‌کارها"""
+    if not c.get('projects'):
+        return ''
+    PL = PROJECT_LABELS[c['lang']]
+    return sec_simple('projects', alt, hfs_head(PL['projects_kicker'], e(PL['projects_title']), e(PL['projects_sub']))
+                      + project_cards(c, depth))
+
+
+def sec_real_work(c, depth, alt=' section-alt'):
+    """نوار «کار واقعی» صفحه‌ی اصلی از REAL_VIDEOS (home=True). VideoObject عمداً فقط در صفحه‌ی پروژه است."""
+    vs = [v for v in REAL_VIDEOS if v.get('home')]
+    if not vs:
+        return ''
+    PL = PROJECT_LABELS[c['lang']]
+    cards = ''.join(
+        f'<figure class="rw-card"><div class="rw-media">{video_tag(depth, v, v.get("focus", ""))}</div>'
+        f'<figcaption><span class="real-tag">{e(PL["real_video"])}</span><span class="rw-cap">{e(v[c["lang"]]["caption"])}</span></figcaption></figure>'
+        for v in vs)
+    pr = project_by_slug(c, vs[0].get('project'))
+    btn = (f'<div class="center-cta"><a class="btn-red" href="{project_href(c, depth, pr["slug"])}">{e(PL["strip_btn"])}</a></div>'
+           if pr else '')
+    return sec_simple('real-work', alt, hfs_head(PL['strip_kicker'], e(PL['strip_title']), e(PL['strip_sub']))
+                      + f'<div class="rw-grid">{cards}</div>' + btn)
+
+
+def service_project_block(c, depth, key):
+    """«کار واقعی» در صفحه‌ی خدمت: اولین ویدیوی REAL_VIDEOS با service == key.
+    اگر ویدیو به صفحه‌ی پروژه وصل باشد، دکمه به آن پروژه می‌رود؛ وگرنه فقط ویدیو و توضیح خودش نمایش داده می‌شود."""
+    v = next((v for v in REAL_VIDEOS if v.get('service') == key
+              and (not v.get('project') or project_by_slug(c, v.get('project')))), None)
+    if not v:
+        return ''
+    PL = PROJECT_LABELS[c['lang']]
+    pr = project_by_slug(c, v['project']) if v.get('project') else None
+    shape = 'is-portrait' if v['h'] > v['w'] else 'is-wide'
+    L = v[c['lang']]
+    if pr:
+        title, desc = PL['svc_title'] + (pr.get('card') or pr['title']), pr['desc']
+        more = f'<a class="btn-red" href="{project_href(c, depth, pr["slug"])}">{e(PL["svc_btn"])} {c["arrow"]}</a>'
+    else:
+        title, desc, more = L['name'], L['desc'], ''
+    return f'''<section class="block proj-svc" id="real-project">
+	<div class="wrap">
+		<div class="proj-svc-card {shape}">
+			<figure class="proj-video {shape}">{video_tag(depth, v)}<figcaption><span class="real-tag">{e(PL['real_video'])}</span><span>{e(L['caption'])}</span></figcaption></figure>
+			<div class="proj-svc-text">
+				<div class="kicker">{PL['svc_kicker']}</div>
+				<h2>{e(title)}</h2>
+				<p>{e(desc)}</p>
+				{more}
+			</div>
+		</div>
+	</div>
+</section>
+'''
+
+
 WRITTEN = {}
 
 
@@ -1273,6 +1562,12 @@ def page_schema(c, key, p):
                'primaryImageOfPage': image_object(hero['img'], hero.get('img_alt', ''))}
     if main_node is not None:
         webpage['about'] = {'@id': main_node['@id']}
+    # ویدیوی واقعی بدون صفحه‌ی پروژه (مثل فرزکاری فلنج) فقط در صفحه‌ی خدمت خودش VideoObject می‌گیرد
+    for v in REAL_VIDEOS:
+        if v.get('service') == key and not v.get('project'):
+            nodes.append(video_object(c, {**{k: v[k] for k in ('id', 'src', 'poster', 'w', 'h', 'upload_date', 'duration')},
+                                          'name': v[c['lang']]['name'], 'desc': v[c['lang']]['desc']}, url))
+            break
     return [org_schema(c), website_node(c), webpage, *nodes,
             {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
                 {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
@@ -1336,6 +1631,14 @@ def build_lang(c):
             check_lengths(p)
             write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
             pages.append(p)
+
+    for pr in c.get('projects', []):
+        p = project_page_meta(c, pr)
+        depth, body = page_project(c, pr)
+        p['schema'] = project_schema(c, pr, p)
+        check_lengths(p)
+        write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
+        pages.append(p)
 
     for key in c['tool_keys']:
         depth, body = page_tool(c, key)
@@ -1409,6 +1712,13 @@ def md_home(c):
     out += md_section(h['why_title']) + '\n' + md_items([f'**{text(t)}**: {text(d)}' for _, t, d in h['why']])
     out += md_section(c['works_title']) + md_paras([c['works_sub']]) + '\n'
     out += md_items([f'**{text(w[c["lang"]][0])}** ({text(w[c["lang"]][1])}): {text(w[c["lang"]][2])}' for w in WORKS])
+    rw = [v for v in REAL_VIDEOS if v.get('home')]
+    if rw:
+        PL = PROJECT_LABELS[c['lang']]
+        out += md_section(PL['strip_title']) + md_paras([PL['strip_sub']]) + '\n'
+        out += md_items([f'{text(v[c["lang"]]["caption"])}: {abs_url(v["src"])}'
+                         + (f' ({SITE}{c["home_path"]}portfolio/{v["project"]}/)' if project_by_slug(c, v.get('project')) else '')
+                         for v in rw])
     out += md_section(h['how_title']) + md_paras([h['how_sub']]) + '\n'
     out += ''.join(f'{k}. **{text(t)}**: {text(d)}\n' for k, (t, d) in enumerate(h['how'], 1))
     out += md_section(h['about_title']) + md_paras(h['about_paras'])
@@ -1454,6 +1764,8 @@ def llms_full(langs):
             out.append('\n---\n\n' + md_tool(c, key))
         for g in c.get('guides', []):
             out.append('\n---\n\n' + md_guide(c, g))
+        for pr in c.get('projects', []):
+            out.append('\n---\n\n' + md_project(c, pr))
     write('llms-full.txt', re.sub(r'\n{3,}', '\n\n', ''.join(out)))
 
 
@@ -1479,12 +1791,28 @@ def md_guide(c, g):
     return out + (md_faq(g['faq']) if g.get('faq') else '')
 
 
-def llms_index(fa, en):
+def md_project(c, pr):
+    url = SITE + c['home_path'] + 'portfolio/' + pr['slug'] + '/'
+    PL = PROJECT_LABELS[c['lang']]
+    out = f'# {text(pr["title"])}\n\nURL: {url}\nPublished: {pr["date"]}\n' + md_paras([pr['lead']])
+    for s in pr['sections']:
+        out += md_section(s['h']) + md_paras(s.get('p', []))
+        if s.get('ul'):
+            out += '\n' + md_items([text(x) for x in s['ul']])
+        v = s.get('video')
+        if v:
+            out += (f'\nVideo ({text(PL["real_video"])}): {text(v["name"])}, filmed {v["upload_date"]}, '
+                    f'{v["duration"][2:].lower()}: {abs_url(v["src"])}\n')
+    names = [project_service(c, k)[0] for k in pr['services']]
+    return out + md_section(PL['services_h']) + '\n' + md_items([text(n) for n in names])
+
+
+def llms_index(fa, en, fa_projects=(), en_projects=()):
     """بخش «## Guides» در llms.txt (که دستی نوشته شده) از روی راهنماها بازسازی می‌شود؛
     بی راهنما، این بخش برداشته می‌شود."""
     path = os.path.join(ROOT, 'llms.txt')
     src = open(path, encoding='utf-8').read()
-    new = re.sub(r'^## Guides\n.*?(?=^## |\Z)', '', src, flags=re.S | re.M)
+    new = re.sub(r'^## (?:Guides|Projects)\n.*?(?=^## |\Z)', '', src, flags=re.S | re.M)
     if en:
         fa_by = {g['slug']: g for g in fa}
         lines = [f'- [All guides]({SITE}/en/guides/) ([Persian]({SITE}/guides/)): '
@@ -1494,6 +1822,17 @@ def llms_index(fa, en):
             persian = f' ([Persian: {text(fg["title"])}]({SITE}/guides/{g["slug"]}/))' if fg else ''
             lines.append(f'- [{text(g["title"])}]({SITE}/en/guides/{g["slug"]}/){persian}: {text(g["desc"])}')
         block = '## Guides\n\n' + '\n'.join(lines) + '\n\n'
+        anchor = next((a for a in ('## Services on the main website', '## Optional') if a in new), None)
+        new = new.replace(anchor, block + anchor, 1) if anchor else new.rstrip('\n') + '\n\n' + block
+    if en_projects:
+        fa_by = {x['slug']: x for x in fa_projects}
+        lines = [f'- [Portfolio]({SITE}/en/portfolio/) ([Persian]({SITE}/portfolio/)): real HyperFab work, '
+                 'with photos and workshop videos']
+        for x in en_projects:
+            fx = fa_by.get(x['slug'])
+            persian = f' ([Persian: {text(fx["title"])}]({SITE}/portfolio/{x["slug"]}/))' if fx else ''
+            lines.append(f'- [{text(x["title"])}]({SITE}/en/portfolio/{x["slug"]}/){persian}: {text(x["desc"])}')
+        block = '## Projects\n\n' + '\n'.join(lines) + '\n\n'
         anchor = next((a for a in ('## Services on the main website', '## Optional') if a in new), None)
         new = new.replace(anchor, block + anchor, 1) if anchor else new.rstrip('\n') + '\n\n' + block
     if new != src:
@@ -1670,14 +2009,16 @@ def check_links():
 def main():
     pages = []
     guides = load_guides()
+    projects = load_projects()
     for c in (content_fa.C, content_en.C):
         c['guides'] = guides[c['lang']]
+        c['projects'] = projects[c['lang']]
         for p in ['page_home'] + ['page_' + k for k in c['tool_keys']]:
             c[p]['lang'] = c['lang']
         pages += build_lang(c)
     sitemap(pages)
     llms_full((content_en.C, content_fa.C))
-    llms_index(guides['fa'], guides['en'])
+    llms_index(guides['fa'], guides['en'], projects['fa'], projects['en'])
     purge_css()
     check_links()
     if WARNINGS:

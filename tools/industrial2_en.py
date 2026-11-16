@@ -22,14 +22,14 @@ def hero_btns():
 
 WELDING = {
     'depth': 2,
-    'answer': ('<b>TIG and MIG welding of stainless steel and 6000-series aluminium</b>, including 6061 and 6063, is offered by HyperFab, '
+    'answer': ('<b>TIG and MIG welding of stainless steel and 6000-series aluminium</b>, including 6061 and 6063, and <b>TIG welding of St37 carbon steel</b> are offered by HyperFab, '
                'a manufacturing company in Tehran, Iran, together with fabrication of welded machine structures and large platform structures '
                'to the client’s approved drawings. VT, PT and phased-array ultrasonic (PAUT) weld testing is available on request, and HyperFab '
                'has built many units for the medical and marine industries. Welding projects are priced by material, weld length and type, '
                'structure size and requested tests; call ' + TEL_EN + '.'),
     'key_facts': [
         ('Service', 'TIG and MIG (argon-shielded) welding and welded fabrication'),
-        ('Materials', 'Stainless steel and 6000-series aluminium (6061, 6063)'),
+        ('Materials', 'Stainless steel, St37 carbon (mild) steel by TIG, 6000-series aluminium (6061, 6063)'),
         ('Weld testing', 'VT, PT, PAUT and other tests on request'),
         ('Pricing model', 'By material, weld length and type, structure size and requested tests'),
         ('Ordering', ORDER_PHONE),
@@ -37,20 +37,20 @@ WELDING = {
     ],
     'hero': {
         'crumb': 'Welding & Welded Structures',
-        'h1': '<em>TIG and MIG welding</em><br>Stainless steel, aluminium and welded structures',
-        'lead': 'TIG and MIG welding of stainless steel and 6000-series aluminium, fabrication and assembly of welded structures for machines, and large platform structures — with VT, PT and phased-array weld testing on request, from drawing to delivery.',
-        'ticks': [('Processes:', 'TIG and MIG (argon shielded)', False), ('Materials:', 'stainless steel, 6000-series aluminium', False),
+        'h1': '<em>TIG and MIG welding</em><br>Stainless steel, steel, aluminium and welded structures',
+        'lead': 'TIG and MIG welding of stainless steel and 6000-series aluminium, TIG welding of St37 steel, fabrication and assembly of welded structures for machines, and large platform structures — with VT, PT and phased-array weld testing on request, from drawing to delivery.',
+        'ticks': [('Processes:', 'TIG and MIG (argon shielded)', False), ('Materials:', 'stainless steel, 6000-series aluminium, St37 steel (TIG)', False),
                   ('Weld testing:', 'VT · PT · PAUT and other tests as required', False)],
         'buttons': hero_btns(),
         'img': IMG['welding'], 'img_alt': 'TIG welding of a HyperFab stainless steel sealing assembly',
-        'stats': [('sparkle', 'TIG · MIG', 'argon', 'stainless and aluminium'), ('layers', '6000', 'series', 'aluminium'),
+        'stats': [('sparkle', 'TIG · MIG', 'argon', 'stainless, steel and aluminium'), ('layers', '6000', 'series', 'aluminium'),
                   ('search', 'VT · PT · PAUT', '', 'weld testing on request'), ('shield', '1', 'owner', 'from drawing to delivery')],
     },
     'sections': [
         {'kicker': 'WHAT WE DO', 'title': 'TIG or MIG welding for stainless steel and aluminium?', 'id': 'what',
-         'sub': 'TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on stainless steel and 6000-series aluminium.',
+         'sub': 'TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on stainless steel and 6000-series aluminium, and TIG welds St37 steel.',
          'paras': [
-             'Argon-shielded welding — <b>TIG</b> (GTAW) and <b>MIG</b> (GMAW) — is the main way to join <b>stainless steel</b> and <b>6000-series aluminium</b> in machine and equipment building.',
+             'Argon-shielded welding — <b>TIG</b> (GTAW) and <b>MIG</b> (GMAW) — is the main way to join <b>stainless steel</b> and <b>6000-series aluminium</b> in machine and equipment building. HyperFab also TIG welds <b>St37 carbon steel</b> (mild steel); one example is a <a href="../portfolio/mechanism-frame-st37/">mechanism frame made from St37 box section and sheet</a>.',
              'HyperFab’s work is not just laying welds; it is building and assembling the project from drawing to delivery. That covers cutting and preparing parts, fixturing, welding with distortion control, weld finishing and testing. HyperFab has built many units for the <b>medical</b> and <b>marine</b> industries, where weld cleanliness and corrosion resistance are critical.',
              'The experience goes beyond small parts. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails — a structure where flatness, alignment and dimensional accuracy over long lengths decide everything.',
              'If a welded part also needs a finish, it can be <a href="../powder-coating/">powder coated at HyperFab</a> and delivered as a finished part in one place. Flat sheet parts can also be ordered through <a href="https://hyperfab.ir/services/laser-metal/">metal laser cutting on hyperfab.ir</a>.',
@@ -63,7 +63,7 @@ WELDING = {
          'adv': [
              ('sparkle', 'TIG welding of stainless steel', 'Clean, precise welds on stainless steel for medical, food and marine equipment, with heat control to preserve corrosion resistance.'),
              ('layers', '6000-series aluminium welding', 'TIG and MIG welding of 6000-series alloys such as 6061 and 6063, for chassis, frames and light structures.'),
-             ('cube', 'Welded machine structures', 'Chassis, frames, housings and enclosures for many kinds of machines in stainless steel or aluminium, from cut parts to assembled structure.'),
+             ('cube', 'Welded machine structures', 'Chassis, frames, housings and enclosures for many kinds of machines in stainless steel, St37 steel or aluminium, from cut parts to assembled structure.'),
              ('ruler', 'Large platform structures', 'Large platforms and framed chassis, including a structure mounted on wheels that runs on rails.'),
              ('shield', 'Medical and marine industries', 'Many units built for medical equipment and marine applications, meeting those industries’ cleanliness and corrosion requirements.'),
              ('search', 'Weld testing', 'Visual testing (VT), liquid penetrant (PT), phased-array ultrasonics (PAUT) and other tests on request.'),
@@ -71,7 +71,7 @@ WELDING = {
          'figure': {'img': IMG['tig'], 'alt': 'TIG welding of a stainless steel pipe', 'caption': 'TIG welding on stainless steel pipe.'}},
         {'kicker': 'YOUR DESIGN', 'title': 'Does HyperFab design the welded structure?', 'id': 'design',
          'paras': [
-             'No. For welded structures, the structural design is the client’s, and HyperFab fabricates to your approved drawings. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.',
+             'Usually the structural design is the client’s, and HyperFab fabricates to your approved drawings; on some projects HyperFab has also designed the mechanism and frame, so ask when you enquire. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.',
              'For large and platform structures, complete approved drawings are essential before fabrication starts. HyperFab takes responsibility for fabrication, follow-up and quality control through to delivery.',
          ]},
         {'kicker': 'WELD TESTING', 'title': 'Which weld tests are available?', 'id': 'testing',
@@ -104,10 +104,11 @@ WELDING = {
     'faq': [
         ('Does HyperFab do TIG welding of stainless steel?', 'Yes. HyperFab does TIG and MIG welding of stainless steel and has built many units for the medical and marine industries. Stainless welded structures are fabricated and assembled from drawing to delivery.'),
         ('Does HyperFab weld 6061 and 6063 aluminium?', 'Yes. HyperFab does TIG and MIG welding of 6000-series aluminium, including 6061 and 6063, for chassis, frames and light structures.'),
+        ('Do you weld mild steel (St37)?', 'Yes. HyperFab does argon TIG welding of St37 steel; for example, a mechanism frame made from St37 box section and sheet, shown in HyperFab’s portfolio.'),
         ('TIG or MIG welding for stainless steel — which is better?', 'TIG gives cleaner, more precise welds and suits thin sheet, cosmetic parts and medical and food equipment. MIG is faster and more economical for long and structural welds. HyperFab does both and recommends the right process by material, thickness and use.'),
         ('How is welding priced at HyperFab?', 'HyperFab prices a welding project by material, weld length and type, structure size and the weld tests requested. The quotation follows a manufacturability review of your drawings.'),
         ('What should I send for a welding quote?', 'Send HyperFab the structure or part drawings, the material, the quantity and any weld tests you need, or describe them by phone on ' + TEL_EN + '.'),
-        ('Does HyperFab design the welded structure?', 'No. Structural design is the client’s and HyperFab fabricates to the approved drawings. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.'),
+        ('Does HyperFab design the welded structure?', 'Structural design is usually the client’s and HyperFab fabricates to the approved drawings; on some projects HyperFab has also designed the mechanism and frame, so ask when you enquire. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.'),
         ('Which weld tests does HyperFab offer?', 'HyperFab offers visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests, on request and to suit the project’s requirements.'),
         ('Does HyperFab build large welded structures?', 'Yes. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails.'),
         ('Where is HyperFab’s welding service based?', 'HyperFab is based in Tehran, Iran. Welding projects are discussed and quoted by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
@@ -117,7 +118,7 @@ WELDING = {
     'cta_btns': CTA_BTNS,
     'schema': svc('HyperFab Welding and Welded Fabrication', ['TIG welding', 'MIG welding', 'جوشکاری آرگون'],
                   'TIG and MIG welding of stainless steel and aluminium and welded structure fabrication', '/en/welding/',
-                  'TIG and MIG welding of stainless steel and 6000-series aluminium, fabrication and assembly of welded machine structures and large platform structures to the client’s drawings, with VT, PT and PAUT weld testing; experience in the medical and marine industries.'),
+                  'TIG and MIG welding of stainless steel and 6000-series aluminium and TIG welding of St37 steel, fabrication and assembly of welded machine structures and large platform structures to the client’s drawings, with VT, PT and PAUT weld testing; experience in the medical and marine industries.'),
 }
 
 TURNING = {
@@ -544,6 +545,7 @@ TUBELASER = {
              '<b>Tab-and-slot clearance:</b> leave a little clearance in tabs and slots so parts fit together without forcing.',
              '<b>Weld seam:</b> welded tube and pipe have a weld seam on the inside. If a hole or slot must not land on the seam, say so on the drawing.',
              '<b>Visible faces:</b> if a face will be visible in the finished product, mark it so feature placement and handling take it into account.',
+             '<b>Threads in thin sheet and walls:</b> thin sheet or tube wall cannot hold a strong tapped thread, so holes are cut for rivet nuts instead, which give screws a proper thread (<a href="../portfolio/mechanism-frame-st37/">St37 mechanism frame case study</a>).',
          ]},
         {'kicker': 'ONE CHAIN', 'title': 'Can HyperFab also weld and finish the frame?', 'id': 'chain',
          'paras': [
@@ -579,6 +581,100 @@ TUBELASER = {
 }
 
 
+THREADROLL = {
+    'depth': 2,
+    'answer': ('<b>Thread rolling</b> forms a thread on a shaft by pressing it between threaded rolls, with no chips: the metal is not cut away '
+               'but displaced into the shape of the thread. HyperFab, a manufacturing company in Tehran, Iran, uses a thread rolling machine to turn '
+               'stainless steel and mild steel shafts into strong screws. A rolled thread is stronger and longer-lasting than a machined one, and the '
+               'process is very cost-effective for this kind of part. Thread size and pitch are checked when you enquire; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Thread rolling and screw making from shafts'),
+        ('Materials', 'Stainless steel and mild steel shafts'),
+        ('Advantage', 'Stronger, longer-lasting threads than machined threads; cost-effective'),
+        ('Size and pitch', 'Ask when you enquire'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
+    'hero': {
+        'crumb': 'Thread Rolling',
+        'h1': '<em>Thread rolling</em><br>strong screws from stainless and steel shafts',
+        'lead': 'HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A rolled thread is formed by pressure, with no chips, so it is stronger and longer-lasting than a thread cut on a lathe or with a die — and for these parts the process is very cost-effective.',
+        'ticks': [('Process:', 'cold forming with threaded rolls, no chips', False), ('Materials:', 'stainless steel and mild steel shafts', False),
+                  ('Advantage:', 'stronger and longer-lasting than cut threads', False)],
+        'buttons': hero_btns(),
+        'img': IMG['threadroll'], 'img_alt': 'Steel shaft on a CNC lathe (stock image)',
+        'stats': [('wrench', 'Cold formed · no chips', '', 'process'), ('layers', 'Stainless · Steel', '', 'shaft material'),
+                  ('shield', 'Stronger than cut threads', '', 'advantage'), ('file', 'Drawing to delivery', '', 'one responsible party')],
+    },
+    'sections': [
+        {'kicker': 'WHAT IT IS', 'title': 'What is thread rolling, and what does HyperFab do?', 'id': 'what',
+         'paras': [
+             '<b>Thread rolling</b> — also called <b>roll threading</b> or <b>rolled threads</b> — forms a thread without cutting. The shaft turns between rolls that carry the thread form, and under their pressure the surface metal of the shaft is shaped into the thread. No chips are removed; metal moves from the root of the thread up into its crest.',
+             'HyperFab uses a thread rolling machine to turn <b>stainless steel</b> and <b>mild steel</b> shafts into <b>strong screws</b>. A screw made this way is stronger and lasts longer than one whose thread was cut by machining. The process itself is very cost-effective, and it suits this kind of application well.',
+         ]},
+        {'kicker': 'WHY STRONGER', 'title': 'Why is a rolled thread stronger than a cut thread?', 'id': 'why',
+         'sub': 'Because the metal is not cut: its grain follows the thread form, the surface is work-hardened by cold forming and the thread root comes out smoother.',
+         'adv': [
+             ('layers', 'Grain flow is not cut', 'Machining cuts straight through the grain of the metal. In rolling, the grain bends to follow the thread profile and stays continuous, so the thread carries load better.'),
+             ('shield', 'Work-hardened surface', 'The pressure of the rolls compresses and hardens the thread surface while cold, so the thread resists wear and damage from repeated assembly better.'),
+             ('target', 'Smoother thread root', 'The thread root is where cracks start in screws under fluctuating load. The smooth, tool-mark-free surface of a rolled thread helps the screw last longer.'),
+             ('coin', 'Less material wasted', 'With no chips removed, less raw material is wasted and threading is faster — one reason rolling is cost-effective.'),
+         ]},
+        {'kicker': 'COMPARE', 'title': 'Thread rolling or thread cutting on a lathe or with a die?', 'id': 'compare',
+         'sub': 'For strong, repeated screws, rolling wins; for one-off parts and special thread profiles, cutting on a lathe or with a die may be the better choice.',
+         'table': [
+             ('Aspect', 'Thread rolling', 'Thread cutting (lathe or die)'),
+             ('Chips', 'None; metal is displaced', 'Metal is removed as chips'),
+             ('Grain flow', 'Follows the thread form and stays continuous', 'Cut through at the thread'),
+             ('Thread surface', 'Smooth and work-hardened', 'Tool marks on the flanks and root'),
+             ('Material waste', 'Low', 'Higher, by the volume of chips'),
+             ('Speed in series', 'Fast and consistent', 'Slower'),
+             ('One-offs and special profiles', 'Needs rolls for that thread; ask', 'Usually simpler'),
+         ],
+         'note': '<b>Choosing fairly:</b> if you need only one or a few parts with a special thread, cutting the thread on a lathe may make more sense. When you enquire, say which screw you need and how many, and the right process will be recommended.'},
+        {'kicker': 'MATERIALS & PARTS', 'title': 'Which materials and parts can be rolled?', 'id': 'scope',
+         'paras': [
+             'HyperFab rolls threads on <b>stainless steel</b> and <b>mild steel</b> shafts. If your part is in another material, ask when you enquire.',
+         ],
+         'checks': [
+             '<b>Screws:</b> stainless steel and mild steel shafts turned into strong screws.',
+             '<b>Common uses of thread rolling:</b> rolling is also commonly used for studs, threaded rods and shafts with threaded ends; for these parts, ask when you enquire.',
+         ]},
+        {'kicker': 'DESIGN TIPS', 'title': 'What should I know before ordering rolled screws?', 'id': 'design',
+         'sub': 'The blank is prepared smaller than the thread’s outside diameter; send the drawing, material, thread specification and quantity.',
+         'checks': [
+             '<b>The blank is smaller than the thread:</b> rolling displaces metal outward and raises the thread crest, so the blank is prepared smaller than the thread’s outside diameter. Do not machine the shaft to the nominal thread size yourself.',
+             '<b>Drawing and thread specification:</b> give the part drawing, the material, the thread type and size, the pitch and the threaded length.',
+             '<b>Quantity:</b> say how many screws or parts you need; it affects the price and the process.',
+             '<b>Turned parts:</b> if the shaft or part to be threaded also needs turning, see <a href="../cnc-turning/">batch CNC turning</a>.',
+         ]},
+        {'kicker': 'HOW IT WORKS', 'title': 'How is thread rolling ordered?', 'id': 'steps',
+         'sub': 'Four steps: send the drawing and specification, review and quote, rolling, and delivery.',
+         'steps': [
+             ('Send the drawing', 'Send the screw drawing or specification, shaft material, thread specification and quantity on Bale, or describe them by phone.'),
+             ('Review and quote', 'Thread size, pitch and material are reviewed and a price is given.'),
+             ('Thread rolling', 'The shafts are threaded on the rolling machine.'),
+             ('Delivery', 'The screws and threaded parts are checked and delivered.'),
+         ]},
+    ],
+    'faq': [
+        ('What is thread rolling?', 'Thread rolling forms a thread on a shaft by pressing it between threaded rolls, with no chips. The metal is not cut away but displaced into the shape of the thread.'),
+        ('Why is a rolled screw stronger?', 'In rolling, the grain of the metal is not cut but bends to follow the thread form, the thread surface is work-hardened by cold forming and the root comes out smoother. The result is a screw that is stronger and longer-lasting than one with a machined thread.'),
+        ('Do you roll threads on stainless steel?', 'Yes. HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws.'),
+        ('Which thread sizes and pitches can you roll?', 'Thread size and pitch are reviewed for each order. Send the screw drawing or specification, or call ' + TEL_EN + '.'),
+        ('What is the minimum order for thread rolling?', 'Ask when you enquire. Tell us how many screws or parts you need and the feasibility and price will be confirmed.'),
+        ('How is thread rolling priced?', 'The price depends on the shaft material and size, the thread specification and length, and the quantity, and is given after the drawing or specification has been reviewed. Rolling itself is a cost-effective way to make screws.'),
+        ('Where is HyperFab’s thread rolling service based?', 'HyperFab is based in Tehran, Iran. Thread rolling is ordered by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
+    ],
+    'cta_h': 'Send us your screw or shaft specification',
+    'cta_p': 'Send the screw drawing or specification, material and quantity, or call. HyperFab’s industrial projects specialist answers by phone.',
+    'cta_btns': CTA_BTNS,
+    'schema': svc('HyperFab Thread Rolling', ['Rolled threads', 'Roll threading', 'رولینگ رزوه'],
+                  'Thread rolling and screw making from stainless steel and mild steel shafts', '/en/thread-rolling/',
+                  'Thread rolling: stainless steel and mild steel shafts turned into strong screws on a thread rolling machine; stronger, longer-lasting threads than machined threads, by a cost-effective process.'),
+}
+
+
 def page(key, slug, title, desc, kw):
     return {'key': key, 'file': 'en/' + slug + '/index.html', 'path': '/en/' + slug + '/', 'alt_path': '/' + slug + '/',
             'alt_rel': slug + '/', 'priority': '0.8', 'title': title, 'desc': desc, 'keywords': kw}
@@ -588,9 +684,12 @@ PAGES = {
     'page_tubelaser': page('tubelaser', 'tube-laser-cutting', 'Tube & Profile Laser Cutting in Tehran, Iran | HyperFab',
                            'HyperFab in Tehran, Iran laser-cuts box section, round pipe, angle and channel in steel, stainless and aluminium: clean, accurate cuts, sample to batch.',
                            'tube laser cutting, profile laser cutting, box section laser cutting, RHS SHS laser cutting, round pipe laser cutting, angle and channel laser cutting, stainless steel tube laser cutting, aluminium profile laser cutting, tube laser cutting Tehran, tube laser cutting Iran, HyperFab'),
+    'page_threadroll': page('threadroll', 'thread-rolling', 'Thread Rolling: Rolled Screws in Tehran, Iran | HyperFab',
+                            'HyperFab in Tehran, Iran turns stainless and steel shafts into strong screws by thread rolling: cold-formed threads, stronger than cut threads, cost-effective.',
+                            'thread rolling, rolled threads, rolled vs cut threads, custom rolled screws, thread rolling Tehran, thread rolling Iran, HyperFab'),
     'page_welding': page('welding', 'welding', 'TIG & MIG Welding, Stainless & Aluminium, Tehran | HyperFab',
-                         'HyperFab in Tehran, Iran does TIG and MIG welding of stainless steel and 6000-series aluminium and welded structures to drawing, with VT, PT and PAUT.',
-                         'TIG welding stainless steel Tehran, TIG welding Iran, MIG welding Iran, stainless steel welding Tehran, aluminium welding Iran, 6061 aluminium welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),
+                         'HyperFab in Tehran, Iran: TIG and MIG welding of stainless and 6000-series aluminium, TIG welding of St37 steel, welded structures to drawing, VT/PT/PAUT.',
+                         'TIG welding stainless steel Tehran, TIG welding Iran, St37 steel TIG welding, mild steel welding Tehran, MIG welding Iran, stainless steel welding Tehran, aluminium welding Iran, 6061 aluminium welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),
     'page_turning': page('turning', 'cnc-turning', 'Batch CNC Turning in Tehran, Iran: Brass & Steel | HyperFab',
                          'HyperFab in Tehran, Iran produces batch CNC turned parts to drawing in brass, MO40 and CK45 steel, with fit tolerances and first-article approval.',
                          'CNC turning batch production Iran, CNC turning Tehran, batch turning Iran, precision brass parts Iran, MO40 42CrMo4 turning, CK45 C45 turning, gauge manufacturing, turned parts supplier Iran, HyperFab'),
@@ -606,7 +705,7 @@ PAGES = {
 }
 
 FEATURE_PARAS = [
-    'When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: <a href="punching/">sheet and tube punching</a>, <a href="tube-laser-cutting/">tube and profile laser cutting</a>, <a href="injection-molding/">mould making and injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="aluminium-extrusion/">aluminium extrusion</a>, <a href="welding/">welding and welded fabrication</a>, <a href="plating-anodizing/">plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. A part can go from production to final finish in one place.',
+    'When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: <a href="punching/">sheet and tube punching</a>, <a href="tube-laser-cutting/">tube and profile laser cutting</a>, <a href="injection-molding/">mould making and injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="thread-rolling/">thread rolling</a>, <a href="aluminium-extrusion/">aluminium extrusion</a>, <a href="welding/">welding and welded fabrication</a>, <a href="plating-anodizing/">plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. A part can go from production to final finish in one place.',
     'HyperFab’s engineering team comes from Iran’s top universities, including Sharif University of Technology, and has worked in industry for years. It has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Its record also includes quality control of 8,000 punched tubes, mating brass parts and MO40 and CK45 gauges, and stainless and aluminium structures for the medical and marine industries.',
 ]
 
@@ -615,15 +714,16 @@ FEATURE_POINTS = [
     '<b><a href="tube-laser-cutting/">Tube and profile laser cutting</a>:</b> box section, pipe, angle and channel in mild steel, stainless and aluminium; from sample to batch.',
     '<b><a href="injection-molding/">Mould making and injection moulding</a>:</b> mould making, sampling and production in PE, PP, ABS and nylon.',
     '<b><a href="cnc-turning/">Batch CNC turning</a>:</b> brass parts with fit tolerances and gauge parts in MO40 and CK45.',
+    '<b><a href="thread-rolling/">Thread rolling</a>:</b> stainless and mild steel shafts turned into strong screws; stronger and longer-lasting than cut threads.',
     '<b><a href="aluminium-extrusion/">Aluminium extrusion</a>:</b> your section with a dedicated die; you bring tonnage and die cost, we do the rest.',
-    '<b><a href="welding/">TIG and MIG welding</a>:</b> stainless steel and 6000-series aluminium, welded structures and platforms, with VT, PT and PAUT.',
+    '<b><a href="welding/">TIG and MIG welding</a>:</b> stainless steel and 6000-series aluminium, TIG welding of St37 steel, welded structures and platforms, with VT, PT and PAUT.',
     '<b><a href="plating-anodizing/">Plating and anodizing</a>:</b> silver and gold on brass and other metals, anodizing and chromate on aluminium.',
     '<b><a href="powder-coating/">Powder coating</a>:</b> powder, pearl, hammer and textured finishes.',
     f'<b>Phone consultation:</b> HyperFab’s industrial projects specialist: <a href="{TEL}">{TEL_EN}</a>.',
 ]
 
 HOME_FAQ = [
-    ('Does HyperFab weld stainless steel and aluminium?', 'Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries. Laser cutting of the structure’s tube and box-section members can also be handled by HyperFab.'),
+    ('Does HyperFab weld stainless steel and aluminium?', 'Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium, TIG welding of St37 steel, and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries. Laser cutting of the structure’s tube and box-section members can also be handled by HyperFab.'),
     ('Does HyperFab do batch CNC turning?', 'Yes. HyperFab produces batch turned parts to drawing, including brass parts with fit tolerances and gauge parts in MO40 and CK45 steel. Each part’s critical points are engineered and checked before production.'),
     ('Does HyperFab extrude aluminium profiles?', 'Yes, as a specialisation and for aluminium only. Profiles are made in the customer’s own section with a dedicated die. The customer has the required tonnage and pays for the die, and HyperFab’s engineering team handles everything from section consultation to delivery.'),
     ('Does HyperFab do plating, anodizing and powder coating?', 'Yes, for production runs. HyperFab does silver and gold plating on brass and other metals, and anodizing and chromate (Alodine) on aluminium. Powder coating in powder, pearl, hammer and textured finishes is also available.'),
@@ -631,9 +731,9 @@ HOME_FAQ = [
 
 
 def apply(C):
-    C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION, 'tubelaser': TUBELASER})
+    C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION, 'tubelaser': TUBELASER, 'threadroll': THREADROLL})
     C.update(PAGES)
-    C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'tubelaser', 'injection', 'turning', 'extrusion', 'welding', 'plating', 'coating']
+    C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'tubelaser', 'injection', 'turning', 'threadroll', 'extrusion', 'welding', 'plating', 'coating']
     f = C['home']['ind_feature']
     f.update({'title': 'Industrial and batch production: from moulds and turning to welding, plating and coating',
               'sub': 'A complete chain for batch parts, from production to final finish, with one responsible engineering team.',
@@ -641,19 +741,19 @@ def apply(C):
               'img': 'assets/img/works/flange-steel-4.jpg', 'img_alt': 'Turning an AISI 304 stainless part on a HyperFab project', 'caption': 'Real photo: turning an AISI 304 stainless part on a HyperFab project.', 'img_w': 868, 'img_h': 1156,
               'more_rel': 'en/cnc-turning/', 'more': 'Batch CNC turning', 'try_url': 'en/welding/', 'try': 'Welding and welded fabrication'})
     C['industrial_links'][1:1] = [('Tube and profile laser cutting', 'en/tube-laser-cutting/')]  # right after punching
-    C['industrial_links'] += [('Batch CNC turning', 'en/cnc-turning/'), ('Aluminium extrusion', 'en/aluminium-extrusion/'),
+    C['industrial_links'] += [('Batch CNC turning', 'en/cnc-turning/'), ('Thread rolling', 'en/thread-rolling/'), ('Aluminium extrusion', 'en/aluminium-extrusion/'),
                               ('Welding and welded fabrication', 'en/welding/'), ('Plating and anodizing', 'en/plating-anodizing/'),
                               ('Powder coating', 'en/powder-coating/')]
     for name, d, path in (('HyperFab Batch CNC Turning', TURNING, '/en/cnc-turning/'), ('HyperFab Aluminium Extrusion', EXTRUSION, '/en/aluminium-extrusion/'),
                           ('HyperFab Welding and Welded Fabrication', WELDING, '/en/welding/'), ('HyperFab Plating and Anodizing', PLATING, '/en/plating-anodizing/'),
                           ('HyperFab Powder Coating', COATING, '/en/powder-coating/'),
-                          ('HyperFab Tube & Profile Laser Cutting', TUBELASER, '/en/tube-laser-cutting/')):
+                          ('HyperFab Tube & Profile Laser Cutting', TUBELASER, '/en/tube-laser-cutting/'), ('HyperFab Thread Rolling', THREADROLL, '/en/thread-rolling/')):
         C['tools_as_services'].append({'title': name, 'paras': [d['schema'][0]['description']], 'url': SITE + path})
     C['knows_about'] += ['CNC turning', 'batch production', 'TIG welding', 'MIG welding', 'stainless steel welding', 'aluminium welding',
                          'welded fabrication', 'non-destructive weld testing', 'gold plating', 'silver plating', 'anodizing',
                          'chromate conversion coating', 'powder coating', 'aluminium extrusion', 'custom aluminium profiles',
-                         'tube laser cutting', 'profile laser cutting', 'box section laser cutting']
-    C['org_desc'] = C['org_desc'].rstrip('.') + ', tube and profile laser cutting, batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing, and powder coating.'
+                         'tube laser cutting', 'profile laser cutting', 'box section laser cutting', 'thread rolling']
+    C['org_desc'] = C['org_desc'].rstrip('.') + ', tube and profile laser cutting, batch CNC turning, thread rolling, aluminium extrusion, welding and welded fabrication, plating and anodizing, and powder coating.'
     C['home']['faq'][-1:-1] = HOME_FAQ
     cnc = next(s for s in C['services'] if s['key'] == 'cnc')
     cnc['paras'].append('CNC machining at HyperFab is not only for mould making. HyperFab makes all kinds of parts to customers’ drawings with high quality and precision, from single parts and prototypes to <a href="cnc-turning/">batch production of turned parts</a> in brass and MO40 and CK45 steel.')

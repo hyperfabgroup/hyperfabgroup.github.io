@@ -244,3 +244,58 @@
 }
 /* قالب آخرین سطر متن‌های تراز‌دوطرفه را راست‌چین می‌کند؛ در نسخه‌ی انگلیسی باید از چپ باشد */
 [dir="ltr"] .hfs-faq .ans,[dir="ltr"] .guide-card p{text-align-last:auto}
+
+/* =====================================================================
+   کار واقعی: صفحه‌ی پروژه (/portfolio/<slug>/)، کارت پروژه‌ها، نوار
+   «کار واقعی» صفحه‌ی اصلی و بلوک «پروژه‌ی واقعی» صفحه‌های خدمت.
+   ساخته‌شده در build.py از tools/projects.py و REAL_VIDEOS در media.py.
+   ویدیوی عمودی در ستون باریک وسط، ویدیوی افقی تمام‌عرض (حداکثر 960px).
+   جهت‌ها منطقی‌اند تا راست‌چین و چپ‌چین هر دو درست باشند.
+   ===================================================================== */
+.proj-video{margin:var(--sp-5) auto 0;max-width:960px}
+.proj-video.is-portrait{max-width:360px}
+.proj-video video{display:block;width:100%;height:auto;border-radius:var(--r-l);background:var(--navy);box-shadow:var(--sh-2)}
+.proj-video figcaption{margin-top:var(--sp-2);font-size:var(--fs-2);color:var(--ink-soft);line-height:1.9;text-align:center;display:flex;flex-direction:column;align-items:center;gap:var(--sp-1)}
+.proj-video figcaption .real-tag{margin-inline-end:0}
+.proj-body .proj-video{scroll-margin-top:calc(var(--hf-head-h) + var(--sp-3))}
+.proj-body{margin-inline:auto}
+.proj-hero .hfs-hero-art img{aspect-ratio:16/9;object-fit:cover;border-radius:var(--r-l)}
+
+/* کارت پروژه‌ها در صفحه‌ی نمونه‌کارها */
+.proj-index{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:var(--sp-5)}
+.proj-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
+.proj-card .im{height:auto;min-height:100%;padding:0;background:var(--navy)}
+.proj-card .im picture,.proj-card .im img{display:block;width:100%;height:100%}
+.proj-card .im img{max-width:none;max-height:none;object-fit:cover;filter:none;aspect-ratio:4/3}
+.proj-card .bd{display:flex;flex-direction:column;align-items:flex-start;gap:var(--sp-1)}
+.proj-card h3{margin-top:var(--sp-2)}
+[dir="ltr"] .proj-card p{text-align-last:auto}
+@media(max-width:600px){.proj-card{grid-template-columns:1fr}.proj-card .im img{aspect-ratio:16/9}}
+
+/* نوار «کار واقعی» صفحه‌ی اصلی: کارت‌های هم‌قد، ویدیو در قاب مربعی (object-fit: cover)؛
+   در موبایل ردیف افقی با اسکرول داخلی، بدون اسکرول افقی خود صفحه */
+.rw-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-4)}
+.rw-card{margin:0;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--sh-1)}
+.rw-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--navy)}
+.rw-media video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.rw-card figcaption{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:var(--sp-1);padding:var(--sp-3) var(--sp-4) var(--sp-4);font-size:var(--fs-3);color:var(--ink);line-height:1.9;font-weight:600}
+@media(max-width:960px){.rw-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3)}.rw-card figcaption{font-size:var(--fs-2)}}
+@media(max-width:700px){
+	.rw-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:var(--sp-3);padding-bottom:var(--sp-2);
+		margin-inline:calc(-1 * var(--sp-4));padding-inline:var(--sp-4);scroll-padding-inline:var(--sp-4);overscroll-behavior-x:contain}
+	.rw-card{flex:0 0 78%;scroll-snap-align:start}
+}
+
+/* «پروژه‌ی واقعی» در صفحه‌ی خدمت */
+.proj-svc{padding-top:0}
+.proj-svc-card{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:var(--sp-7);align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--sh-1);padding:var(--sp-5) var(--sp-6)}
+.proj-svc-card.is-wide{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.proj-svc-card .proj-video{margin:0;max-width:none;width:100%}
+.proj-svc-text h2{font-size:var(--fs-7);color:var(--navy);margin:var(--sp-2) 0 var(--sp-3);line-height:1.6}
+.proj-svc-text p{color:var(--ink-soft);font-size:var(--fs-4);line-height:2.05;margin:0 0 var(--sp-5)}
+[dir="ltr"] .proj-svc-text p{text-align-last:auto}
+@media(max-width:860px){
+	.proj-svc-card,.proj-svc-card.is-wide{grid-template-columns:1fr;gap:var(--sp-5);padding:var(--sp-4)}
+	.proj-svc-card.is-portrait .proj-video{max-width:280px;margin-inline:auto}
+	.proj-svc-text h2{font-size:var(--fs-6)}
+}

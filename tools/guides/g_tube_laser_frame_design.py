@@ -86,7 +86,8 @@ FA = {
              'در هایپرفب می‌توانید پس از برش لیزر، جوشکاری TIG و MIG فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ '
              'را بر اساس نقشه‌ی تأییدشده‌ی خودتان و سپس رنگ کوره‌ای (پودری) را در سفارش تیراژی بسپارید؛ '
              'در این حالت همان طرفی که زبانه و شیار را بریده، مسئول جوش و ابعاد نهایی فریم هم هست. '
-             'برای فریم‌های آهنی، امکان جوشکاری را هنگام استعلام بپرسید؛ در غیر این صورت قطعات بریده‌شده و آماده‌ی مونتاژ تحویل می‌شوند تا جوشکار خودتان آن‌ها را جوش بدهد.',
+             'فریم‌های آهنی (فولاد St37) را هم هایپرفب با جوش آرگون TIG جوشکاری می‌کند؛ نمونه‌اش <a href="{home}portfolio/mechanism-frame-st37/">فریم مکانیزمی از قوطی و ورق St37</a> است. '
+             'اگر ترجیح می‌دهید، قطعات بریده‌شده را هم می‌توانید آماده‌ی مونتاژ تحویل بگیرید تا جوشکار خودتان آن‌ها را جوش بدهد.',
              'قیمت برش لیزر پروفیل پیش از دیدن نقشه قابل اعلام نیست و از ترکیب این عوامل به دست می‌آید:',
              'برای قیمت دقیق، فایل STEP یا نقشه‌ی فریم را همراه با مقطع، جنس و تعداد در پیام‌رسان بله بفرستید یا با کارشناس پروژه‌های صنعتی هایپرفب '
              'به شماره‌ی ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید.',
@@ -97,7 +98,7 @@ FA = {
              'تعداد برش‌ها، سوراخ‌ها، شیارها و سرهای فرم‌دار هر قطعه.',
              'تیراژ: نمونه، تیراژ اولیه‌ی کوچک یا سفارش تیراژی.',
              'تأمین متریال توسط شما یا هایپرفب.',
-             'کارهای بعدی مثل جوش فریم استیل یا آلومینیوم، رنگ کوره‌ای یا آندایز.',
+             'کارهای بعدی مثل جوش فریم استیل، آهن (St37) یا آلومینیوم، رنگ کوره‌ای یا آندایز.',
          ]},
     ],
     'faq': [
@@ -108,8 +109,8 @@ FA = {
          'نه، اما بهترین ورودی است. فایل STEP یا IGES رابطه‌ی زبانه‌ها و شیارها را دقیق نشان می‌دهد. '
          'اگر ندارید، نقشه‌ی دوبعدی، DXF یا PDF هم پذیرفته می‌شود، به شرطی که مقطع و ابعادش روشن نوشته شده باشد.'),
         ('جوش و رنگ فریم را هم انجام می‌دهید؟',
-         'برای فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ بله: پس از برش لیزر، هایپرفب جوشکاری TIG و MIG را بر اساس نقشه‌ی شما و سپس رنگ کوره‌ای را در سفارش تیراژی انجام می‌دهد. '
-         'برای فریم آهنی، امکان جوشکاری را هنگام استعلام بپرسید؛ قطعات بریده‌شده را هم می‌توانید آماده‌ی جوش تحویل بگیرید.'),
+         'بله. پس از برش لیزر، هایپرفب فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ را با جوش TIG و MIG و فریم‌های آهنی (فولاد St37) را با جوش TIG، بر اساس نقشه‌ی شما جوشکاری می‌کند و سپس رنگ کوره‌ای را در سفارش تیراژی انجام می‌دهد. '
+         'اگر ترجیح می‌دهید، قطعات بریده‌شده را هم می‌توانید آماده‌ی جوش تحویل بگیرید.'),
         ('برای تیراژ من برش لیزر ارزان‌تر است یا اره و دریل؟',
          'به تعداد سوراخ‌ها، شیارها و سرهای فرم‌دار هر قطعه و به تیراژ بستگی دارد. قطعه‌ی پرجزئیات معمولاً با لیزر و برش صاف با یکی دو سوراخ با اره و دریل به‌صرفه‌تر است. '
          'نقشه را بفرستید یا با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید تا روش مناسب پیشنهاد شود.'),
@@ -199,7 +200,8 @@ EN = {
              'After laser cutting, HyperFab can also carry out TIG and MIG welding of stainless steel '
              'and 6000-series aluminium frames to your approved design, followed by powder coating for batch orders; '
              'whoever cut the tabs and slots is then also responsible for the welding and final frame dimensions. '
-             'For mild-steel frames, ask about welding when you request a quote; otherwise the parts are delivered cut and ready to assemble for your own welder.',
+             'HyperFab also TIG welds mild-steel (St37) frames; one example is a <a href="{home}portfolio/mechanism-frame-st37/">mechanism frame made from St37 box section and sheet</a>. '
+             'If you prefer, the parts can still be delivered cut and ready to assemble for your own welder.',
              'A tube laser price cannot be given before the drawing is seen; it comes from a combination of these factors:',
              'For an exact quote, send the STEP file or frame drawing with the section, material and quantity on Bale, or call HyperFab’s industrial projects specialist on 09962233898 (+98 996 223 3898).',
          ],
@@ -209,7 +211,7 @@ EN = {
              'The number of cuts, holes, slots and shaped ends on each part.',
              'Quantity: sample, small first run or batch order.',
              'Whether you or HyperFab supply the material.',
-             'Follow-on work such as welding a stainless or aluminium frame, powder coating or anodizing.',
+             'Follow-on work such as welding a stainless, St37 steel or aluminium frame, powder coating or anodizing.',
          ]},
     ],
     'faq': [
@@ -220,8 +222,8 @@ EN = {
          'No, but it is the best input. A STEP or IGES model shows exactly how the tabs and slots relate. '
          'Without one, a 2D drawing, DXF or PDF is accepted, as long as the section and its dimensions are clearly stated.'),
         ('Can you weld and paint the frame too?',
-         'For stainless steel and 6000-series aluminium frames, yes: after laser cutting, HyperFab carries out TIG and MIG welding to your drawing, followed by powder coating for batch orders. '
-         'For mild-steel frames, ask about welding when you request a quote; cut parts can also be delivered ready for welding.'),
+         'Yes. After laser cutting, HyperFab TIG and MIG welds stainless steel and 6000-series aluminium frames and TIG welds mild-steel (St37) frames to your drawing, followed by powder coating for batch orders. '
+         'If you prefer, cut parts can also be delivered ready for welding.'),
         ('Which is cheaper for my quantity: laser or saw and drill?',
          'It depends on how many holes, slots and shaped ends each part has, and on the quantity. Feature-rich parts usually favour the laser; a straight cut with a hole or two may favour the saw and drill. '
          'Send the drawing or call 09962233898 and HyperFab will recommend the right route.'),

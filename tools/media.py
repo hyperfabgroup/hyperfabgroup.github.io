@@ -60,3 +60,61 @@ def video_url(code):
 
 def video_embed(code):
     return 'https://www.aparat.com/video/video/embed/videohash/' + code + '/vt/frame'
+
+
+# ---------------------------------------------------------------- ویدیوهای واقعی کارگاه
+# فیلم‌های خود هایپرفب که روی همین سایت میزبانی می‌شوند (assets/media/). از اینجا ساخته می‌شوند:
+#   - نوار «کار واقعی» صفحه‌ی اصلی (home=True، به همین ترتیب)
+#   - ویدیوهای صفحه‌ی پروژه (tools/projects.py با vid('شناسه', زبان))؛ VideoObject فقط آنجا ساخته می‌شود
+#   - بلوک «پروژه‌ی واقعی» صفحه‌ی خدمت service (اولین ویدیوی هر خدمت که project دارد)
+# برای ویدیوی تازه (مثلاً نورد رزوه یا فرز فلنج استیل): mp4 را در assets/media/ و پوستر jpg هم‌اندازه را
+# در assets/img/works/ بگذارید و یک ردیف اینجا اضافه کنید. upload_date روز فیلم‌برداری است (YYYY-MM-DD)،
+# duration به قالب ISO 8601 (PT51S). focus نقطه‌ی برش تصویر در کارت‌های مربعی نوار صفحه‌ی اصلی است.
+REAL_VIDEOS = [
+    {'id': 'tube-laser', 'src': 'assets/media/work-tube-laser.mp4', 'poster': 'assets/img/works/work-tube-laser.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2024-07-14', 'duration': 'PT51S',
+     'project': 'mechanism-frame-st37', 'service': 'tubelaser', 'home': True, 'focus': '50% 40%',
+     'fa': {'caption': 'برش لیزر قوطی فولادی برای فریم یک مکانیزم · تیر ۱۴۰۳',
+            'name': 'برش لیزر قوطی فولادی St37 برای فریم یک مکانیزم',
+            'desc': 'برش لیزر قوطی فولادی St37 با دستگاه لیزر لوله در هایپرفب؛ قطعات اسکلت فریم مکانیزمی که طراحی‌اش هم کار خود هایپرفب است.'},
+     'en': {'caption': 'Tube laser cutting steel box section for a mechanism frame · Jul 2024',
+            'name': 'Tube laser cutting St37 steel box section for a mechanism frame',
+            'desc': 'Laser cutting St37 steel box section on a tube laser at HyperFab: the skeleton parts of a mechanism frame that HyperFab also designed.'}},
+    {'id': 'frame-welding', 'src': 'assets/media/work-frame-welding.mp4', 'poster': 'assets/img/works/work-frame-welding.jpg',
+     'w': 1280, 'h': 720, 'upload_date': '2024-10-09', 'duration': 'PT8S',
+     'project': 'mechanism-frame-st37', 'service': 'welding', 'home': True, 'focus': '50% 50%',
+     'fa': {'caption': 'جوش آرگون TIG فریم St37؛ قوطی لیزرشده و ورق خم‌شده · مهر ۱۴۰۳',
+            'name': 'جوش آرگون TIG فریم St37',
+            'desc': 'جوشکاری آرگون TIG قطعات قوطی برش‌خورده با لیزر به ورق برش‌خورده و خم‌شده؛ فریم St37 ساخت کارگاه هایپرفب.'},
+     'en': {'caption': 'TIG welding the St37 frame: laser-cut tube and bent sheet · Oct 2024',
+            'name': 'TIG welding an St37 steel frame',
+            'desc': 'TIG welding laser-cut box-section parts to laser-cut, bent sheet: an St37 frame made in HyperFab’s workshop.'}},
+    {'id': 'rivet-nut', 'src': 'assets/media/work-rivet-nut.mp4', 'poster': 'assets/img/works/work-rivet-nut.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2024-10-09', 'duration': 'PT13S',
+     'project': 'mechanism-frame-st37', 'service': None, 'home': True, 'focus': '50% 35%',
+     'fa': {'caption': 'نصب مهره‌پرچ با ابزار بادی روی ورق نازک همان فریم · مهر ۱۴۰۳',
+            'name': 'نصب مهره‌پرچ با ابزار بادی روی ورق نازک',
+            'desc': 'نصب مهره‌پرچ با ابزار پرچ بادی روی ورق نازک فریم St37 در هایپرفب، تا پیچ‌ها رزوه‌ی کامل و محکم داشته باشند.'},
+     'en': {'caption': 'Fitting rivet nuts in the frame’s thin sheet with a pneumatic tool · Oct 2024',
+            'name': 'Fitting rivet nuts in thin sheet with a pneumatic tool',
+            'desc': 'Installing rivet nuts with a pneumatic rivet-nut tool in the thin sheet of an St37 frame at HyperFab, so the screws get full, strong threads.'}},
+    {'id': 'flange-milling', 'src': 'assets/media/work-flange-milling.mp4', 'poster': 'assets/img/works/work-flange-milling.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2023-11-30', 'duration': 'PT29S',
+     'project': None, 'service': 'turning', 'home': True, 'focus': '50% 45%',
+     'fa': {'caption': 'فرزکاری چهارپهلوی داخل یک فلنج استیل · آذر ۱۴۰۲',
+            'name': 'فرزکاری چهارپهلوی داخل فلنج استیل',
+            'desc': 'فلنج استیلی که داخلش باید چهارپهلو می‌شد، روی دستگاه فرز در هایپرفب ماشین‌کاری می‌شود؛ فرزکاری استیل از کارهای دشوار ماشین‌کاری است. قطعه برای مشتری ساخته شده است.'},
+     'en': {'caption': 'Milling a square bore inside a stainless flange · Nov 2023',
+            'name': 'Milling a square bore in a stainless steel flange',
+            'desc': 'A stainless flange whose bore had to be square, machined on a milling machine at HyperFab; milling stainless is among the hardest machining jobs. Made for a customer.'}},
+]
+
+REAL_BY_ID = {v['id']: v for v in REAL_VIDEOS}
+
+
+def vid(vid_id, lang):
+    """ویدیوی واقعی برای بخش صفحه‌ی پروژه: {'id','src','poster','w','h','name','desc','upload_date','duration'}"""
+    v = REAL_BY_ID[vid_id]
+    return {'id': v['id'], 'src': v['src'], 'poster': v['poster'], 'w': v['w'], 'h': v['h'],
+            'upload_date': v['upload_date'], 'duration': v['duration'],
+            'name': v[lang]['name'], 'desc': v[lang]['desc']}

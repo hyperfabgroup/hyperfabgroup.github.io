@@ -82,12 +82,12 @@ FA = {
          ]},
         {'h': 'قیمت جوشکاری TIG و MIG به چه عواملی بستگی دارد؟',
          'p': [
-             'طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد؛ نقشه پیش از شروع از نظر ساخت‌پذیری، ترتیب '
+             'طراحی سازه معمولاً با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد (در برخی پروژه‌ها طراحی مکانیزم و فریم را هم هایپرفب انجام داده است)؛ نقشه پیش از شروع از نظر ساخت‌پذیری، ترتیب '
              'جوشکاری و کنترل اعوجاج بررسی و سپس قیمت اعلام می‌شود. عوامل اصلی قیمت:',
              'برای قیمت دقیق، نقشه، جنس، تعداد و آزمون‌های لازم را آماده کنید و با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید.',
          ],
          'ul': [
-             'جنس قطعه: استیل ضدزنگ یا آلومینیوم سری ۶۰۰۰',
+             'جنس قطعه: استیل ضدزنگ، آلومینیوم سری ۶۰۰۰ یا فولاد St37 (که هایپرفب با جوش TIG جوشکاری می‌کند)',
              'طول و نوع جوش و روش جوشکاری؛ TIG کندتر و MIG سریع‌تر است',
              'ابعاد سازه و فیکسچربندی؛ در سازه‌های بزرگ، مثل شاسی شبکه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند، صافی و هم‌راستایی در طول زیاد تعیین‌کننده است',
              'الزامات ظاهری و بهداشتی: پرداخت جوش، محافظت پشت درز و پاک‌سازی تغییر رنگ',
@@ -199,12 +199,12 @@ EN = {
          ]},
         {'h': 'What drives the cost of TIG and MIG welding?',
          'p': [
-             'Structural design is the client’s, and HyperFab fabricates to your approved drawings. The drawings are first checked for manufacturability, '
+             'Structural design is usually the client’s, and HyperFab fabricates to your approved drawings (on some projects HyperFab has also designed the mechanism and frame). The drawings are first checked for manufacturability, '
              'welding sequence and distortion control, and then quoted. The main cost drivers are:',
              'For an exact quote, have your drawings, material, quantity and required tests ready and call 09962233898.',
          ],
          'ul': [
-             'Material: stainless steel or 6000-series aluminium',
+             'Material: stainless steel, 6000-series aluminium or St37 steel (which HyperFab welds by TIG)',
              'Weld length and type, and the process; TIG is slower, MIG faster',
              'Structure size and fixturing; on large frames, such as a framed chassis mounted on wheels that runs on rails, flatness and alignment over long lengths drive the effort',
              'Cosmetic and hygiene requirements: weld dressing, back purging and heat-tint removal',

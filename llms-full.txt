@@ -1,6 +1,6 @@
 # HyperFab (هایپرفب) — full site content
 
-> Full text of every page of https://hyperfabgroup.github.io/ in English and Persian, generated from the site sources on 2026-11-15. English pages come first, then Persian. Short index: https://hyperfabgroup.github.io/llms.txt. Main website and online ordering: https://hyperfab.ir/
+> Full text of every page of https://hyperfabgroup.github.io/ in English and Persian, generated from the site sources on 2026-11-16. English pages come first, then Persian. Short index: https://hyperfabgroup.github.io/llms.txt. Main website and online ordering: https://hyperfab.ir/
 
 ---
 
@@ -22,7 +22,7 @@ HyperFab (Persian: هایپرفب) is an online manufacturing platform in Tehran
 
 HyperFab’s 3D printing, CNC, laser and bending orders are usually ready within three working days, and the minimum order is one part. Parts are shipped across Iran by Post, Tipax and Snappbox, and pickup in Tehran is free. HyperFab’s Tekeyab service sources small pieces of industrial material — sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics — quotes a price and cuts them to size if needed.
 
-For industrial and batch production, HyperFab offers sheet and tube punching (metal and polyethylene), tube and profile laser cutting, mould making and plastic injection moulding, batch CNC turning, custom aluminium extrusion, TIG and MIG welding, gold and silver plating and anodizing and powder coating. For punching, injection moulding and extrusion, tooling design and manufacture are part of the service, and parts are inspected before delivery. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. Industrial projects are handled by phone: +98 996 223 3898.
+For industrial and batch production, HyperFab offers sheet and tube punching (metal and polyethylene), tube and profile laser cutting, mould making and plastic injection moulding, batch CNC turning, thread rolling, custom aluminium extrusion, TIG and MIG welding, gold and silver plating and anodizing and powder coating. For punching, injection moulding and extrusion, tooling design and manufacture are part of the service, and parts are inspected before delivery. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. Industrial projects are handled by phone: +98 996 223 3898.
 
 ## Services and manufacturing processes
 
@@ -137,7 +137,7 @@ Tekeyab covers aluminium, stainless steel, carbon steel, copper and brass, engin
 
 A complete chain for batch parts, from production to final finish, with one responsible engineering team.
 
-When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: sheet and tube punching, tube and profile laser cutting, mould making and injection moulding, batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing and powder coating. A part can go from production to final finish in one place.
+When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: sheet and tube punching, tube and profile laser cutting, mould making and injection moulding, batch CNC turning, thread rolling, aluminium extrusion, welding and welded fabrication, plating and anodizing and powder coating. A part can go from production to final finish in one place.
 
 HyperFab’s engineering team comes from Iran’s top universities, including Sharif University of Technology, and has worked in industry for years. It has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Its record also includes quality control of 8,000 punched tubes, mating brass parts and MO40 and CK45 gauges, and stainless and aluminium structures for the medical and marine industries.
 
@@ -145,8 +145,9 @@ HyperFab’s engineering team comes from Iran’s top universities, including Sh
 - Tube and profile laser cutting: box section, pipe, angle and channel in mild steel, stainless and aluminium; from sample to batch.
 - Mould making and injection moulding: mould making, sampling and production in PE, PP, ABS and nylon.
 - Batch CNC turning: brass parts with fit tolerances and gauge parts in MO40 and CK45.
+- Thread rolling: stainless and mild steel shafts turned into strong screws; stronger and longer-lasting than cut threads.
 - Aluminium extrusion: your section with a dedicated die; you bring tonnage and die cost, we do the rest.
-- TIG and MIG welding: stainless steel and 6000-series aluminium, welded structures and platforms, with VT, PT and PAUT.
+- TIG and MIG welding: stainless steel and 6000-series aluminium, TIG welding of St37 steel, welded structures and platforms, with VT, PT and PAUT.
 - Plating and anodizing: silver and gold on brass and other metals, anodizing and chromate on aluminium.
 - Powder coating: powder, pearl, hammer and textured finishes.
 - Phone consultation: HyperFab’s industrial projects specialist: +98 996 223 3898.
@@ -167,6 +168,15 @@ Real photos of parts HyperFab has made, from CNC turning and batch PTFE parts to
 - **Machined steel shaft splined at both ends** (Steel · mechanical and automotive): A shaft with splines at both ends for high-torque transmission, machined for full, backlash-free engagement.
 - **Turned AISI 304 stainless steel bushing** (AISI 304 stainless · industrial): A stainless bushing with precise steps and grooves and a clean finish, for bearing seats and other precision locations.
 - **Precision off-axis parts in brass, stainless steel and polymer** (Brass, stainless and polymer · mechanisms): A set of small precision parts, including off-axis parts, in brass, stainless steel and polymer, made in one project with meticulous dimensional inspection.
+
+## Real work from HyperFab’s workshop
+
+Real footage of parts HyperFab designed and made for its customers.
+
+- Tube laser cutting steel box section for a mechanism frame · Jul 2024: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4 (https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/)
+- TIG welding the St37 frame: laser-cut tube and bent sheet · Oct 2024: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4 (https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/)
+- Fitting rivet nuts in the frame’s thin sheet with a pneumatic tool · Oct 2024: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4 (https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/)
+- Milling a square bore inside a stainless flange · Nov 2023: https://hyperfabgroup.github.io/assets/media/work-flange-milling.mp4
 
 ## How it works
 
@@ -243,7 +253,7 @@ Send a hand sketch, a photo of a sample part or a description of what it does. D
 
 ### Does HyperFab weld stainless steel and aluminium?
 
-Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries. Laser cutting of the structure’s tube and box-section members can also be handled by HyperFab.
+Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium, TIG welding of St37 steel, and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request, and many units have been built for the medical and marine industries. Laser cutting of the structure’s tube and box-section members can also be handled by HyperFab.
 
 ### Does HyperFab do batch CNC turning?
 
@@ -715,6 +725,7 @@ A 3D STEP or IGES file is the best input; state the section, material and quanti
 - Tab-and-slot clearance: leave a little clearance in tabs and slots so parts fit together without forcing.
 - Weld seam: welded tube and pipe have a weld seam on the inside. If a hole or slot must not land on the seam, say so on the drawing.
 - Visible faces: if a face will be visible in the finished product, mark it so feature placement and handling take it into account.
+- Threads in thin sheet and walls: thin sheet or tube wall cannot hold a strong tapped thread, so holes are cut for rivet nuts instead, which give screws a proper thread (St37 mechanism frame case study).
 
 ## Can HyperFab also weld and finish the frame?
 
@@ -990,6 +1001,112 @@ HyperFab is based in Tehran, Iran. Batch turning projects are discussed by phone
 
 ---
 
+# Thread rolling — strong screws from stainless and steel shafts
+
+URL: https://hyperfabgroup.github.io/en/thread-rolling/
+
+Thread rolling forms a thread on a shaft by pressing it between threaded rolls, with no chips: the metal is not cut away but displaced into the shape of the thread. HyperFab, a manufacturing company in Tehran, Iran, uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A rolled thread is stronger and longer-lasting than a machined one, and the process is very cost-effective for this kind of part. Thread size and pitch are checked when you enquire; call +98 996 223 3898.
+
+HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A rolled thread is formed by pressure, with no chips, so it is stronger and longer-lasting than a thread cut on a lathe or with a die — and for these parts the process is very cost-effective.
+
+- Service: Thread rolling and screw making from shafts
+- Materials: Stainless steel and mild steel shafts
+- Advantage: Stronger, longer-lasting threads than machined threads; cost-effective
+- Size and pitch: Ask when you enquire
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Process: cold forming with threaded rolls, no chips
+- Materials: stainless steel and mild steel shafts
+- Advantage: stronger and longer-lasting than cut threads
+
+## What is thread rolling, and what does HyperFab do?
+
+Thread rolling — also called roll threading or rolled threads — forms a thread without cutting. The shaft turns between rolls that carry the thread form, and under their pressure the surface metal of the shaft is shaped into the thread. No chips are removed; metal moves from the root of the thread up into its crest.
+
+HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A screw made this way is stronger and lasts longer than one whose thread was cut by machining. The process itself is very cost-effective, and it suits this kind of application well.
+
+## Why is a rolled thread stronger than a cut thread?
+
+Because the metal is not cut: its grain follows the thread form, the surface is work-hardened by cold forming and the thread root comes out smoother.
+
+- **Grain flow is not cut**: Machining cuts straight through the grain of the metal. In rolling, the grain bends to follow the thread profile and stays continuous, so the thread carries load better.
+- **Work-hardened surface**: The pressure of the rolls compresses and hardens the thread surface while cold, so the thread resists wear and damage from repeated assembly better.
+- **Smoother thread root**: The thread root is where cracks start in screws under fluctuating load. The smooth, tool-mark-free surface of a rolled thread helps the screw last longer.
+- **Less material wasted**: With no chips removed, less raw material is wasted and threading is faster — one reason rolling is cost-effective.
+
+## Thread rolling or thread cutting on a lathe or with a die?
+
+For strong, repeated screws, rolling wins; for one-off parts and special thread profiles, cutting on a lathe or with a die may be the better choice.
+
+| Aspect | Thread rolling | Thread cutting (lathe or die) |
+|---|---|---|
+| Chips | None; metal is displaced | Metal is removed as chips |
+| Grain flow | Follows the thread form and stays continuous | Cut through at the thread |
+| Thread surface | Smooth and work-hardened | Tool marks on the flanks and root |
+| Material waste | Low | Higher, by the volume of chips |
+| Speed in series | Fast and consistent | Slower |
+| One-offs and special profiles | Needs rolls for that thread; ask | Usually simpler |
+
+Choosing fairly: if you need only one or a few parts with a special thread, cutting the thread on a lathe may make more sense. When you enquire, say which screw you need and how many, and the right process will be recommended.
+
+## Which materials and parts can be rolled?
+
+HyperFab rolls threads on stainless steel and mild steel shafts. If your part is in another material, ask when you enquire.
+
+- Screws: stainless steel and mild steel shafts turned into strong screws.
+- Common uses of thread rolling: rolling is also commonly used for studs, threaded rods and shafts with threaded ends; for these parts, ask when you enquire.
+
+## What should I know before ordering rolled screws?
+
+The blank is prepared smaller than the thread’s outside diameter; send the drawing, material, thread specification and quantity.
+
+- The blank is smaller than the thread: rolling displaces metal outward and raises the thread crest, so the blank is prepared smaller than the thread’s outside diameter. Do not machine the shaft to the nominal thread size yourself.
+- Drawing and thread specification: give the part drawing, the material, the thread type and size, the pitch and the threaded length.
+- Quantity: say how many screws or parts you need; it affects the price and the process.
+- Turned parts: if the shaft or part to be threaded also needs turning, see batch CNC turning.
+
+## How is thread rolling ordered?
+
+Four steps: send the drawing and specification, review and quote, rolling, and delivery.
+
+1. **Send the drawing**: Send the screw drawing or specification, shaft material, thread specification and quantity on Bale, or describe them by phone.
+2. **Review and quote**: Thread size, pitch and material are reviewed and a price is given.
+3. **Thread rolling**: The shafts are threaded on the rolling machine.
+4. **Delivery**: The screws and threaded parts are checked and delivered.
+
+## FAQ
+
+### What is thread rolling?
+
+Thread rolling forms a thread on a shaft by pressing it between threaded rolls, with no chips. The metal is not cut away but displaced into the shape of the thread.
+
+### Why is a rolled screw stronger?
+
+In rolling, the grain of the metal is not cut but bends to follow the thread form, the thread surface is work-hardened by cold forming and the root comes out smoother. The result is a screw that is stronger and longer-lasting than one with a machined thread.
+
+### Do you roll threads on stainless steel?
+
+Yes. HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws.
+
+### Which thread sizes and pitches can you roll?
+
+Thread size and pitch are reviewed for each order. Send the screw drawing or specification, or call +98 996 223 3898.
+
+### What is the minimum order for thread rolling?
+
+Ask when you enquire. Tell us how many screws or parts you need and the feasibility and price will be confirmed.
+
+### How is thread rolling priced?
+
+The price depends on the shaft material and size, the thread specification and length, and the quantity, and is given after the drawing or specification has been reviewed. Rolling itself is a cost-effective way to make screws.
+
+### Where is HyperFab’s thread rolling service based?
+
+HyperFab is based in Tehran, Iran. Thread rolling is ordered by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
 # Aluminium profile extrusion — Your cross-section, with a dedicated die
 
 URL: https://hyperfabgroup.github.io/en/aluminium-extrusion/
@@ -1104,30 +1221,30 @@ HyperFab is based in Tehran, Iran. Custom profile projects start with a consulta
 
 ---
 
-# TIG and MIG welding — Stainless steel, aluminium and welded structures
+# TIG and MIG welding — Stainless steel, steel, aluminium and welded structures
 
 URL: https://hyperfabgroup.github.io/en/welding/
 
-TIG and MIG welding of stainless steel and 6000-series aluminium, including 6061 and 6063, is offered by HyperFab, a manufacturing company in Tehran, Iran, together with fabrication of welded machine structures and large platform structures to the client’s approved drawings. VT, PT and phased-array ultrasonic (PAUT) weld testing is available on request, and HyperFab has built many units for the medical and marine industries. Welding projects are priced by material, weld length and type, structure size and requested tests; call +98 996 223 3898.
+TIG and MIG welding of stainless steel and 6000-series aluminium, including 6061 and 6063, and TIG welding of St37 carbon steel are offered by HyperFab, a manufacturing company in Tehran, Iran, together with fabrication of welded machine structures and large platform structures to the client’s approved drawings. VT, PT and phased-array ultrasonic (PAUT) weld testing is available on request, and HyperFab has built many units for the medical and marine industries. Welding projects are priced by material, weld length and type, structure size and requested tests; call +98 996 223 3898.
 
-TIG and MIG welding of stainless steel and 6000-series aluminium, fabrication and assembly of welded structures for machines, and large platform structures — with VT, PT and phased-array weld testing on request, from drawing to delivery.
+TIG and MIG welding of stainless steel and 6000-series aluminium, TIG welding of St37 steel, fabrication and assembly of welded structures for machines, and large platform structures — with VT, PT and phased-array weld testing on request, from drawing to delivery.
 
 - Service: TIG and MIG (argon-shielded) welding and welded fabrication
-- Materials: Stainless steel and 6000-series aluminium (6061, 6063)
+- Materials: Stainless steel, St37 carbon (mild) steel by TIG, 6000-series aluminium (6061, 6063)
 - Weld testing: VT, PT, PAUT and other tests on request
 - Pricing model: By material, weld length and type, structure size and requested tests
 - Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
 - Location: Tehran, Iran
 
 - Processes: TIG and MIG (argon shielded)
-- Materials: stainless steel, 6000-series aluminium
+- Materials: stainless steel, 6000-series aluminium, St37 steel (TIG)
 - Weld testing: VT · PT · PAUT and other tests as required
 
 ## TIG or MIG welding for stainless steel and aluminium?
 
-TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on stainless steel and 6000-series aluminium.
+TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on stainless steel and 6000-series aluminium, and TIG welds St37 steel.
 
-Argon-shielded welding — TIG (GTAW) and MIG (GMAW) — is the main way to join stainless steel and 6000-series aluminium in machine and equipment building.
+Argon-shielded welding — TIG (GTAW) and MIG (GMAW) — is the main way to join stainless steel and 6000-series aluminium in machine and equipment building. HyperFab also TIG welds St37 carbon steel (mild steel); one example is a mechanism frame made from St37 box section and sheet.
 
 HyperFab’s work is not just laying welds; it is building and assembling the project from drawing to delivery. That covers cutting and preparing parts, fixturing, welding with distortion control, weld finishing and testing. HyperFab has built many units for the medical and marine industries, where weld cleanliness and corrosion resistance are critical.
 
@@ -1141,14 +1258,14 @@ TIG welding of stainless steel, TIG and MIG welding of 6000-series aluminium, we
 
 - **TIG welding of stainless steel**: Clean, precise welds on stainless steel for medical, food and marine equipment, with heat control to preserve corrosion resistance.
 - **6000-series aluminium welding**: TIG and MIG welding of 6000-series alloys such as 6061 and 6063, for chassis, frames and light structures.
-- **Welded machine structures**: Chassis, frames, housings and enclosures for many kinds of machines in stainless steel or aluminium, from cut parts to assembled structure.
+- **Welded machine structures**: Chassis, frames, housings and enclosures for many kinds of machines in stainless steel, St37 steel or aluminium, from cut parts to assembled structure.
 - **Large platform structures**: Large platforms and framed chassis, including a structure mounted on wheels that runs on rails.
 - **Medical and marine industries**: Many units built for medical equipment and marine applications, meeting those industries’ cleanliness and corrosion requirements.
 - **Weld testing**: Visual testing (VT), liquid penetrant (PT), phased-array ultrasonics (PAUT) and other tests on request.
 
 ## Does HyperFab design the welded structure?
 
-No. For welded structures, the structural design is the client’s, and HyperFab fabricates to your approved drawings. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.
+Usually the structural design is the client’s, and HyperFab fabricates to your approved drawings; on some projects HyperFab has also designed the mechanism and frame, so ask when you enquire. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.
 
 For large and platform structures, complete approved drawings are essential before fabrication starts. HyperFab takes responsibility for fabrication, follow-up and quality control through to delivery.
 
@@ -1191,6 +1308,10 @@ Yes. HyperFab does TIG and MIG welding of stainless steel and has built many uni
 
 Yes. HyperFab does TIG and MIG welding of 6000-series aluminium, including 6061 and 6063, for chassis, frames and light structures.
 
+### Do you weld mild steel (St37)?
+
+Yes. HyperFab does argon TIG welding of St37 steel; for example, a mechanism frame made from St37 box section and sheet, shown in HyperFab’s portfolio.
+
 ### TIG or MIG welding for stainless steel — which is better?
 
 TIG gives cleaner, more precise welds and suits thin sheet, cosmetic parts and medical and food equipment. MIG is faster and more economical for long and structural welds. HyperFab does both and recommends the right process by material, thickness and use.
@@ -1205,7 +1326,7 @@ Send HyperFab the structure or part drawings, the material, the quantity and any
 
 ### Does HyperFab design the welded structure?
 
-No. Structural design is the client’s and HyperFab fabricates to the approved drawings. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.
+Structural design is usually the client’s and HyperFab fabricates to the approved drawings; on some projects HyperFab has also designed the mechanism and frame, so ask when you enquire. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.
 
 ### Which weld tests does HyperFab offer?
 
@@ -1848,6 +1969,7 @@ Sheet and profile work has the widest spread of names: one shop calls a cut daha
 | Mitre cut (US: miter cut) | برش فارسی‌بر (فارسی بر) | An angled end cut for the corners of frames. |
 | Tab and slot joint | اتصال زبانه و شیار | A tab on one part locates in a slot on another and holds the frame in position before welding. |
 | Gusset; gusset plate | لچکی | A triangular or trapezoidal plate welded into a joint corner to stiffen it. |
+| Rivet nut; blind rivet nut; rivnut | مهره‌پرچ (مهره پرچی، ریوت‌نات) | A nut riveted into a hole in thin sheet or a tube wall that gives a screw a strong thread. |
 | Box section; square or rectangular hollow section (SHS / RHS) | قوطی | A hollow profile with a square or rectangular section. |
 | Angle; L-section | نبشی | An L-shaped profile with two legs. |
 | Channel; C-channel or U-channel | ناودانی | A U-shaped profile with a web and two flanges. |
@@ -1862,6 +1984,7 @@ In machining, the process name, the thread and the steel grade are the words tha
 | CNC turning; lathe work | تراشکاری CNC (تراش) | Making round parts by rotating the workpiece against a cutting tool. |
 | CNC milling | فرزکاری (فرز CNC) | Material removal with a rotating cutter for flat faces, pockets, slots and prismatic shapes. |
 | Thread; threading; tapping (internal) | رزوه (رزوه‌زنی، دنده) | An internal or external helical groove for screws, nuts and pipe fittings. |
+| Thread rolling; rolled thread | رولینگ رزوه (نورد رزوه، رزوه نوردی) | Forming an external thread by pressing the blank between threaded rolls, with no chips; the result is stronger than a cut thread. |
 | Knurl; knurling | آج (آج‌زنی) | A ridged pattern rolled or cut on a round surface for a better grip. |
 | Chamfer | پخ | A small angled edge that removes sharpness and eases assembly. |
 | Burr; deburring | پلیسه (پلیسه‌گیری) | The sharp edge left after cutting or machining, and the work of removing it. |
@@ -2421,9 +2544,9 @@ Agree acceptance criteria up front too. For fusion welds in steel, including sta
 
 ## What drives the cost of TIG and MIG welding?
 
-Structural design is the client’s, and HyperFab fabricates to your approved drawings. The drawings are first checked for manufacturability, welding sequence and distortion control, and then quoted. The main cost drivers are:
+Structural design is usually the client’s, and HyperFab fabricates to your approved drawings (on some projects HyperFab has also designed the mechanism and frame). The drawings are first checked for manufacturability, welding sequence and distortion control, and then quoted. The main cost drivers are:
 
-- Material: stainless steel or 6000-series aluminium
+- Material: stainless steel, 6000-series aluminium or St37 steel (which HyperFab welds by TIG)
 - Weld length and type, and the process; TIG is slower, MIG faster
 - Structure size and fixturing; on large frames, such as a framed chassis mounted on wheels that runs on rails, flatness and alignment over long lengths drive the effort
 - Cosmetic and hygiene requirements: weld dressing, back purging and heat-tint removal
@@ -2513,7 +2636,7 @@ A saw is also fine for straight cuts on a few lengths with a hole or two. But th
 
 ## From cut parts to a finished frame: welding, coating and what drives the price
 
-After laser cutting, HyperFab can also carry out TIG and MIG welding of stainless steel and 6000-series aluminium frames to your approved design, followed by powder coating for batch orders; whoever cut the tabs and slots is then also responsible for the welding and final frame dimensions. For mild-steel frames, ask about welding when you request a quote; otherwise the parts are delivered cut and ready to assemble for your own welder.
+After laser cutting, HyperFab can also carry out TIG and MIG welding of stainless steel and 6000-series aluminium frames to your approved design, followed by powder coating for batch orders; whoever cut the tabs and slots is then also responsible for the welding and final frame dimensions. HyperFab also TIG welds mild-steel (St37) frames; one example is a mechanism frame made from St37 box section and sheet. If you prefer, the parts can still be delivered cut and ready to assemble for your own welder.
 
 A tube laser price cannot be given before the drawing is seen; it comes from a combination of these factors:
 
@@ -2522,7 +2645,7 @@ A tube laser price cannot be given before the drawing is seen; it comes from a c
 - The number of cuts, holes, slots and shaped ends on each part.
 - Quantity: sample, small first run or batch order.
 - Whether you or HyperFab supply the material.
-- Follow-on work such as welding a stainless or aluminium frame, powder coating or anodizing.
+- Follow-on work such as welding a stainless, St37 steel or aluminium frame, powder coating or anodizing.
 
 For an exact quote, send the STEP file or frame drawing with the section, material and quantity on Bale, or call HyperFab’s industrial projects specialist on 09962233898 (+98 996 223 3898).
 
@@ -2538,11 +2661,78 @@ No, but it is the best input. A STEP or IGES model shows exactly how the tabs an
 
 ### Can you weld and paint the frame too?
 
-For stainless steel and 6000-series aluminium frames, yes: after laser cutting, HyperFab carries out TIG and MIG welding to your drawing, followed by powder coating for batch orders. For mild-steel frames, ask about welding when you request a quote; cut parts can also be delivered ready for welding.
+Yes. After laser cutting, HyperFab TIG and MIG welds stainless steel and 6000-series aluminium frames and TIG welds mild-steel (St37) frames to your drawing, followed by powder coating for batch orders. If you prefer, cut parts can also be delivered ready for welding.
 
 ### Which is cheaper for my quantity: laser or saw and drill?
 
 It depends on how many holes, slots and shaped ends each part has, and on the quantity. Feature-rich parts usually favour the laser; a straight cut with a hole or two may favour the saw and drill. Send the drawing or call 09962233898 and HyperFab will recommend the right route.
+
+---
+
+# Mechanism Frame in St37: From Design to Welding
+
+URL: https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/
+Published: 2026-11-16
+
+HyperFab took a light, low-cost mechanism frame from design to final weld in house: St37 steel box section was cut on a tube laser, the sheet parts were laser cut and bent, everything was joined by TIG welding, and rivet nuts were fitted so parts could be screwed to the thin sheet. The videos on this page were filmed on this job in HyperFab’s workshop.
+
+## The brief: a light, low-cost frame for a mechanism
+
+This frame was designed and made for a HyperFab customer’s mechanism: a structure the mechanism’s parts are mounted on. The aim of the design was a frame that is strong enough for the job but light and inexpensive.
+
+On a job like this, the choice of section, sheet thickness and joining method sets the final cost from day one. So HyperFab started with the design, not with the cutting.
+
+## Designed by HyperFab
+
+HyperFab designed the frame around two elements: St37 steel box section for the skeleton, and St37 sheet, laser cut and bent into the frame’s sheet parts. With laser cutting, holes and joint positions can be settled in the design from the start, so less drilling and hand fitting is needed after fabrication.
+
+One key design decision was to use thin sheet. Thinner sheet cuts both the weight of the frame and the cost of material and cutting, but it is too thin to hold a usable thread. Rivet nuts solved that, as explained below.
+
+## Tube laser cutting the St37 box section
+
+The skeleton parts were cut from St37 box section on a tube laser. Tube laser cutting produces the length, the holes and the end profile that mates with the neighbouring part in a single operation, straight from the design file. The result is parts that fit together accurately, so the welder does not have to grind and file joints to make them meet.
+
+Video (Real footage from HyperFab’s workshop): Tube laser cutting St37 steel box section for a mechanism frame, filmed 2024-07-14, 51s: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4
+
+## Sheet laser cutting and bending in HyperFab’s workshops
+
+The frame’s sheet parts were laser cut from St37 sheet in HyperFab’s workshops and then bent. Laser cutting produces the flat pattern with every hole and slot in one go, and bending brings it to its final shape.
+
+Bent flanges stiffen thin sheet, which is why a thinner gauge can still give a plate that does not flex under load. This is where design and fabrication meet: thin sheet only works when the bends are designed for it.
+
+## TIG welding the St37 frame
+
+Next, the laser-cut box-section parts were welded to the cut and bent sheet. This was done by TIG welding, whose heat is concentrated and easy to control: it is less likely to burn through or distort thin sheet, and it leaves a clean weld that needs little grinding.
+
+Laser-cut parts fit together properly, which makes assembly and welding simpler and the drawing dimensions easier to hold.
+
+Video (Real footage from HyperFab’s workshop): TIG welding an St37 steel frame, filmed 2024-10-09, 8s: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4
+
+## Rivet nuts in thin sheet: strong threads without thick sheet
+
+Thin sheet kept the frame light and affordable, but it is too thin to hold a reliable thread: a thread with only a turn or two of engagement strips after the screw has been in and out a few times. The answer was rivet nuts.
+
+A rivet nut goes into a hole from one side of the sheet, and the setting tool collapses its body behind the sheet so it locks firmly in place. On this job the rivet nuts were set with a pneumatic rivet-nut tool, which makes the work fast and consistent. The benefits:
+
+- A full, strong thread for screws without moving to thicker sheet
+- Fitted from one side, with no access needed behind the part
+- No welding and no heat on the thin sheet, so no distortion
+- Less weight and cost than thicker sheet
+
+Video (Real footage from HyperFab’s workshop): Fitting rivet nuts in thin sheet with a pneumatic tool, filmed 2024-10-09, 13s: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4
+
+## The result: one team from design to finished frame
+
+The result was a light frame in St37 box section and sheet, with the mechanism’s parts screwed to it. The more important point is how it was made: the design, tube laser cutting, sheet laser cutting and bending, welding and rivet nuts were all done by HyperFab, with one team responsible for the whole job.
+
+When the designer and the fabricator are the same team, decisions such as thinning the sheet or choosing rivet nuts are made with the workshop in mind, and the final cost comes down. If your machine or mechanism needs a frame or a steel structure, send HyperFab a drawing or even an early idea.
+
+## Services used on this project
+
+- Tube & Profile Laser Cutting
+- Metal Laser Cutting
+- Sheet Metal Bending
+- Welding & Welded Structures
 
 ---
 
@@ -2564,7 +2754,7 @@ URL: https://hyperfabgroup.github.io/
 
 برای خرید تکه‌ی کوچک متریال صنعتی، سرویس تکه‌یاب هایپرفب تکه را پیدا می‌کند، قیمت می‌دهد و در صورت نیاز به اندازه برش می‌زند: ورق، میلگرد، شفت، تسمه، لوله و پروفیل از آلومینیوم، استیل، فولاد، مس، برنج و پلاستیک مهندسی. ارسال به سراسر ایران با پست پیشتاز، تیپاکس و اسنپ‌باکس است و تحویل حضوری در تهران رایگان است.
 
-برای تولید صنعتی و تیراژی، هایپرفب پانچ ورق و لوله (فلزی و پلی‌اتیلن)، برش لیزر قوطی، لوله و پروفیل، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری آرگون TIG و MIG، آبکاری و آندایز و رنگ کوره‌ای را انجام می‌دهد و کیفیت قطعات را پیش از تحویل کنترل می‌کند. در پانچ، تزریق و اکسترود، طراحی و ساخت قالب هم بخشی از خدمت است. گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور می‌آید و سال‌ها در دل صنعت کار کرده است. مشاوره‌ی این پروژه‌ها تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
+برای تولید صنعتی و تیراژی، هایپرفب پانچ ورق و لوله (فلزی و پلی‌اتیلن)، برش لیزر قوطی، لوله و پروفیل، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، رولینگ رزوه، اکسترود پروفیل آلومینیوم، جوشکاری آرگون TIG و MIG، آبکاری و آندایز و رنگ کوره‌ای را انجام می‌دهد و کیفیت قطعات را پیش از تحویل کنترل می‌کند. در پانچ، تزریق و اکسترود، طراحی و ساخت قالب هم بخشی از خدمت است. گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور می‌آید و سال‌ها در دل صنعت کار کرده است. مشاوره‌ی این پروژه‌ها تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
 
 ## خدمات و روش‌های تولید
 
@@ -2679,7 +2869,7 @@ URL: https://hyperfab.ir/services/bending/
 
 زنجیره‌ی کامل ساخت قطعات تیراژی، از ساخت قطعه تا پوشش نهایی، با یک گروه مهندسی مسئول.
 
-وقتی قطعه از نمونه به تیراژ می‌رسد، روش ساخت هم باید عوض شود. هایپرفب برای تولید صنعتی و تیراژی، زنجیره‌ی کاملی از خدمات دارد: پانچ ورق و لوله، برش لیزر پروفیل و لوله، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری و ساخت سازه‌های جوشی، آبکاری و آندایز و رنگ کوره‌ای. یعنی قطعه از ساخت تا پوشش نهایی یک‌جا انجام و تحویل می‌شود.
+وقتی قطعه از نمونه به تیراژ می‌رسد، روش ساخت هم باید عوض شود. هایپرفب برای تولید صنعتی و تیراژی، زنجیره‌ی کاملی از خدمات دارد: پانچ ورق و لوله، برش لیزر پروفیل و لوله، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، رولینگ رزوه، اکسترود پروفیل آلومینیوم، جوشکاری و ساخت سازه‌های جوشی، آبکاری و آندایز و رنگ کوره‌ای. یعنی قطعه از ساخت تا پوشش نهایی یک‌جا انجام و تحویل می‌شود.
 
 گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور، از جمله دانشگاه صنعتی شریف، می‌آید و سال‌ها در دل صنعت کار کرده است. چهار قالب تزریق پلی‌اتیلن را از ساخت تا راه‌اندازی برده و با آن‌ها بیش از ۸۰٬۰۰۰ قطعه تولید شده است. کنترل کیفیت ۸٬۰۰۰ لوله‌ی پانچ‌شده، قطعات برنجی جفت‌شونده و گیج‌های MO40 و CK45، و سازه‌های استیل و آلومینیوم برای صنایع پزشکی و دریایی هم در کارنامه‌اش است.
 
@@ -2687,8 +2877,9 @@ URL: https://hyperfab.ir/services/bending/
 - برش لیزر پروفیل و لوله: قوطی، لوله، نبشی و ناودانی از آهن، استیل و آلومینیوم؛ از نمونه تا تیراژ.
 - قالب‌سازی و تزریق پلاستیک: ساخت قالب، نمونه‌گیری و تولید ضربی با PE، PP، ABS و نایلون.
 - تراشکاری CNC تیراژی: قطعات برنجی با تلرانس انطباقی و قطعات گیج از MO40 و CK45.
+- رولینگ رزوه: تبدیل شفت استیل و فولادی به پیچ محکم؛ محکم‌تر و بادوام‌تر از رزوه‌ی تراشیده.
 - اکسترود پروفیل آلومینیوم: مقطع دلخواه با قالب اختصاصی؛ تناژ و هزینه‌ی قالب با شما، بقیه با ما.
-- جوشکاری TIG و MIG: استیل ضدزنگ و آلومینیوم ۶۰۰۰، سازه‌های جوشی و پلتفرم، با آزمون VT، PT و PAUT.
+- جوشکاری TIG و MIG: استیل ضدزنگ و آلومینیوم ۶۰۰۰، جوش TIG فولاد St37، سازه‌های جوشی و پلتفرم، با آزمون VT، PT و PAUT.
 - آبکاری و آندایز: نقره و طلا روی برنج و فلزات، آندایز و کروماته روی آلومینیوم.
 - رنگ کوره‌ای: پودری، صدفی، چکشی و بافت‌دار.
 - مشاوره‌ی تلفنی: کارشناس پروژه‌های صنعتی هایپرفب: ۰۹۹۶۲۲۳۳۸۹۸.
@@ -2709,6 +2900,15 @@ URL: https://hyperfab.ir/services/bending/
 - **شفت فولادی ماشین‌کاری‌شده با هزارخار در دو سر** (فولاد · مکانیک و خودرو): شفت با هزارخار در هر دو انتها برای انتقال گشتاور بالا؛ ماشین‌کاری دقیق برای درگیری کامل و بدون لقی.
 - **بوش استیل ۳۰۴ تراشکاری‌شده** (استیل ۳۰۴ · صنعتی): بوش استیل با پله‌ها و شیارهای دقیق و سطح پرداخت تمیز، برای یاتاقان‌بندی و مواضع نیازمند ابعاد دقیق.
 - **قطعات دقیق خارج از محور از برنج، استیل و پلیمر** (برنج، استیل و پلیمر · مکانیزم): مجموعه‌ای از قطعات کوچک و دقیق، از جمله قطعات خارج از محور، از برنج، استیل و پلیمر در یک پروژه، با کنترل ابعادی موشکافانه.
+
+## کار واقعی، از کارگاه هایپرفب
+
+ویدیوهای واقعی از قطعاتی که هایپرفب برای مشتریانش طراحی و ساخته است.
+
+- برش لیزر قوطی فولادی برای فریم یک مکانیزم · تیر ۱۴۰۳: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4 (https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/)
+- جوش آرگون TIG فریم St37؛ قوطی لیزرشده و ورق خم‌شده · مهر ۱۴۰۳: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4 (https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/)
+- نصب مهره‌پرچ با ابزار بادی روی ورق نازک همان فریم · مهر ۱۴۰۳: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4 (https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/)
+- فرزکاری چهارپهلوی داخل یک فلنج استیل · آذر ۱۴۰۲: https://hyperfabgroup.github.io/assets/media/work-flange-milling.mp4
 
 ## سفارش ساخت قطعه در هایپرفب چطور انجام می‌شود؟
 
@@ -2785,7 +2985,7 @@ URL: https://hyperfab.ir/services/bending/
 
 ### هایپرفب جوشکاری آرگون استیل و آلومینیوم انجام می‌دهد؟
 
-بله. هایپرفب جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد و سازه‌های جوشی دستگاه و سازه‌های پلتفرمی بزرگ را بر اساس نقشه‌ی مشتری می‌سازد. آزمون‌های VT، PT و PAUT هم به درخواست انجام می‌شود و نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته شده است. برش لیزر قوطی و لوله‌ی اعضای سازه را هم می‌توانید به هایپرفب بسپارید.
+بله. هایپرفب جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ و جوش TIG روی فولاد St37 انجام می‌دهد و سازه‌های جوشی دستگاه و سازه‌های پلتفرمی بزرگ را بر اساس نقشه‌ی مشتری می‌سازد. آزمون‌های VT، PT و PAUT هم به درخواست انجام می‌شود و نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته شده است. برش لیزر قوطی و لوله‌ی اعضای سازه را هم می‌توانید به هایپرفب بسپارید.
 
 ### هایپرفب تراشکاری CNC تیراژی انجام می‌دهد؟
 
@@ -3255,6 +3455,7 @@ URL: https://hyperfabgroup.github.io/tube-laser-cutting/
 - لقی زبانه و شیار: در طراحی زبانه و شیار کمی لقی بگذارید تا قطعات بدون ضربه و فشار در هم بنشینند.
 - درز جوش: قوطی و لوله‌ی درزدار، در داخل یک خط جوش دارند. اگر سوراخ یا شیاری نباید روی درز بیفتد، در نقشه بنویسید.
 - وجه نمایان: اگر وجهی از قطعه در محصول نهایی دیده می‌شود، آن را مشخص کنید تا در جانمایی برش‌ها و جابه‌جایی قطعه رعایت شود.
+- رزوه روی ورق و دیواره‌ی نازک: ورق یا دیواره‌ی نازک ضخامت کافی برای رزوه‌ی قلاویزی محکم ندارد؛ به‌جای آن، سوراخ مهره‌پرچ (ریوت‌نات) بریده می‌شود تا مهره‌پرچ رزوه‌ی محکم برای پیچ بدهد (نمونه‌کار فریم مکانیزم St37).
 
 ## جوش و رنگ فریم هم در هایپرفب انجام می‌شود؟
 
@@ -3526,6 +3727,112 @@ URL: https://hyperfabgroup.github.io/cnc-turning/
 
 ---
 
+# رولینگ رزوه (نورد رزوه) — ساخت پیچ از شفت استیل و فولادی
+
+URL: https://hyperfabgroup.github.io/thread-rolling/
+
+رولینگ رزوه (نورد رزوه) یعنی شکل‌دادن رزوه روی شفت با فشار غلتک‌های رزوه‌دار، بدون براده‌برداری؛ فلز بریده نمی‌شود، بلکه جابه‌جا می‌شود و فرم رزوه را می‌گیرد. هایپرفب در تهران با دستگاه رولینگ، شفت‌های استیل و آهنی (فولادی) را به پیچ‌های محکم تبدیل می‌کند؛ رزوه‌ی رولینگ‌شده از رزوه‌ی تراشیده محکم‌تر و بادوام‌تر است و این روش برای چنین کاربردهایی بسیار مقرون‌به‌صرفه است. اندازه و گام رزوه هنگام استعلام بررسی می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+هایپرفب با دستگاه رولینگ، شفت‌های استیل و آهنی را به پیچ‌های محکم تبدیل می‌کند. رزوه‌ی نوردشده بدون براده و با فشار شکل می‌گیرد؛ برای همین از رزوه‌ای که با تراش یا حدیده بریده می‌شود محکم‌تر و بادوام‌تر است، و برای این کاربردها روشی بسیار مقرون‌به‌صرفه است.
+
+- خدمت: رولینگ رزوه (نورد رزوه) و ساخت پیچ از شفت
+- جنس: شفت استیل و آهنی (فولادی)
+- مزیت: رزوه‌ی محکم‌تر و بادوام‌تر از رزوه‌ی تراشیده؛ مقرون‌به‌صرفه
+- اندازه و گام: هنگام استعلام بپرسید
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro
+- محل: تهران
+
+- روش: نورد سرد رزوه با غلتک، بدون براده
+- جنس: شفت استیل و آهنی (فولادی)
+- مزیت: رزوه‌ی محکم‌تر و بادوام‌تر از رزوه‌ی تراشیده
+
+## رولینگ رزوه چیست و هایپرفب چه کاری انجام می‌دهد؟
+
+رولینگ رزوه (Thread Rolling) را با نام‌های نورد رزوه، رزوه نوردی و رزوه رولینگ هم می‌شناسند. در این روش، شفت بین غلتک‌هایی که فرم رزوه را روی خود دارند می‌چرخد و زیر فشار آن‌ها، فلز سطح شفت به شکل رزوه درمی‌آید. هیچ براده‌ای برداشته نمی‌شود؛ فلز از ته رزوه به سمت تاج آن جابه‌جا می‌شود.
+
+هایپرفب با دستگاه رولینگ، شفت‌های استیل و آهنی (فولادی) را به پیچ‌های محکم تبدیل می‌کند. پیچی که این‌طور ساخته می‌شود، در مقایسه با پیچی که رزوه‌اش با ماشین‌کاری بریده شده، استحکام و عمر بیشتری دارد. خود فرایند هم بسیار مقرون‌به‌صرفه است و برای چنین کاربردهایی روش مناسبی است.
+
+## چرا رزوه‌ی رولینگ‌شده محکم‌تر از رزوه‌ی تراشیده است؟
+
+چون فلز بریده نمی‌شود: الیاف فلز دنبال فرم رزوه خم می‌شوند، سطح رزوه با کار سرد سخت‌تر می‌شود و ته رزوه صاف‌تر درمی‌آید.
+
+- **الیاف فلز بریده نمی‌شوند**: در تراشکاری، ابزار از وسط الیاف (جهت دانه‌های) فلز عبور می‌کند و آن‌ها را می‌برد. در رولینگ، الیاف دنبال پروفیل رزوه خم می‌شوند و پیوسته می‌مانند؛ رزوه‌ای که این‌طور شکل گرفته، در برابر بار بهتر مقاومت می‌کند.
+- **سطح سخت‌تر با کار سرد**: فشار غلتک‌ها سطح رزوه را در حالت سرد فشرده و سخت‌تر می‌کند؛ برای همین رزوه در برابر سایش و آسیب در باز و بست مقاوم‌تر است.
+- **ته رزوه‌ی صاف‌تر**: ته رزوه جای شروع ترک در پیچ‌هایی است که بار متناوب می‌گیرند. سطح صاف و بدون رد ابزارِ رزوه‌ی نوردشده، عمر پیچ را بیشتر می‌کند.
+- **هدررفت کمتر مواد**: چون براده‌ای برداشته نمی‌شود، مواد اولیه کمتر هدر می‌رود و رزوه‌زنی سریع‌تر انجام می‌شود؛ یکی از دلایلی که رولینگ را مقرون‌به‌صرفه می‌کند.
+
+## رولینگ رزوه یا رزوه‌زنی با تراش و حدیده؛ کدام مناسب‌تر است؟
+
+برای پیچ‌های محکم و تکراری، رولینگ برتری دارد؛ برای تک‌قطعه و پروفیل‌های رزوه‌ی خاص، رزوه‌زنی با تراش یا حدیده ممکن است گزینه‌ی مناسب‌تری باشد.
+
+| موضوع | رولینگ رزوه (نورد) | رزوه‌زنی با تراش یا حدیده |
+|---|---|---|
+| براده | بدون براده؛ فلز جابه‌جا می‌شود | فلز به شکل براده برداشته می‌شود |
+| الیاف فلز | دنبال فرم رزوه خم می‌شوند و پیوسته می‌مانند | در محل رزوه بریده می‌شوند |
+| سطح رزوه | صاف و سخت‌شده با کار سرد | رد ابزار روی سطح و ته رزوه |
+| هدررفت مواد | کم | بیشتر، به اندازه‌ی براده |
+| سرعت در کار سری | سریع و یکنواخت | کندتر |
+| تک‌قطعه و پروفیل رزوه‌ی خاص | به غلتک همان رزوه نیاز دارد؛ بپرسید | معمولاً ساده‌تر |
+
+انتخاب منصفانه‌ی روش: اگر فقط یک یا چند قطعه با رزوه‌ی خاص لازم دارید، رزوه‌زنی با تراش ممکن است منطقی‌تر باشد. هنگام استعلام بگویید چه پیچی و به چه تعداد لازم دارید تا روش مناسب پیشنهاد شود.
+
+## چه جنس‌ها و قطعاتی رولینگ می‌شوند؟
+
+هایپرفب رولینگ رزوه را روی شفت استیل و شفت آهنی (فولادی) انجام می‌دهد. اگر قطعه‌تان از جنس دیگری است، هنگام استعلام بپرسید.
+
+- پیچ: تبدیل شفت استیل و فولادی به پیچ‌های محکم.
+- کاربردهای رایج رولینگ: رولینگ رزوه معمولاً برای پیچ دوسر، میله‌ی رزوه‌شده و شفت‌هایی که سرشان رزوه دارد هم به کار می‌رود؛ برای این قطعات هنگام استعلام بپرسید.
+
+## برای سفارش پیچ رولینگ‌شده چه چیزهایی را بدانیم؟
+
+قطر شفت خام پیش از رولینگ کوچک‌تر از قطر خارجی رزوه است؛ نقشه، جنس، مشخصات رزوه و تعداد را بفرستید.
+
+- قطر شفت خام کوچک‌تر از قطر رزوه است: در رولینگ، فلز به بیرون جابه‌جا می‌شود و تاج رزوه بالا می‌آید. برای همین شفت خام را کوچک‌تر از قطر خارجی رزوه آماده می‌کنند؛ شفت را خودتان به اندازه‌ی اسمی رزوه نتراشید.
+- نقشه و مشخصات رزوه: نقشه‌ی قطعه، جنس، نوع و اندازه‌ی رزوه، گام و طول رزوه‌شده را بنویسید.
+- تعداد: تعداد پیچ یا قطعه‌ی لازم را بگویید؛ در قیمت و روش ساخت اثر دارد.
+- قطعه‌ی تراشکاری: اگر شفت یا قطعه‌ای که باید رزوه بخورد خودش تراشکاری لازم دارد، صفحه‌ی تراشکاری CNC تیراژی را ببینید.
+
+## سفارش رولینگ رزوه چه مراحلی دارد؟
+
+چهار مرحله: ارسال نقشه و مشخصات، بررسی و پیشنهاد قیمت، رولینگ، و تحویل.
+
+1. **ارسال نقشه**: نقشه یا مشخصات پیچ، جنس شفت، مشخصات رزوه و تعداد را در بله بفرستید یا تلفنی شرح دهید.
+2. **بررسی و قیمت**: اندازه و گام رزوه و جنس بررسی و قیمت اعلام می‌شود.
+3. **رولینگ رزوه**: شفت‌ها با دستگاه رولینگ رزوه می‌خورند.
+4. **تحویل**: پیچ‌ها و قطعات رزوه‌شده کنترل و تحویل می‌شوند.
+
+## FAQ
+
+### رولینگ رزوه چیست؟
+
+رولینگ رزوه یا نورد رزوه یعنی شکل‌دادن رزوه روی شفت با فشار غلتک‌های رزوه‌دار، بدون براده‌برداری. فلز بریده نمی‌شود، بلکه جابه‌جا می‌شود و فرم رزوه را می‌گیرد.
+
+### چرا پیچ رولینگ‌شده محکم‌تر است؟
+
+چون در رولینگ الیاف فلز بریده نمی‌شوند و دنبال فرم رزوه خم می‌شوند، سطح رزوه با کار سرد سخت‌تر می‌شود و ته رزوه صاف‌تر درمی‌آید. نتیجه پیچی است که از پیچ با رزوه‌ی تراشیده محکم‌تر و بادوام‌تر است.
+
+### شفت استیل را هم رولینگ می‌کنید؟
+
+بله. هایپرفب با دستگاه رولینگ، شفت‌های استیل و آهنی (فولادی) را به پیچ‌های محکم تبدیل می‌کند.
+
+### رولینگ رزوه در چه اندازه‌ها و گام‌هایی انجام می‌شود؟
+
+اندازه و گام رزوه برای هر سفارش جداگانه بررسی می‌شود. نقشه یا مشخصات پیچ را بفرستید یا تماس بگیرید: ۰۹۹۶۲۲۳۳۸۹۸.
+
+### حداقل تعداد سفارش رولینگ رزوه چقدر است؟
+
+هنگام استعلام بپرسید. تعداد پیچ یا قطعه را بگویید تا امکان و قیمت سفارش اعلام شود.
+
+### قیمت رولینگ رزوه چطور محاسبه می‌شود؟
+
+قیمت به جنس و اندازه‌ی شفت، مشخصات و طول رزوه و تعداد بستگی دارد و پس از بررسی نقشه یا مشخصات اعلام می‌شود. خود رولینگ روشی مقرون‌به‌صرفه برای ساخت پیچ است.
+
+### رولینگ رزوه هایپرفب کجاست؟
+
+هایپرفب در تهران است: تهران، خیابان انقلاب، پیچ شمیران، خیابان صفی‌علیشاه، نبش کوچه تهرانی، پلاک ۳۹، واحد ۱. مشاوره و سفارش رولینگ رزوه تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸، و در پیام‌رسان بله: @hyperfab_pro.
+
+---
+
 # اکسترود پروفیل آلومینیوم — مقطع دلخواه شما، با قالب اختصاصی
 
 URL: https://hyperfabgroup.github.io/aluminium-extrusion/
@@ -3644,28 +3951,28 @@ URL: https://hyperfabgroup.github.io/aluminium-extrusion/
 
 ---
 
-# جوشکاری آرگون TIG و MIG — استیل ضدزنگ، آلومینیوم و سازه‌های جوشی
+# جوشکاری آرگون TIG و MIG — استیل، فولاد، آلومینیوم و سازه‌های جوشی
 
 URL: https://hyperfabgroup.github.io/welding/
 
-جوشکاری آرگون، یعنی جوش TIG و MIG، روش اصلی اتصال استیل ضدزنگ و آلومینیوم در ساخت دستگاه و تجهیزات صنعتی است. هایپرفب در تهران جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ و ساخت سازه‌های جوشی را بر اساس نقشه‌ی شما، از نقشه تا تحویل و با آزمون‌های VT، PT و PAUT به درخواست شما، انجام می‌دهد. قیمت بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌های درخواستی اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+جوشکاری آرگون، یعنی جوش TIG و MIG، روش اصلی اتصال استیل ضدزنگ و آلومینیوم در ساخت دستگاه و تجهیزات صنعتی است. هایپرفب در تهران جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰، جوش TIG روی فولاد St37 و ساخت سازه‌های جوشی را بر اساس نقشه‌ی شما، از نقشه تا تحویل و با آزمون‌های VT، PT و PAUT به درخواست شما، انجام می‌دهد. قیمت بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌های درخواستی اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
 
-جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰، ساخت و مونتاژ سازه‌های جوشی برای دستگاه‌ها و ساخت سازه‌های پلتفرمی بزرگ؛ با آزمون‌های جوش VT، PT و Phased Array به درخواست شما، از نقشه تا تحویل.
+جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ و جوش TIG روی فولاد St37، ساخت و مونتاژ سازه‌های جوشی برای دستگاه‌ها و ساخت سازه‌های پلتفرمی بزرگ؛ با آزمون‌های جوش VT، PT و Phased Array به درخواست شما، از نقشه تا تحویل.
 
 - خدمت: جوشکاری آرگون TIG و MIG، ساخت و مونتاژ سازه‌های جوشی؛ آزمون VT، PT، PAUT و آزمون‌های دیگر به درخواست مشتری
-- جنس: استیل ضدزنگ، آلومینیوم سری ۶۰۰۰ (مثل ۶۰۶۱ و ۶۰۶۳)
+- جنس: استیل ضدزنگ، فولاد St37 (آهن) با جوش TIG، آلومینیوم سری ۶۰۰۰ (مثل ۶۰۶۱ و ۶۰۶۳)
 - سابقه: صنایع پزشکی و دریایی، سازه‌های پلتفرمی بزرگ
 - قیمت‌گذاری: بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌ها
 - سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro
 - محل: تهران
 
 - روش‌ها: جوش آرگون TIG و MIG
-- جنس: استیل ضدزنگ، آلومینیوم سری 6000
+- جنس: استیل ضدزنگ، آلومینیوم سری 6000، فولاد St37 (با TIG)
 - آزمون جوش: VT · PT · PAUT و آزمون‌های دیگر طبق نیاز
 
 ## جوشکاری آرگون TIG و MIG چیست و هایپرفب چه می‌سازد؟
 
-جوشکاری آرگون، یعنی TIG (GTAW) و MIG (GMAW)، روش اصلی اتصال استیل ضدزنگ و آلومینیوم در ساخت دستگاه و تجهیزات صنعتی است. TIG برای جوش‌های تمیز و دقیق روی ورق نازک و قطعات حساس به کار می‌رود و MIG برای سرعت بیشتر در جوش‌های طولانی و سازه‌ای. هایپرفب هر دو را روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد.
+جوشکاری آرگون، یعنی TIG (GTAW) و MIG (GMAW)، روش اصلی اتصال استیل ضدزنگ و آلومینیوم در ساخت دستگاه و تجهیزات صنعتی است. TIG برای جوش‌های تمیز و دقیق روی ورق نازک و قطعات حساس به کار می‌رود و MIG برای سرعت بیشتر در جوش‌های طولانی و سازه‌ای. هایپرفب هر دو را روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد و جوش آرگون TIG را روی فولاد St37 (آهن) هم انجام می‌دهد؛ نمونه‌اش فریم مکانیزمی از قوطی و ورق St37 است.
 
 کار هایپرفب فقط زدن جوش نیست؛ ساختن و جمع‌کردن پروژه از نقشه تا تحویل است. این مسیر برش و آماده‌سازی قطعات، فیکسچربندی، جوشکاری با کنترل تاب و اعوجاج، پرداخت جوش و آزمون را در بر می‌گیرد. هایپرفب تاکنون نمونه‌های زیادی برای صنایع پزشکی و صنایع دریایی ساخته است. در این دو حوزه، هم تمیزی جوش و هم مقاومت در برابر خوردگی حیاتی است.
 
@@ -3677,14 +3984,14 @@ URL: https://hyperfabgroup.github.io/welding/
 
 - **جوش TIG استیل ضدزنگ**: جوش تمیز و دقیق روی استیل ضدزنگ برای تجهیزات پزشکی، غذایی و دریایی، با کنترل حرارت برای حفظ مقاومت در برابر خوردگی.
 - **جوش آلومینیوم سری ۶۰۰۰**: جوش TIG و MIG آلومینیوم‌های سری ۶۰۰۰ مثل ۶۰۶۱ و ۶۰۶۳؛ برای شاسی، فریم و سازه‌های سبک.
-- **سازه‌های جوشی دستگاه**: شاسی، فریم، بدنه و قاب دستگاه‌های مختلف از استیل ضدزنگ یا آلومینیوم، از قطعات بریده‌شده تا سازه‌ی مونتاژشده.
+- **سازه‌های جوشی دستگاه**: شاسی، فریم، بدنه و قاب دستگاه‌های مختلف از استیل ضدزنگ، فولاد St37 یا آلومینیوم، از قطعات بریده‌شده تا سازه‌ی مونتاژشده.
 - **سازه‌های پلتفرمی بزرگ**: پلتفرم‌ها و شاسی‌های شبکه‌ای بزرگ، از جمله سازه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند.
 - **صنایع پزشکی و دریایی**: نمونه‌های متعدد برای تجهیزات پزشکی و کاربردهای دریایی، با الزامات تمیزی و خوردگی این صنایع.
 - **آزمون جوش**: آزمون چشمی (VT)، مایع نافذ (PT)، فراصوتی آرایه‌فازی (PAUT) و آزمون‌های دیگر به درخواست مشتری.
 
 ## طراحی سازه با کیست و ساخت چطور انجام می‌شود؟
 
-در سازه‌های جوشی، طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد. پیش از شروع، نقشه از نظر ساخت‌پذیری بررسی می‌شود: ترتیب جوشکاری، دسترسی به درزها، کنترل اعوجاج و تلرانس‌هایی که در عمل دست‌یافتنی‌اند. اگر نکته‌ای باشد، پیش از ساخت با شما در میان گذاشته می‌شود.
+در سازه‌های جوشی، طراحی سازه معمولاً با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد؛ در برخی پروژه‌ها طراحی مکانیزم و فریم را هم هایپرفب انجام داده است و می‌توانید هنگام استعلام بپرسید. پیش از شروع، نقشه از نظر ساخت‌پذیری بررسی می‌شود: ترتیب جوشکاری، دسترسی به درزها، کنترل اعوجاج و تلرانس‌هایی که در عمل دست‌یافتنی‌اند. اگر نکته‌ای باشد، پیش از ساخت با شما در میان گذاشته می‌شود.
 
 برای سازه‌های بزرگ و پلتفرمی، داشتن نقشه‌ی کامل و تأییدشده پیش از شروع ساخت ضروری است. هایپرفب ساخت، پیگیری و کنترل کیفیت سازه را تا تحویل بر عهده می‌گیرد.
 
@@ -3727,6 +4034,10 @@ URL: https://hyperfabgroup.github.io/welding/
 
 بله. هایپرفب جوش TIG و MIG را روی آلومینیوم‌های سری ۶۰۰۰، از جمله ۶۰۶۱ و ۶۰۶۳، برای شاسی، فریم و سازه‌های سبک انجام می‌دهد.
 
+### جوشکاری آهن (فولاد St37) هم انجام می‌دهید؟
+
+بله. هایپرفب جوش آرگون TIG روی فولاد St37 انجام می‌دهد؛ نمونه‌اش فریم مکانیزمی از قوطی و ورق St37 است که در بخش نمونه‌کارهای هایپرفب آمده است.
+
 ### جوش TIG بهتر است یا MIG؟
 
 TIG جوش تمیزتر و دقیق‌تری می‌دهد و برای ورق نازک، قطعات ظاهری و تجهیزات پزشکی و غذایی مناسب‌تر است. MIG سریع‌تر است و برای جوش‌های طولانی و سازه‌ای اقتصادی‌تر. هایپرفب هر دو را انجام می‌دهد و روش مناسب را بر اساس جنس، ضخامت و کاربرد پیشنهاد می‌کند.
@@ -3737,7 +4048,7 @@ TIG جوش تمیزتر و دقیق‌تری می‌دهد و برای ورق ن
 
 ### طراحی سازه را هم انجام می‌دهید؟
 
-خیر. طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده انجام می‌دهد. نقشه پیش از ساخت از نظر ساخت‌پذیری بررسی می‌شود و نکته‌ها با شما در میان گذاشته می‌شود.
+طراحی سازه معمولاً با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده انجام می‌دهد؛ در برخی پروژه‌ها طراحی مکانیزم و فریم را هم هایپرفب انجام داده است؛ هنگام استعلام بپرسید. نقشه پیش از ساخت از نظر ساخت‌پذیری بررسی می‌شود و نکته‌ها با شما در میان گذاشته می‌شود.
 
 ### چه آزمون‌هایی روی جوش انجام می‌دهید؟
 
@@ -4384,6 +4695,7 @@ Updated: 2026-11-15
 | برش فارسی‌بر (فارسی بر) | Mitre cut (US: miter cut) | برش مایل سرِ پروفیل برای ساختن گوشه‌ی قاب و فریم. |
 | اتصال زبانه و شیار | Tab and slot joint | زبانه‌ی یک قطعه در شیار قطعه‌ی دیگر می‌نشیند و قطعات را پیش از جوش در جای درست نگه می‌دارد. |
 | لچکی | Gusset; gusset plate | ورق مثلثی یا ذوزنقه‌ای که در گوشه‌ی اتصال جوش می‌شود تا آن را سفت‌تر کند. |
+| مهره‌پرچ (مهره پرچی، ریوت‌نات) | Rivet nut; blind rivet nut; rivnut | مهره‌ای که در سوراخ ورق نازک یا دیواره‌ی قوطی پرچ می‌شود و رزوه‌ی محکم برای پیچ می‌دهد. |
 | قوطی | Box section; square or rectangular hollow section (SHS / RHS) | پروفیل توخالی با مقطع مربع یا مستطیل. |
 | نبشی | Angle; L-section | پروفیل L شکل با دو بال. |
 | ناودانی | Channel; C-channel or U-channel | پروفیل U شکل با یک جان و دو بال. |
@@ -4398,6 +4710,7 @@ Updated: 2026-11-15
 | تراشکاری CNC (تراش) | CNC turning; lathe work | ساخت قطعات گرد با چرخاندن قطعه و حرکت ابزار برش روی آن. |
 | فرزکاری (فرز CNC) | CNC milling | براده‌برداری با ابزار دوار برای سطح تخت، جیب، شیار و شکل‌های منشوری. |
 | رزوه (رزوه‌زنی، دنده) | Thread; threading; tapping (internal) | شیار مارپیچ داخلی یا خارجی برای پیچ و مهره و اتصالات لوله. |
+| رولینگ رزوه (نورد رزوه، رزوه نوردی) | Thread rolling; rolled thread | شکل‌دادن رزوه‌ی خارجی با فشار غلتک‌های رزوه‌دار، بدون براده؛ رزوه‌ی حاصل از رزوه‌ی تراشیده محکم‌تر است. |
 | آج (آج‌زنی) | Knurl; knurling | الگوی شیاردار روی سطح گرد برای گرفتن بهتر با دست. |
 | پخ | Chamfer | لبه‌ی مورب کوچک روی گوشه برای حذف تیزی و راحتی مونتاژ. |
 | پلیسه (پلیسه‌گیری) | Burr; deburring | لبه‌ی تیز و زائده‌ای که پس از برش یا ماشین‌کاری می‌ماند و باید گرفته شود. |
@@ -4957,9 +5270,9 @@ Updated: 2026-11-15
 
 ## قیمت جوشکاری TIG و MIG به چه عواملی بستگی دارد؟
 
-طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد؛ نقشه پیش از شروع از نظر ساخت‌پذیری، ترتیب جوشکاری و کنترل اعوجاج بررسی و سپس قیمت اعلام می‌شود. عوامل اصلی قیمت:
+طراحی سازه معمولاً با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد (در برخی پروژه‌ها طراحی مکانیزم و فریم را هم هایپرفب انجام داده است)؛ نقشه پیش از شروع از نظر ساخت‌پذیری، ترتیب جوشکاری و کنترل اعوجاج بررسی و سپس قیمت اعلام می‌شود. عوامل اصلی قیمت:
 
-- جنس قطعه: استیل ضدزنگ یا آلومینیوم سری ۶۰۰۰
+- جنس قطعه: استیل ضدزنگ، آلومینیوم سری ۶۰۰۰ یا فولاد St37 (که هایپرفب با جوش TIG جوشکاری می‌کند)
 - طول و نوع جوش و روش جوشکاری؛ TIG کندتر و MIG سریع‌تر است
 - ابعاد سازه و فیکسچربندی؛ در سازه‌های بزرگ، مثل شاسی شبکه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند، صافی و هم‌راستایی در طول زیاد تعیین‌کننده است
 - الزامات ظاهری و بهداشتی: پرداخت جوش، محافظت پشت درز و پاک‌سازی تغییر رنگ
@@ -5049,7 +5362,7 @@ Updated: 2026-11-15
 
 ## از قطعه‌ی بریده تا فریم آماده: جوش، رنگ و عوامل مؤثر بر قیمت
 
-در هایپرفب می‌توانید پس از برش لیزر، جوشکاری TIG و MIG فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ را بر اساس نقشه‌ی تأییدشده‌ی خودتان و سپس رنگ کوره‌ای (پودری) را در سفارش تیراژی بسپارید؛ در این حالت همان طرفی که زبانه و شیار را بریده، مسئول جوش و ابعاد نهایی فریم هم هست. برای فریم‌های آهنی، امکان جوشکاری را هنگام استعلام بپرسید؛ در غیر این صورت قطعات بریده‌شده و آماده‌ی مونتاژ تحویل می‌شوند تا جوشکار خودتان آن‌ها را جوش بدهد.
+در هایپرفب می‌توانید پس از برش لیزر، جوشکاری TIG و MIG فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ را بر اساس نقشه‌ی تأییدشده‌ی خودتان و سپس رنگ کوره‌ای (پودری) را در سفارش تیراژی بسپارید؛ در این حالت همان طرفی که زبانه و شیار را بریده، مسئول جوش و ابعاد نهایی فریم هم هست. فریم‌های آهنی (فولاد St37) را هم هایپرفب با جوش آرگون TIG جوشکاری می‌کند؛ نمونه‌اش فریم مکانیزمی از قوطی و ورق St37 است. اگر ترجیح می‌دهید، قطعات بریده‌شده را هم می‌توانید آماده‌ی مونتاژ تحویل بگیرید تا جوشکار خودتان آن‌ها را جوش بدهد.
 
 قیمت برش لیزر پروفیل پیش از دیدن نقشه قابل اعلام نیست و از ترکیب این عوامل به دست می‌آید:
 
@@ -5058,7 +5371,7 @@ Updated: 2026-11-15
 - تعداد برش‌ها، سوراخ‌ها، شیارها و سرهای فرم‌دار هر قطعه.
 - تیراژ: نمونه، تیراژ اولیه‌ی کوچک یا سفارش تیراژی.
 - تأمین متریال توسط شما یا هایپرفب.
-- کارهای بعدی مثل جوش فریم استیل یا آلومینیوم، رنگ کوره‌ای یا آندایز.
+- کارهای بعدی مثل جوش فریم استیل، آهن (St37) یا آلومینیوم، رنگ کوره‌ای یا آندایز.
 
 برای قیمت دقیق، فایل STEP یا نقشه‌ی فریم را همراه با مقطع، جنس و تعداد در پیام‌رسان بله بفرستید یا با کارشناس پروژه‌های صنعتی هایپرفب به شماره‌ی ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید.
 
@@ -5074,8 +5387,75 @@ Updated: 2026-11-15
 
 ### جوش و رنگ فریم را هم انجام می‌دهید؟
 
-برای فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ بله: پس از برش لیزر، هایپرفب جوشکاری TIG و MIG را بر اساس نقشه‌ی شما و سپس رنگ کوره‌ای را در سفارش تیراژی انجام می‌دهد. برای فریم آهنی، امکان جوشکاری را هنگام استعلام بپرسید؛ قطعات بریده‌شده را هم می‌توانید آماده‌ی جوش تحویل بگیرید.
+بله. پس از برش لیزر، هایپرفب فریم‌های استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ را با جوش TIG و MIG و فریم‌های آهنی (فولاد St37) را با جوش TIG، بر اساس نقشه‌ی شما جوشکاری می‌کند و سپس رنگ کوره‌ای را در سفارش تیراژی انجام می‌دهد. اگر ترجیح می‌دهید، قطعات بریده‌شده را هم می‌توانید آماده‌ی جوش تحویل بگیرید.
 
 ### برای تیراژ من برش لیزر ارزان‌تر است یا اره و دریل؟
 
 به تعداد سوراخ‌ها، شیارها و سرهای فرم‌دار هر قطعه و به تیراژ بستگی دارد. قطعه‌ی پرجزئیات معمولاً با لیزر و برش صاف با یکی دو سوراخ با اره و دریل به‌صرفه‌تر است. نقشه را بفرستید یا با ۰۹۹۶۲۲۳۳۸۹۸ تماس بگیرید تا روش مناسب پیشنهاد شود.
+
+---
+
+# طراحی و ساخت فریم مکانیزم از قوطی و ورق St37
+
+URL: https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/
+Published: 2026-11-16
+
+هایپرفب فریم سبک و کم‌هزینه‌ی یک مکانیزم را از طراحی تا جوش نهایی خودش انجام داد: قوطی فولادی St37 با برش لیزر قوطی آماده شد، ورق‌ها با برش لیزر بریده و خم شدند، قطعات با جوش آرگون TIG به هم متصل شدند و برای بستن اجزا روی ورق نازک، مهره‌پرچ نصب شد. ویدیوهای این صفحه از همین کار در کارگاه هایپرفب گرفته شده‌اند.
+
+## سفارش: فریمی سبک و کم‌هزینه برای یک مکانیزم
+
+این فریم برای مکانیزم یکی از مشتریان هایپرفب طراحی و ساخته شد؛ سازه‌ای که اجزای مکانیزم روی آن بسته می‌شوند. هدف طراحی این بود که فریم در عین استحکام کافی، سبک و کم‌هزینه باشد.
+
+در چنین کاری، انتخاب پروفیل، ضخامت ورق و روش اتصال از همان ابتدا قیمت تمام‌شده را تعیین می‌کند. به همین دلیل هایپرفب کار را از طراحی شروع کرد، نه از برش.
+
+## طراحی فریم در هایپرفب
+
+هایپرفب فریم را از دو جزء طراحی کرد: قوطی فولادی St37 برای اسکلت فریم و ورق St37 که با برش لیزر و خم‌کاری به قطعات ورقی فریم تبدیل می‌شود. وقتی برش با لیزر انجام می‌شود، سوراخ‌ها و محل اتصال‌ها را می‌توان از همان ابتدا در طراحی دید تا بعد از ساخت، سوراخکاری و اصلاح دستی کمتر لازم شود.
+
+یک تصمیم مهم طراحی، استفاده از ورق نازک بود. ورق نازک‌تر هم وزن فریم را پایین می‌آورد و هم هزینه‌ی متریال و برش را؛ اما برای پیچ، رزوه‌ی کافی ندارد. راه‌حل این مشکل مهره‌پرچ بود که پایین‌تر توضیح داده شده است.
+
+## برش لیزر قوطی فولادی St37
+
+قطعات اسکلت از قوطی St37 با دستگاه لیزر لوله بریده شدند. در برش لیزر قوطی، طول قطعه، سوراخ‌ها و فرم سرِ قوطی برای جفت شدن با قطعه‌ی کناری، همه در یک مرحله و مستقیم از روی فایل طراحی بریده می‌شوند. نتیجه، قطعاتی است که دقیق کنار هم می‌نشینند و جوشکار مجبور نیست درزها را با سنگ و سوهان جفت کند.
+
+Video (ویدیوی واقعی از کارگاه هایپرفب): برش لیزر قوطی فولادی St37 برای فریم یک مکانیزم, filmed 2024-07-14, 51s: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4
+
+## برش لیزر و خم ورق در کارگاه‌های هایپرفب
+
+قطعات ورقی فریم از ورق St37 در کارگاه‌های هایپرفب با لیزر بریده و سپس خم شدند. برش لیزر، شکل گسترده‌ی قطعه را با همه‌ی سوراخ‌ها و شیارها یک‌جا درمی‌آورد و خم‌کاری آن را به فرم نهایی درمی‌آورد.
+
+لبه‌های خم‌شده به ورق نازک سفتی می‌دهند؛ برای همین با ورقی نازک‌تر هم می‌شود به صفحه‌ای رسید که زیر بار تاب برندارد. این همان جایی است که طراحی و ساخت به هم گره می‌خورند: ورق نازک فقط وقتی جواب می‌دهد که خم‌ها درست طراحی شده باشند.
+
+## جوش آرگون TIG فریم St37
+
+در مرحله‌ی بعد، قطعات قوطی که با لیزر بریده شده بودند به ورق‌های برش‌خورده و خم‌شده جوش داده شدند. این کار با جوش آرگون (TIG) انجام شد: حرارت در این روش متمرکز و قابل کنترل است، روی ورق نازک کمتر باعث سوراخ شدن و تاب برداشتن می‌شود و جوشی تمیز می‌دهد که به سنگ‌زنی زیادی نیاز ندارد.
+
+قطعاتی که با لیزر بریده می‌شوند درست روی هم می‌نشینند؛ این، مونتاژ و جوشکاری را ساده‌تر و رسیدن به ابعاد نقشه را آسان‌تر می‌کند.
+
+Video (ویدیوی واقعی از کارگاه هایپرفب): جوش آرگون TIG فریم St37, filmed 2024-10-09, 8s: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4
+
+## مهره‌پرچ روی ورق نازک: رزوه‌ی محکم بدون ورق ضخیم
+
+ورق نازک برای سبک و ارزان ماندن فریم انتخاب شده بود، اما آن‌قدر ضخامت ندارد که بشود در آن رزوه‌ی قابل اعتماد زد؛ رزوه‌ای که فقط یکی دو دنده در ورق دارد، با چند بار باز و بسته کردن پیچ از بین می‌رود. راه‌حل، مهره‌پرچ بود.
+
+مهره‌پرچ از یک طرف ورق در سوراخ گذاشته می‌شود و ابزار پرچ، بدنه‌اش را پشت ورق جمع می‌کند تا محکم در جای خود قفل شود. در این پروژه مهره‌پرچ‌ها با ابزار پرچ بادی نصب شدند که کار را سریع و یکنواخت می‌کند. مزیت‌های این روش:
+
+- رزوه‌ی کامل و محکم برای پیچ، بدون نیاز به ورق ضخیم‌تر
+- نصب از یک طرف ورق، بدون دسترسی به پشت کار
+- بدون جوش و بدون حرارت روی ورق نازک، پس بدون تاب برداشتن
+- وزن و هزینه‌ی کمتر نسبت به ورق ضخیم
+
+Video (ویدیوی واقعی از کارگاه هایپرفب): نصب مهره‌پرچ با ابزار بادی روی ورق نازک, filmed 2024-10-09, 13s: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4
+
+## نتیجه: یک گروه، از طراحی تا فریم آماده
+
+حاصل کار، فریمی سبک از قوطی و ورق St37 بود که اجزای مکانیزم با پیچ روی آن بسته می‌شوند. اما نکته‌ی مهم‌تر این پروژه، روش کار است: طراحی، برش لیزر قوطی، برش لیزر و خم ورق، جوشکاری و نصب مهره‌پرچ همه در هایپرفب انجام شد و یک گروه مسئول کل کار بود.
+
+وقتی طراح و سازنده یکی باشند، تصمیم‌هایی مثل نازک کردن ورق یا انتخاب مهره‌پرچ با توجه به امکانات ساخت گرفته می‌شوند و هزینه‌ی تمام‌شده پایین می‌آید. اگر برای دستگاه یا مکانیزم خود به فریم و سازه‌ی فلزی نیاز دارید، نقشه یا حتی ایده‌ی اولیه را برای هایپرفب بفرستید.
+
+## خدمت‌های به‌کاررفته در این پروژه
+
+- برش لیزر پروفیل و لوله
+- برش لیزر فلزات
+- خم‌کاری ورق
+- جوشکاری و سازه‌های جوشی
