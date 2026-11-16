@@ -303,3 +303,5 @@
 	.proj-svc-card.is-portrait .proj-video{max-width:280px;margin-inline:auto}
 	.proj-svc-text h2{font-size:var(--fs-6)}
 }
+#in-pictures .clip-grid .clip video{aspect-ratio:16/9;object-fit:cover}
+.rw-card .real-tag{display:none}

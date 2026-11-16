@@ -823,7 +823,7 @@ def page_hub(c, key, hb):
     body = hub_hero(c, depth, key, hb)
     if key == 'services':
         est = dict(h['est_feature'], cls='')
-        body += sec_online(c, depth, on_services=True, alt='') + sec_details(c, depth) \
+        body += sec_online(c, depth, on_services=True, alt='') + service_project_block(c, depth, 'services') + sec_details(c, depth) \
             + stock_block(c, depth, 'services', hb['crumb']) + feature(c, depth, est, '../') \
             + sec_how(c) + hub_guides(c, depth, key) + home_cta(c)
     elif key == 'industrial':
@@ -874,6 +874,11 @@ def hub_schema(c, key, hb, p):
         nodes.append({'@type': 'ItemList', 'name': hb['crumb'], 'itemListElement': [
             {'@type': 'ListItem', 'position': k, 'name': n, 'url': u} for k, (n, u) in enumerate(items, 1)]})
     # VideoObject عمداً نیست: ویدیوها روی آپارات‌اند و گوگل بدون uploadDate آن را خطا می‌گیرد
+    for v in REAL_VIDEOS:  # ویدیوی واقعی بدون پروژه که به این صفحه‌ی هاب تعلق دارد
+        if v.get('service') == key and not v.get('project'):
+            nodes.append(video_object(c, {**{k: v[k] for k in ('id', 'src', 'poster', 'w', 'h', 'upload_date', 'duration')},
+                                          'name': v[c['lang']]['name'], 'desc': v[c['lang']]['desc']}, url))
+            break
     return nodes
 
 
@@ -894,7 +899,7 @@ def stock_block(c, depth, page_key, title):
         wh = f' width="{size[0]}" height="{size[1]}"' if size else ''
         out += (f'<figure class="clip"><video autoplay muted loop playsinline preload="metadata" poster="{rel(depth, poster)}"{wh}>'
                 f'<source src="{rel(depth, mp4)}" type="video/mp4"></video>'
-                f'<figcaption>{credit(c, mp4, "inline-credit")}</figcaption></figure>')
+                f'<figcaption>{credit(c, mp4, "inline-credit") or real_caption(c, mp4)}</figcaption></figure>')
     if len(clips) > 1:
         out = f'<div class="clip-grid">{out}</div>'
     out += '<div class="stock-grid">' + ''.join(
@@ -902,6 +907,15 @@ def stock_block(c, depth, page_key, title):
         for ph in photos) + '</div>'
     return (f'<section class="block section-alt" id="in-pictures"><div class="wrap">'
             f'{hfs_head("IN PICTURES", e(title + c["in_pictures"]))}{out}</div></section>\n')
+
+
+def real_caption(c, src):
+    """زیرنویس ویدیوی واقعی خود هایپرفب (بدون منبع آرشیوی) وقتی در بخش «در تصویر» می‌آید."""
+    v = next((v for v in REAL_VIDEOS if v['src'] == src), None)
+    if not v:
+        return ''
+    return (f'<span class="real-tag">{e(PROJECT_LABELS[c["lang"]]["real_video"])}</span> '
+            f'<span>{e(v[c["lang"]]["caption"])}</span>')
 
 
 def related_block(c, depth, path, key=None):
