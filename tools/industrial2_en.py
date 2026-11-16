@@ -108,7 +108,7 @@ WELDING = {
         ('TIG or MIG welding for stainless steel — which is better?', 'TIG gives cleaner, more precise welds and suits thin sheet, cosmetic parts and medical and food equipment. MIG is faster and more economical for long and structural welds. HyperFab does both and recommends the right process by material, thickness and use.'),
         ('How is welding priced at HyperFab?', 'HyperFab prices a welding project by material, weld length and type, structure size and the weld tests requested. The quotation follows a manufacturability review of your drawings.'),
         ('What should I send for a welding quote?', 'Send HyperFab the structure or part drawings, the material, the quantity and any weld tests you need, or describe them by phone on ' + TEL_EN + '.'),
-        ('Does HyperFab design the welded structure?', 'Structural design is usually the client’s and HyperFab fabricates to the approved drawings; on some projects HyperFab has also designed the mechanism and frame, so ask when you enquire. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.'),
+        ('Does HyperFab design the welded structure?', 'Structural design is usually the client’s; on special projects, the whole job, from design to fabrication, is entrusted to HyperFab in one piece, so ask when you enquire. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.'),
         ('Which weld tests does HyperFab offer?', 'HyperFab offers visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests, on request and to suit the project’s requirements.'),
         ('Does HyperFab build large welded structures?', 'Yes. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails.'),
         ('Where is HyperFab’s welding service based?', 'HyperFab is based in Tehran, Iran. Welding projects are discussed and quoted by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
@@ -584,13 +584,15 @@ TUBELASER = {
 THREADROLL = {
     'depth': 2,
     'answer': ('<b>Thread rolling</b> forms a thread on a shaft by pressing it between threaded rolls, with no chips: the metal is not cut away '
-               'but displaced into the shape of the thread. HyperFab, a manufacturing company in Tehran, Iran, uses a thread rolling machine to turn '
-               'stainless steel and mild steel shafts into strong screws. A rolled thread is stronger and longer-lasting than a machined one, and the '
+               'but displaced into the shape of the thread. HyperFab, a manufacturing company in Tehran, Iran, runs and manages thread rolling that turns '
+               'stainless steel and mild steel shafts into strong screws: the blank diameter is fixed with a few test pieces, the shafts are '
+               'centerless-ground to that diameter and then rolled. A rolled thread is stronger and longer-lasting than a machined one, and the '
                'process is very cost-effective for this kind of part. Thread size and pitch are checked when you enquire; call ' + TEL_EN + '.'),
     'key_facts': [
         ('Service', 'Thread rolling and screw making from shafts'),
         ('Materials', 'Stainless steel and mild steel shafts'),
         ('Advantage', 'Stronger, longer-lasting threads than machined threads; cost-effective'),
+        ('Process', 'Test pieces, blanks centerless-ground to the exact diameter, then rolling'),
         ('Size and pitch', 'Ask when you enquire'),
         ('Ordering', ORDER_PHONE),
         ('Location', LOCATION),
@@ -598,11 +600,11 @@ THREADROLL = {
     'hero': {
         'crumb': 'Thread Rolling',
         'h1': '<em>Thread rolling</em><br>strong screws from stainless and steel shafts',
-        'lead': 'HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A rolled thread is formed by pressure, with no chips, so it is stronger and longer-lasting than a thread cut on a lathe or with a die — and for these parts the process is very cost-effective.',
+        'lead': 'HyperFab runs thread rolling from test pieces to production, turning stainless steel and mild steel shafts into strong screws. A rolled thread is formed by pressure, with no chips, so it is stronger and longer-lasting than a thread cut on a lathe or with a die — and for these parts the process is very cost-effective.',
         'ticks': [('Process:', 'cold forming with threaded rolls, no chips', False), ('Materials:', 'stainless steel and mild steel shafts', False),
                   ('Advantage:', 'stronger and longer-lasting than cut threads', False)],
         'buttons': hero_btns(),
-        'img': IMG['threadroll'], 'img_alt': 'Steel shaft on a CNC lathe (stock image)',
+        'img': IMG['threadroll'], 'img_alt': 'Real photo from a HyperFab thread-rolling project: a long shaft between the rolling dies',
         'stats': [('wrench', 'Cold formed · no chips', '', 'process'), ('layers', 'Stainless · Steel', '', 'shaft material'),
                   ('shield', 'Stronger than cut threads', '', 'advantage'), ('file', 'Drawing to delivery', '', 'one responsible party')],
     },
@@ -610,7 +612,7 @@ THREADROLL = {
         {'kicker': 'WHAT IT IS', 'title': 'What is thread rolling, and what does HyperFab do?', 'id': 'what',
          'paras': [
              '<b>Thread rolling</b> — also called <b>roll threading</b> or <b>rolled threads</b> — forms a thread without cutting. The shaft turns between rolls that carry the thread form, and under their pressure the surface metal of the shaft is shaped into the thread. No chips are removed; metal moves from the root of the thread up into its crest.',
-             'HyperFab uses a thread rolling machine to turn <b>stainless steel</b> and <b>mild steel</b> shafts into <b>strong screws</b>. A screw made this way is stronger and lasts longer than one whose thread was cut by machining. The process itself is very cost-effective, and it suits this kind of application well.',
+             'HyperFab runs and manages thread rolling to turn <b>stainless steel</b> and <b>mild steel</b> shafts into <b>strong screws</b>, from fixing the blank diameter and centerless grinding to the rolling itself. A screw made this way is stronger and lasts longer than one whose thread was cut by machining. The process itself is very cost-effective, and it suits this kind of application well.',
          ]},
         {'kicker': 'WHY STRONGER', 'title': 'Why is a rolled thread stronger than a cut thread?', 'id': 'why',
          'sub': 'Because the metal is not cut: its grain follows the thread form, the surface is work-hardened by cold forming and the thread root comes out smoother.',
@@ -640,27 +642,40 @@ THREADROLL = {
              '<b>Screws:</b> stainless steel and mild steel shafts turned into strong screws.',
              '<b>Common uses of thread rolling:</b> rolling is also commonly used for studs, threaded rods and shafts with threaded ends; for these parts, ask when you enquire.',
          ]},
+        {'kicker': 'PROCESS', 'title': 'How HyperFab runs thread rolling: from test pieces to production', 'id': 'process',
+         'sub': 'The blank diameter sets the final major diameter of the thread, so it is fixed with a few test pieces before production.',
+         'paras': [
+             'Rolling does not cut metal; it displaces it outward from the thread root to form the crest. So the blank diameter decides the major diameter of the finished thread, and any small error in the blank shows up directly in the thread. That is why HyperFab does not guess the blank diameter: it measures and fixes it with a few test pieces, and only then starts production. HyperFab coordinates and manages the whole chain, from <b>centerless grinding</b> to rolling.',
+         ],
+         'steps': [
+             ('Target tolerance', 'The tolerance required on the thread’s major diameter is set from the drawing or the part’s use.'),
+             ('Test pieces', '3–4 short test pieces are centerless-ground, then rolled, and their thread diameter is measured.'),
+             ('Exact blank diameter', 'The measurements fix the exact blank diameter for this thread and this material.'),
+             ('Grinding and rolling', 'The production shafts are centerless-ground to exactly that diameter and then rolled.'),
+         ]},
         {'kicker': 'DESIGN TIPS', 'title': 'What should I know before ordering rolled screws?', 'id': 'design',
-         'sub': 'The blank is prepared smaller than the thread’s outside diameter; send the drawing, material, thread specification and quantity.',
+         'sub': 'The blank is smaller than the thread’s outside diameter and is fixed with test pieces; send the drawing, material, thread specification and quantity.',
          'checks': [
-             '<b>The blank is smaller than the thread:</b> rolling displaces metal outward and raises the thread crest, so the blank is prepared smaller than the thread’s outside diameter. Do not machine the shaft to the nominal thread size yourself.',
+             '<b>Leave the blank diameter to HyperFab:</b> rolling displaces metal outward and raises the thread crest, so the blank is smaller than the thread’s outside diameter, and its exact size is fixed with <a href="#process">test pieces</a>. Do not machine the shaft to the nominal thread size yourself; centerless grinding of the blanks is part of the same process, and HyperFab arranges it.',
              '<b>Drawing and thread specification:</b> give the part drawing, the material, the thread type and size, the pitch and the threaded length.',
              '<b>Quantity:</b> say how many screws or parts you need; it affects the price and the process.',
              '<b>Turned parts:</b> if the shaft or part to be threaded also needs turning, see <a href="../cnc-turning/">batch CNC turning</a>.',
          ]},
         {'kicker': 'HOW IT WORKS', 'title': 'How is thread rolling ordered?', 'id': 'steps',
-         'sub': 'Four steps: send the drawing and specification, review and quote, rolling, and delivery.',
+         'sub': 'Four steps: send the drawing and specification, review and quote, test pieces and rolling, and delivery.',
          'steps': [
              ('Send the drawing', 'Send the screw drawing or specification, shaft material, thread specification and quantity on Bale, or describe them by phone.'),
              ('Review and quote', 'Thread size, pitch and material are reviewed and a price is given.'),
-             ('Thread rolling', 'The shafts are threaded on the rolling machine.'),
+             ('Test pieces and rolling', 'The blank diameter is fixed with test pieces; then the shafts are centerless-ground and rolled.'),
              ('Delivery', 'The screws and threaded parts are checked and delivered.'),
          ]},
     ],
     'faq': [
         ('What is thread rolling?', 'Thread rolling forms a thread on a shaft by pressing it between threaded rolls, with no chips. The metal is not cut away but displaced into the shape of the thread.'),
         ('Why is a rolled screw stronger?', 'In rolling, the grain of the metal is not cut but bends to follow the thread form, the thread surface is work-hardened by cold forming and the root comes out smoother. The result is a screw that is stronger and longer-lasting than one with a machined thread.'),
-        ('Do you roll threads on stainless steel?', 'Yes. HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws.'),
+        ('Do you roll threads on stainless steel?', 'Yes. HyperFab runs thread rolling on stainless steel and mild steel shafts and turns them into strong screws.'),
+        ('How is the blank diameter for thread rolling decided?', 'With test pieces. Rolling displaces metal outward, so the blank diameter decides the thread’s major diameter. HyperFab first has 3–4 short test pieces centerless-ground and rolled and measures their threads, which fixes the exact blank diameter needed to hold the major-diameter tolerance. The production shafts are then centerless-ground to that diameter and rolled.'),
+        ('Do I need to prepare the blanks myself?', 'No. Centerless grinding the blanks to the exact diameter is part of HyperFab’s thread rolling process, and HyperFab arranges it. Send the screw drawing or specification, the material and the quantity; if the shaft also needs turning before threading, say so when you enquire.'),
         ('Which thread sizes and pitches can you roll?', 'Thread size and pitch are reviewed for each order. Send the screw drawing or specification, or call ' + TEL_EN + '.'),
         ('What is the minimum order for thread rolling?', 'Ask when you enquire. Tell us how many screws or parts you need and the feasibility and price will be confirmed.'),
         ('How is thread rolling priced?', 'The price depends on the shaft material and size, the thread specification and length, and the quantity, and is given after the drawing or specification has been reviewed. Rolling itself is a cost-effective way to make screws.'),
@@ -671,7 +686,7 @@ THREADROLL = {
     'cta_btns': CTA_BTNS,
     'schema': svc('HyperFab Thread Rolling', ['Rolled threads', 'Roll threading', 'رولینگ رزوه'],
                   'Thread rolling and screw making from stainless steel and mild steel shafts', '/en/thread-rolling/',
-                  'Thread rolling: stainless steel and mild steel shafts turned into strong screws on a thread rolling machine; stronger, longer-lasting threads than machined threads, by a cost-effective process.'),
+                  'Thread rolling: stainless steel and mild steel shafts turned into strong screws; the blank diameter is fixed with test pieces and held by centerless grinding. Stronger, longer-lasting threads than machined threads, by a cost-effective process.'),
 }
 
 
@@ -686,7 +701,7 @@ PAGES = {
                            'tube laser cutting, profile laser cutting, box section laser cutting, RHS SHS laser cutting, round pipe laser cutting, angle and channel laser cutting, stainless steel tube laser cutting, aluminium profile laser cutting, tube laser cutting Tehran, tube laser cutting Iran, HyperFab'),
     'page_threadroll': page('threadroll', 'thread-rolling', 'Thread Rolling: Rolled Screws in Tehran, Iran | HyperFab',
                             'HyperFab in Tehran, Iran turns stainless and steel shafts into strong screws by thread rolling: cold-formed threads, stronger than cut threads, cost-effective.',
-                            'thread rolling, rolled threads, rolled vs cut threads, custom rolled screws, thread rolling Tehran, thread rolling Iran, HyperFab'),
+                            'thread rolling, rolled threads, rolled vs cut threads, custom rolled screws, centerless grinding, thread rolling Tehran, thread rolling Iran, HyperFab'),
     'page_welding': page('welding', 'welding', 'TIG & MIG Welding, Stainless & Aluminium, Tehran | HyperFab',
                          'HyperFab in Tehran, Iran: TIG and MIG welding of stainless and 6000-series aluminium, TIG welding of St37 steel, welded structures to drawing, VT/PT/PAUT.',
                          'TIG welding stainless steel Tehran, TIG welding Iran, St37 steel TIG welding, mild steel welding Tehran, MIG welding Iran, stainless steel welding Tehran, aluminium welding Iran, 6061 aluminium welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),

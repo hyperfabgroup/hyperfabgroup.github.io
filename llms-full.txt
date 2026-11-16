@@ -169,14 +169,15 @@ Real photos of parts HyperFab has made, from CNC turning and batch PTFE parts to
 - **Turned AISI 304 stainless steel bushing** (AISI 304 stainless · industrial): A stainless bushing with precise steps and grooves and a clean finish, for bearing seats and other precision locations.
 - **Precision off-axis parts in brass, stainless steel and polymer** (Brass, stainless and polymer · mechanisms): A set of small precision parts, including off-axis parts, in brass, stainless steel and polymer, made in one project with meticulous dimensional inspection.
 
-## Real work from HyperFab’s workshop
+## Real work from HyperFab projects
 
-Real footage of parts HyperFab designed and made for its customers.
+Real footage of parts HyperFab designed, made or saw through production for its customers.
 
 - Tube laser cutting steel box section for a mechanism frame · Jul 2024: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4 (https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/)
 - TIG welding the St37 frame: laser-cut tube and bent sheet · Oct 2024: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4 (https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/)
 - Fitting rivet nuts in the frame’s thin sheet with a pneumatic tool · Oct 2024: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4 (https://hyperfabgroup.github.io/en/portfolio/mechanism-frame-st37/)
 - Milling a square bore inside a stainless flange · Nov 2023: https://hyperfabgroup.github.io/assets/media/work-flange-milling.mp4
+- Thread rolling a long shaft for a customer order · Nov 2023: https://hyperfabgroup.github.io/assets/media/work-thread-rolling.mp4
 
 ## How it works
 
@@ -1005,13 +1006,14 @@ HyperFab is based in Tehran, Iran. Batch turning projects are discussed by phone
 
 URL: https://hyperfabgroup.github.io/en/thread-rolling/
 
-Thread rolling forms a thread on a shaft by pressing it between threaded rolls, with no chips: the metal is not cut away but displaced into the shape of the thread. HyperFab, a manufacturing company in Tehran, Iran, uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A rolled thread is stronger and longer-lasting than a machined one, and the process is very cost-effective for this kind of part. Thread size and pitch are checked when you enquire; call +98 996 223 3898.
+Thread rolling forms a thread on a shaft by pressing it between threaded rolls, with no chips: the metal is not cut away but displaced into the shape of the thread. HyperFab, a manufacturing company in Tehran, Iran, runs and manages thread rolling that turns stainless steel and mild steel shafts into strong screws: the blank diameter is fixed with a few test pieces, the shafts are centerless-ground to that diameter and then rolled. A rolled thread is stronger and longer-lasting than a machined one, and the process is very cost-effective for this kind of part. Thread size and pitch are checked when you enquire; call +98 996 223 3898.
 
-HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A rolled thread is formed by pressure, with no chips, so it is stronger and longer-lasting than a thread cut on a lathe or with a die — and for these parts the process is very cost-effective.
+HyperFab runs thread rolling from test pieces to production, turning stainless steel and mild steel shafts into strong screws. A rolled thread is formed by pressure, with no chips, so it is stronger and longer-lasting than a thread cut on a lathe or with a die — and for these parts the process is very cost-effective.
 
 - Service: Thread rolling and screw making from shafts
 - Materials: Stainless steel and mild steel shafts
 - Advantage: Stronger, longer-lasting threads than machined threads; cost-effective
+- Process: Test pieces, blanks centerless-ground to the exact diameter, then rolling
 - Size and pitch: Ask when you enquire
 - Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
 - Location: Tehran, Iran
@@ -1024,7 +1026,7 @@ HyperFab uses a thread rolling machine to turn stainless steel and mild steel sh
 
 Thread rolling — also called roll threading or rolled threads — forms a thread without cutting. The shaft turns between rolls that carry the thread form, and under their pressure the surface metal of the shaft is shaped into the thread. No chips are removed; metal moves from the root of the thread up into its crest.
 
-HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws. A screw made this way is stronger and lasts longer than one whose thread was cut by machining. The process itself is very cost-effective, and it suits this kind of application well.
+HyperFab runs and manages thread rolling to turn stainless steel and mild steel shafts into strong screws, from fixing the blank diameter and centerless grinding to the rolling itself. A screw made this way is stronger and lasts longer than one whose thread was cut by machining. The process itself is very cost-effective, and it suits this kind of application well.
 
 ## Why is a rolled thread stronger than a cut thread?
 
@@ -1057,22 +1059,33 @@ HyperFab rolls threads on stainless steel and mild steel shafts. If your part is
 - Screws: stainless steel and mild steel shafts turned into strong screws.
 - Common uses of thread rolling: rolling is also commonly used for studs, threaded rods and shafts with threaded ends; for these parts, ask when you enquire.
 
+## How HyperFab runs thread rolling: from test pieces to production
+
+The blank diameter sets the final major diameter of the thread, so it is fixed with a few test pieces before production.
+
+Rolling does not cut metal; it displaces it outward from the thread root to form the crest. So the blank diameter decides the major diameter of the finished thread, and any small error in the blank shows up directly in the thread. That is why HyperFab does not guess the blank diameter: it measures and fixes it with a few test pieces, and only then starts production. HyperFab coordinates and manages the whole chain, from centerless grinding to rolling.
+
+1. **Target tolerance**: The tolerance required on the thread’s major diameter is set from the drawing or the part’s use.
+2. **Test pieces**: 3–4 short test pieces are centerless-ground, then rolled, and their thread diameter is measured.
+3. **Exact blank diameter**: The measurements fix the exact blank diameter for this thread and this material.
+4. **Grinding and rolling**: The production shafts are centerless-ground to exactly that diameter and then rolled.
+
 ## What should I know before ordering rolled screws?
 
-The blank is prepared smaller than the thread’s outside diameter; send the drawing, material, thread specification and quantity.
+The blank is smaller than the thread’s outside diameter and is fixed with test pieces; send the drawing, material, thread specification and quantity.
 
-- The blank is smaller than the thread: rolling displaces metal outward and raises the thread crest, so the blank is prepared smaller than the thread’s outside diameter. Do not machine the shaft to the nominal thread size yourself.
+- Leave the blank diameter to HyperFab: rolling displaces metal outward and raises the thread crest, so the blank is smaller than the thread’s outside diameter, and its exact size is fixed with test pieces. Do not machine the shaft to the nominal thread size yourself; centerless grinding of the blanks is part of the same process, and HyperFab arranges it.
 - Drawing and thread specification: give the part drawing, the material, the thread type and size, the pitch and the threaded length.
 - Quantity: say how many screws or parts you need; it affects the price and the process.
 - Turned parts: if the shaft or part to be threaded also needs turning, see batch CNC turning.
 
 ## How is thread rolling ordered?
 
-Four steps: send the drawing and specification, review and quote, rolling, and delivery.
+Four steps: send the drawing and specification, review and quote, test pieces and rolling, and delivery.
 
 1. **Send the drawing**: Send the screw drawing or specification, shaft material, thread specification and quantity on Bale, or describe them by phone.
 2. **Review and quote**: Thread size, pitch and material are reviewed and a price is given.
-3. **Thread rolling**: The shafts are threaded on the rolling machine.
+3. **Test pieces and rolling**: The blank diameter is fixed with test pieces; then the shafts are centerless-ground and rolled.
 4. **Delivery**: The screws and threaded parts are checked and delivered.
 
 ## FAQ
@@ -1087,7 +1100,15 @@ In rolling, the grain of the metal is not cut but bends to follow the thread for
 
 ### Do you roll threads on stainless steel?
 
-Yes. HyperFab uses a thread rolling machine to turn stainless steel and mild steel shafts into strong screws.
+Yes. HyperFab runs thread rolling on stainless steel and mild steel shafts and turns them into strong screws.
+
+### How is the blank diameter for thread rolling decided?
+
+With test pieces. Rolling displaces metal outward, so the blank diameter decides the thread’s major diameter. HyperFab first has 3–4 short test pieces centerless-ground and rolled and measures their threads, which fixes the exact blank diameter needed to hold the major-diameter tolerance. The production shafts are then centerless-ground to that diameter and rolled.
+
+### Do I need to prepare the blanks myself?
+
+No. Centerless grinding the blanks to the exact diameter is part of HyperFab’s thread rolling process, and HyperFab arranges it. Send the screw drawing or specification, the material and the quantity; if the shaft also needs turning before threading, say so when you enquire.
 
 ### Which thread sizes and pitches can you roll?
 
@@ -1326,7 +1347,7 @@ Send HyperFab the structure or part drawings, the material, the quantity and any
 
 ### Does HyperFab design the welded structure?
 
-Structural design is usually the client’s and HyperFab fabricates to the approved drawings; on some projects HyperFab has also designed the mechanism and frame, so ask when you enquire. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.
+Structural design is usually the client’s; on special projects, the whole job, from design to fabrication, is entrusted to HyperFab in one piece, so ask when you enquire. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.
 
 ### Which weld tests does HyperFab offer?
 
@@ -1985,6 +2006,7 @@ In machining, the process name, the thread and the steel grade are the words tha
 | CNC milling | فرزکاری (فرز CNC) | Material removal with a rotating cutter for flat faces, pockets, slots and prismatic shapes. |
 | Thread; threading; tapping (internal) | رزوه (رزوه‌زنی، دنده) | An internal or external helical groove for screws, nuts and pipe fittings. |
 | Thread rolling; rolled thread | رولینگ رزوه (نورد رزوه، رزوه نوردی) | Forming an external thread by pressing the blank between threaded rolls, with no chips; the result is stronger than a cut thread. |
+| Centerless grinding | سنگ سنترلس (سنگ‌زنی بی‌مرغک) | Precision grinding of a shaft’s outside diameter without centres, between the grinding wheel and a regulating wheel; used, for example, to bring thread-rolling blanks to an exact diameter. |
 | Knurl; knurling | آج (آج‌زنی) | A ridged pattern rolled or cut on a round surface for a better grip. |
 | Chamfer | پخ | A small angled edge that removes sharpness and eases assembly. |
 | Burr; deburring | پلیسه (پلیسه‌گیری) | The sharp edge left after cutting or machining, and the work of removing it. |
@@ -2692,7 +2714,7 @@ One key design decision was to use thin sheet. Thinner sheet cuts both the weigh
 
 The skeleton parts were cut from St37 box section on a tube laser. Tube laser cutting produces the length, the holes and the end profile that mates with the neighbouring part in a single operation, straight from the design file. The result is parts that fit together accurately, so the welder does not have to grind and file joints to make them meet.
 
-Video (Real footage from HyperFab’s workshop): Tube laser cutting St37 steel box section for a mechanism frame, filmed 2024-07-14, 51s: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4
+Video (Real footage from HyperFab projects): Tube laser cutting St37 steel box section for a mechanism frame, filmed 2024-07-14, 51s: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4
 
 ## Sheet laser cutting and bending in HyperFab’s workshops
 
@@ -2706,7 +2728,7 @@ Next, the laser-cut box-section parts were welded to the cut and bent sheet. Thi
 
 Laser-cut parts fit together properly, which makes assembly and welding simpler and the drawing dimensions easier to hold.
 
-Video (Real footage from HyperFab’s workshop): TIG welding an St37 steel frame, filmed 2024-10-09, 8s: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4
+Video (Real footage from HyperFab projects): TIG welding an St37 steel frame, filmed 2024-10-09, 8s: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4
 
 ## Rivet nuts in thin sheet: strong threads without thick sheet
 
@@ -2719,7 +2741,7 @@ A rivet nut goes into a hole from one side of the sheet, and the setting tool co
 - No welding and no heat on the thin sheet, so no distortion
 - Less weight and cost than thicker sheet
 
-Video (Real footage from HyperFab’s workshop): Fitting rivet nuts in thin sheet with a pneumatic tool, filmed 2024-10-09, 13s: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4
+Video (Real footage from HyperFab projects): Fitting rivet nuts in thin sheet with a pneumatic tool, filmed 2024-10-09, 13s: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4
 
 ## The result: one team from design to finished frame
 
@@ -2901,14 +2923,15 @@ URL: https://hyperfab.ir/services/bending/
 - **بوش استیل ۳۰۴ تراشکاری‌شده** (استیل ۳۰۴ · صنعتی): بوش استیل با پله‌ها و شیارهای دقیق و سطح پرداخت تمیز، برای یاتاقان‌بندی و مواضع نیازمند ابعاد دقیق.
 - **قطعات دقیق خارج از محور از برنج، استیل و پلیمر** (برنج، استیل و پلیمر · مکانیزم): مجموعه‌ای از قطعات کوچک و دقیق، از جمله قطعات خارج از محور، از برنج، استیل و پلیمر در یک پروژه، با کنترل ابعادی موشکافانه.
 
-## کار واقعی، از کارگاه هایپرفب
+## کار واقعی، از پروژه‌های هایپرفب
 
-ویدیوهای واقعی از قطعاتی که هایپرفب برای مشتریانش طراحی و ساخته است.
+ویدیوهای واقعی از قطعاتی که هایپرفب برای مشتریانش طراحی کرده، ساخته یا ساختشان را پیش برده است.
 
 - برش لیزر قوطی فولادی برای فریم یک مکانیزم · تیر ۱۴۰۳: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4 (https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/)
 - جوش آرگون TIG فریم St37؛ قوطی لیزرشده و ورق خم‌شده · مهر ۱۴۰۳: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4 (https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/)
 - نصب مهره‌پرچ با ابزار بادی روی ورق نازک همان فریم · مهر ۱۴۰۳: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4 (https://hyperfabgroup.github.io/portfolio/mechanism-frame-st37/)
 - فرزکاری چهارپهلوی داخل یک فلنج استیل · آذر ۱۴۰۲: https://hyperfabgroup.github.io/assets/media/work-flange-milling.mp4
+- رولینگ رزوه‌ی یک شفت بلند برای سفارش مشتری · آبان ۱۴۰۲: https://hyperfabgroup.github.io/assets/media/work-thread-rolling.mp4
 
 ## سفارش ساخت قطعه در هایپرفب چطور انجام می‌شود؟
 
@@ -3731,13 +3754,14 @@ URL: https://hyperfabgroup.github.io/cnc-turning/
 
 URL: https://hyperfabgroup.github.io/thread-rolling/
 
-رولینگ رزوه (نورد رزوه) یعنی شکل‌دادن رزوه روی شفت با فشار غلتک‌های رزوه‌دار، بدون براده‌برداری؛ فلز بریده نمی‌شود، بلکه جابه‌جا می‌شود و فرم رزوه را می‌گیرد. هایپرفب در تهران با دستگاه رولینگ، شفت‌های استیل و آهنی (فولادی) را به پیچ‌های محکم تبدیل می‌کند؛ رزوه‌ی رولینگ‌شده از رزوه‌ی تراشیده محکم‌تر و بادوام‌تر است و این روش برای چنین کاربردهایی بسیار مقرون‌به‌صرفه است. اندازه و گام رزوه هنگام استعلام بررسی می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+رولینگ رزوه (نورد رزوه) یعنی شکل‌دادن رزوه روی شفت با فشار غلتک‌های رزوه‌دار، بدون براده‌برداری؛ فلز بریده نمی‌شود، بلکه جابه‌جا می‌شود و فرم رزوه را می‌گیرد. هایپرفب در تهران رولینگ رزوه‌ی شفت‌های استیل و آهنی (فولادی) را اجرا و مدیریت می‌کند و آن‌ها را به پیچ‌های محکم تبدیل می‌کند: قطر شفت خام با چند نمونه‌ی آزمایشی تعیین می‌شود، شفت‌ها با سنگ سنترلس به همان قطر می‌رسند و بعد رولینگ می‌شوند. رزوه‌ی رولینگ‌شده از رزوه‌ی تراشیده محکم‌تر و بادوام‌تر است و این روش برای چنین کاربردهایی بسیار مقرون‌به‌صرفه است. اندازه و گام رزوه هنگام استعلام بررسی می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
 
-هایپرفب با دستگاه رولینگ، شفت‌های استیل و آهنی را به پیچ‌های محکم تبدیل می‌کند. رزوه‌ی نوردشده بدون براده و با فشار شکل می‌گیرد؛ برای همین از رزوه‌ای که با تراش یا حدیده بریده می‌شود محکم‌تر و بادوام‌تر است، و برای این کاربردها روشی بسیار مقرون‌به‌صرفه است.
+هایپرفب رولینگ رزوه‌ی شفت‌های استیل و آهنی را از نمونه‌ی آزمایشی تا تولید پیش می‌برد و آن‌ها را به پیچ‌های محکم تبدیل می‌کند. رزوه‌ی نوردشده بدون براده و با فشار شکل می‌گیرد؛ برای همین از رزوه‌ای که با تراش یا حدیده بریده می‌شود محکم‌تر و بادوام‌تر است، و برای این کاربردها روشی بسیار مقرون‌به‌صرفه است.
 
 - خدمت: رولینگ رزوه (نورد رزوه) و ساخت پیچ از شفت
 - جنس: شفت استیل و آهنی (فولادی)
 - مزیت: رزوه‌ی محکم‌تر و بادوام‌تر از رزوه‌ی تراشیده؛ مقرون‌به‌صرفه
+- روش کار: نمونه‌ی آزمایشی، سنگ سنترلس شفت خام به قطر دقیق، سپس رولینگ
 - اندازه و گام: هنگام استعلام بپرسید
 - سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro
 - محل: تهران
@@ -3750,7 +3774,7 @@ URL: https://hyperfabgroup.github.io/thread-rolling/
 
 رولینگ رزوه (Thread Rolling) را با نام‌های نورد رزوه، رزوه نوردی و رزوه رولینگ هم می‌شناسند. در این روش، شفت بین غلتک‌هایی که فرم رزوه را روی خود دارند می‌چرخد و زیر فشار آن‌ها، فلز سطح شفت به شکل رزوه درمی‌آید. هیچ براده‌ای برداشته نمی‌شود؛ فلز از ته رزوه به سمت تاج آن جابه‌جا می‌شود.
 
-هایپرفب با دستگاه رولینگ، شفت‌های استیل و آهنی (فولادی) را به پیچ‌های محکم تبدیل می‌کند. پیچی که این‌طور ساخته می‌شود، در مقایسه با پیچی که رزوه‌اش با ماشین‌کاری بریده شده، استحکام و عمر بیشتری دارد. خود فرایند هم بسیار مقرون‌به‌صرفه است و برای چنین کاربردهایی روش مناسبی است.
+هایپرفب رولینگ رزوه را برای تبدیل شفت‌های استیل و آهنی (فولادی) به پیچ‌های محکم اجرا و مدیریت می‌کند؛ از تعیین قطر شفت خام و سنگ سنترلس تا خود رولینگ. پیچی که این‌طور ساخته می‌شود، در مقایسه با پیچی که رزوه‌اش با ماشین‌کاری بریده شده، استحکام و عمر بیشتری دارد. خود فرایند هم بسیار مقرون‌به‌صرفه است و برای چنین کاربردهایی روش مناسبی است.
 
 ## چرا رزوه‌ی رولینگ‌شده محکم‌تر از رزوه‌ی تراشیده است؟
 
@@ -3778,27 +3802,38 @@ URL: https://hyperfabgroup.github.io/thread-rolling/
 
 ## چه جنس‌ها و قطعاتی رولینگ می‌شوند؟
 
-هایپرفب رولینگ رزوه را روی شفت استیل و شفت آهنی (فولادی) انجام می‌دهد. اگر قطعه‌تان از جنس دیگری است، هنگام استعلام بپرسید.
+هایپرفب رولینگ رزوه را روی شفت استیل و شفت آهنی (فولادی) اجرا می‌کند. اگر قطعه‌تان از جنس دیگری است، هنگام استعلام بپرسید.
 
 - پیچ: تبدیل شفت استیل و فولادی به پیچ‌های محکم.
 - کاربردهای رایج رولینگ: رولینگ رزوه معمولاً برای پیچ دوسر، میله‌ی رزوه‌شده و شفت‌هایی که سرشان رزوه دارد هم به کار می‌رود؛ برای این قطعات هنگام استعلام بپرسید.
 
+## رولینگ رزوه در هایپرفب چطور انجام می‌شود؟ از نمونه‌ی آزمایشی تا تولید
+
+قطر شفت خام، قطر خارجی رزوه‌ی نهایی را تعیین می‌کند؛ برای همین این قطر پیش از تولید با چند نمونه‌ی آزمایشی قطعی می‌شود.
+
+در رولینگ، فلز بریده نمی‌شود؛ از ته رزوه به بیرون جابه‌جا می‌شود و تاج رزوه را می‌سازد. پس قطر خارجی رزوه را قطر شفت خام تعیین می‌کند و هر اختلاف کوچکی در قطر خام، مستقیم در قطر رزوه دیده می‌شود. برای همین هایپرفب قطر شفت خام را حدس نمی‌زند: آن را با چند نمونه‌ی آزمایشی اندازه می‌گیرد و قطعی می‌کند، و بعد تولید را شروع می‌کند. هایپرفب کل این زنجیره را، از سنگ سنترلس تا رولینگ، هماهنگ و مدیریت می‌کند.
+
+1. **تلرانس هدف**: تلرانس لازم برای قطر خارجی رزوه از روی نقشه یا کاربرد قطعه مشخص می‌شود.
+2. **نمونه‌های آزمایشی**: ۳ تا ۴ شفت کوتاه آزمایشی سنگ سنترلس و بعد رولینگ می‌شوند و قطر رزوه‌شان اندازه‌گیری می‌شود.
+3. **قطر دقیق شفت خام**: از نتیجه‌ی اندازه‌گیری نمونه‌ها، قطر دقیق شفت خام برای همین رزوه و همین جنس قطعی می‌شود.
+4. **سنگ سنترلس و رولینگ تولید**: شفت‌های اصلی با سنگ سنترلس دقیقاً به همان قطر می‌رسند و سپس رولینگ می‌شوند.
+
 ## برای سفارش پیچ رولینگ‌شده چه چیزهایی را بدانیم؟
 
-قطر شفت خام پیش از رولینگ کوچک‌تر از قطر خارجی رزوه است؛ نقشه، جنس، مشخصات رزوه و تعداد را بفرستید.
+قطر شفت خام کوچک‌تر از قطر خارجی رزوه است و با نمونه‌ی آزمایشی تعیین می‌شود؛ نقشه، جنس، مشخصات رزوه و تعداد را بفرستید.
 
-- قطر شفت خام کوچک‌تر از قطر رزوه است: در رولینگ، فلز به بیرون جابه‌جا می‌شود و تاج رزوه بالا می‌آید. برای همین شفت خام را کوچک‌تر از قطر خارجی رزوه آماده می‌کنند؛ شفت را خودتان به اندازه‌ی اسمی رزوه نتراشید.
+- تعیین قطر شفت خام را به هایپرفب بسپارید: در رولینگ، فلز به بیرون جابه‌جا می‌شود و تاج رزوه بالا می‌آید؛ برای همین شفت خام از قطر خارجی رزوه کوچک‌تر است و قطر دقیقش با نمونه‌های آزمایشی تعیین می‌شود. شفت را خودتان به اندازه‌ی اسمی رزوه نتراشید؛ سنگ سنترلس شفت‌های خام بخشی از همین فرایند است و هایپرفب آن را هماهنگ می‌کند.
 - نقشه و مشخصات رزوه: نقشه‌ی قطعه، جنس، نوع و اندازه‌ی رزوه، گام و طول رزوه‌شده را بنویسید.
 - تعداد: تعداد پیچ یا قطعه‌ی لازم را بگویید؛ در قیمت و روش ساخت اثر دارد.
 - قطعه‌ی تراشکاری: اگر شفت یا قطعه‌ای که باید رزوه بخورد خودش تراشکاری لازم دارد، صفحه‌ی تراشکاری CNC تیراژی را ببینید.
 
 ## سفارش رولینگ رزوه چه مراحلی دارد؟
 
-چهار مرحله: ارسال نقشه و مشخصات، بررسی و پیشنهاد قیمت، رولینگ، و تحویل.
+چهار مرحله: ارسال نقشه و مشخصات، بررسی و پیشنهاد قیمت، نمونه‌ی آزمایشی و رولینگ، و تحویل.
 
 1. **ارسال نقشه**: نقشه یا مشخصات پیچ، جنس شفت، مشخصات رزوه و تعداد را در بله بفرستید یا تلفنی شرح دهید.
 2. **بررسی و قیمت**: اندازه و گام رزوه و جنس بررسی و قیمت اعلام می‌شود.
-3. **رولینگ رزوه**: شفت‌ها با دستگاه رولینگ رزوه می‌خورند.
+3. **نمونه و رولینگ**: قطر شفت خام با نمونه‌های آزمایشی قطعی می‌شود؛ سپس شفت‌ها سنگ سنترلس و رولینگ می‌شوند.
 4. **تحویل**: پیچ‌ها و قطعات رزوه‌شده کنترل و تحویل می‌شوند.
 
 ## FAQ
@@ -3813,7 +3848,15 @@ URL: https://hyperfabgroup.github.io/thread-rolling/
 
 ### شفت استیل را هم رولینگ می‌کنید؟
 
-بله. هایپرفب با دستگاه رولینگ، شفت‌های استیل و آهنی (فولادی) را به پیچ‌های محکم تبدیل می‌کند.
+بله. هایپرفب رولینگ رزوه‌ی شفت‌های استیل و آهنی (فولادی) را اجرا می‌کند و آن‌ها را به پیچ‌های محکم تبدیل می‌کند.
+
+### قطر شفت خام برای رولینگ چطور تعیین می‌شود؟
+
+با نمونه‌ی آزمایشی. در رولینگ فلز به بیرون جابه‌جا می‌شود، پس قطر شفت خام قطر خارجی رزوه را تعیین می‌کند. در هایپرفب اول ۳ تا ۴ شفت کوتاه آزمایشی سنگ سنترلس و رولینگ می‌شوند و قطر رزوه‌شان اندازه‌گیری می‌شود تا قطر دقیق شفت خام برای رسیدن به تلرانس قطر خارجی رزوه قطعی شود. بعد شفت‌های اصلی با سنگ سنترلس به همان قطر می‌رسند و رولینگ می‌شوند.
+
+### شفت خام را خودم باید آماده کنم؟
+
+لازم نیست. سنگ سنترلس شفت‌های خام به قطر دقیق، بخشی از فرایند رولینگ در هایپرفب است و هایپرفب آن را هماهنگ می‌کند. نقشه یا مشخصات پیچ، جنس و تعداد را بفرستید؛ اگر شفت پیش از رزوه به تراشکاری هم نیاز دارد، هنگام استعلام بگویید.
 
 ### رولینگ رزوه در چه اندازه‌ها و گام‌هایی انجام می‌شود؟
 
@@ -4048,7 +4091,7 @@ TIG جوش تمیزتر و دقیق‌تری می‌دهد و برای ورق ن
 
 ### طراحی سازه را هم انجام می‌دهید؟
 
-طراحی سازه معمولاً با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده انجام می‌دهد؛ در برخی پروژه‌ها طراحی مکانیزم و فریم را هم هایپرفب انجام داده است؛ هنگام استعلام بپرسید. نقشه پیش از ساخت از نظر ساخت‌پذیری بررسی می‌شود و نکته‌ها با شما در میان گذاشته می‌شود.
+طراحی سازه معمولاً با کارفرماست؛ در پروژه‌های خاص، کل پروژه از طراحی تا ساخت یک‌جا به هایپرفب سپرده می‌شود؛ هنگام استعلام بپرسید. نقشه پیش از ساخت از نظر ساخت‌پذیری بررسی می‌شود و نکته‌ها با شما در میان گذاشته می‌شود.
 
 ### چه آزمون‌هایی روی جوش انجام می‌دهید؟
 
@@ -4711,6 +4754,7 @@ Updated: 2026-11-15
 | فرزکاری (فرز CNC) | CNC milling | براده‌برداری با ابزار دوار برای سطح تخت، جیب، شیار و شکل‌های منشوری. |
 | رزوه (رزوه‌زنی، دنده) | Thread; threading; tapping (internal) | شیار مارپیچ داخلی یا خارجی برای پیچ و مهره و اتصالات لوله. |
 | رولینگ رزوه (نورد رزوه، رزوه نوردی) | Thread rolling; rolled thread | شکل‌دادن رزوه‌ی خارجی با فشار غلتک‌های رزوه‌دار، بدون براده؛ رزوه‌ی حاصل از رزوه‌ی تراشیده محکم‌تر است. |
+| سنگ سنترلس (سنگ‌زنی بی‌مرغک) | Centerless grinding | سنگ‌زنی دقیق قطر خارجی شفت بدون مرغک، بین چرخ سنگ و چرخ تنظیم؛ مثلاً برای رساندن شفت خام رولینگ به قطر دقیق. |
 | آج (آج‌زنی) | Knurl; knurling | الگوی شیاردار روی سطح گرد برای گرفتن بهتر با دست. |
 | پخ | Chamfer | لبه‌ی مورب کوچک روی گوشه برای حذف تیزی و راحتی مونتاژ. |
 | پلیسه (پلیسه‌گیری) | Burr; deburring | لبه‌ی تیز و زائده‌ای که پس از برش یا ماشین‌کاری می‌ماند و باید گرفته شود. |
@@ -5418,7 +5462,7 @@ Published: 2026-11-16
 
 قطعات اسکلت از قوطی St37 با دستگاه لیزر لوله بریده شدند. در برش لیزر قوطی، طول قطعه، سوراخ‌ها و فرم سرِ قوطی برای جفت شدن با قطعه‌ی کناری، همه در یک مرحله و مستقیم از روی فایل طراحی بریده می‌شوند. نتیجه، قطعاتی است که دقیق کنار هم می‌نشینند و جوشکار مجبور نیست درزها را با سنگ و سوهان جفت کند.
 
-Video (ویدیوی واقعی از کارگاه هایپرفب): برش لیزر قوطی فولادی St37 برای فریم یک مکانیزم, filmed 2024-07-14, 51s: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4
+Video (ویدیوی واقعی از پروژه‌های هایپرفب): برش لیزر قوطی فولادی St37 برای فریم یک مکانیزم, filmed 2024-07-14, 51s: https://hyperfabgroup.github.io/assets/media/work-tube-laser.mp4
 
 ## برش لیزر و خم ورق در کارگاه‌های هایپرفب
 
@@ -5432,7 +5476,7 @@ Video (ویدیوی واقعی از کارگاه هایپرفب): برش لیز�
 
 قطعاتی که با لیزر بریده می‌شوند درست روی هم می‌نشینند؛ این، مونتاژ و جوشکاری را ساده‌تر و رسیدن به ابعاد نقشه را آسان‌تر می‌کند.
 
-Video (ویدیوی واقعی از کارگاه هایپرفب): جوش آرگون TIG فریم St37, filmed 2024-10-09, 8s: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4
+Video (ویدیوی واقعی از پروژه‌های هایپرفب): جوش آرگون TIG فریم St37, filmed 2024-10-09, 8s: https://hyperfabgroup.github.io/assets/media/work-frame-welding.mp4
 
 ## مهره‌پرچ روی ورق نازک: رزوه‌ی محکم بدون ورق ضخیم
 
@@ -5445,7 +5489,7 @@ Video (ویدیوی واقعی از کارگاه هایپرفب): جوش آرگ�
 - بدون جوش و بدون حرارت روی ورق نازک، پس بدون تاب برداشتن
 - وزن و هزینه‌ی کمتر نسبت به ورق ضخیم
 
-Video (ویدیوی واقعی از کارگاه هایپرفب): نصب مهره‌پرچ با ابزار بادی روی ورق نازک, filmed 2024-10-09, 13s: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4
+Video (ویدیوی واقعی از پروژه‌های هایپرفب): نصب مهره‌پرچ با ابزار بادی روی ورق نازک, filmed 2024-10-09, 13s: https://hyperfabgroup.github.io/assets/media/work-rivet-nut.mp4
 
 ## نتیجه: یک گروه، از طراحی تا فریم آماده
 

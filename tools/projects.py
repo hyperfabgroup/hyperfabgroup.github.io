@@ -151,20 +151,20 @@ PROJECTS = [MECHANISM_FRAME]
 
 # برچسب‌های صفحه‌ی پروژه، فهرست پروژه‌ها و نوار «کار واقعی»
 PROJECT_LABELS = {
-    'fa': {'real_video': 'ویدیوی واقعی از کارگاه هایپرفب', 'services_h': 'خدمت‌های به‌کاررفته در این پروژه',
+    'fa': {'real_video': 'ویدیوی واقعی از پروژه‌های هایپرفب', 'services_h': 'خدمت‌های به‌کاررفته در این پروژه',
            'guides_h': 'راهنماهای مرتبط', 'published': 'انتشار', 'all_work': 'همه‌ی نمونه‌کارها',
            'projects_kicker': 'PROJECTS', 'projects_title': 'پروژه‌های واقعی، مرحله به مرحله',
            'projects_sub': 'داستان کامل کارهایی که هایپرفب از طراحی تا ساخت انجام داده است، با ویدیوی واقعی هر مرحله.',
            'read': 'داستان کامل پروژه',
-           'strip_kicker': 'REAL WORK', 'strip_title': 'کار واقعی، از کارگاه هایپرفب',
-           'strip_sub': 'ویدیوهای واقعی از قطعاتی که هایپرفب برای مشتریانش طراحی و ساخته است.', 'strip_btn': 'داستان کامل پروژه‌ی فریم مکانیزم',
+           'strip_kicker': 'REAL WORK', 'strip_title': 'کار واقعی، از پروژه‌های هایپرفب',
+           'strip_sub': 'ویدیوهای واقعی از قطعاتی که هایپرفب برای مشتریانش طراحی کرده، ساخته یا ساختشان را پیش برده است.', 'strip_btn': 'داستان کامل پروژه‌ی فریم مکانیزم',
            'svc_kicker': 'REAL PROJECT', 'svc_title': 'پروژه‌ی واقعی: ', 'svc_btn': 'داستان کامل این پروژه'},
-    'en': {'real_video': 'Real footage from HyperFab’s workshop', 'services_h': 'Services used on this project',
+    'en': {'real_video': 'Real footage from HyperFab projects', 'services_h': 'Services used on this project',
            'guides_h': 'Related guides', 'published': 'Published', 'all_work': 'All work',
            'projects_kicker': 'PROJECTS', 'projects_title': 'Real projects, step by step',
            'projects_sub': 'The full story of jobs HyperFab took from design to fabrication, with real footage of each step.',
            'read': 'Read the full project',
-           'strip_kicker': 'REAL WORK', 'strip_title': 'Real work from HyperFab’s workshop',
-           'strip_sub': 'Real footage of parts HyperFab designed and made for its customers.', 'strip_btn': 'The full mechanism-frame project',
+           'strip_kicker': 'REAL WORK', 'strip_title': 'Real work from HyperFab projects',
+           'strip_sub': 'Real footage of parts HyperFab designed, made or saw through production for its customers.', 'strip_btn': 'The full mechanism-frame project',
            'svc_kicker': 'REAL PROJECT', 'svc_title': 'Real project: ', 'svc_btn': 'See the full project'},
 }

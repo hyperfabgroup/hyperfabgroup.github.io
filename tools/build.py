@@ -484,6 +484,9 @@ def svc_hero(c, depth, d):
                     for a, b, lat in d['ticks'])
     btns = ''.join(f'<a class="{cls}" href="{u}">{(icon("box", 18) + " ") if cls == "btn-red" else ""}{e(t)}</a>' for cls, t, u in d['buttons'])
     home = rel(depth, c['home_rel']) or './'
+    # عکس عمودی (مثل پوستر ویدیوی موبایلی) در قاب افقی بریده می‌شود تا در ستون هیرو باریک نماند
+    size = img_size(d['img'])
+    portrait = ' is-portrait' if size and size[1] > size[0] else ''
     return f'''<section class="hfs-hero">
 	<div class="wrap">
 		<div>
@@ -493,7 +496,7 @@ def svc_hero(c, depth, d):
 			<ul class="hfs-ticks">{ticks}</ul>
 			<div class="hfs-hero-btns">{btns}</div>
 		</div>
-		<figure class="hfs-hero-art has-pic">{img(depth, d['img'], d['img_alt'], eager=True, picture=True)}{credit(c, d['img'], 'hero-credit')}</figure>
+		<figure class="hfs-hero-art has-pic{portrait}">{img(depth, d['img'], d['img_alt'], eager=True, picture=True)}{credit(c, d['img'], 'hero-credit')}</figure>
 	</div>
 	{stats_bar(d['stats'])}
 </section>

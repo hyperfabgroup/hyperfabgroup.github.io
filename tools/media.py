@@ -62,12 +62,12 @@ def video_embed(code):
     return 'https://www.aparat.com/video/video/embed/videohash/' + code + '/vt/frame'
 
 
-# ---------------------------------------------------------------- ویدیوهای واقعی کارگاه
+# ---------------------------------------------------------------- ویدیوهای واقعی پروژه‌های هایپرفب
 # فیلم‌های خود هایپرفب که روی همین سایت میزبانی می‌شوند (assets/media/). از اینجا ساخته می‌شوند:
 #   - نوار «کار واقعی» صفحه‌ی اصلی (home=True، به همین ترتیب)
 #   - ویدیوهای صفحه‌ی پروژه (tools/projects.py با vid('شناسه', زبان))؛ VideoObject فقط آنجا ساخته می‌شود
-#   - بلوک «پروژه‌ی واقعی» صفحه‌ی خدمت service (اولین ویدیوی هر خدمت که project دارد)
-# برای ویدیوی تازه (مثلاً نورد رزوه یا فرز فلنج استیل): mp4 را در assets/media/ و پوستر jpg هم‌اندازه را
+#   - بلوک «پروژه‌ی واقعی» صفحه‌ی خدمت service (اولین ویدیوی هر خدمت)؛ ویدیوی بی‌پروژه همان‌جا VideoObject می‌گیرد
+# برای ویدیوی تازه: mp4 را در assets/media/ و پوستر jpg هم‌اندازه را
 # در assets/img/works/ بگذارید و یک ردیف اینجا اضافه کنید. upload_date روز فیلم‌برداری است (YYYY-MM-DD)،
 # duration به قالب ISO 8601 (PT51S). focus نقطه‌ی برش تصویر در کارت‌های مربعی نوار صفحه‌ی اصلی است.
 REAL_VIDEOS = [
@@ -107,6 +107,25 @@ REAL_VIDEOS = [
      'en': {'caption': 'Milling a square bore inside a stainless flange · Nov 2023',
             'name': 'Milling a square bore in a stainless steel flange',
             'desc': 'A stainless flange whose bore had to be square, machined on a milling machine at HyperFab; milling stainless is among the hardest machining jobs. Made for a customer.'}},
+    # رولینگ در کارگاه همکار و زیر مدیریت هایپرفب انجام شده؛ پس متن از «پروژه‌ی هایپرفب» می‌گوید، نه «کارگاه هایپرفب»
+    {'id': 'thread-rolling', 'src': 'assets/media/work-thread-rolling.mp4', 'poster': 'assets/img/works/work-thread-rolling.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2023-11-19', 'duration': 'PT34S',
+     'project': None, 'service': 'threadroll', 'home': True, 'focus': '50% 40%',
+     'fa': {'caption': 'رولینگ رزوه‌ی یک شفت بلند برای سفارش مشتری · آبان ۱۴۰۲',
+            'name': 'رولینگ رزوه‌ی شفت بلند بین غلتک‌های رزوه',
+            'desc': 'یک شفت بلند بین غلتک‌های رزوه‌دار دستگاه رولینگ می‌چرخد و رزوه بدون براده، با فشار غلتک‌ها روی آن شکل می‌گیرد؛ از پروژه‌ای که هایپرفب برای سفارش یک مشتری اجرا کرد.'},
+     'en': {'caption': 'Thread rolling a long shaft for a customer order · Nov 2023',
+            'name': 'Thread rolling a long shaft between the rolling dies',
+            'desc': 'A long shaft turns between the threaded dies of a thread rolling machine, and the thread forms under their pressure with no chips: from a project HyperFab ran for a customer order.'}},
+    {'id': 'rolling-dies', 'src': 'assets/media/work-rolling-dies.mp4', 'poster': 'assets/img/works/work-rolling-dies.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2023-11-19', 'duration': 'PT7S',
+     'project': None, 'service': None, 'home': False, 'focus': '50% 50%',
+     'fa': {'caption': 'غلتک‌های رولینگ رزوه با روان‌کار، از نزدیک · آبان ۱۴۰۲',
+            'name': 'غلتک‌های رولینگ رزوه از نزدیک',
+            'desc': 'نمای نزدیک غلتک‌های رزوه‌دار دستگاه رولینگ با روان‌کار، از همان پروژه‌ی رولینگ شفت بلند که هایپرفب برای سفارش یک مشتری اجرا کرد.'},
+     'en': {'caption': 'Close-up of the thread-rolling dies with lubricant · Nov 2023',
+            'name': 'Thread-rolling dies, close up',
+            'desc': 'A close-up of the threaded dies of a thread rolling machine with lubricant, from the same long-shaft rolling project HyperFab ran for a customer order.'}},
 ]
 
 REAL_BY_ID = {v['id']: v for v in REAL_VIDEOS}
