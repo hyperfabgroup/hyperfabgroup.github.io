@@ -275,9 +275,11 @@
 @media(max-width:600px){.proj-card{grid-template-columns:1fr}.proj-card .im img{aspect-ratio:16/9}}
 
 /* نوار «کار واقعی» صفحه‌ی اصلی: کارت‌های هم‌قد، ویدیو در قاب مربعی (object-fit: cover)؛
-   در دسکتاپ همه‌ی کارت‌ها در یک ردیف، هر تعداد که باشند؛ در تبلت و موبایل ردیف افقی با اسکرول داخلی،
-   بدون اسکرول افقی خود صفحه */
-.rw-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:var(--sp-4)}
+   در دسکتاپ یک ردیف با کارت‌های دست‌کم ۱۸۰ پیکسلی؛ اگر جا نشود، خود ردیف (نه صفحه) افقی اسکرول می‌خورد
+   و کارت بعدی نیمه‌پیدا می‌ماند تا اسکرول دیده شود. در تبلت و موبایل ردیف افقی با کارت‌های پهن‌تر */
+.rw-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(180px,1fr);gap:var(--sp-4);
+	overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;padding-bottom:var(--sp-3)}
+.rw-grid>.rw-card{scroll-snap-align:start}
 .rw-card{margin:0;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--sh-1)}
 .rw-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--navy)}
 .rw-media video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
@@ -303,5 +305,25 @@
 	.proj-svc-card.is-portrait .proj-video{max-width:280px;margin-inline:auto}
 	.proj-svc-text h2{font-size:var(--fs-6)}
 }
+/* چند ویدیوی واقعی در یک صفحه‌ی خدمت: کارت‌های کنار هم؛ در موبایل ردیف افقی با اسکرول داخلی */
+.proj-svc-many{padding-top:var(--sp-7)}
+.proj-svc-multi{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-5)}
+.proj-svc-item{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--sh-1);padding:var(--sp-4)}
+.proj-svc-item .proj-video{margin:0;max-width:none;width:100%}
+.proj-svc-item .proj-video video{aspect-ratio:4/5;height:auto;object-fit:cover}
+.proj-svc-item h3{font-size:var(--fs-5);color:var(--navy);margin:var(--sp-4) 0 var(--sp-2);line-height:1.7}
+.proj-svc-item p{color:var(--ink-soft);font-size:var(--fs-3);line-height:2;margin:0}
+.proj-svc-item p+p{margin-top:var(--sp-2)}
+.proj-svc-note{border-inline-start:3px solid var(--accent);padding-inline-start:var(--sp-3)}
+.proj-svc-text .proj-svc-note{margin-top:calc(-1 * var(--sp-3))}
+[dir="ltr"] .proj-svc-item p{text-align-last:auto}
+@media(max-width:700px){
+	.proj-svc-multi{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:var(--sp-3);padding-bottom:var(--sp-2);
+		margin-inline:calc(-1 * var(--sp-4));padding-inline:var(--sp-4);scroll-padding-inline:var(--sp-4);overscroll-behavior-x:contain}
+	.proj-svc-item{flex:0 0 82%;scroll-snap-align:start}
+}
 #in-pictures .clip-grid .clip video{aspect-ratio:16/9;object-fit:cover}
 .rw-card .real-tag{display:none}
+
+/* برچسب پررنگ فارسی در فهرست تیک‌دار: قالب direction:ltr می‌دهد و دونقطه سمت اشتباه می‌افتد */
+[dir="rtl"] .hfs-dg-item p b{direction:rtl}

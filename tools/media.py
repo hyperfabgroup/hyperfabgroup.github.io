@@ -66,7 +66,9 @@ def video_embed(code):
 # فیلم‌های خود هایپرفب که روی همین سایت میزبانی می‌شوند (assets/media/). از اینجا ساخته می‌شوند:
 #   - نوار «کار واقعی» صفحه‌ی اصلی (home=True، به همین ترتیب)
 #   - ویدیوهای صفحه‌ی پروژه (tools/projects.py با vid('شناسه', زبان))؛ VideoObject فقط آنجا ساخته می‌شود
-#   - بلوک «پروژه‌ی واقعی» صفحه‌ی خدمت service (اولین ویدیوی هر خدمت)؛ ویدیوی بی‌پروژه همان‌جا VideoObject می‌گیرد
+#   - بلوک «کار واقعی» صفحه‌ی خدمت service (کلید یک صفحه، یا فهرستی از کلیدها)؛ اگر چند ویدیو به یک صفحه
+#     تعلق داشته باشد، تا MAX_SVC_VIDEOS تا کنار هم نمایش داده می‌شوند؛ ویدیوی بی‌پروژه همان‌جا VideoObject می‌گیرد.
+#     note اختیاری در هر زبان، یک جمله‌ی پیوند ویدیو با آن خدمت است که زیر توضیح ویدیو می‌آید
 # برای ویدیوی تازه: mp4 را در assets/media/ و پوستر jpg هم‌اندازه را
 # در assets/img/works/ بگذارید و یک ردیف اینجا اضافه کنید. upload_date روز فیلم‌برداری است (YYYY-MM-DD)،
 # duration به قالب ISO 8601 (PT51S). focus نقطه‌ی برش تصویر در کارت‌های مربعی نوار صفحه‌ی اصلی است.
@@ -107,6 +109,36 @@ REAL_VIDEOS = [
      'en': {'caption': 'Milling a square bore inside a stainless flange · Nov 2023',
             'name': 'Milling a square bore in a stainless steel flange',
             'desc': 'A stainless flange whose bore had to be square, machined on a milling machine at HyperFab; milling stainless is among the hardest machining jobs. Made for a customer.'}},
+    # فیلم‌های خود هایپرفب (۲۵ آبان ۱۴۰۵)؛ چیزی بیش از آنچه در تصویر دیده می‌شود ادعا نمی‌شود (نه نام قطعه، نه محل)
+    {'id': 'gear-milling', 'src': 'assets/media/work-gear-milling.mp4', 'poster': 'assets/img/works/work-gear-milling.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2026-11-16', 'duration': 'PT14S',
+     'project': None, 'service': 'turning', 'home': True, 'focus': '50% 35%',
+     'fa': {'caption': 'فرزکاری با فرز افقی و تیغه‌ی فرم دنده‌ای',
+            'name': 'فرزکاری با تیغه‌ی فرم دنده‌ای روی فرز افقی',
+            'desc': 'فیلم واقعی هایپرفب از فرزکاری با فرز افقی: تیغه‌ی فرم دنده‌ای روی محور دستگاه می‌چرخد و قطعه‌ی بسته‌شده روی دستگاه را فرز می‌کند. از این نوع تیغه‌ها برای زدن فرم دندانه و شیار استفاده می‌شود.'},
+     'en': {'caption': 'Milling with a toothed form cutter on a horizontal mill',
+            'name': 'Milling with a toothed form cutter on a horizontal mill',
+            'desc': 'Real HyperFab footage of horizontal milling: a toothed form cutter turns on the machine’s arbor and mills a clamped workpiece. Cutters like this are used to cut tooth forms and slots.'}},
+    {'id': 'cnc-milling', 'src': 'assets/media/work-cnc-milling.mp4', 'poster': 'assets/img/works/work-cnc-milling.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2026-11-16', 'duration': 'PT8S',
+     'project': None, 'service': 'turning', 'home': True, 'focus': '50% 55%',
+     'fa': {'caption': 'مرکز ماشین‌کاری CNC (فرز CNC) با گیره و کله‌ی تقسیم',
+            'name': 'مرکز ماشین‌کاری CNC (فرز CNC) با گیره و کله‌ی تقسیم',
+            'desc': 'فیلم واقعی هایپرفب از یک مرکز ماشین‌کاری عمودی CNC که روی میزش گیره‌ی ماشین و کله‌ی تقسیم بسته شده است. کله‌ی تقسیم قطعه را به زاویه‌های دقیق می‌چرخاند تا وجه‌ها و شیارهای دور قطعه فرز شوند.'},
+     'en': {'caption': 'A CNC machining centre with a vise and a dividing head',
+            'name': 'A CNC machining centre with a vise and a dividing head',
+            'desc': 'Real HyperFab footage of a vertical CNC machining centre with a machine vise and a dividing head on its table. The dividing head indexes the part to precise angles so that faces and slots around it can be milled.'}},
+    {'id': 'surface-grinding', 'src': 'assets/media/work-surface-grinding.mp4', 'poster': 'assets/img/works/work-surface-grinding.jpg',
+     'w': 540, 'h': 960, 'upload_date': '2026-11-16', 'duration': 'PT19S',
+     'project': None, 'service': 'wirecut', 'home': True, 'focus': '50% 38%',
+     'fa': {'caption': 'سنگ‌زنی سطحی (سنگ تخت) قطعه‌ی فلزی',
+            'name': 'سنگ‌زنی سطحی (سنگ تخت) قطعه‌ی فلزی',
+            'desc': 'فیلم واقعی هایپرفب از سنگ‌زنی سطحی: چرخ سنگ دستگاه سنگ تخت روی قطعه‌ای فلزی که روی میز دستگاه بسته شده رفت‌وبرگشت می‌کند و سطح آن را صاف و تخت می‌کند. جرقه‌ها از تماس چرخ سنگ با فلز است.',
+            'note': 'سنگ‌زنی سطحی مرحله‌ای رایج پیش و پس از وایرکات قطعات قالب است: سطح‌ها پیش از برش تخت و موازی می‌شوند و پس از آن به اندازه‌ی نهایی می‌رسند.'},
+     'en': {'caption': 'Surface grinding a metal part',
+            'name': 'Surface grinding a metal part',
+            'desc': 'Real HyperFab footage of surface grinding: the wheel of a surface grinder passes back and forth over a metal part held on the machine table and grinds its face flat. The sparks come from the wheel meeting the metal.',
+            'note': 'Surface grinding is a common step before and after wire cutting die parts: the faces are ground flat and parallel before cutting and brought to final size afterwards.'}},
     # رولینگ در کارگاه همکار و زیر مدیریت هایپرفب انجام شده؛ پس متن از «پروژه‌ی هایپرفب» می‌گوید، نه «کارگاه هایپرفب»
     {'id': 'thread-rolling', 'src': 'assets/media/work-thread-rolling.mp4', 'poster': 'assets/img/works/work-thread-rolling.jpg',
      'w': 540, 'h': 960, 'upload_date': '2023-11-19', 'duration': 'PT34S',
@@ -147,6 +179,13 @@ REAL_VIDEOS = [
 ]
 
 REAL_BY_ID = {v['id']: v for v in REAL_VIDEOS}
+MAX_SVC_VIDEOS = 3
+
+
+def serves(v, key):
+    """آیا ویدیوی واقعی v به صفحه‌ی خدمت key تعلق دارد؟ service می‌تواند یک کلید یا فهرستی از کلیدها باشد."""
+    s = v.get('service')
+    return key in s if isinstance(s, (list, tuple)) else s == key
 
 
 def vid(vid_id, lang):

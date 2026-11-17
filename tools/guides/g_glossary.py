@@ -12,12 +12,12 @@ GUIDE = {
         'desc': 'معادل انگلیسی اصطلاحات کارگاهی ساخت قطعه: نقشه و تلرانس، پانچ و برش لیزر، تراشکاری، قالب‌سازی و تزریق، اکسترود، جوشکاری، آندایز و رنگ کوره‌ای.',
         'keywords': ('واژه‌نامه ساخت و تولید, اصطلاحات صنعتی فارسی انگلیسی, معادل انگلیسی اصطلاحات کارگاهی, پانچ, پانچینگ, '
                      'برش دهان‌ماهی, برش زین‌اسبی, برش فارسی‌بر, لچکی, قالب‌سازی, قالب سازی, تزریق پلاستیک, اکسترود, اکستروژن, '
-                     'جوش آرگون, جوش CO2, آندایز, آنودایز, آنادایز, کروماته, آلوداین, رنگ کوره‌ای, رنگ پودری الکترواستاتیک, '
+                     'وایرکات, سنگ تخت, جوش آرگون, جوش CO2, آندایز, آنودایز, آنادایز, کروماته, آلوداین, رنگ کوره‌ای, رنگ پودری الکترواستاتیک, '
                      'پرینت سه‌بعدی, پرینت سه بعدی, تلرانس, تولرانس, تیراژ'),
         'lead': ('این واژه‌نامه اصطلاحاتی را که در کارگاه‌ها و بازار ساخت قطعه در ایران رایج است، کنار معادل انگلیسی‌شان می‌گذارد؛ '
                  'همان واژه‌هایی که در نقشه، استاندارد و استعلام قیمت می‌آیند. اگر سازنده‌ای از «دهان‌ماهی» یا «رنگ کوره‌ای» گفت '
                  'و در نقشه coping یا powder coating نوشته شده بود، معادل و املاهای رایج را در جدول همان بخش پیدا کنید.'),
-        'updated': '2026-11-15',
+        'updated': '2026-11-17',
         'service': 'services',
         'sections': [
             {'h': 'اصطلاحات عمومی نقشه و سفارش قطعه به انگلیسی',
@@ -100,6 +100,10 @@ GUIDE = {
                   'شکل‌دادن رزوه‌ی خارجی با فشار غلتک‌های رزوه‌دار، بدون براده؛ رزوه‌ی حاصل از رزوه‌ی تراشیده محکم‌تر است.'],
                  ['سنگ سنترلس (سنگ‌زنی بی‌مرغک)', 'Centerless grinding',
                   'سنگ‌زنی دقیق قطر خارجی شفت بدون مرغک، بین چرخ سنگ و چرخ تنظیم؛ مثلاً برای رساندن شفت خام رولینگ به قطر دقیق.'],
+                 ['سنگ تخت (سنگ‌زنی سطحی)', 'Surface grinding',
+                  'سنگ‌زنی سطح تخت قطعه با چرخ سنگی که روی آن رفت‌وبرگشت می‌کند، برای سطحی صاف، موازی و دقیق؛ مرحله‌ای رایج پیش و پس از وایرکات قطعات قالب.'],
+                 ['وایرکات (اسپارک سیمی، برش سیمی)', 'Wire EDM; wire cutting',
+                  'برش فلزات رسانا با جرقه‌ی الکتریکی و سیم نازک، بدون نیروی برش؛ فولاد سخت‌کاری‌شده را هم می‌بُرد و گوشه‌ی داخلی تقریباً تیز می‌دهد.'],
                  ['آج (آج‌زنی)', 'Knurl; knurling',
                   'الگوی شیاردار روی سطح گرد برای گرفتن بهتر با دست.'],
                  ['پخ', 'Chamfer',
@@ -282,7 +286,7 @@ GUIDE = {
         'lead': ('This glossary pairs the terms you hear in Iranian workshops and on supplier calls with the English terms used on drawings, '
                  'datasheets, standards and quotes. If a Tehran shop talks about a dahan-mahi cut or rang-e kure-i and your drawing says coping '
                  'or powder coating, find the section, read across the table and note the common Persian spelling variants.'),
-        'updated': '2026-11-15',
+        'updated': '2026-11-17',
         'service': 'services',
         'sections': [
             {'h': 'General drawing and ordering terms in Persian',
@@ -365,6 +369,10 @@ GUIDE = {
                   'Forming an external thread by pressing the blank between threaded rolls, with no chips; the result is stronger than a cut thread.'],
                  ['Centerless grinding', 'سنگ سنترلس (سنگ‌زنی بی‌مرغک)',
                   'Precision grinding of a shaft’s outside diameter without centres, between the grinding wheel and a regulating wheel; used, for example, to bring thread-rolling blanks to an exact diameter.'],
+                 ['Surface grinding', 'سنگ تخت (سنگ‌زنی سطحی)',
+                  'Grinding a flat face with a wheel that passes back and forth over the part, for a flat, parallel and accurate surface; a common step before and after wire cutting die parts.'],
+                 ['Wire EDM; wire cutting', 'وایرکات (اسپارک سیمی، برش سیمی)',
+                  'Cutting conductive metals with electrical sparks from a thin wire and no cutting force; it cuts hardened steel and leaves almost sharp inside corners.'],
                  ['Knurl; knurling', 'آج (آج‌زنی)',
                   'A ridged pattern rolled or cut on a round surface for a better grip.'],
                  ['Chamfer', 'پخ',

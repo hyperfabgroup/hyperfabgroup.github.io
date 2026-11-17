@@ -18,6 +18,7 @@ MEDIA = {'bending': {'clip': None,
  'punching': {'clip': None,
               'photos': ['assets/img/stock/punching-1.jpg', 'assets/img/stock/punching-2.jpg', 'assets/img/stock/punching-3.jpg']},
  'threadroll': {'clip': None, 'photos': []},  # ویدیوی واقعی رولینگ در REAL_VIDEOS (tools/media.py) است
+ 'wirecut': {'clip': None, 'photos': []},  # هنوز عکس و کلیپ وایرکات نداریم؛ ویدیوی سنگ تخت در REAL_VIDEOS است
  'tubelaser': {'clip': ('assets/media/tubelaser-clip.mp4', 'assets/img/stock/tubelaser-clip.jpg'), 'photos': ['assets/img/stock/tubelaser-1.jpg']},
  'turning': {'clip': ('assets/media/turning-clip.mp4', 'assets/img/stock/turning-clip.jpg'),
              'photos': ['assets/img/stock/turning-1.jpg', 'assets/img/stock/turning-2.jpg', 'assets/img/stock/turning-3.jpg']},
@@ -26,7 +27,7 @@ MEDIA = {'bending': {'clip': None,
 
 # صفحه‌ی هر خدمت ← موضوع(های) آرشیوی آن
 PAGE_TOPICS = {
-    'punching': ['punching'], 'tubelaser': ['tubelaser'], 'injection': ['injection'], 'turning': ['turning'], 'threadroll': ['threadroll'], 'extrusion': ['extrusion'],
+    'punching': ['punching'], 'tubelaser': ['tubelaser'], 'injection': ['injection'], 'turning': ['turning'], 'threadroll': ['threadroll'], 'wirecut': ['wirecut'], 'extrusion': ['extrusion'],
     'welding': ['welding'], 'plating': ['plating'], 'coating': ['coating'],
     'services': ['printing3d', 'laser', 'lasercut', 'bending'],
 }

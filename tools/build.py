@@ -26,7 +26,7 @@ import content_fa  # noqa: E402
 import content_en  # noqa: E402
 from common import SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
-from media import WORKS, VIDEOS, REAL_VIDEOS, video_url, video_embed  # noqa: E402
+from media import WORKS, VIDEOS, REAL_VIDEOS, MAX_SVC_VIDEOS, serves, video_url, video_embed  # noqa: E402
 from projects import PROJECTS, PROJECT_LABELS  # noqa: E402
 from structure import HUBS, NAV_LABELS, INDUSTRIAL_KEYS, GUIDES_HUB, GUIDE_LABELS  # noqa: E402
 import guides as guides_pkg  # noqa: E402
@@ -874,11 +874,7 @@ def hub_schema(c, key, hb, p):
         nodes.append({'@type': 'ItemList', 'name': hb['crumb'], 'itemListElement': [
             {'@type': 'ListItem', 'position': k, 'name': n, 'url': u} for k, (n, u) in enumerate(items, 1)]})
     # VideoObject عمداً نیست: ویدیوها روی آپارات‌اند و گوگل بدون uploadDate آن را خطا می‌گیرد
-    for v in REAL_VIDEOS:  # ویدیوی واقعی بدون پروژه که به این صفحه‌ی هاب تعلق دارد
-        if v.get('service') == key and not v.get('project'):
-            nodes.append(video_object(c, {**{k: v[k] for k in ('id', 'src', 'poster', 'w', 'h', 'upload_date', 'duration')},
-                                          'name': v[c['lang']]['name'], 'desc': v[c['lang']]['desc']}, url))
-            break
+    nodes += svc_video_objects(c, key, url)  # ویدیوهای واقعی بدون پروژه که در این صفحه‌ی هاب نمایش داده می‌شوند
     return nodes
 
 
@@ -1496,14 +1492,50 @@ def sec_real_work(c, depth, alt=' section-alt'):
                       + f'<div class="rw-grid">{cards}</div>' + btn)
 
 
+def svc_videos(c, key):
+    """ویدیوهای واقعی بلوک «کار واقعی» صفحه‌ی key، به ترتیب REAL_VIDEOS و حداکثر MAX_SVC_VIDEOS تا.
+    ویدیوی وابسته به پروژه فقط وقتی می‌آید که صفحه‌ی آن پروژه در این زبان ساخته شود."""
+    return [v for v in REAL_VIDEOS if serves(v, key)
+            and (not v.get('project') or project_by_slug(c, v.get('project')))][:MAX_SVC_VIDEOS]
+
+
+def svc_video_objects(c, key, url):
+    """VideoObject هر ویدیوی بی‌پروژه‌ای که در بلوک «کار واقعی» این صفحه نمایش داده می‌شود؛ @id یکتا با شناسه‌ی ویدیو
+    (ویدیوی وابسته به پروژه VideoObject خود را در صفحه‌ی پروژه می‌گیرد)"""
+    return [video_object(c, {**{k: v[k] for k in ('id', 'src', 'poster', 'w', 'h', 'upload_date', 'duration')},
+                             'name': v[c['lang']]['name'], 'desc': v[c['lang']]['desc']}, url)
+            for v in svc_videos(c, key) if not v.get('project')]
+
+
+def svc_video_figure(c, depth, v, focus=''):
+    """ویدیوی بلوک «کار واقعی». ویدیوی بی‌پروژه نامش را در تیتر کنار خودش دارد، پس زیرنویسش فقط تاریخ فیلم است
+    (تکرار نام نمی‌شود)؛ ویدیوی پروژه زیرنویس خودش را دارد چون تیتر کنارش نام پروژه است."""
+    PL = PROJECT_LABELS[c['lang']]
+    shape = 'is-portrait' if v['h'] > v['w'] else 'is-wide'
+    cap = (e(v[c['lang']]['caption']) if v.get('project')
+           else f'<time datetime="{v["upload_date"]}">{e(guide_date(c, v["upload_date"]))}</time>')
+    return (f'<figure class="proj-video {shape}" id="video-{v["id"]}">{video_tag(depth, v, focus)}'
+            f'<figcaption><span class="real-tag">{e(PL["real_video"])}</span><span>{cap}</span></figcaption></figure>')
+
+
 def service_project_block(c, depth, key):
-    """«کار واقعی» در صفحه‌ی خدمت: اولین ویدیوی REAL_VIDEOS با service == key.
-    اگر ویدیو به صفحه‌ی پروژه وصل باشد، دکمه به آن پروژه می‌رود؛ وگرنه فقط ویدیو و توضیح خودش نمایش داده می‌شود."""
-    v = next((v for v in REAL_VIDEOS if v.get('service') == key
-              and (not v.get('project') or project_by_slug(c, v.get('project')))), None)
-    if not v:
+    """«کار واقعی» در صفحه‌ی خدمت: ویدیوهای REAL_VIDEOS که service آن‌ها این صفحه است (svc_videos).
+    یک ویدیو: کارت افقی ویدیو و متن؛ اگر به صفحه‌ی پروژه وصل باشد، دکمه به آن پروژه می‌رود.
+    چند ویدیو: کارت‌های کنار هم، هر کدام با نام و توضیح خودش (در موبایل ردیف افقی با اسکرول داخلی)."""
+    vs = svc_videos(c, key)
+    if not vs:
         return ''
     PL = PROJECT_LABELS[c['lang']]
+    if len(vs) > 1:
+        cards = ''.join(
+            f'<article class="proj-svc-item">{svc_video_figure(c, depth, v, v.get("focus", ""))}'
+            f'<h3>{e(v[c["lang"]]["name"])}</h3><p>{e(v[c["lang"]]["desc"])}</p>'
+            + (f'<p class="proj-svc-note">{e(v[c["lang"]]["note"])}</p>' if v[c['lang']].get('note') else '')
+            + '</article>' for v in vs)
+        return (f'<section class="block proj-svc proj-svc-many" id="real-project"><div class="wrap">'
+                f'{hfs_head(PL["svc_kicker_many"], e(PL["svc_title_many"]), e(PL["svc_sub_many"]))}'
+                f'<div class="proj-svc-multi">{cards}</div></div></section>\n')
+    v = vs[0]
     pr = project_by_slug(c, v['project']) if v.get('project') else None
     shape = 'is-portrait' if v['h'] > v['w'] else 'is-wide'
     L = v[c['lang']]
@@ -1512,14 +1544,16 @@ def service_project_block(c, depth, key):
         more = f'<a class="btn-red" href="{project_href(c, depth, pr["slug"])}">{e(PL["svc_btn"])} {c["arrow"]}</a>'
     else:
         title, desc, more = L['name'], L['desc'], ''
+    note = f'<p class="proj-svc-note">{e(L["note"])}</p>' if L.get('note') else ''
     return f'''<section class="block proj-svc" id="real-project">
 	<div class="wrap">
 		<div class="proj-svc-card {shape}">
-			<figure class="proj-video {shape}">{video_tag(depth, v)}<figcaption><span class="real-tag">{e(PL['real_video'])}</span><span>{e(L['caption'])}</span></figcaption></figure>
+			{svc_video_figure(c, depth, v)}
 			<div class="proj-svc-text">
-				<div class="kicker">{PL['svc_kicker']}</div>
+				<div class="kicker">{PL['svc_kicker'] if pr else PL['svc_kicker_many']}</div>
 				<h2>{e(title)}</h2>
 				<p>{e(desc)}</p>
+				{note}
 				{more}
 			</div>
 		</div>
@@ -1580,11 +1614,7 @@ def page_schema(c, key, p):
     if main_node is not None:
         webpage['about'] = {'@id': main_node['@id']}
     # ویدیوی واقعی بدون صفحه‌ی پروژه (مثل فرزکاری فلنج) فقط در صفحه‌ی خدمت خودش VideoObject می‌گیرد
-    for v in REAL_VIDEOS:
-        if v.get('service') == key and not v.get('project'):
-            nodes.append(video_object(c, {**{k: v[k] for k in ('id', 'src', 'poster', 'w', 'h', 'upload_date', 'duration')},
-                                          'name': v[c['lang']]['name'], 'desc': v[c['lang']]['desc']}, url))
-            break
+    nodes += svc_video_objects(c, key, url)
     return [org_schema(c), website_node(c), webpage, *nodes,
             {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
                 {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},

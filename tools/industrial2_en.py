@@ -690,6 +690,115 @@ THREADROLL = {
 }
 
 
+WIRECUT = {
+    'depth': 2,
+    'answer': ('<b>Wire EDM</b> (wire cutting, or wire-cut EDM) cuts electrically conductive metals with electrical sparks: a thin wire follows the path of the drawing through the part '
+               'without touching it and with no cutting force, so it cuts hardened steel and leaves almost sharp inside corners. HyperFab, a manufacturing company in Tehran, Iran, '
+               'carries out wire EDM cutting of metal parts and tool and mould components, such as punches and dies, to your drawing and delivers them. '
+               'Give the material, thickness and quantity when you enquire; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Wire EDM (wire cutting) of metal parts, tool and mould components'),
+        ('Process', 'Spark erosion with a thin wire, no cutting force'),
+        ('Materials', 'Conductive metals, from hardened tool and die steels to stainless steel, aluminium, brass, copper and carbide'),
+        ('Common uses', 'Punches and dies, mould inserts, precision parts with complex profiles'),
+        ('Material, thickness, quantity', 'Tell us when you enquire'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
+    'hero': {
+        'crumb': 'Wire EDM',
+        'h1': '<em>Wire EDM</em><br>precision cutting of hardened metals and mould parts',
+        'lead': 'HyperFab carries out wire EDM cutting of metal parts and tool and mould components to your drawing and delivers them. Wire EDM cuts with sparks, not tool pressure, so hardened steel, sharp inside corners and thin walls that are hard or impossible to mill or turn can be cut accurately.',
+        'ticks': [('Process:', 'wire EDM; cutting with sparks and no cutting force', False), ('Materials:', 'conductive metals, hardened steel included', False),
+                  ('Uses:', 'punches and dies, mould inserts and precision parts', False)],
+        'buttons': hero_btns(),
+        'img': IMG['wirecut'], 'img_alt': 'A wire EDM machine with its dielectric tank and wire guides (archive photo)',
+        'stats': [('bolt', 'Cut by sparks', '', 'process'), ('shield', 'Hardened steel', '', 'material'),
+                  ('target', 'Sharp inside corners', '', 'advantage'), ('file', 'Drawing to delivery', '', 'one responsible party')],
+    },
+    'sections': [
+        {'kicker': 'WHAT IT IS', 'title': 'What is wire EDM, and what does HyperFab do?', 'id': 'what',
+         'paras': [
+             '<b>Wire EDM</b> — also called <b>wire cutting</b>, <b>wire-cut EDM</b> or <b>wire erosion</b> — is a form of electrical discharge machining (EDM). A thin wire works like a saw that never touches the part: it follows the path of the drawing, and the metal is removed a tiny particle at a time by a rapid series of small sparks. The machine is CNC-controlled, and the wire path is programmed from the part’s 2D drawing.',
+             'HyperFab carries out wire EDM cutting of metal parts and tool and mould components to your drawing and delivers them, from reviewing the drawing and start-hole positions to cutting and inspecting the part. Wire EDM earns its place where other processes struggle: hardened steel, sharp inside corners, complex profiles and precise punch-to-die clearances.',
+         ]},
+        {'kicker': 'HOW IT WORKS', 'title': 'How does wire EDM work? Sparks, wire and dielectric water', 'id': 'how',
+         'sub': 'The wire never touches the part: a rapid series of sparks across the tiny gap between them melts and vaporises the metal, and dielectric water flushes the particles away.',
+         'adv': [
+             ('bolt', 'Spark erosion', 'A voltage is applied between the wire and the part, and sparks jump across the tiny gap between them in rapid succession. Each spark melts and vaporises a minute particle of metal, and the cut is built up from these removed particles.'),
+             ('link', 'A thin, always-fresh wire', 'The wire, usually brass or coated, feeds continuously from a spool through the cut. The sparks wear the wire too, so fresh wire is always arriving at the cut and accuracy stays consistent through the job.'),
+             ('layers', 'Dielectric water', 'Cutting takes place in deionised (dielectric) water. The water controls the sparks, keeps the cut cool and flushes the removed particles out of the kerf.'),
+             ('shield', 'No cutting force', 'The wire puts no pressure on the part, so the part does not bend or vibrate under the tool. Thin walls, narrow tabs and delicate parts are cut without distortion, and the part’s hardness does not stand in the way.'),
+             ('target', 'Start holes', 'The wire has to pass through the part. To cut a closed internal shape, such as a die opening, a start hole is first made by drilling or by small-hole EDM drilling, and the wire is threaded through it. A cut that starts from the outer edge of the part needs no start hole.'),
+             ('cube', '2D and taper cuts', 'Wire EDM cuts a 2D profile straight through the full thickness of the part. Taper cuts, for example for die clearance angles, are reviewed on request and depend on the machine.'),
+         ]},
+        {'kicker': 'WHAT IT IS GOOD FOR', 'title': 'Which materials and parts is wire EDM best for?', 'id': 'uses',
+         'sub': 'Wherever the part is hard, needs sharp inside corners or thin walls, or depends on a precise punch-to-die clearance.',
+         'paras': [
+             'Wire EDM cuts any electrically conductive metal: <b>conductive metals, from hardened tool and die steels to stainless steel, aluminium, brass, copper and carbide</b>. Materials that do not conduct electricity, such as plastics, cannot be wire cut. Give the material and thickness of the part when you enquire.',
+         ],
+         'checks': [
+             '<b>Hardened steel:</b> the hardness of the part is no obstacle to wire EDM. A part can therefore be heat-treated first and cut to its final shape afterwards, so heat-treatment distortion is not carried into the finished profile.',
+             '<b>Sharp inside corners:</b> the inside corner radius is limited only by the wire radius and the spark gap — far smaller than the radius a milling cutter leaves in a corner.',
+             '<b>Thin walls and tabs:</b> with no force on the part, fine and narrow features are cut without vibration or bending.',
+             '<b>Punch-to-die clearance:</b> a punch and die can be cut from the same drawing with a wire-path offset, so the clearance between them comes out as the designer intended.',
+             '<b>Common uses of wire EDM:</b> punches and dies for blanking and <a href="../punching/">punching</a> tools, mould inserts, precision parts with complex 2D profiles, gears, splines and keyways, and cutting hardened parts after heat treatment.',
+         ]},
+        {'kicker': 'COMPARE', 'title': 'Wire EDM, laser cutting or milling: which fits best?', 'id': 'compare',
+         'sub': 'Wire EDM is the most precise and gentlest of the three and the go-to process for hardened steel, but it is slower and usually costs more. For ordinary sheet, laser cutting fits better; for 3D forms, milling does.',
+         'table': [
+             ('Aspect', 'Wire EDM', 'Laser cutting', 'CNC milling'),
+             ('Material hardness', 'Cuts hardened steel too; the material only has to conduct', 'Common sheet materials; the heat of the cut affects the edge of hardened steel', 'Difficult, slow and costly in hardened steel'),
+             ('Inside corners', 'Almost sharp; limited only by the wire radius', 'Fairly sharp', 'Rounded to at least the cutter radius'),
+             ('Heat-affected zone', 'Very small; the cut is made under water', 'Yes; the cut edge is heated', 'None; the cut is mechanical'),
+             ('Thickness range', 'From thin sheet to thick die blocks', 'Mostly sheet; edge quality drops as thickness grows', 'No thickness limit, and it makes 3D forms'),
+             ('Cutting force', 'None', 'None', 'Yes; the part must be clamped firmly and thin walls may chatter'),
+             ('Speed and cost', 'Slow; higher cost per part', 'Fast; economical for sheet and batches', 'Moderate; depends on geometry and material'),
+             ('Best for', 'Punches and dies, mould inserts, hard precision parts', 'Sheet parts, frames and panels, sample to batch', 'Prismatic and 3D parts, pockets and tapped holes'),
+         ],
+         'note': '<b>Choosing fairly:</b> if the part is ordinary sheet and needs no particular hardness or precision, <a href="https://hyperfab.ir/services/laser-metal/">sheet metal laser cutting</a> is faster and cheaper, and is priced online at hyperfab.ir. Keep wire EDM for where hardness, precision or sharp corners really matter. When you enquire, say what the part is for and the right process will be recommended.'},
+        {'kicker': 'DESIGN TIPS', 'title': 'How should I prepare a drawing for wire EDM?', 'id': 'design',
+         'sub': 'Send a DXF or STEP file, mark the start-hole positions, state the hardness and heat treatment, and ask for tight tolerances only where they are needed.',
+         'checks': [
+             '<b>File:</b> for a 2D profile, a full-scale DXF file is the best input. If the part is 3D or has taper cuts, send a STEP file too. A fully dimensioned PDF drawing is also accepted.',
+             '<b>Start-hole positions:</b> for each closed internal shape, mark the start hole on the drawing or say where one is allowed. If the part is heat-treated before wire cutting, it is better to make the start holes before hardening.',
+             '<b>Hardness and heat treatment:</b> give the material and hardness, and say whether the part is already hardened or will be heat-treated later.',
+             '<b>Tolerances only where needed:</b> put tight tolerances only on the dimensions and faces that really matter, such as the punch-to-die clearance. Needlessly tight tolerances add cutting passes and cost.',
+             '<b>Punch-to-die clearance:</b> if you order a punch and die together, state the clearance you want, or tell us the material and thickness of the sheet the tool will cut.',
+             '<b>Material, thickness and quantity:</b> give the material and thickness of the part and the quantity you need when you enquire.',
+         ]},
+        {'kicker': 'ONE CHAIN', 'title': 'Wire EDM in the mould and part-making chain', 'id': 'chain',
+         'paras': [
+             'Wire EDM is usually one step in a chain. Tool and mould components are turned or milled before wire cutting, heat-treated, and surface-ground flat and parallel; after wire cutting they may also get a final grind. When you enquire, say what stage the part is at and what work remains, so the whole route can be reviewed together.',
+             'At HyperFab, wire EDM sits alongside other services: punches and dies for <a href="../punching/">sheet and tube punching tools</a>, inserts and precision parts for <a href="../injection-molding/">mould making and injection moulding</a>, and round parts that need <a href="../cnc-turning/">CNC turning</a> before or after wire cutting. The advantage of this chain is one responsible party for the whole part.',
+         ]},
+        {'kicker': 'HOW TO ORDER', 'title': 'How is wire EDM ordered?', 'id': 'steps',
+         'sub': 'Four steps: send the drawing, review and quote, wire cutting, and inspection and delivery.',
+         'steps': [
+             ('Send the drawing', 'Send the DXF or STEP file and drawing on Bale, or call and give the material, thickness, hardness and quantity.'),
+             ('Review and quote', 'The drawing, start-hole positions and tolerances are reviewed and a price is given.'),
+             ('Wire cutting', 'Once you approve, the part is wire cut.'),
+             ('Inspection and delivery', 'The critical dimensions are checked and the part is delivered.'),
+         ]},
+    ],
+    'faq': [
+        ('Which materials can wire EDM cut?', 'Any electrically conductive metal: from hardened tool and die steels to stainless steel, aluminium, brass, copper and carbide. Materials that do not conduct electricity, such as plastics, cannot be wire cut. Give the material and thickness of the part when you enquire.'),
+        ('Can wire EDM cut hardened steel?', 'Yes — that is its main advantage. The cut is made by sparks, not by a tool that has to be harder than the part, so hardness is no obstacle. That is why mould parts are usually heat-treated first and wire cut afterwards.'),
+        ('Why does wire EDM need a start hole?', 'The wire has to pass through the part. To cut a closed internal shape, such as a die opening, a start hole is first made by drilling or small-hole EDM drilling, and the wire is threaded through it. A cut that starts from the outer edge of the part needs no start hole.'),
+        ('How is wire EDM different from laser cutting?', 'Wire EDM cuts with sparks under water, puts no significant force or heat into the part, cuts hardened steel and thick parts precisely and leaves almost sharp inside corners, but it is slower and costs more. Laser cutting is fast and economical, and suits ordinary sheet parts better.'),
+        ('What file do you need for wire EDM?', 'For a 2D profile, a full-scale DXF file is the best input; for a 3D part or a taper cut, send a STEP file too. A fully dimensioned PDF drawing is also accepted. Mark the start-hole positions and give the hardness of the part.'),
+        ('How is wire EDM priced?', 'The price depends on the length of the cut and the thickness of the part, the material, the accuracy and surface finish required (which set the number of cutting passes), the number of start holes and the quantity, and is given after the drawing has been reviewed.'),
+        ('Where is HyperFab’s wire EDM service based?', 'HyperFab is based in Tehran, Iran. Wire EDM is ordered by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
+    ],
+    'cta_h': 'Send us your wire EDM drawing',
+    'cta_p': 'Send the DXF or STEP file with the material, thickness, hardness and quantity, or call. HyperFab’s industrial projects specialist answers by phone.',
+    'cta_btns': CTA_BTNS,
+    'schema': svc('HyperFab Wire EDM', ['Wire cutting', 'Wire-cut EDM', 'Wire erosion', 'وایرکات'],
+                  'Wire EDM cutting of metal parts and tool and mould components', '/en/wire-cut/',
+                  'Wire EDM (wire cutting) of conductive metals, from hardened tool and die steels to stainless steel, aluminium, brass, copper and carbide: punches and dies, mould inserts and precision parts with complex profiles, to the customer’s drawing.'),
+}
+
+
 def page(key, slug, title, desc, kw):
     return {'key': key, 'file': 'en/' + slug + '/index.html', 'path': '/en/' + slug + '/', 'alt_path': '/' + slug + '/',
             'alt_rel': slug + '/', 'priority': '0.8', 'title': title, 'desc': desc, 'keywords': kw}
@@ -702,6 +811,9 @@ PAGES = {
     'page_threadroll': page('threadroll', 'thread-rolling', 'Thread Rolling: Rolled Screws in Tehran, Iran | HyperFab',
                             'HyperFab in Tehran, Iran turns stainless and steel shafts into strong screws by thread rolling: cold-formed threads, stronger than cut threads, cost-effective.',
                             'thread rolling, rolled threads, rolled vs cut threads, custom rolled screws, centerless grinding, thread rolling Tehran, thread rolling Iran, HyperFab'),
+    'page_wirecut': page('wirecut', 'wire-cut', 'Wire EDM (Wire Cutting) in Tehran, Iran | HyperFab',
+                         'HyperFab in Tehran, Iran carries out wire EDM cutting of conductive metals, hardened tool steel included: punches, dies, mould inserts and precision parts.',
+                         'wire EDM, wire cutting, wire cut EDM, wire EDM Tehran, wire EDM Iran, wire EDM hardened steel, punch and die wire cutting, mould insert wire EDM, HyperFab'),
     'page_welding': page('welding', 'welding', 'TIG & MIG Welding, Stainless & Aluminium, Tehran | HyperFab',
                          'HyperFab in Tehran, Iran: TIG and MIG welding of stainless and 6000-series aluminium, TIG welding of St37 steel, welded structures to drawing, VT/PT/PAUT.',
                          'TIG welding stainless steel Tehran, TIG welding Iran, St37 steel TIG welding, mild steel welding Tehran, MIG welding Iran, stainless steel welding Tehran, aluminium welding Iran, 6061 aluminium welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),
@@ -720,7 +832,7 @@ PAGES = {
 }
 
 FEATURE_PARAS = [
-    'When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: <a href="punching/">sheet and tube punching</a>, <a href="tube-laser-cutting/">tube and profile laser cutting</a>, <a href="injection-molding/">mould making and injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="thread-rolling/">thread rolling</a>, <a href="aluminium-extrusion/">aluminium extrusion</a>, <a href="welding/">welding and welded fabrication</a>, <a href="plating-anodizing/">plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. A part can go from production to final finish in one place.',
+    'When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: <a href="punching/">sheet and tube punching</a>, <a href="tube-laser-cutting/">tube and profile laser cutting</a>, <a href="injection-molding/">mould making and injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="thread-rolling/">thread rolling</a>, <a href="wire-cut/">wire EDM</a>, <a href="aluminium-extrusion/">aluminium extrusion</a>, <a href="welding/">welding and welded fabrication</a>, <a href="plating-anodizing/">plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. A part can go from production to final finish in one place.',
     'HyperFab’s engineering team comes from Iran’s top universities, including Sharif University of Technology, and has worked in industry for years. It has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Its record also includes quality control of 8,000 punched tubes, mating brass parts and MO40 and CK45 gauges, and stainless and aluminium structures for the medical and marine industries.',
 ]
 
@@ -730,6 +842,7 @@ FEATURE_POINTS = [
     '<b><a href="injection-molding/">Mould making and injection moulding</a>:</b> mould making, sampling and production in PE, PP, ABS and nylon.',
     '<b><a href="cnc-turning/">Batch CNC turning</a>:</b> brass parts with fit tolerances and gauge parts in MO40 and CK45.',
     '<b><a href="thread-rolling/">Thread rolling</a>:</b> stainless and mild steel shafts turned into strong screws; stronger and longer-lasting than cut threads.',
+    '<b><a href="wire-cut/">Wire EDM</a>:</b> precision cutting of conductive metals, hardened steel included; punches and dies, mould inserts and precision parts.',
     '<b><a href="aluminium-extrusion/">Aluminium extrusion</a>:</b> your section with a dedicated die; you bring tonnage and die cost, we do the rest.',
     '<b><a href="welding/">TIG and MIG welding</a>:</b> stainless steel and 6000-series aluminium, TIG welding of St37 steel, welded structures and platforms, with VT, PT and PAUT.',
     '<b><a href="plating-anodizing/">Plating and anodizing</a>:</b> silver and gold on brass and other metals, anodizing and chromate on aluminium.',
@@ -746,9 +859,9 @@ HOME_FAQ = [
 
 
 def apply(C):
-    C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION, 'tubelaser': TUBELASER, 'threadroll': THREADROLL})
+    C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION, 'tubelaser': TUBELASER, 'threadroll': THREADROLL, 'wirecut': WIRECUT})
     C.update(PAGES)
-    C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'tubelaser', 'injection', 'turning', 'threadroll', 'extrusion', 'welding', 'plating', 'coating']
+    C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'tubelaser', 'injection', 'turning', 'threadroll', 'wirecut', 'extrusion', 'welding', 'plating', 'coating']
     f = C['home']['ind_feature']
     f.update({'title': 'Industrial and batch production: from moulds and turning to welding, plating and coating',
               'sub': 'A complete chain for batch parts, from production to final finish, with one responsible engineering team.',
@@ -756,19 +869,20 @@ def apply(C):
               'img': 'assets/img/works/flange-steel-4.jpg', 'img_alt': 'Turning an AISI 304 stainless part on a HyperFab project', 'caption': 'Real photo: turning an AISI 304 stainless part on a HyperFab project.', 'img_w': 868, 'img_h': 1156,
               'more_rel': 'en/cnc-turning/', 'more': 'Batch CNC turning', 'try_url': 'en/welding/', 'try': 'Welding and welded fabrication'})
     C['industrial_links'][1:1] = [('Tube and profile laser cutting', 'en/tube-laser-cutting/')]  # right after punching
-    C['industrial_links'] += [('Batch CNC turning', 'en/cnc-turning/'), ('Thread rolling', 'en/thread-rolling/'), ('Aluminium extrusion', 'en/aluminium-extrusion/'),
+    C['industrial_links'] += [('Batch CNC turning', 'en/cnc-turning/'), ('Thread rolling', 'en/thread-rolling/'), ('Wire EDM', 'en/wire-cut/'), ('Aluminium extrusion', 'en/aluminium-extrusion/'),
                               ('Welding and welded fabrication', 'en/welding/'), ('Plating and anodizing', 'en/plating-anodizing/'),
                               ('Powder coating', 'en/powder-coating/')]
     for name, d, path in (('HyperFab Batch CNC Turning', TURNING, '/en/cnc-turning/'), ('HyperFab Aluminium Extrusion', EXTRUSION, '/en/aluminium-extrusion/'),
                           ('HyperFab Welding and Welded Fabrication', WELDING, '/en/welding/'), ('HyperFab Plating and Anodizing', PLATING, '/en/plating-anodizing/'),
                           ('HyperFab Powder Coating', COATING, '/en/powder-coating/'),
-                          ('HyperFab Tube & Profile Laser Cutting', TUBELASER, '/en/tube-laser-cutting/'), ('HyperFab Thread Rolling', THREADROLL, '/en/thread-rolling/')):
+                          ('HyperFab Tube & Profile Laser Cutting', TUBELASER, '/en/tube-laser-cutting/'), ('HyperFab Thread Rolling', THREADROLL, '/en/thread-rolling/'),
+                          ('HyperFab Wire EDM', WIRECUT, '/en/wire-cut/')):
         C['tools_as_services'].append({'title': name, 'paras': [d['schema'][0]['description']], 'url': SITE + path})
     C['knows_about'] += ['CNC turning', 'batch production', 'TIG welding', 'MIG welding', 'stainless steel welding', 'aluminium welding',
                          'welded fabrication', 'non-destructive weld testing', 'gold plating', 'silver plating', 'anodizing',
                          'chromate conversion coating', 'powder coating', 'aluminium extrusion', 'custom aluminium profiles',
-                         'tube laser cutting', 'profile laser cutting', 'box section laser cutting', 'thread rolling']
-    C['org_desc'] = C['org_desc'].rstrip('.') + ', tube and profile laser cutting, batch CNC turning, thread rolling, aluminium extrusion, welding and welded fabrication, plating and anodizing, and powder coating.'
+                         'tube laser cutting', 'profile laser cutting', 'box section laser cutting', 'thread rolling', 'wire EDM']
+    C['org_desc'] = C['org_desc'].rstrip('.') + ', tube and profile laser cutting, batch CNC turning, thread rolling, wire EDM, aluminium extrusion, welding and welded fabrication, plating and anodizing, and powder coating.'
     C['home']['faq'][-1:-1] = HOME_FAQ
     cnc = next(s for s in C['services'] if s['key'] == 'cnc')
     cnc['paras'].append('CNC machining at HyperFab is not only for mould making. HyperFab makes all kinds of parts to customers’ drawings with high quality and precision, from single parts and prototypes to <a href="cnc-turning/">batch production of turned parts</a> in brass and MO40 and CK45 steel.')
