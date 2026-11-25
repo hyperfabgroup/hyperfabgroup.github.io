@@ -265,6 +265,7 @@ def head(c, page, depth):
 <link rel="stylesheet" href="{css}fonts.css">
 <link rel="stylesheet" href="{css}hyperfab.min.css">
 <link rel="stylesheet" href="{css}site.css">
+<script defer src="{css}analytics.js"></script>
 <link rel="alternate" type="text/plain" title="llms.txt" href="{SITE}/llms.txt">
 <link rel="alternate" type="text/plain" title="llms-full.txt" href="{SITE}/llms-full.txt">
 {ld(page['schema'])}
