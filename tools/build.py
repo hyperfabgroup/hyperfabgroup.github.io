@@ -1705,10 +1705,11 @@ def sitemap(pages):
     for p in pages:
         a = by_path[p['alt_path']]
         fa, en = (p, a) if p['lang'] == 'fa' else (a, p)
-        out.append(f'  <url><loc>{SITE}{p["path"]}</loc><lastmod>{p.get("lastmod", TODAY)}</lastmod>'
-                   f'<changefreq>monthly</changefreq><priority>{p["priority"]}</priority>'
+        lastmod = f'<lastmod>{p["lastmod"]}</lastmod>' if p.get('lastmod') else ''
+        out.append(f'  <url><loc>{SITE}{p["path"]}</loc>{lastmod}'
                    f'<xhtml:link rel="alternate" hreflang="fa" href="{SITE}{fa["path"]}"/>'
-                   f'<xhtml:link rel="alternate" hreflang="en" href="{SITE}{en["path"]}"/></url>')
+                   f'<xhtml:link rel="alternate" hreflang="en" href="{SITE}{en["path"]}"/>'
+                   f'<xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{fa["path"]}"/></url>')
     out.append('</urlset>\n')
     write('sitemap.xml', '\n'.join(out))
 
