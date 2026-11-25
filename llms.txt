@@ -19,6 +19,7 @@ Key facts:
 
 - [HyperFab — home (Persian)](https://hyperfabgroup.github.io/): all services, real portfolio photos, videos, team, FAQ and contact details
 - [HyperFab — home (English)](https://hyperfabgroup.github.io/en/)
+- [Industrial and batch production quote checklist](https://hyperfabgroup.github.io/en/industrial/#production-quote) ([Persian](https://hyperfabgroup.github.io/industrial/#production-quote)): prepare a drawing or sample, material and finishing details, critical tolerances and inspection requirements, quantities and delivery.
 - [Online price estimator](https://hyperfabgroup.github.io/en/price-estimator/) ([Persian](https://hyperfabgroup.github.io/price-estimator/)): how instant 3D printing and laser cutting prices are calculated, DFM checks, file formats per service
 - [Tekeyab — small pieces of industrial material](https://hyperfabgroup.github.io/en/tekeyab/) ([Persian](https://hyperfabgroup.github.io/tekeyab/))
 - [Sheet and tube punching](https://hyperfabgroup.github.io/en/punching/) ([Persian](https://hyperfabgroup.github.io/punching/)): metal and polyethylene, punching dies, production runs

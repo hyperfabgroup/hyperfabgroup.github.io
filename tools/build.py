@@ -771,10 +771,13 @@ def page_home(c):
 def hub_page_meta(c, key, hb):
     fa = c['lang'] == 'fa'
     other_home_path, other_rel = ('/en/', 'en/') if fa else ('/', '')
-    return {'key': key, 'lang': c['lang'], 'file': c['home_rel'] + hb['slug'] + '/index.html',
+    page = {'key': key, 'lang': c['lang'], 'file': c['home_rel'] + hb['slug'] + '/index.html',
             'path': c['home_path'] + hb['slug'] + '/', 'alt_path': other_home_path + hb['slug'] + '/',
             'alt_rel': other_rel + hb['slug'] + '/', 'priority': hb['priority'], 'title': hb['title'], 'desc': hb['desc'],
             'keywords': c['page_home']['keywords'], 'og_img': hb['img'], 'og_alt': hb['crumb']}
+    if hb.get('lastmod'):
+        page['lastmod'] = hb['lastmod']
+    return page
 
 
 def hub_hero(c, depth, key, hb):
@@ -783,11 +786,15 @@ def hub_hero(c, depth, key, hb):
     if key == 'industrial':
         btns = [('btn-red', b[1], b[2]) if k == 0 else ('hfs-btn-ghost', b[1], b[2])
                 for k, b in enumerate(c['punching']['cta_btns'][:2])]
+        btns.append(('hfs-btn-ghost', hb['quote_title'], '#production-quote'))
     elif key == 'credits':
         btns = []
     else:
         btns = [('btn-red', c['home']['btn1'], MAIN + '/order/'),
                 ('hfs-btn-ghost', L['contact'], rel(depth, c['home_rel'] + 'contact/'))]
+        if key == 'services':
+            btns.append(('hfs-btn-ghost', hb['batch_cta'],
+                         rel(depth, c['home_rel'] + 'industrial/') + '#production-quote'))
     b = ''.join(f'<a class="{cls}" href="{u}">{(icon("box", 18) + " ") if cls == "btn-red" else ""}{e(t)}</a>' for cls, t, u in btns)
     return f'''<section class="hfs-hero">
 	<div class="wrap">
@@ -817,6 +824,16 @@ def credits_table(c, depth):
             f'<thead><tr>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>')
 
 
+def industrial_quote(c, depth, hb):
+    example = rel(depth, c['home_rel'] + 'portfolio/mechanism-frame-st37/')
+    guide = rel(depth, c['home_rel'] + 'guides/3d-printing-vs-cnc-vs-injection/')
+    links = (f'<p><a href="{e(example)}">{e(hb["quote_example"])}</a></p>'
+             f'<p><a href="{e(guide)}">{e(hb["quote_process_guide"])}</a></p>')
+    content = (f'<div class="hfs-head"><h2>{e(hb["quote_title"])}</h2><p>{e(hb["quote_intro"])}</p></div>'
+               + why_cards(hb['quote_items']) + f'<div class="prose">{links}</div>')
+    return sec_simple('production-quote', ' section-alt', content)
+
+
 def page_hub(c, key, hb):
     depth = c['depth_home'] + 1
     h = c['home']
@@ -828,7 +845,7 @@ def page_hub(c, key, hb):
             + sec_how(c) + hub_guides(c, depth, key) + home_cta(c)
     elif key == 'industrial':
         ind = dict(h['ind_feature'], cls=' section-alt', id='industrial')
-        body += sec_industrial(c, depth, on_hub=True) + feature(c, depth, ind, '../') + sec_why(c) \
+        body += industrial_quote(c, depth, hb) + sec_industrial(c, depth, on_hub=True) + feature(c, depth, ind, '../') + sec_why(c) \
             + hub_guides(c, depth, key) + cta_block(hb['cta_h'], hb['cta_p'], c['punching']['cta_btns'])
     elif key == 'portfolio':
         body += sec_projects(c, depth) + sec_works(c, depth, alt=' section-alt' if c.get('projects') else '') \
@@ -855,7 +872,7 @@ def hub_schema(c, key, hb, p):
     ptype = {'about': 'AboutPage', 'contact': 'ContactPage', 'credits': 'WebPage'}.get(key, 'CollectionPage')
     nodes = [org_schema(c), website_node(c),
              {'@type': ptype, '@id': url, 'url': url, 'name': p['title'], 'description': p['desc'], 'inLanguage': c['lang'],
-              'dateModified': TODAY, 'isPartOf': {'@id': website_id}, 'about': {'@id': ORG_ID},
+              'dateModified': p.get('lastmod', TODAY), 'isPartOf': {'@id': website_id}, 'about': {'@id': ORG_ID},
               'breadcrumb': {'@id': url + '#breadcrumb'}, 'primaryImageOfPage': image_object(hb['img'], hb['crumb'])},
              {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
                  {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
