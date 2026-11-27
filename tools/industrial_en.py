@@ -187,7 +187,7 @@ INJECTION = {
              ('Mould and sampling', 'The mould is built, sampled and corrected until you give final approval.'),
              ('Production and delivery', 'Parts are produced with quality control and delivered.'),
          ],
-         'note': '<b>Before investing in a mould:</b> you can make a prototype with <a href="../#fdm">HyperFab FDM 3D printing</a> and check form, dimensions and assembly on a real part.'},
+         'note': '<b>Before investing in a mould:</b> you can make a prototype with <a href="../services/#fdm">HyperFab FDM 3D printing</a> and check form, dimensions and assembly on a real part.'},
         {'kicker': 'WHY HYPERFAB', 'title': 'Why choose HyperFab for an injection moulding project?', 'id': 'why',
          'sub': 'Engineering review before tooling, real production experience and one owner from design to delivery.',
          'why': [

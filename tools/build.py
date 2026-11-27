@@ -220,6 +220,11 @@ def ld(graph):
             % json.dumps(data, ensure_ascii=False, separators=(',', ':')))
 
 
+def page_date_fields(page):
+    lastmod = page.get('lastmod')
+    return {'dateModified': lastmod} if lastmod else {}
+
+
 # ---------------------------------------------------------------- layout
 def head(c, page, depth):
     url = SITE + page['path']
@@ -873,7 +878,7 @@ def hub_schema(c, key, hb, p):
     ptype = {'about': 'AboutPage', 'contact': 'ContactPage', 'credits': 'WebPage'}.get(key, 'CollectionPage')
     nodes = [org_schema(c), website_node(c),
              {'@type': ptype, '@id': url, 'url': url, 'name': p['title'], 'description': p['desc'], 'inLanguage': c['lang'],
-              'dateModified': p.get('lastmod', TODAY), 'isPartOf': {'@id': website_id}, 'about': {'@id': ORG_ID},
+              **page_date_fields(p), 'isPartOf': {'@id': website_id}, 'about': {'@id': ORG_ID},
               'breadcrumb': {'@id': url + '#breadcrumb'}, 'primaryImageOfPage': image_object(hb['img'], hb['crumb'])},
              {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
                  {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
@@ -1626,7 +1631,7 @@ def page_schema(c, key, p):
     hero = c[key]['hero']
     website_id = SITE + c['home_path'] + '#website'
     webpage = {'@type': 'WebPage', '@id': url, 'url': url, 'name': p['title'], 'description': p['desc'],
-               'inLanguage': c['lang'], 'dateModified': TODAY, 'isPartOf': {'@id': website_id},
+               'inLanguage': c['lang'], **page_date_fields(p), 'isPartOf': {'@id': website_id},
                'breadcrumb': {'@id': url + '#breadcrumb'},
                'primaryImageOfPage': image_object(hero['img'], hero.get('img_alt', ''))}
     if main_node is not None:
@@ -1660,7 +1665,7 @@ def build_lang(c):
     p['schema'] = [org_schema(c), website_node(c),
                    {'@type': 'WebPage', '@id': SITE + c['home_path'], 'url': SITE + c['home_path'], 'name': p['title'],
                     'description': p['desc'], 'inLanguage': c['lang'], 'isPartOf': {'@id': SITE + c['home_path'] + '#website'},
-                    'about': {'@id': ORG_ID}, 'dateModified': TODAY,
+                    'about': {'@id': ORG_ID}, **page_date_fields(p),
                     'primaryImageOfPage': image_object(HOME_IMG, c['home']['hero_alt'])},
                    {'@type': 'ItemList', 'name': c['home']['svc_title'], 'itemListElement': [
                        {'@type': 'ListItem', 'position': k, 'item': {
